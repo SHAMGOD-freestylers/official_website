@@ -1,15 +1,17 @@
 @import "variables";
-body {
+.container {
   display: flex;
+
   // sidebar
   .side {
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: $white;
     width: 200px;
     position: sticky;
     font-family: $english;
-
+    min-height: 100vh;
     .logo {
       width: 14rem;
       height: 14rem;
@@ -22,7 +24,7 @@ body {
       text-align: left;
       letter-spacing: 0.3rem;
       line-height: 2rem;
-      margin: 12rem 7rem 15rem 7rem;
+      margin: auto 7rem;
       font-weight: 900;
     }
     .side-icon {
@@ -45,8 +47,13 @@ body {
   }
 
   main {
-    background-color: green;
+    min-height: 100vh;
+    min-width: 100vh;
 
-    height: 1500px;
+    .mainvisual img {
+      width: 100%;
+      max-width: 1920px;
+      object-fit: cover;
+    }
   }
 }
