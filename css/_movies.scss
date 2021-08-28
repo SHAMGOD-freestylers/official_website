@@ -1,0 +1,70 @@
+@import "rayout";
+@import "variables";
+// TODO　背景画像に背景色を重ねる所
+.movies-mainvisual {
+  background-image: url(../images/movies-img.png);
+  background-size: cover;
+  height: 51rem;
+  .movies-mainvisual-box {
+    padding-top: 26.7rem;
+    padding-bottom: 12.3rem;
+    color: $white;
+    .section-title {
+      border-left: thick solid white;
+    }
+    // 背景色重ね
+    position: relative;
+  }
+  //   背景色重ね
+  &:after {
+    background-color: #801617;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+#movies {
+  margin-top: 7.6rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .movies-box {
+    &:first-child {
+      margin-left: 7.75rem;
+    }
+    &:nth-child(2) {
+      margin-left: 5.4rem;
+    }
+    &:nth-child(3) {
+      margin-top: 6rem;
+      margin-left: 7.75rem;
+    }
+    &:nth-child(4) {
+      margin-top: 6rem;
+      margin-left: 5.4rem;
+    }
+
+    .movies-text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 48rem;
+      height: 16.7rem;
+      text-align: center;
+      background-color: #f4f4f4;
+      .movies-box-text_title {
+        font-size: 2rem;
+        font-family: $japanese;
+        font-weight: bold;
+      }
+      .movies-box-text_subtext {
+        padding-top: 0.7rem;
+        font-size: 1.4rem;
+        color: #818181;
+      }
+    }
+  }
+}

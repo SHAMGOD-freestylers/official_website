@@ -55,5 +55,17 @@
       max-width: 1920px;
       object-fit: cover;
     }
+
+    // セクションタイトル
+    .section-title {
+      width: 100%;
+      font-weight: bold;
+      margin-top: 9rem;
+      font-size: 3rem;
+      font-family: $english;
+      border-left: thick solid black;
+      padding-left: 2.4rem;
+      margin-left: 2.4rem;
+    }
   }
 }
