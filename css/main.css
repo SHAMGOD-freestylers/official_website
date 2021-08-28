@@ -486,6 +486,7 @@ template {
   width: 200px;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   font-family: Alfa Slab One;
   min-height: 100vh;
 }
@@ -607,6 +608,7 @@ header nav a:hover {
   width: 200px;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   font-family: Alfa Slab One;
   min-height: 100vh;
 }
@@ -717,6 +719,7 @@ header nav a:hover {
   width: 200px;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   font-family: Alfa Slab One;
   min-height: 100vh;
 }
