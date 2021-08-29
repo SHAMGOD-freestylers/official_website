@@ -1,0 +1,30 @@
+@import "rayout";
+@import "variables";
+// TODO　背景画像に背景色を重ねる所
+.history-mainvisual {
+  background-image: url(../images/history-img.png);
+  background-size: cover;
+  height: 51rem;
+  .history-mainvisual-box {
+    padding-top: 26.7rem;
+    padding-bottom: 12.3rem;
+    color: $white;
+    .section-title {
+      border-left: thick solid white;
+    }
+    // 背景色重ね
+    position: relative;
+  }
+  //   背景色重ね
+  &:after {
+    background-color: #801617;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+#history{
+    margin-top:8.5rem ;
+}
