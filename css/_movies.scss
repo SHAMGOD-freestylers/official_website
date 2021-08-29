@@ -1,38 +1,12 @@
 @import "rayout";
 @import "variables";
-
 .movies-mainvisual {
-  background-image: url(../images/movies-img.png);
-  background-size: cover;
-  height: 51rem;
-  position: relative;
+  @include mainvisual("../images/movies-img.png");
   .movies-mainvisual-box {
-    // padding-top: 26.7rem;
-    // padding-bottom: 12.3rem;
-    color: $white;
-    .section-title {
-      border-left: thick solid white;
-      z-index: 11;
-      position: absolute;
-top: 50%;
-    }
-    // 背景色重ね
-
-    &::after {
-      //   背景色重ね
-      content: '';
-      height: 24rem;
-      z-index: 10;
-      opacity: 0.5;
-      background-color: #801617;
-      position: absolute;
-      top: 53%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+    @include mainvisual-box(#801617);
   }
 }
+
 #movies {
   margin-top: 7.6rem;
   display: flex;
@@ -76,41 +50,38 @@ top: 50%;
     }
   }
 }
-.movies-btn-box{
-  
-  line-height:40px;
+.movies-btn-box {
+  line-height: 40px;
 
   width: 100%;
   font-weight: bold;
 
   font-size: 3rem;
   font-family: $english;
-margin-top: 5.4rem;
-margin-right: 14rem;
-
+  margin-top: 5.4rem;
+  margin-right: 14rem;
 }
-.movies-btn{
-
-  display:block;
+.movies-btn {
+  display: block;
   width: 14rem;
   height: 5rem;
   margin-left: auto;
-  background:black;
-  text-align:center;
-  border-top:3px solid black;
-  border-bottom:3px solid black;
-  color:$white;
-  font-size:1.4rem;
-  font-weight:bold;
-  box-shadow:0px 0px 0px 1px $white inset;
+  background: black;
+  text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 1px $white inset;
   transition: all 0.5s ease;
-  &:hover{
-    background:$white;
-    color:black;
-    margin-left:0px;
-    margin-top:0px;
-    border-top:3px solid $white;
-    border-bottom:3px solid $white;
-    box-shadow:0px 0px 0px 1px $white ;
+  &:hover {
+    background: $white;
+    color: black;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-top: 3px solid $white;
+    border-bottom: 3px solid $white;
+    box-shadow: 0px 0px 0px 1px $white;
   }
 }

@@ -1,38 +1,12 @@
 @import "rayout";
 @import "variables";
-// TODO moviesと一緒だからまとめたい
 .history-mainvisual {
-  background-image: url(../images/history-img.png);
-  background-size: cover;
-  height: 51rem;
-  position: relative;
+  @include mainvisual("../images/history-img.png");
   .history-mainvisual-box {
-    // padding-top: 26.7rem;
-    // padding-bottom: 12.3rem;
-    color: $white;
-    .section-title {
-      border-left: thick solid white;
-      z-index: 11;
-      position: absolute;
-      top: 50%;
-    }
-    // 背景色重ね
-
-    &::after {
-      //   背景色重ね
-      content: "";
-      height: 24rem;
-      z-index: 10;
-      opacity: 0.5;
-      background-color: #123a7f;
-      position: absolute;
-      top: 53%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+    @include mainvisual-box(#123a7f);
   }
 }
+
 #history {
   .history-main {
     font-family: $japanese;
