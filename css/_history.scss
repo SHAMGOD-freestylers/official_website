@@ -2,54 +2,53 @@
 @import "variables";
 // TODO moviesと一緒だからまとめたい
 .history-mainvisual {
-    background-image: url(../images/history-img.png);
-    background-size: cover;
-    height: 51rem;
-    position: relative;
-    .history-mainvisual-box {
-      // padding-top: 26.7rem;
-      // padding-bottom: 12.3rem;
-      color: $white;
-      .section-title {
-        border-left: thick solid white;
-        z-index: 11;
-        position: absolute;
-  top: 50%;
-      }
-      // 背景色重ね
-  
-      &::after {
-        //   背景色重ね
-        content: '';
-        height: 24rem;
-        z-index: 10;
-        opacity: 0.5;
-        background-color:#123A7F;
-        position: absolute;
-        top: 53%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
+  background-image: url(../images/history-img.png);
+  background-size: cover;
+  height: 51rem;
+  position: relative;
+  .history-mainvisual-box {
+    // padding-top: 26.7rem;
+    // padding-bottom: 12.3rem;
+    color: $white;
+    .section-title {
+      border-left: thick solid white;
+      z-index: 11;
+      position: absolute;
+      top: 50%;
+    }
+    // 背景色重ね
+
+    &::after {
+      //   背景色重ね
+      content: "";
+      height: 24rem;
+      z-index: 10;
+      opacity: 0.5;
+      background-color: #123a7f;
+      position: absolute;
+      top: 53%;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
-#history{
-
-  .history-main{
+}
+#history {
+  .history-main {
     font-family: $japanese;
     font-size: 1.4rem;
     padding: 6.5rem 8.5rem;
     line-height: 2.8rem;
     margin: 0 auto;
     display: flex;
-    &_left{
+    &_left {
       text-align: right;
     }
-    &_right{
+    &_right {
       margin-left: 7rem;
       text-align: left;
     }
-    .history-main-text{
+    .history-main-text {
       padding-bottom: 6.5rem;
     }
   }
