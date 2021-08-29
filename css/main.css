@@ -1694,8 +1694,19 @@ header nav a:hover {
 
 .contact-box-right .contact-box-right-btn {
   margin-top: 2.4rem;
+  margin-bottom: 2.5rem;
   width: 26.5rem;
   height: 9.1rem;
   cursor: pointer;
+}
+
+footer {
+  color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  height: 6rem;
+  line-height: 6rem;
+  width: 100%;
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */
