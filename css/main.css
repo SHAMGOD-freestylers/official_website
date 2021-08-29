@@ -531,6 +531,10 @@ template {
   margin-left: 1.2rem;
 }
 
+.container section {
+  margin-top: 8rem;
+}
+
 .container main .mainvisual img {
   width: 100%;
   max-width: 1920px;
@@ -648,6 +652,10 @@ header nav a:hover {
   margin-left: 1.2rem;
 }
 
+.container section {
+  margin-top: 8rem;
+}
+
 .container main .mainvisual img {
   width: 100%;
   max-width: 1920px;
@@ -728,6 +736,10 @@ header nav a:hover {
 
 .container .side .side-icon i:last-child {
   margin-left: 1.2rem;
+}
+
+.container section {
+  margin-top: 8rem;
 }
 
 .container main .mainvisual img {
@@ -834,6 +846,10 @@ header nav a:hover {
 
 .container .side .side-icon i:last-child {
   margin-left: 1.2rem;
+}
+
+.container section {
+  margin-top: 8rem;
 }
 
 .container main .mainvisual img {
@@ -1047,6 +1063,10 @@ header nav a:hover {
   margin-left: 1.2rem;
 }
 
+.container section {
+  margin-top: 8rem;
+}
+
 .container main .mainvisual img {
   width: 100%;
   max-width: 1920px;
@@ -1165,6 +1185,10 @@ header nav a:hover {
 
 .container .side .side-icon i:last-child {
   margin-left: 1.2rem;
+}
+
+.container section {
+  margin-top: 8rem;
 }
 
 .container main .mainvisual img {
@@ -1304,6 +1328,10 @@ header nav a:hover {
   margin-left: 1.2rem;
 }
 
+.container section {
+  margin-top: 8rem;
+}
+
 .container main .mainvisual img {
   width: 100%;
   max-width: 1920px;
@@ -1402,6 +1430,10 @@ header nav a:hover {
 
 .container .side .side-icon i:last-child {
   margin-left: 1.2rem;
+}
+
+.container section {
+  margin-top: 8rem;
 }
 
 .container main .mainvisual img {
@@ -1511,5 +1543,159 @@ header nav a:hover {
 
 #faq .faq-main .faq-box:nth-child(even) {
   margin-left: 40rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .side {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  width: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-family: "Alfa Slab One", cursive;
+  min-height: 100vh;
+}
+
+.container .side .logo {
+  width: 14rem;
+  height: 14rem;
+  margin: 0 2.7rem;
+  margin-top: 4.1rem;
+}
+
+.container .side .side-text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 1.2rem;
+  text-align: left;
+  letter-spacing: 0.3rem;
+  line-height: 2rem;
+  margin: auto 7rem;
+  font-weight: 900;
+}
+
+.container .side .side-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  padding: 0 5.3rem;
+  margin-bottom: 2.2rem;
+}
+
+.container .side .side-icon i {
+  font-size: 2rem;
+}
+
+.container .side .side-icon i:first-child {
+  margin-right: 1.2rem;
+}
+
+.container .side .side-icon i:last-child {
+  margin-left: 1.2rem;
+}
+
+.container section {
+  margin-top: 8rem;
+}
+
+.container main .mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container main .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  font-family: "Alfa Slab One", cursive;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
+}
+
+.contact-mainvisual {
+  background-image: url("../images/contact-img.png");
+  background-size: cover;
+  height: 51rem;
+  position: relative;
+}
+
+.contact-mainvisual .contact-mainvisual-box {
+  color: #ffffff;
+}
+
+.contact-mainvisual .contact-mainvisual-box .section-title {
+  border-left: thick solid white;
+  z-index: 11;
+  position: absolute;
+  top: 50%;
+}
+
+.contact-mainvisual .contact-mainvisual-box::after {
+  content: "";
+  height: 24rem;
+  z-index: 10;
+  opacity: 0.5;
+  background-color: #818284;
+  position: absolute;
+  top: 53%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact-box {
+  margin-top: 8.6rem;
+  padding: 0 7.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-box-left {
+  margin-top: 4.6rem;
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+}
+
+.contact-box-left span {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.contact-box-right {
+  margin-left: 7.3rem;
+  font-size: 1.4rem;
+}
+
+.contact-box-right-text {
+  text-align: left;
+  padding-top: 4.3rem;
+}
+
+.contact-box-right .contact-box-right-btn {
+  margin-top: 2.4rem;
+  width: 26.5rem;
+  height: 9.1rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
