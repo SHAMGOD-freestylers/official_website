@@ -1,0 +1,29 @@
+@import "rayout";
+@import "variables";
+.history-mainvisual {
+  @include mainvisual("../images/history-img.png");
+  .history-mainvisual-box {
+    @include mainvisual-box(#123a7f);
+  }
+}
+
+#history {
+  .history-main {
+    font-family: $japanese;
+    font-size: 1.4rem;
+    padding: 6.5rem 8.5rem;
+    line-height: 2.8rem;
+    margin: 0 auto;
+    display: flex;
+    &_left {
+      text-align: right;
+    }
+    &_right {
+      margin-left: 7rem;
+      text-align: left;
+    }
+    .history-main-text {
+      padding-bottom: 6.5rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "rayout";
+@import "variables";
+
+.faq-mainvisual {
+  @include mainvisual("../images/faq-img.png");
+
+  .faq-mainvisual-box {
+    @include mainvisual-box(#8d2659) // padding-top: 26.7rem;
+;
+  }
+}
+
+#faq {
+  .faq-main {
+    width: 100%;
+    padding: 0 6.4rem;
+    .faq-box {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 25rem;
+      width: 63rem;
+      font-family: $japanese;
+      line-height: 2.8rem;
+      margin-top: 6rem;
+      .faq-question {
+        display: flex;
+        font-size: 2.4rem;
+
+        &-q {
+          font-size: 4rem;
+          margin-right: 1.6rem;
+          font-family: $english;
+          margin-right: 3.2rem;
+        }
+      }
+      .faq-answer {
+        margin-top: 4.2rem;
+        display: flex;
+        font-size: 1.4rem;
+        &-a {
+          color: #8d2659;
+          font-size: 4rem;
+          margin-right: 1.6rem;
+          font-family: $english;
+        }
+      }
+      &:nth-child(even) {
+        margin-left: 40rem;
+      }
+    }
+  }
+}

@@ -1,12 +1,43 @@
 // color
 $white: #ffffff;
 $black: #111111;
-$gray: #818284;
+$gray: #818181;
 $red: #ff1013;
 $dark-red: #400b0c;
 $purple: #8d2659;
 $blue: #123a7f;
 
 // font-family
-$english: Alfa Slab One;
-$japanese: Noto Sans CJK JP;
+$english: "Alfa Slab One", cursive;
+$japanese: "Noto Sans JP", sans-serif;
+
+// mixin
+@mixin mainvisual($url) {
+  background-image: url($url);
+  background-size: cover;
+  height: 51rem;
+  position: relative;
+}
+@mixin mainvisual-box($color) {
+  color: $white;
+  .section-title {
+    border-left: thick solid white;
+    z-index: 11;
+    position: absolute;
+    top: 50%;
+  }
+  // 背景色重ね
+  &::after {
+    //   背景色重ね
+    content: "";
+    height: 24rem;
+    z-index: 10;
+    opacity: 0.5;
+    background-color: $color;
+    position: absolute;
+    top: 53%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

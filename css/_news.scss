@@ -1,0 +1,31 @@
+@import "variables";
+@import "rayout";
+
+.news-container {
+  display: flex;
+  padding-top: 13rem;
+  .news-box {
+    margin-left: 4.67rem;
+    &:first-child {
+      margin-left: 7.2rem;
+    }
+    img {
+      height: 20.7rem;
+      width: 30.46rem;
+    }
+    .news-text-box {
+      .news-text_sub {
+        padding-top: 2.45rem;
+        display: flex;
+        justify-content: space-between;
+        color: $gray;
+        font-size: 1.2rem;
+      }
+      .news-text_title {
+        padding-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
