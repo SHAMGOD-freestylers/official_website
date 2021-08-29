@@ -1,6 +1,6 @@
 @import "rayout";
 @import "variables";
-// TODO　背景画像に背景色を重ねる所
+
 .movies-mainvisual {
   background-image: url(../images/movies-img.png);
   background-size: cover;
@@ -23,7 +23,7 @@ top: 50%;
       content: '';
       height: 24rem;
       z-index: 10;
-      opacity: 0.7;
+      opacity: 0.5;
       background-color: #801617;
       position: absolute;
       top: 53%;

@@ -1,7 +1,7 @@
 @import "variables";
+
 .container {
   display: flex;
-
   // sidebar
   .side {
     height: 100%;
@@ -48,9 +48,6 @@
   }
 
   main {
-    min-height: 100vh;
-    min-width: 100vh;
-
     .mainvisual img {
       width: 100%;
       max-width: 1920px;
