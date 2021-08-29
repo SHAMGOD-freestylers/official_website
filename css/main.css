@@ -1454,10 +1454,11 @@ header nav a:hover {
 }
 
 #faq .faq-main {
-  margin: 8rem 0;
+  width: 100%;
+  padding: 0 6.4rem;
 }
 
-#faq .faq-box {
+#faq .faq-main .faq-box {
   background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1476,33 +1477,39 @@ header nav a:hover {
   width: 63rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
+  margin-top: 6rem;
 }
 
-#faq .faq-box .faq-question {
+#faq .faq-main .faq-box .faq-question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 2.4rem;
 }
 
-#faq .faq-box .faq-question-q {
+#faq .faq-main .faq-box .faq-question-q {
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
+  margin-right: 3.2rem;
 }
 
-#faq .faq-box .faq-answer {
+#faq .faq-main .faq-box .faq-answer {
   margin-top: 4.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #8d2659;
   font-size: 1.4rem;
 }
 
-#faq .faq-box .faq-answer-a {
+#faq .faq-main .faq-box .faq-answer-a {
+  color: #8d2659;
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
+}
+
+#faq .faq-main .faq-box:nth-child(even) {
+  margin-left: 40rem;
 }
 /*# sourceMappingURL=main.css.map */
