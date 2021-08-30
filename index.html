@@ -23,25 +23,29 @@
   <body>
     <div class="container">
       <!-- sidebar -->
-      <div class="side">
-        <img class="logo" src="./images/logo.png" alt="" />
-        <div class="side-text">
-          KEIO UNIVERSITY <br />
-          FREESTYLE <br />
-          BASKETBALL CREW
+      <aside class="side">
+        <div class="sticky">
+          <div class="sticky-part">
+            <img class="logo" src="./images/logo.png" alt="" />
+            <div class="side-text">
+              KEIO UNIVERSITY <br />
+              FREESTYLE <br />
+              BASKETBALL CREW
+            </div>
+            <div class="side-icon">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+            </div>
+            <img src="./images/entry.svg" alt="" />
+          </div>
         </div>
-        <div class="side-icon">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-        </div>
-        <img src="./images/entry.svg" alt="" />
-      </div>
+      </aside>
 
       <main>
         <!-- header -->
         <header>
-          <nav>
+          <nav id="nav">
             <a href="#Message">MESSAGE</a>
             <a href="#Movies">MOVIES</a>
             <a href="News">NEWS</a>
@@ -57,6 +61,7 @@
         <!-- message -->
         <section id="message">
           <p class="section-title">MESSAGE</p>
+          <div class="bg-text">SHAMGOD</div>
           <div class="message-box">
             <div class="message-box_left">
               <h1 class="message-concept">
@@ -92,6 +97,7 @@
         <div class="movies-mainvisual">
           <div class="movies-mainvisual-box">
             <p class="section-title">MOVIES</p>
+            <div class="bg-text-even_movies">MOVIES</div>
           </div>
         </div>
         <section id="movies">
@@ -178,8 +184,9 @@
           </div>
         </section>
         <!-- news -->
-        <section id="News">
+        <section id="news">
           <h2 class="section-title">NEWS</h2>
+          <div class="bg-text">NEWS</div>
           <div class="news-container">
             <div class="news-box">
               <img src="./images/news1.png" alt="" class="news-box-img" />
@@ -222,6 +229,7 @@
           <div class="history-mainvisual">
             <div class="history-mainvisual-box">
               <p class="section-title">HISTORY</p>
+              <div class="bg-text-even_history">HISTORY</div>
             </div>
           </div>
           <div class="history-main">
@@ -244,6 +252,76 @@
                 class="history-main-img"
               />
             </div>
+            <!-- timeline -->
+
+            <ul class="timeline">
+              <li>
+                <!--線が伸びる基準となるHTML。liを基準として、spanに指定された線を伸ばします。-->
+                <dl>
+                  <dt>
+                    <br />
+                  </dt>
+                  <dd>
+                    <br /><br />
+                    <!-- 慶應初フリースタイルバスケットボールサークル、SHAMGOD創始 -->
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd><br /></dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd><br /></dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd><br /></dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd>
+                    <br />
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd>
+                    <br />
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd><br /></dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd><br /></dd>
+                </dl>
+              </li>
+            </ul>
+
             <div class="history-main_right">
               <img
                 src="./images/history-right.png"
@@ -267,12 +345,19 @@
                 2020年<br />
                 オンライン三田祭に出演
               </div>
+              <div class="history-main-text">
+                2021年<br />
+                Coming soon!
+              </div>
             </div>
           </div>
+
+          <div class="history-main_right"></div>
         </section>
         <!-- Representative -->
         <section id="representative">
           <p class="section-title">Representative</p>
+          <div class="bg-text">READER</div>
           <div class="repsen-box">
             <div class="repsen-box-left">
               <div class="repsen-text">
@@ -305,6 +390,7 @@
           <div class="faq-mainvisual">
             <div class="faq-mainvisual-box">
               <p class="section-title">FAQ</p>
+              <div class="bg-text-even_faq">FAQ</div>
             </div>
           </div>
           <div class="faq-main">
@@ -375,6 +461,7 @@
           <div class="contact-mainvisual">
             <div class="contact-mainvisual-box">
               <p class="section-title">CONTACT</p>
+              <div class="bg-text-even_contact">CONTACT</div>
             </div>
           </div>
           <div class="contact-box">
@@ -410,10 +497,20 @@
             </div>
           </div>
         </section>
+
         <footer>
           © 2021 SHAMGOD ~freestyle basketball crew~ All Rights Reserved.
         </footer>
       </main>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!--自作のJS-->
+
+    <script src="./js/timeline.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

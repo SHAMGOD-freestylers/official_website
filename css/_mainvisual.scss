@@ -1,2 +1,7 @@
 @import "rayout";
 
+.mainvisual img {
+  width: 100%;
+  // max-width: 1920px;
+  object-fit: cover;
+}
