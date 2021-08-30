@@ -472,10 +472,20 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,23 +493,16 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -511,7 +514,7 @@ template {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,27 +523,20 @@ template {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -559,6 +555,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 header nav {
@@ -593,10 +590,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,23 +611,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -632,7 +632,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,27 +641,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -675,14 +668,30 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+.mainvisual img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,23 +699,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -718,7 +720,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,27 +729,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -807,10 +802,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,23 +823,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -846,7 +844,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,27 +853,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -1036,10 +1027,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1047,23 +1048,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1075,7 +1069,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,27 +1078,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -1177,10 +1164,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,23 +1185,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1216,7 +1206,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1225,27 +1215,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -1382,10 +1365,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1393,23 +1386,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1421,7 +1407,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1430,27 +1416,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -1503,10 +1482,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1514,23 +1503,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1542,7 +1524,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1551,27 +1533,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
@@ -1694,10 +1669,20 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .container .side {
-  height: 100%;
+  width: 200px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container .side .sticky .sticky-part {
+  min-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1705,23 +1690,16 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Alfa Slab One", cursive;
-  min-height: 100vh;
 }
 
-.container .side .logo {
+.container .side .sticky .sticky-part .logo {
   width: 14rem;
   height: 14rem;
   margin: 0 2.7rem;
   margin-top: 4.1rem;
 }
 
-.container .side .side-text {
+.container .side .sticky .sticky-part .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1733,7 +1711,7 @@ header nav a:hover {
   font-weight: 900;
 }
 
-.container .side .side-icon {
+.container .side .sticky .sticky-part .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1742,27 +1720,20 @@ header nav a:hover {
   margin-bottom: 2.2rem;
 }
 
-.container .side .side-icon i {
+.container .side .sticky .sticky-part .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .side-icon i:first-child {
+.container .side .sticky .sticky-part .side-icon i:first-child {
   margin-right: 1.2rem;
 }
 
-.container .side .side-icon i:last-child {
+.container .side .sticky .sticky-part .side-icon i:last-child {
   margin-left: 1.2rem;
 }
 
 .container section {
   margin-top: 8rem;
-}
-
-.container main .mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container main .section-title {
