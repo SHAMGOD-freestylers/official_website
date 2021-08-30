@@ -41,3 +41,14 @@ $japanese: "Noto Sans JP", sans-serif;
     right: 0;
   }
 }
+@mixin bg-text {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  font-family: $english;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
+}
