@@ -6,7 +6,9 @@
     @include mainvisual-box(#123a7f);
   }
 }
-
+.bg-text-even_history {
+  @include bg-text-even(41%);
+}
 #history {
   .history-main {
     font-family: $japanese;

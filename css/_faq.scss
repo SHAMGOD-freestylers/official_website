@@ -9,6 +9,9 @@
 ;
   }
 }
+.bg-text-even_faq {
+  @include bg-text-even(74%);
+}
 
 #faq {
   .faq-main {

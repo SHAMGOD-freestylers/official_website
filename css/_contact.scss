@@ -7,6 +7,9 @@
     @include mainvisual-box(#818284);
   }
 }
+.bg-text-even_contact {
+  @include bg-text-even(37%);
+}
 .contact-box {
   margin-top: 8.6rem;
   padding: 0 7.9rem;

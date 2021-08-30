@@ -581,7 +581,7 @@ header nav a {
   font-size: 1.4rem;
   margin-right: 4rem;
   font-family: "Alfa Slab One", cursive;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.07rem;
   cursor: pointer;
 }
 
@@ -918,6 +918,20 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.bg-text-even_movies {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  top: 67%;
+  left: 41%;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
 }
 
 #movies {
@@ -1276,6 +1290,20 @@ header nav a:hover {
   right: 0;
 }
 
+.bg-text-even_history {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  top: 67%;
+  left: 41%;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
+}
+
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
@@ -1588,6 +1616,20 @@ header nav a:hover {
   right: 0;
 }
 
+.bg-text-even_faq {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  top: 67%;
+  left: 74%;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
+}
+
 #faq .faq-main {
   width: 100%;
   padding: 0 6.4rem;
@@ -1763,6 +1805,20 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.bg-text-even_contact {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  top: 67%;
+  left: 37%;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
 }
 
 .contact-box {

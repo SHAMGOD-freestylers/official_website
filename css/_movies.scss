@@ -6,7 +6,9 @@
     @include mainvisual-box(#801617);
   }
 }
-
+.bg-text-even_movies {
+  @include bg-text-even(41%);
+}
 #movies {
   margin-top: 7.6rem;
   display: flex;
