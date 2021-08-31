@@ -922,7 +922,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 41%;
+  left: 44.3%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -985,45 +985,6 @@ header nav a:hover {
   padding-top: 0.7rem;
   font-size: 1.4rem;
   color: #818181;
-}
-
-.movies-btn-box {
-  line-height: 40px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
-  margin-top: 5.4rem;
-  margin-right: 14rem;
-}
-
-.movies-btn {
-  display: block;
-  width: 14rem;
-  height: 5rem;
-  margin-left: auto;
-  background: black;
-  text-align: center;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: bold;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
-          box-shadow: 0px 0px 0px 1px #ffffff inset;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.movies-btn:hover {
-  background: #ffffff;
-  color: black;
-  margin-left: 0px;
-  margin-top: 0px;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff;
-          box-shadow: 0px 0px 0px 1px #ffffff;
 }
 
 .container {
@@ -1121,6 +1082,8 @@ header nav a:hover {
 }
 
 #news {
+  padding-bottom: 7rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -1133,7 +1096,7 @@ header nav a:hover {
 
 #news .news-container .news-box {
   z-index: 20;
-  margin-left: 4.67rem;
+  margin-left: 7rem;
 }
 
 #news .news-container .news-box:first-child {
@@ -1161,6 +1124,43 @@ header nav a:hover {
   padding-top: 1rem;
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+.news-btn-box {
+  line-height: 40px;
+  width: 14rem;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  height: 5rem;
+  position: absolute;
+  top: 100%;
+  left: 77.3%;
+  cursor: pointer;
+}
+
+.news-btn {
+  display: block;
+  background: black;
+  text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
+          box-shadow: 0px 0px 0px 1px #ffffff inset;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.news-btn:hover {
+  background: #ffffff;
+  color: black;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px #ffffff;
+          box-shadow: 0px 0px 0px 1px #ffffff;
 }
 
 .container {
@@ -1284,7 +1284,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 41%;
+  left: 38%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1602,7 +1602,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 74%;
+  left: 72%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1789,7 +1789,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 37%;
+  left: 34%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;

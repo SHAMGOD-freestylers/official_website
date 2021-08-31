@@ -5,6 +5,9 @@
   @include bg-text;
 }
 #news {
+  padding-bottom: 7rem;
+  margin-bottom: 3rem;
+
   position: relative;
 
   .news-container {
@@ -14,7 +17,7 @@
     .news-box {
       z-index: 20;
 
-      margin-left: 4.67rem;
+      margin-left: 7rem;
       &:first-child {
         margin-left: 7.2rem;
       }
@@ -37,5 +40,37 @@
         }
       }
     }
+  }
+}
+.news-btn-box {
+  line-height: 40px;
+  width: 14rem;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: $japanese;
+  height: 5rem;
+  position: absolute;
+  top: 100%;
+  left: 77.3%;
+  cursor: pointer;
+}
+
+.news-btn {
+  display: block;
+  background: black;
+  text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 1px $white inset;
+  transition: all 0.5s ease;
+  &:hover {
+    background: $white;
+    color: black;
+    border-top: 3px solid $white;
+    border-bottom: 3px solid $white;
+    box-shadow: 0px 0px 0px 1px $white;
   }
 }

@@ -7,7 +7,7 @@
   }
 }
 .bg-text-even_movies {
-  @include bg-text-even(41%);
+  @include bg-text-even(44.3%);
 }
 #movies {
   margin-top: 7.6rem;
@@ -50,40 +50,5 @@
         color: #818181;
       }
     }
-  }
-}
-.movies-btn-box {
-  line-height: 40px;
-
-  width: 100%;
-  font-weight: bold;
-
-  font-size: 3rem;
-  font-family: $english;
-  margin-top: 5.4rem;
-  margin-right: 14rem;
-}
-.movies-btn {
-  display: block;
-  width: 14rem;
-  height: 5rem;
-  margin-left: auto;
-  background: black;
-  text-align: center;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  color: $white;
-  font-size: 1.4rem;
-  font-weight: bold;
-  box-shadow: 0px 0px 0px 1px $white inset;
-  transition: all 0.5s ease;
-  &:hover {
-    background: $white;
-    color: black;
-    margin-left: 0px;
-    margin-top: 0px;
-    border-top: 3px solid $white;
-    border-bottom: 3px solid $white;
-    box-shadow: 0px 0px 0px 1px $white;
   }
 }
