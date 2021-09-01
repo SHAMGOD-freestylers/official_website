@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 .history-mainvisual {
   @include mainvisual("../images/history-img.png");
@@ -62,7 +62,7 @@
       top: 0;
       width: 2px; /*線の太さ*/
       height: 0; /*はじめは高さを0に*/
-      background: #ccc;
+      color: #707070;
     }
 
     /*タイムラインの見出し横の丸の位置と形状*/

@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 
 .contact-mainvisual {
@@ -11,13 +11,13 @@
   @include bg-text-even(34%);
 }
 .contact-box {
-  margin-top: 8.6rem;
+  margin-top: 4.3rem;
   padding: 0 7.9rem;
   display: flex;
   font-family: $japanese;
 
   &-left {
-    margin-top: 4.6rem;
+    margin-top: 9rem;
     font-size: 4.4rem;
     line-height: 6.6rem;
     span {
@@ -28,6 +28,7 @@
   &-right {
     margin-left: 7.3rem;
     font-size: 1.4rem;
+    line-height: 3rem;
     &-text {
       text-align: left;
       padding-top: 4.3rem;
@@ -35,8 +36,8 @@
     // btn
     .contact-box-right-btn {
       margin-top: 2.4rem;
-      margin-bottom: 2.5rem;
-      width: 26.5rem;
+      margin-bottom: 4rem;
+      width: 26.579rem;
       height: 9.1rem;
       cursor: pointer;
     }

@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 .movies-mainvisual {
   @include mainvisual("../images/movies-img.png");
@@ -33,20 +33,21 @@
     .movies-text-box {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       width: 48rem;
-      height: 16.7rem;
+      height: 16.35rem;
       text-align: center;
+      font-weight: bold;
       background-color: #f4f4f4;
       .movies-box-text_title {
+        line-height: 2.8rem;
         font-size: 2rem;
         font-family: $japanese;
-        font-weight: bold;
       }
       .movies-box-text_subtext {
         padding-top: 0.7rem;
         font-size: 1.4rem;
+        line-height: 2rem;
         color: #818181;
       }
     }

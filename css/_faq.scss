@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 
 .faq-mainvisual {
@@ -16,7 +16,7 @@
 #faq {
   .faq-main {
     width: 100%;
-    padding: 0 6.4rem;
+    margin-bottom: 6.4rem;
     .faq-box {
       background-color: #f7f7f7;
       display: flex;
