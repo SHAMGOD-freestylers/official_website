@@ -21,7 +21,7 @@
     font-size: 4.4rem;
     line-height: 6.6rem;
     span {
-      color: $white;
+      color: white;
       background-color: #000000;
     }
   }
@@ -32,6 +32,10 @@
     &-text {
       text-align: left;
       padding-top: 4.3rem;
+
+      .contact-dot {
+        vertical-align: middle;
+      }
     }
     // btn
     .contact-box-right-btn {

@@ -5,15 +5,11 @@
   @include bg-text;
 }
 #news {
-  padding-bottom: 7rem;
-  margin-bottom: 3rem;
-
-  position: relative;
-
   .news-container {
+    font-family: $japanese;
     display: flex;
-
     padding-top: 13rem;
+
     .news-box {
       z-index: 20;
 
@@ -44,34 +40,33 @@
   }
 }
 .news-btn-box {
+  margin-left: auto;
+  text-align: center;
+  margin-top: 3.9rem;
   line-height: 40px;
   width: 14rem;
   font-weight: bold;
   font-size: 3rem;
-  font-family: $japanese;
   height: 5rem;
-  position: absolute;
-  top: 100%;
-  left: 76.6%;
+
   cursor: pointer;
 }
 
 .news-btn {
   display: block;
   background: black;
-  text-align: center;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  color: $white;
+  color: white;
   font-size: 1.4rem;
   font-weight: bold;
-  box-shadow: 0px 0px 0px 1px $white inset;
+  box-shadow: 0px 0px 0px 1px white inset;
   transition: all 0.5s ease;
   &:hover {
-    background: $white;
+    background: white;
     color: black;
-    border-top: 3px solid $white;
-    border-bottom: 3px solid $white;
-    box-shadow: 0px 0px 0px 1px $white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: 0px 0px 0px 1px white;
   }
 }

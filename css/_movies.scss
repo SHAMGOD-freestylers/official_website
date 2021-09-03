@@ -10,7 +10,6 @@
   @include bg-text-even(44.3%);
 }
 #movies {
-  margin-top: 7.6rem;
   display: flex;
   flex-wrap: wrap;
 
@@ -32,6 +31,7 @@
 
     .movies-text-box {
       display: flex;
+      font-family: $japanese;
       flex-direction: column;
       justify-content: center;
       width: 48rem;
@@ -48,7 +48,7 @@
         padding-top: 0.7rem;
         font-size: 1.4rem;
         line-height: 2rem;
-        color: #818181;
+        color: $gray;
       }
     }
   }

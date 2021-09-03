@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   // sidebar
   .side {
     width: 200px;
@@ -54,20 +54,77 @@
       // }
     }
   }
-  section {
-    margin-top: 8rem;
-  }
+
   main {
-    // セクションタイトル
+    font-family: $english;
+    section {
+      margin: 8rem 0 7rem;
+      letter-spacing: 1.5px;
+    }
+    // セクションタイトル(背景なし)
     .section-title {
       width: 100%;
       font-weight: bold;
       margin-top: 9rem;
       font-size: 3rem;
-      font-family: $english;
       border-left: thick solid black;
       padding-left: 2.4rem;
       margin-left: 2.4rem;
     }
   }
+}
+//mixin
+@mixin mainvisual-box($color) {
+  color: white;
+  // セクションタイトル(背景あり)
+  .section-title {
+    border-left: thick solid white;
+    z-index: 11;
+    position: absolute;
+    top: 50%;
+  }
+  // 背景色重ね
+  &::after {
+    //   背景色重ね
+    content: "";
+    height: 24rem;
+    z-index: 10;
+    opacity: 0.5;
+    background-color: $color;
+    position: absolute;
+    top: 53%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@mixin mainvisual($url) {
+  background-image: url($url);
+  background-size: cover;
+  height: 51rem;
+  position: relative;
+}
+
+@mixin bg-text {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
+}
+@mixin bg-text-even($left) {
+  position: absolute;
+  margin: 0;
+  margin-top: 2rem;
+  z-index: 10;
+  text-align: left;
+  font-size: 14rem;
+  top: 67%;
+  left: $left;
+  font-family: $english;
+  letter-spacing: 0.7rem;
+  color: #f7f7f7;
 }

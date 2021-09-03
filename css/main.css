@@ -472,7 +472,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -537,8 +537,13 @@ template {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -546,14 +551,13 @@ template {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
 }
 
 header {
-  color: #ffffff;
+  color: white;
   width: 100%;
   position: fixed;
   top: 0;
@@ -595,7 +599,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -660,8 +664,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -669,7 +678,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -686,7 +694,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -751,8 +759,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -760,7 +773,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -773,7 +785,6 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
@@ -813,7 +824,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -878,8 +889,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -887,7 +903,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -901,7 +916,7 @@ header nav a:hover {
 }
 
 .movies-mainvisual .movies-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .movies-mainvisual .movies-mainvisual-box .section-title {
@@ -939,7 +954,6 @@ header nav a:hover {
 }
 
 #movies {
-  margin-top: 7.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,6 +983,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans JP", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1000,7 +1015,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -1065,8 +1080,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -1074,7 +1094,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -1087,18 +1106,12 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
 
-#news {
-  padding-bottom: 7rem;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
 #news .news-container {
+  font-family: "Noto Sans JP", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,47 +1154,45 @@ header nav a:hover {
 }
 
 .news-btn-box {
+  margin-left: auto;
+  text-align: center;
+  margin-top: 3.9rem;
   line-height: 40px;
   width: 14rem;
   font-weight: bold;
   font-size: 3rem;
-  font-family: "Noto Sans JP", sans-serif;
   height: 5rem;
-  position: absolute;
-  top: 100%;
-  left: 76.6%;
   cursor: pointer;
 }
 
 .news-btn {
   display: block;
   background: black;
-  text-align: center;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  color: #ffffff;
+  color: white;
   font-size: 1.4rem;
   font-weight: bold;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
-          box-shadow: 0px 0px 0px 1px #ffffff inset;
+  -webkit-box-shadow: 0px 0px 0px 1px white inset;
+          box-shadow: 0px 0px 0px 1px white inset;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .news-btn:hover {
-  background: #ffffff;
+  background: white;
   color: black;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff;
-          box-shadow: 0px 0px 0px 1px #ffffff;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -1246,8 +1257,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -1255,7 +1271,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -1269,7 +1284,7 @@ header nav a:hover {
 }
 
 .history-mainvisual .history-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .history-mainvisual .history-mainvisual-box .section-title {
@@ -1309,7 +1324,7 @@ header nav a:hover {
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
-  padding: 6.5rem 8.5rem;
+  padding-top: 8.5rem;
   line-height: 2.8rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -1324,8 +1339,13 @@ header nav a:hover {
   padding-bottom: 6.5rem;
 }
 
+#history .history-main .history-main-text:last-child {
+  padding-bottom: 0;
+}
+
 #history .history-main_left {
   text-align: right;
+  padding-top: 4.8rem;
 }
 
 #history .history-main_left .history-main-text:nth-child(3) {
@@ -1341,16 +1361,24 @@ header nav a:hover {
 }
 
 #history .history-main .timeline {
-  max-width: 5rem;
+  height: 67rem;
   width: 100%;
-  padding: 0 5rem;
+  margin-top: 3rem;
+  max-width: 5rem;
+  padding-left: 2.8rem;
+  padding-right: 3.8rem;
+  margin-bottom: 1rem;
 }
 
 #history .history-main .timeline li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding: 0 0 20px 0;
+  padding: 0 0 2rem 0;
+}
+
+#history .history-main .timeline li:last-child {
+  padding: 0;
 }
 
 #history .history-main .timeline dl {
@@ -1360,9 +1388,9 @@ header nav a:hover {
 #history .history-main .border-line {
   /*線の位置*/
   position: absolute;
-  left: 0.25em;
+  left: 0.715rem;
   top: 0;
-  width: 2px;
+  width: 1px;
   /*線の太さ*/
   height: 0;
   /*はじめは高さを0に*/
@@ -1374,8 +1402,8 @@ header nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   background: #666;
   border-radius: 50%;
 }
@@ -1384,7 +1412,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -1449,8 +1477,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -1458,7 +1491,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -1496,7 +1528,6 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
@@ -1505,7 +1536,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -1570,8 +1601,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -1579,7 +1615,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -1593,7 +1628,7 @@ header nav a:hover {
 }
 
 .faq-mainvisual .faq-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .faq-mainvisual .faq-mainvisual-box .section-title {
@@ -1694,7 +1729,7 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .container .side {
@@ -1759,8 +1794,13 @@ header nav a:hover {
   margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
+.container main {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
 }
 
 .container main .section-title {
@@ -1768,7 +1808,6 @@ header nav a:hover {
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
@@ -1782,7 +1821,7 @@ header nav a:hover {
 }
 
 .contact-mainvisual .contact-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .contact-mainvisual .contact-mainvisual-box .section-title {
@@ -1835,7 +1874,7 @@ header nav a:hover {
 }
 
 .contact-box-left span {
-  color: #ffffff;
+  color: white;
   background-color: #000000;
 }
 
@@ -1850,6 +1889,10 @@ header nav a:hover {
   padding-top: 4.3rem;
 }
 
+.contact-box-right-text .contact-dot {
+  vertical-align: middle;
+}
+
 .contact-box-right .contact-box-right-btn {
   margin-top: 2.4rem;
   margin-bottom: 4rem;
@@ -1859,7 +1902,7 @@ header nav a:hover {
 }
 
 footer {
-  color: #ffffff;
+  color: white;
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   height: 8.2rem;

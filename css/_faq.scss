@@ -5,7 +5,7 @@
   @include mainvisual("../images/faq-img.png");
 
   .faq-mainvisual-box {
-    @include mainvisual-box(#8d2659) // padding-top: 26.7rem;
+    @include mainvisual-box($dark-red) // padding-top: 26.7rem;
 ;
   }
 }
@@ -44,7 +44,7 @@
         display: flex;
         font-size: 1.4rem;
         &-a {
-          color: #8d2659;
+          color: $dark-red;
           font-size: 4rem;
           margin-right: 1.6rem;
           font-family: $english;
