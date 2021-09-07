@@ -556,7 +556,7 @@ template {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 header {
@@ -686,7 +686,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .mainvisual img {
@@ -784,7 +784,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .bg-text {
@@ -807,7 +807,6 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   padding-top: 8.4rem;
-  padding-bottom: 9.7rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -917,7 +916,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .movies-mainvisual {
@@ -965,16 +964,21 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+.movie-contents {
+  display: table-cell;
+}
+
 .movie-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 7.6rem;
 }
 
 .movie-main .movies-box:first-child {
-  margin-left: 7.75rem;
+  margin-left: 5.4rem;
 }
 
 .movie-main .movies-box:nth-child(2) {
@@ -983,7 +987,7 @@ header nav a:hover {
 
 .movie-main .movies-box:nth-child(3) {
   margin-top: 6rem;
-  margin-left: 7.75rem;
+  margin-left: 5.4rem;
 }
 
 .movie-main .movies-box:nth-child(4) {
@@ -1111,7 +1115,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .bg-text {
@@ -1291,7 +1295,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .history-mainvisual {
@@ -1514,7 +1518,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 #representative {
@@ -1641,7 +1645,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .faq-mainvisual {
@@ -1837,7 +1841,7 @@ header nav a:hover {
 }
 
 .container main section .contents {
-  margin: 0 8rem;
+  padding: 0 7.5rem;
 }
 
 .contact-mainvisual {

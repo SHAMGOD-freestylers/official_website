@@ -9,20 +9,24 @@
 .bg-text-even_movies {
   @include bg-text-even(44.3%);
 }
+.movie-contents {
+  display: table-cell;
+}
 .movie-main {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 7.6rem;
 
   .movies-box {
     &:first-child {
-      margin-left: 7.75rem;
+      margin-left: 5.4rem;
     }
     &:nth-child(2) {
       margin-left: 5.4rem;
     }
     &:nth-child(3) {
       margin-top: 6rem;
-      margin-left: 7.75rem;
+      margin-left: 5.4rem;
     }
     &:nth-child(4) {
       margin-top: 6rem;
