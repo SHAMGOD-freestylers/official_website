@@ -9,7 +9,7 @@
 .bg-text-even_movies {
   @include bg-text-even(44.3%);
 }
-#movies {
+.movie-main {
   display: flex;
   flex-wrap: wrap;
 

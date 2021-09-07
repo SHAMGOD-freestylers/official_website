@@ -497,8 +497,7 @@ template {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -510,7 +509,7 @@ template {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -518,7 +517,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -527,14 +526,24 @@ template {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -546,14 +555,8 @@ template {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 header {
@@ -624,8 +627,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -637,7 +639,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -645,7 +647,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -654,14 +656,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -673,14 +685,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .mainvisual img {
@@ -719,8 +725,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -732,7 +737,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -740,7 +745,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -749,14 +754,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -768,14 +783,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .bg-text {
@@ -849,8 +858,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -862,7 +870,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -870,7 +878,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -879,14 +887,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -898,14 +916,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .movies-mainvisual {
@@ -953,7 +965,7 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
-#movies {
+.movie-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,25 +973,25 @@ header nav a:hover {
       flex-wrap: wrap;
 }
 
-#movies .movies-box:first-child {
+.movie-main .movies-box:first-child {
   margin-left: 7.75rem;
 }
 
-#movies .movies-box:nth-child(2) {
+.movie-main .movies-box:nth-child(2) {
   margin-left: 5.4rem;
 }
 
-#movies .movies-box:nth-child(3) {
+.movie-main .movies-box:nth-child(3) {
   margin-top: 6rem;
   margin-left: 7.75rem;
 }
 
-#movies .movies-box:nth-child(4) {
+.movie-main .movies-box:nth-child(4) {
   margin-top: 6rem;
   margin-left: 5.4rem;
 }
 
-#movies .movies-box .movies-text-box {
+.movie-main .movies-box .movies-text-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,13 +1010,13 @@ header nav a:hover {
   background-color: #f4f4f4;
 }
 
-#movies .movies-box .movies-text-box .movies-box-text_title {
+.movie-main .movies-box .movies-text-box .movies-box-text_title {
   line-height: 2.8rem;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
-#movies .movies-box .movies-text-box .movies-box-text_subtext {
+.movie-main .movies-box .movies-text-box .movies-box-text_subtext {
   padding-top: 0.7rem;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -1040,8 +1052,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -1053,7 +1064,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -1061,7 +1072,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -1070,14 +1081,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -1089,14 +1110,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .bg-text {
@@ -1217,8 +1232,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -1230,7 +1244,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -1238,7 +1252,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -1247,14 +1261,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -1266,14 +1290,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .history-mainvisual {
@@ -1437,8 +1455,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -1450,7 +1467,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -1458,7 +1475,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -1467,14 +1484,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -1486,14 +1513,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 #representative {
@@ -1561,8 +1582,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -1574,7 +1594,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -1582,7 +1602,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -1591,14 +1611,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -1610,14 +1640,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .faq-mainvisual {
@@ -1754,8 +1778,7 @@ header nav a:hover {
 .container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
 .container .side .sticky .side-text {
@@ -1767,7 +1790,7 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .container .side .sticky .side-icon {
@@ -1775,7 +1798,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 0 5.9rem;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
@@ -1784,14 +1807,24 @@ header nav a:hover {
 }
 
 .container .side .sticky .side-icon i:first-child {
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
-  width: 2re;
+  width: 2rem;
   margin-left: 1rem;
+}
+
+.container .section-title {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 9rem;
+  font-size: 3rem;
+  border-left: thick solid black;
+  padding-left: 2.4rem;
+  margin-left: 2.4rem;
 }
 
 .container main {
@@ -1803,14 +1836,8 @@ header nav a:hover {
   letter-spacing: 1.5px;
 }
 
-.container main .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
+.container main section .contents {
+  margin: 0 8rem;
 }
 
 .contact-mainvisual {

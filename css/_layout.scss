@@ -19,8 +19,7 @@
       .logo {
         width: 14rem;
         height: 14rem;
-        margin: 0 2.7rem;
-        margin-top: 4.1rem;
+        margin: 4.1rem 2.7rem 0 2.7rem;
       }
       .side-text {
         writing-mode: vertical-rl;
@@ -29,47 +28,51 @@
         letter-spacing: 0.3rem;
         line-height: 2rem;
         margin: auto 7rem;
-        font-weight: 900;
+        font-weight: bold;
       }
       .side-icon {
         display: flex;
         text-align: center;
-        padding: 0 5.9rem;
+        // TODO margin paddingどっちの方がいい？
+        margin: 0 5.9rem;
         margin-bottom: 2.2rem;
 
         i {
-          //   TODO 一番右のアイコンの余白が消えない・バランスが悪い
           font-size: 2rem;
         }
         i:first-child {
-          padding-left: 0.2rem;
+          margin-left: 0.2rem;
           margin-right: 1.2rem;
         }
         .facebook-logo img {
           height: 2rem;
-          width: 2re;
+          width: 2rem;
           margin-left: 1rem;
         }
       }
       // }
     }
   }
+  // セクションタイトル(背景なし)
 
+  .section-title {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 9rem;
+    font-size: 3rem;
+    border-left: thick solid black;
+    padding-left: 2.4rem;
+    // 左の線用margin
+    margin-left: 2.4rem;
+  }
   main {
     font-family: $english;
     section {
       margin: 8rem 0 7rem;
       letter-spacing: 1.5px;
-    }
-    // セクションタイトル(背景なし)
-    .section-title {
-      width: 100%;
-      font-weight: bold;
-      margin-top: 9rem;
-      font-size: 3rem;
-      border-left: thick solid black;
-      padding-left: 2.4rem;
-      margin-left: 2.4rem;
+      .contents {
+        margin: 0 8rem;
+      }
     }
   }
 }
