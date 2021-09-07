@@ -473,6 +473,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -482,8 +483,7 @@ template {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +547,7 @@ template {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -603,6 +604,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -612,8 +614,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,6 +678,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -701,6 +703,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -710,8 +713,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,6 +777,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -833,6 +836,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -842,8 +846,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,6 +910,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -1032,6 +1036,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -1041,8 +1046,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1106,6 +1110,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -1212,6 +1217,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -1221,8 +1227,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1286,6 +1291,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -1435,6 +1441,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -1444,8 +1451,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,6 +1515,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -1562,6 +1569,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -1571,8 +1579,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1636,6 +1643,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -1758,6 +1766,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container .side {
@@ -1767,8 +1776,7 @@ header nav a:hover {
 
 .container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1832,6 +1840,7 @@ header nav a:hover {
 }
 
 .container main {
+  width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
 }
 
