@@ -5,3 +5,24 @@ $dark-red: #8d2659;
 // font-family
 $english: "Alfa Slab One", cursive;
 $japanese: "Noto Sans JP", sans-serif;
+
+// レスポンシブ
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

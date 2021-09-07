@@ -6,6 +6,9 @@ header {
   left: 0;
   z-index: 100;
   margin-top: 3.5rem;
+  @include sp {
+    display: none;
+  }
 
   nav {
     display: flex;

@@ -476,9 +476,22 @@ template {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -551,13 +564,31 @@ template {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 header {
@@ -568,6 +599,12 @@ header {
   left: 0;
   z-index: 100;
   margin-top: 3.5rem;
+}
+
+@media (max-width: 480px) {
+  header {
+    display: none;
+  }
 }
 
 header nav {
@@ -607,9 +644,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -682,13 +732,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .mainvisual img {
@@ -696,6 +764,13 @@ header nav a:hover {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .mainvisual img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .container {
@@ -706,9 +781,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -781,13 +869,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .bg-text {
@@ -801,6 +907,12 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
+}
+
 #message {
   position: relative;
 }
@@ -811,6 +923,12 @@ header nav a:hover {
   display: flex;
   padding-top: 8.4rem;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 480px) {
+  #message .message-box {
+    display: block;
+  }
 }
 
 #message .message-box .message-box_left {
@@ -839,9 +957,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -914,13 +1045,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .movies-mainvisual {
@@ -928,6 +1077,12 @@ header nav a:hover {
   background-size: cover;
   height: 51rem;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .movies-mainvisual {
+    max-width: 100%;
+  }
 }
 
 .movies-mainvisual .movies-mainvisual-box {
@@ -969,7 +1124,13 @@ header nav a:hover {
 }
 
 .movie-contents {
-  display: table-cell;
+  margin-left: 11.3rem;
+}
+
+@media (max-width: 480px) {
+  .movie-contents {
+    margin: 0;
+  }
 }
 
 .movie-main {
@@ -981,22 +1142,40 @@ header nav a:hover {
   padding-top: 7.6rem;
 }
 
-.movie-main .movies-box:first-child {
-  margin-left: 5.4rem;
+@media (max-width: 480px) {
+  .movie-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .movie-main .movies-box:nth-child(2) {
   margin-left: 5.4rem;
 }
 
+@media (max-width: 480px) {
+  .movie-main .movies-box:nth-child(2) {
+    margin: 0;
+  }
+}
+
 .movie-main .movies-box:nth-child(3) {
   margin-top: 6rem;
-  margin-left: 5.4rem;
 }
 
 .movie-main .movies-box:nth-child(4) {
   margin-top: 6rem;
   margin-left: 5.4rem;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box:nth-child(4) {
+    margin: 0;
+  }
 }
 
 .movie-main .movies-box .movies-text-box {
@@ -1039,9 +1218,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -1114,13 +1306,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .bg-text {
@@ -1134,12 +1344,24 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
+}
+
 #news .news-container {
   font-family: "Noto Sans JP", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 13rem;
+}
+
+@media (max-width: 480px) {
+  #news .news-container {
+    display: block;
+  }
 }
 
 #news .news-container .news-box {
@@ -1220,9 +1442,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -1295,13 +1530,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .history-mainvisual {
@@ -1309,6 +1562,12 @@ header nav a:hover {
   background-size: cover;
   height: 51rem;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .history-mainvisual {
+    max-width: 100%;
+  }
 }
 
 .history-mainvisual .history-mainvisual-box {
@@ -1363,6 +1622,12 @@ header nav a:hover {
   /*タイムラインの見出し横の丸の位置と形状*/
 }
 
+@media (max-width: 480px) {
+  #history .history-main {
+    display: block;
+  }
+}
+
 #history .history-main .history-main-text {
   padding-bottom: 6.5rem;
 }
@@ -1396,6 +1661,12 @@ header nav a:hover {
   padding-left: 2.8rem;
   padding-right: 3.8rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main .timeline {
+    display: none;
+  }
 }
 
 #history .history-main .timeline li {
@@ -1444,9 +1715,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -1519,13 +1803,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 #representative {
@@ -1544,6 +1846,12 @@ header nav a:hover {
   display: flex;
 }
 
+@media (max-width: 480px) {
+  #representative .repsen-box {
+    display: block;
+  }
+}
+
 #representative .repsen-box .repsen-text {
   padding-top: 4.4rem;
 }
@@ -1551,6 +1859,13 @@ header nav a:hover {
 #representative .repsen-box-right {
   z-index: 20;
   margin-left: 5.8rem;
+}
+
+@media (max-width: 480px) {
+  #representative .repsen-box-right {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .bg-text {
@@ -1564,6 +1879,12 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1572,9 +1893,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -1647,13 +1981,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .faq-mainvisual {
@@ -1661,6 +2013,12 @@ header nav a:hover {
   background-size: cover;
   height: 51rem;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .faq-mainvisual {
+    max-width: 100%;
+  }
 }
 
 .faq-mainvisual .faq-mainvisual-box {
@@ -1728,6 +2086,12 @@ header nav a:hover {
   margin-top: 6rem;
 }
 
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box {
+    display: block;
+  }
+}
+
 #faq .faq-main .faq-box .faq-question {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1761,6 +2125,12 @@ header nav a:hover {
   margin-left: 40rem;
 }
 
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box:nth-child(even) {
+    margin: 0;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1769,9 +2139,22 @@ header nav a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
 .container .side {
   width: 200px;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
 }
 
 .container .side .sticky {
@@ -1844,13 +2227,31 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
 .container main section {
   margin: 8rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
 .container main section .contents {
   padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .contact-mainvisual {
@@ -1858,6 +2259,12 @@ header nav a:hover {
   background-size: cover;
   height: 51rem;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .contact-mainvisual {
+    max-width: 100%;
+  }
 }
 
 .contact-mainvisual .contact-mainvisual-box {
@@ -1905,6 +2312,12 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .contact-box {
+    display: block;
+  }
 }
 
 .contact-box-left {

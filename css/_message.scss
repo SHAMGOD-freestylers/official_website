@@ -11,7 +11,9 @@
     display: flex;
     padding-top: 8.4rem;
     font-family: $japanese;
-
+    @include sp {
+      display: block;
+    }
     .message-box_left {
       font-size: 4.4rem;
       line-height: 1.5;

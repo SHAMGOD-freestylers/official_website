@@ -18,6 +18,9 @@
 
     margin: 0 auto;
     display: flex;
+    @include sp {
+      display: block;
+    }
     .history-main-text {
       padding-bottom: 6.5rem;
       &:last-child {
@@ -50,6 +53,9 @@
       padding-left: 2.8rem;
       padding-right: 3.8rem;
       margin-bottom: 1rem;
+      @include sp {
+        display: none;
+      }
     }
 
     .timeline li {

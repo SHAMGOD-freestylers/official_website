@@ -10,27 +10,39 @@
   @include bg-text-even(44.3%);
 }
 .movie-contents {
-  display: table-cell;
+  margin-left: 11.3rem;
+  @include sp {
+    margin: 0;
+  }
 }
 .movie-main {
   display: flex;
   flex-wrap: wrap;
   padding-top: 7.6rem;
-
+  @include sp {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   .movies-box {
     &:first-child {
-      margin-left: 5.4rem;
+      // margin-left: 5.4rem;
     }
     &:nth-child(2) {
       margin-left: 5.4rem;
+      @include sp {
+        margin: 0;
+      }
     }
     &:nth-child(3) {
       margin-top: 6rem;
-      margin-left: 5.4rem;
+      // margin-left: 5.4rem;
     }
     &:nth-child(4) {
       margin-top: 6rem;
       margin-left: 5.4rem;
+      @include sp {
+        margin: 0;
+      }
     }
 
     .movies-text-box {

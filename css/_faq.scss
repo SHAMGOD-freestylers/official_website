@@ -28,6 +28,9 @@
       font-family: $japanese;
       line-height: 2.8rem;
       margin-top: 6rem;
+      @include sp {
+        display: block;
+      }
       .faq-question {
         display: flex;
         font-size: 2.4rem;
@@ -52,6 +55,9 @@
       }
       &:nth-child(even) {
         margin-left: 40rem;
+        @include sp {
+          margin: 0;
+        }
       }
     }
   }

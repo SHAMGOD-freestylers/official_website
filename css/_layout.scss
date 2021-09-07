@@ -4,11 +4,18 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden;
+  @include sp {
+    width: 100%;
+    display: block;
+    // overflow: visible;
+  }
   // sidebar
   .side {
     width: 200px;
     font-family: $english;
-
+    @include sp {
+      display: none;
+    }
     .sticky {
       // .sticky-part {
       min-height: 100vh;
@@ -55,7 +62,6 @@
     }
   }
   // セクションタイトル(背景なし)
-
   .section-title {
     width: 100%;
     font-weight: bold;
@@ -69,11 +75,20 @@
   main {
     width: calc(100% - 200px);
     font-family: $english;
+    @include sp {
+      width: 100%;
+    }
     section {
       margin: 8rem 0 7rem;
       letter-spacing: 1.5px;
+      @include sp {
+        margin: auto;
+      }
       .contents {
         padding: 0 7.5rem;
+        @include sp {
+          padding: 0;
+        }
       }
     }
   }
@@ -108,6 +123,10 @@
   background-size: cover;
   height: 51rem;
   position: relative;
+  @include sp {
+    max-width: 100%;
+    // height: auto;
+  }
 }
 
 @mixin bg-text {
@@ -119,6 +138,9 @@
   font-size: 14rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+  @include sp {
+    display: none;
+  }
 }
 @mixin bg-text-even($left) {
   position: absolute;

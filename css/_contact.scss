@@ -15,7 +15,9 @@
   padding: 0 7.9rem;
   display: flex;
   font-family: $japanese;
-
+  @include sp {
+    display: block;
+  }
   &-left {
     margin-top: 9rem;
     font-size: 4.4rem;
