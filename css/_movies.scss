@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 .movies-mainvisual {
   @include mainvisual("../images/movies-img.png");
@@ -7,83 +7,65 @@
   }
 }
 .bg-text-even_movies {
-  @include bg-text-even(41%);
+  @include bg-text-even(44.3%);
 }
-#movies {
-  margin-top: 7.6rem;
+.movie-contents {
+  margin-left: 11.3rem;
+  @include sp {
+    margin: 0;
+  }
+}
+.movie-main {
   display: flex;
   flex-wrap: wrap;
-
+  padding-top: 7.6rem;
+  @include sp {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   .movies-box {
     &:first-child {
-      margin-left: 7.75rem;
+      // margin-left: 5.4rem;
     }
     &:nth-child(2) {
       margin-left: 5.4rem;
+      @include sp {
+        margin: 0;
+      }
     }
     &:nth-child(3) {
       margin-top: 6rem;
-      margin-left: 7.75rem;
+      // margin-left: 5.4rem;
     }
     &:nth-child(4) {
       margin-top: 6rem;
       margin-left: 5.4rem;
+      @include sp {
+        margin: 0;
+      }
     }
 
     .movies-text-box {
       display: flex;
+      font-family: $japanese;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       width: 48rem;
-      height: 16.7rem;
+      height: 16.35rem;
       text-align: center;
+      font-weight: bold;
       background-color: #f4f4f4;
       .movies-box-text_title {
+        line-height: 2.8rem;
         font-size: 2rem;
         font-family: $japanese;
-        font-weight: bold;
       }
       .movies-box-text_subtext {
         padding-top: 0.7rem;
         font-size: 1.4rem;
-        color: #818181;
+        line-height: 2rem;
+        color: $gray;
       }
     }
-  }
-}
-.movies-btn-box {
-  line-height: 40px;
-
-  width: 100%;
-  font-weight: bold;
-
-  font-size: 3rem;
-  font-family: $english;
-  margin-top: 5.4rem;
-  margin-right: 14rem;
-}
-.movies-btn {
-  display: block;
-  width: 14rem;
-  height: 5rem;
-  margin-left: auto;
-  background: black;
-  text-align: center;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  color: $white;
-  font-size: 1.4rem;
-  font-weight: bold;
-  box-shadow: 0px 0px 0px 1px $white inset;
-  transition: all 0.5s ease;
-  &:hover {
-    background: $white;
-    color: black;
-    margin-left: 0px;
-    margin-top: 0px;
-    border-top: 3px solid $white;
-    border-bottom: 3px solid $white;
-    box-shadow: 0px 0px 0px 1px $white;
   }
 }

@@ -472,8 +472,15 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -481,10 +488,15 @@ template {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,14 +507,13 @@ template {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -511,51 +522,89 @@ template {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
 }
 
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
+}
+
 header {
+  color: white;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 480px) {
+  header {
+    display: none;
+  }
 }
 
 header nav {
@@ -569,8 +618,6 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1.75rem 0;
-  margin-right: 0;
 }
 
 header nav a {
@@ -586,15 +633,22 @@ header nav a:hover {
 }
 
 .bg-is-black {
-  color: white;
+  color: black;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -602,10 +656,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,14 +675,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -632,57 +690,102 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .mainvisual img {
   width: 100%;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .mainvisual img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -690,10 +793,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,14 +812,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -720,43 +827,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .bg-text {
@@ -766,9 +903,14 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
 }
 
 #message {
@@ -780,12 +922,18 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   padding-top: 8.4rem;
-  padding-bottom: 9.7rem;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 480px) {
+  #message .message-box {
+    display: block;
+  }
 }
 
 #message .message-box .message-box_left {
   font-size: 4.4rem;
+  line-height: 1.5;
   z-index: 20;
   padding: 0 7.3rem;
 }
@@ -793,7 +941,7 @@ header nav a:hover {
 #message .message-box .message-box_right {
   z-index: 20;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2.8rem;
 }
 
@@ -805,8 +953,15 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -814,10 +969,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,14 +988,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -844,43 +1003,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .movies-mainvisual {
@@ -890,8 +1079,14 @@ header nav a:hover {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .movies-mainvisual {
+    max-width: 100%;
+  }
+}
+
 .movies-mainvisual .movies-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .movies-mainvisual .movies-mainvisual-box .section-title {
@@ -922,116 +1117,112 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 41%;
+  left: 44.3%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
 
-#movies {
-  margin-top: 7.6rem;
+.movie-contents {
+  margin-left: 11.3rem;
+}
+
+@media (max-width: 480px) {
+  .movie-contents {
+    margin: 0;
+  }
+}
+
+.movie-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 7.6rem;
 }
 
-#movies .movies-box:first-child {
-  margin-left: 7.75rem;
+@media (max-width: 480px) {
+  .movie-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
-#movies .movies-box:nth-child(2) {
+.movie-main .movies-box:nth-child(2) {
   margin-left: 5.4rem;
 }
 
-#movies .movies-box:nth-child(3) {
-  margin-top: 6rem;
-  margin-left: 7.75rem;
+@media (max-width: 480px) {
+  .movie-main .movies-box:nth-child(2) {
+    margin: 0;
+  }
 }
 
-#movies .movies-box:nth-child(4) {
+.movie-main .movies-box:nth-child(3) {
+  margin-top: 6rem;
+}
+
+.movie-main .movies-box:nth-child(4) {
   margin-top: 6rem;
   margin-left: 5.4rem;
 }
 
-#movies .movies-box .movies-text-box {
+@media (max-width: 480px) {
+  .movie-main .movies-box:nth-child(4) {
+    margin: 0;
+  }
+}
+
+.movie-main .movies-box .movies-text-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Sans JP", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 48rem;
-  height: 16.7rem;
+  height: 16.35rem;
   text-align: center;
+  font-weight: bold;
   background-color: #f4f4f4;
 }
 
-#movies .movies-box .movies-text-box .movies-box-text_title {
+.movie-main .movies-box .movies-text-box .movies-box-text_title {
+  line-height: 2.8rem;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: bold;
 }
 
-#movies .movies-box .movies-text-box .movies-box-text_subtext {
+.movie-main .movies-box .movies-text-box .movies-box-text_subtext {
   padding-top: 0.7rem;
   font-size: 1.4rem;
+  line-height: 2rem;
   color: #818181;
-}
-
-.movies-btn-box {
-  line-height: 40px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
-  margin-top: 5.4rem;
-  margin-right: 14rem;
-}
-
-.movies-btn {
-  display: block;
-  width: 14rem;
-  height: 5rem;
-  margin-left: auto;
-  background: black;
-  text-align: center;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: bold;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
-          box-shadow: 0px 0px 0px 1px #ffffff inset;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.movies-btn:hover {
-  background: #ffffff;
-  color: black;
-  margin-left: 0px;
-  margin-top: 0px;
-  border-top: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 0px 1px #ffffff;
-          box-shadow: 0px 0px 0px 1px #ffffff;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -1039,10 +1230,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1053,14 +1249,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1069,43 +1264,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .bg-text {
@@ -1115,25 +1340,33 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
 
-#news {
-  position: relative;
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
 }
 
 #news .news-container {
+  font-family: "Noto Sans JP", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 13rem;
 }
 
+@media (max-width: 480px) {
+  #news .news-container {
+    display: block;
+  }
+}
+
 #news .news-container .news-box {
   z-index: 20;
-  margin-left: 4.67rem;
+  margin-left: 7rem;
 }
 
 #news .news-container .news-box:first-child {
@@ -1143,6 +1376,10 @@ header nav a:hover {
 #news .news-container .news-box img {
   height: 20.7rem;
   width: 30.46rem;
+}
+
+#news .news-container .news-box .news-text-box {
+  font-weight: bold;
 }
 
 #news .news-container .news-box .news-text-box .news-text_sub {
@@ -1160,15 +1397,56 @@ header nav a:hover {
 #news .news-container .news-box .news-text-box .news-text_title {
   padding-top: 1rem;
   font-size: 1.8rem;
+}
+
+.news-btn-box {
+  margin-left: auto;
+  text-align: center;
+  margin-top: 3.9rem;
+  line-height: 40px;
+  width: 14rem;
   font-weight: bold;
+  font-size: 3rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.news-btn {
+  display: block;
+  background: black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 0px 1px white inset;
+          box-shadow: 0px 0px 0px 1px white inset;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.news-btn:hover {
+  background: white;
+  color: black;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -1176,10 +1454,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,14 +1473,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1206,43 +1488,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .history-mainvisual {
@@ -1252,8 +1564,14 @@ header nav a:hover {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .history-mainvisual {
+    max-width: 100%;
+  }
+}
+
 .history-mainvisual .history-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .history-mainvisual .history-mainvisual-box .section-title {
@@ -1284,7 +1602,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 41%;
+  left: 38%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1293,7 +1611,7 @@ header nav a:hover {
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
-  padding: 6.5rem 8.5rem;
+  padding-top: 8.5rem;
   line-height: 2.8rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -1304,12 +1622,23 @@ header nav a:hover {
   /*タイムラインの見出し横の丸の位置と形状*/
 }
 
+@media (max-width: 480px) {
+  #history .history-main {
+    display: block;
+  }
+}
+
 #history .history-main .history-main-text {
   padding-bottom: 6.5rem;
 }
 
+#history .history-main .history-main-text:last-child {
+  padding-bottom: 0;
+}
+
 #history .history-main_left {
   text-align: right;
+  padding-top: 4.8rem;
 }
 
 #history .history-main_left .history-main-text:nth-child(3) {
@@ -1325,16 +1654,30 @@ header nav a:hover {
 }
 
 #history .history-main .timeline {
-  max-width: 5rem;
+  height: 67rem;
   width: 100%;
-  padding: 0 5rem;
+  margin-top: 3rem;
+  max-width: 5rem;
+  padding-left: 2.8rem;
+  padding-right: 3.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main .timeline {
+    display: none;
+  }
 }
 
 #history .history-main .timeline li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding: 0 0 20px 0;
+  padding: 0 0 2rem 0;
+}
+
+#history .history-main .timeline li:last-child {
+  padding: 0;
 }
 
 #history .history-main .timeline dl {
@@ -1344,13 +1687,13 @@ header nav a:hover {
 #history .history-main .border-line {
   /*線の位置*/
   position: absolute;
-  left: 0.25em;
+  left: 0.715rem;
   top: 0;
-  width: 2px;
+  width: 1px;
   /*線の太さ*/
   height: 0;
   /*はじめは高さを0に*/
-  background: #ccc;
+  color: #707070;
 }
 
 #history .history-main .timeline li::after {
@@ -1358,8 +1701,8 @@ header nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   background: #666;
   border-radius: 50%;
 }
@@ -1368,8 +1711,15 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -1377,10 +1727,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1391,14 +1746,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1407,43 +1761,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 #representative {
@@ -1451,13 +1835,21 @@ header nav a:hover {
 }
 
 #representative .repsen-box {
-  padding: 12.9rem 8.5rem;
+  padding: 0 8.5rem;
+  margin-top: 14rem;
+  padding-bottom: 2rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   font-size: 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 480px) {
+  #representative .repsen-box {
+    display: block;
+  }
 }
 
 #representative .repsen-box .repsen-text {
@@ -1469,6 +1861,13 @@ header nav a:hover {
   margin-left: 5.8rem;
 }
 
+@media (max-width: 480px) {
+  #representative .repsen-box-right {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
 .bg-text {
   position: absolute;
   margin: 0;
@@ -1476,17 +1875,29 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text {
+    display: none;
+  }
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -1494,10 +1905,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,14 +1924,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1524,43 +1939,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .faq-mainvisual {
@@ -1570,8 +2015,14 @@ header nav a:hover {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .faq-mainvisual {
+    max-width: 100%;
+  }
+}
+
 .faq-mainvisual .faq-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .faq-mainvisual .faq-mainvisual-box .section-title {
@@ -1602,7 +2053,7 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 74%;
+  left: 72%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1610,7 +2061,7 @@ header nav a:hover {
 
 #faq .faq-main {
   width: 100%;
-  padding: 0 6.4rem;
+  margin-bottom: 6.4rem;
 }
 
 #faq .faq-main .faq-box {
@@ -1633,6 +2084,12 @@ header nav a:hover {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   margin-top: 6rem;
+}
+
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box {
+    display: block;
+  }
 }
 
 #faq .faq-main .faq-box .faq-question {
@@ -1668,12 +2125,25 @@ header nav a:hover {
   margin-left: 40rem;
 }
 
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box:nth-child(even) {
+    margin: 0;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 .container .side {
@@ -1681,10 +2151,15 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
 }
 
-.container .side .sticky .sticky-part {
+@media (max-width: 480px) {
+  .container .side {
+    display: none;
+  }
+}
+
+.container .side .sticky {
   min-height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,14 +2170,13 @@ header nav a:hover {
           flex-direction: column;
 }
 
-.container .side .sticky .sticky-part .logo {
+.container .side .sticky .logo {
   width: 14rem;
   height: 14rem;
-  margin: 0 2.7rem;
-  margin-top: 4.1rem;
+  margin: 4.1rem 2.7rem 0 2.7rem;
 }
 
-.container .side .sticky .sticky-part .side-text {
+.container .side .sticky .side-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -1711,43 +2185,73 @@ header nav a:hover {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   margin: auto 7rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
-.container .side .sticky .sticky-part .side-icon {
+.container .side .sticky .side-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 0 5.3rem;
+  text-align: center;
+  margin: 0 5.9rem;
   margin-bottom: 2.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i {
+.container .side .sticky .side-icon i {
   font-size: 2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:first-child {
+.container .side .sticky .side-icon i:first-child {
+  margin-left: 0.2rem;
   margin-right: 1.2rem;
 }
 
-.container .side .sticky .sticky-part .side-icon i:last-child {
-  margin-left: 1.2rem;
+.container .side .sticky .side-icon .facebook-logo img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
-.container section {
-  margin-top: 8rem;
-}
-
-.container main .section-title {
+.container .section-title {
   width: 100%;
   font-weight: bold;
   margin-top: 9rem;
   font-size: 3rem;
-  font-family: "Alfa Slab One", cursive;
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+.container main {
+  width: calc(100% - 200px);
+  font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  .container main {
+    width: 100%;
+  }
+}
+
+.container main section {
+  margin: 8rem 0 7rem;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 480px) {
+  .container main section {
+    margin: auto;
+  }
+}
+
+.container main section .contents {
+  padding: 0 7.5rem;
+}
+
+@media (max-width: 480px) {
+  .container main section .contents {
+    padding: 0;
+  }
 }
 
 .contact-mainvisual {
@@ -1757,8 +2261,14 @@ header nav a:hover {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .contact-mainvisual {
+    max-width: 100%;
+  }
+}
+
 .contact-mainvisual .contact-mainvisual-box {
-  color: #ffffff;
+  color: white;
 }
 
 .contact-mainvisual .contact-mainvisual-box .section-title {
@@ -1789,14 +2299,14 @@ header nav a:hover {
   text-align: left;
   font-size: 14rem;
   top: 67%;
-  left: 37%;
+  left: 34%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
 }
 
 .contact-box {
-  margin-top: 8.6rem;
+  margin-top: 4.3rem;
   padding: 0 7.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1804,20 +2314,27 @@ header nav a:hover {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media (max-width: 480px) {
+  .contact-box {
+    display: block;
+  }
+}
+
 .contact-box-left {
-  margin-top: 4.6rem;
+  margin-top: 9rem;
   font-size: 4.4rem;
   line-height: 6.6rem;
 }
 
 .contact-box-left span {
-  color: #ffffff;
+  color: white;
   background-color: #000000;
 }
 
 .contact-box-right {
   margin-left: 7.3rem;
   font-size: 1.4rem;
+  line-height: 3rem;
 }
 
 .contact-box-right-text {
@@ -1825,19 +2342,23 @@ header nav a:hover {
   padding-top: 4.3rem;
 }
 
+.contact-box-right-text .contact-dot {
+  vertical-align: middle;
+}
+
 .contact-box-right .contact-box-right-btn {
   margin-top: 2.4rem;
-  margin-bottom: 2.5rem;
-  width: 26.5rem;
+  margin-bottom: 4rem;
+  width: 26.579rem;
   height: 9.1rem;
   cursor: pointer;
 }
 
 footer {
-  color: #ffffff;
+  color: white;
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
-  height: 6rem;
+  height: 8.2rem;
   line-height: 6rem;
   width: 100%;
   background-color: black;

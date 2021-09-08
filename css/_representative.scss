@@ -1,20 +1,32 @@
 @import "variables";
-@import "rayout";
+@import "layout";
 
 #representative {
   position: relative;
   .repsen-box {
-    padding: 12.9rem 8.5rem;
+    padding: 0 8.5rem;
+    margin-top: 14rem;
+    padding-bottom: 2rem;
+
     font-family: $japanese;
     line-height: 2.8rem;
     font-size: 1.4rem;
     display: flex;
+    @include sp {
+      display: block;
+    }
     .repsen-text {
       padding-top: 4.4rem;
     }
     &-right {
       z-index: 20;
       margin-left: 5.8rem;
+      @include sp {
+        margin: 0;
+
+        max-width: 100%;
+        // height: auto;
+      }
     }
   }
 }

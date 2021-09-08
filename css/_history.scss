@@ -1,4 +1,4 @@
-@import "rayout";
+@import "layout";
 @import "variables";
 .history-mainvisual {
   @include mainvisual("../images/history-img.png");
@@ -7,22 +7,29 @@
   }
 }
 .bg-text-even_history {
-  @include bg-text-even(41%);
+  @include bg-text-even(38%);
 }
 #history {
   .history-main {
     font-family: $japanese;
     font-size: 1.4rem;
-    padding: 6.5rem 8.5rem;
+    padding-top: 8.5rem;
     line-height: 2.8rem;
 
     margin: 0 auto;
     display: flex;
+    @include sp {
+      display: block;
+    }
     .history-main-text {
       padding-bottom: 6.5rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
     &_left {
       text-align: right;
+      padding-top: 4.8rem;
       .history-main-text {
         &:nth-child(3) {
           padding-bottom: 11.2rem;
@@ -38,16 +45,27 @@
 
     /*タイムライン全体の設定*/
     .timeline {
-      max-width: 5rem;
+      height: 67rem;
       width: 100%;
-      padding: 0 5rem;
+      margin-top: 3rem;
+      max-width: 5rem;
+      // 線からleft,rightの余白
+      padding-left: 2.8rem;
+      padding-right: 3.8rem;
+      margin-bottom: 1rem;
+      @include sp {
+        display: none;
+      }
     }
 
     .timeline li {
       /*線の起点とするためrelativeを設定*/
       position: relative;
       list-style: none;
-      padding: 0 0 20px 0;
+      padding: 0 0 2rem 0;
+      &:last-child {
+        padding: 0;
+      }
     }
 
     .timeline dl {
@@ -58,11 +76,11 @@
     .border-line {
       /*線の位置*/
       position: absolute;
-      left: 0.25em;
+      left: 0.715rem;
       top: 0;
-      width: 2px; /*線の太さ*/
+      width: 1px; /*線の太さ*/
       height: 0; /*はじめは高さを0に*/
-      background: #ccc;
+      color: #707070;
     }
 
     /*タイムラインの見出し横の丸の位置と形状*/
@@ -71,8 +89,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 10px;
-      height: 10px;
+      width: 1rem;
+      height: 1rem;
       background: #666;
       border-radius: 50%;
     }

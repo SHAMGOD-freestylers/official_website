@@ -1,20 +1,21 @@
 @import "variables";
-@import "rayout";
+@import "layout";
 // 背景文字
 .bg-text {
   @include bg-text;
 }
 #news {
-  position: relative;
-
   .news-container {
+    font-family: $japanese;
     display: flex;
-
     padding-top: 13rem;
+    @include sp {
+      display: block;
+    }
     .news-box {
       z-index: 20;
 
-      margin-left: 4.67rem;
+      margin-left: 7rem;
       &:first-child {
         margin-left: 7.2rem;
       }
@@ -23,6 +24,8 @@
         width: 30.46rem;
       }
       .news-text-box {
+        font-weight: bold;
+
         .news-text_sub {
           padding-top: 2.45rem;
           display: flex;
@@ -33,9 +36,39 @@
         .news-text_title {
           padding-top: 1rem;
           font-size: 1.8rem;
-          font-weight: bold;
         }
       }
     }
+  }
+}
+.news-btn-box {
+  margin-left: auto;
+  text-align: center;
+  margin-top: 3.9rem;
+  line-height: 40px;
+  width: 14rem;
+  font-weight: bold;
+  font-size: 3rem;
+  height: 5rem;
+
+  cursor: pointer;
+}
+
+.news-btn {
+  display: block;
+  background: black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 1px white inset;
+  transition: all 0.5s ease;
+  &:hover {
+    background: white;
+    color: black;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: 0px 0px 0px 1px white;
   }
 }

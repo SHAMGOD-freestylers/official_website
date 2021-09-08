@@ -1,7 +1,12 @@
-@import "rayout";
+@import "layout";
+@import "variables";
 
 .mainvisual img {
   width: 100%;
-  // max-width: 1920px;
+  height: 100vh;
   object-fit: cover;
+  @include sp {
+    max-width: 100%;
+    height: auto;
+  }
 }
