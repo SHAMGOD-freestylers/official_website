@@ -17,6 +17,7 @@
   .faq-main {
     width: 100%;
     margin-bottom: 6.4rem;
+
     .faq-box {
       background-color: #f7f7f7;
       display: flex;
@@ -29,28 +30,41 @@
       line-height: 2.8rem;
       margin-top: 6rem;
       @include sp {
+        background-color: #fff;
         display: block;
+        max-width: 31rem;
+        padding: 6rem 0;
+        margin: 6rem 0;
       }
       .faq-question {
         display: flex;
         font-size: 2.4rem;
-
+        @include sp {
+          font-size: 1.8rem;
+        }
         &-q {
           font-size: 4rem;
           margin-right: 1.6rem;
           font-family: $english;
           margin-right: 3.2rem;
+          @include sp {
+            font-size: 3rem;
+          }
         }
       }
       .faq-answer {
         margin-top: 4.2rem;
         display: flex;
         font-size: 1.4rem;
+
         &-a {
           color: $dark-red;
           font-size: 4rem;
           margin-right: 1.6rem;
           font-family: $english;
+          @include sp {
+            font-size: 3rem;
+          }
         }
       }
       &:nth-child(even) {

@@ -1984,7 +1984,15 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   #representative .repsen-box {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 3rem;
+    margin: 5rem 0;
   }
 }
 
@@ -2001,6 +2009,10 @@ header nav a:hover {
   #representative .repsen-box-right {
     margin: 0;
     max-width: 100%;
+  }
+  #representative .repsen-box-right img {
+    max-width: 31.5rem;
+    margin: 3rem 0;
   }
 }
 
@@ -2230,7 +2242,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   #faq .faq-main .faq-box {
+    background-color: #fff;
     display: block;
+    max-width: 31rem;
+    padding: 6rem 0;
+    margin: 6rem 0;
   }
 }
 
@@ -2241,11 +2257,23 @@ header nav a:hover {
   font-size: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-question {
+    font-size: 1.8rem;
+  }
+}
+
 #faq .faq-main .faq-box .faq-question-q {
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
   margin-right: 3.2rem;
+}
+
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-question-q {
+    font-size: 3rem;
+  }
 }
 
 #faq .faq-main .faq-box .faq-answer {
@@ -2261,6 +2289,12 @@ header nav a:hover {
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-answer-a {
+    font-size: 3rem;
+  }
 }
 
 #faq .faq-main .faq-box:nth-child(even) {
