@@ -15,7 +15,6 @@
     font-size: 1.4rem;
     padding-top: 8.5rem;
     line-height: 2.8rem;
-
     margin: 0 auto;
     display: flex;
     @include sp {
@@ -30,6 +29,13 @@
     &_left {
       text-align: right;
       padding-top: 4.8rem;
+      img {
+        padding-bottom: 7.5rem;
+        @include sp{
+          max-width: 32rem;
+
+        }
+      }
       .history-main-text {
         &:nth-child(3) {
           padding-bottom: 11.2rem;
@@ -38,8 +44,17 @@
     }
     &_right {
       text-align: left;
+      @include sp{
+        display: flex;
+        flex-direction: column-reverse;
+
+      }
       img {
         padding-bottom: 7.5rem;
+        @include sp{
+          min-width: 34.5rem;
+
+        }
       }
     }
 

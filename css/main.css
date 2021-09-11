@@ -559,6 +559,12 @@ template {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -587,7 +593,7 @@ template {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -727,6 +733,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -755,7 +767,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -864,6 +876,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -892,7 +910,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -936,6 +954,19 @@ header nav a:hover {
   line-height: 1.5;
   z-index: 20;
   padding: 0 7.3rem;
+}
+
+@media (max-width: 480px) {
+  #message .message-box .message-box_left {
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #message .message-box .message-box_left {
+    padding: 0;
+  }
 }
 
 #message .message-box .message-box_right {
@@ -1040,6 +1071,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -1068,7 +1105,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1148,9 +1185,26 @@ header nav a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 3rem;
   }
+}
+
+.movie-main .movies-box {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box {
+    width: 100%;
+  }
+}
+
+.movie-main .movies-box iframe {
+  width: 100%;
+  height: 90%;
 }
 
 .movie-main .movies-box:nth-child(2) {
@@ -1197,10 +1251,22 @@ header nav a:hover {
   background-color: #f4f4f4;
 }
 
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box {
+    max-width: 100%;
+  }
+}
+
 .movie-main .movies-box .movies-text-box .movies-box-text_title {
   line-height: 2.8rem;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box .movies-box-text_title {
+    font-size: 1.5rem;
+  }
 }
 
 .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
@@ -1208,6 +1274,12 @@ header nav a:hover {
   font-size: 1.4rem;
   line-height: 2rem;
   color: #818181;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -1301,6 +1373,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -1329,7 +1407,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1369,8 +1447,20 @@ header nav a:hover {
   margin-left: 7rem;
 }
 
+@media (max-width: 480px) {
+  #news .news-container .news-box {
+    margin: 0 3rem 5rem;
+  }
+}
+
 #news .news-container .news-box:first-child {
   margin-left: 7.2rem;
+}
+
+@media (max-width: 480px) {
+  #news .news-container .news-box:first-child {
+    margin: 0 3rem 5rem;
+  }
 }
 
 #news .news-container .news-box img {
@@ -1380,6 +1470,12 @@ header nav a:hover {
 
 #news .news-container .news-box .news-text-box {
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #news .news-container .news-box .news-text-box {
+    max-width: 29.5rem;
+  }
 }
 
 #news .news-container .news-box .news-text-box .news-text_sub {
@@ -1525,6 +1621,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -1553,7 +1655,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1641,6 +1743,16 @@ header nav a:hover {
   padding-top: 4.8rem;
 }
 
+#history .history-main_left img {
+  padding-bottom: 7.5rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main_left img {
+    max-width: 32rem;
+  }
+}
+
 #history .history-main_left .history-main-text:nth-child(3) {
   padding-bottom: 11.2rem;
 }
@@ -1649,8 +1761,26 @@ header nav a:hover {
   text-align: left;
 }
 
+@media (max-width: 480px) {
+  #history .history-main_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 #history .history-main_right img {
   padding-bottom: 7.5rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main_right img {
+    min-width: 34.5rem;
+  }
 }
 
 #history .history-main .timeline {
@@ -1798,6 +1928,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -1826,7 +1962,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1976,6 +2112,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -2004,7 +2146,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -2222,6 +2364,12 @@ header nav a:hover {
   margin-left: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -2250,7 +2398,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 

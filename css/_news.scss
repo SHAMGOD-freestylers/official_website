@@ -16,8 +16,16 @@
       z-index: 20;
 
       margin-left: 7rem;
+      @include sp{
+        margin: 0 3rem 5rem;
+      }
       &:first-child {
         margin-left: 7.2rem;
+        @include sp{
+
+        margin: 0 3rem 5rem;
+
+        }
       }
       img {
         height: 20.7rem;
@@ -25,6 +33,9 @@
       }
       .news-text-box {
         font-weight: bold;
+        @include sp{
+          max-width: 29.5rem
+        }
 
         .news-text_sub {
           padding-top: 2.45rem;
@@ -50,8 +61,8 @@
   font-weight: bold;
   font-size: 3rem;
   height: 5rem;
-
   cursor: pointer;
+  
 }
 
 .news-btn {
