@@ -39,6 +39,7 @@
     line-height: 3rem;
     @include sp {
       margin: 0;
+      margin-top: 10rem;
     }
     &-text {
       text-align: left;
