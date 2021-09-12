@@ -71,8 +71,9 @@
     padding-left: 2.4rem;
     // 左の線用margin
     margin-left: 2.4rem;
-    @include sp{
-      font-size: 2.5rem;
+    @include sp {
+      font-size: 2rem;
+      padding-left: 1.2rem;
     }
   }
   main {
@@ -82,10 +83,11 @@
       width: 100%;
     }
     section {
-      margin: 8rem 0 7rem;
+      margin: 4rem 0 7rem;
       letter-spacing: 1.5px;
       @include sp {
         margin: auto;
+        letter-spacing: 1px;
       }
       .contents {
         padding: 0 7.5rem;
@@ -105,6 +107,9 @@
     z-index: 11;
     position: absolute;
     top: 50%;
+    @include sp {
+      top: 25%;
+    }
   }
   // 背景色重ね
   &::after {
@@ -119,6 +124,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+    @include sp {
+      height: 12rem;
+    }
   }
 }
 @mixin mainvisual($url) {
@@ -127,8 +135,11 @@
   height: 51rem;
   position: relative;
   @include sp {
-    max-width: 100%;
-    // height: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -157,4 +168,8 @@
   font-family: $english;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+  @include sp {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
 }

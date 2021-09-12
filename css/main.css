@@ -561,7 +561,8 @@ template {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -577,13 +578,14 @@ template {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -735,7 +737,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -751,13 +754,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -878,7 +882,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -894,13 +899,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1073,7 +1079,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -1089,13 +1096,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1118,7 +1126,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .movies-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -1131,6 +1143,12 @@ header nav a:hover {
   z-index: 11;
   position: absolute;
   top: 50%;
+}
+
+@media (max-width: 480px) {
+  .movies-mainvisual .movies-mainvisual-box .section-title {
+    top: 25%;
+  }
 }
 
 .movies-mainvisual .movies-mainvisual-box::after {
@@ -1146,6 +1164,12 @@ header nav a:hover {
   right: 0;
 }
 
+@media (max-width: 480px) {
+  .movies-mainvisual .movies-mainvisual-box::after {
+    height: 12rem;
+  }
+}
+
 .bg-text-even_movies {
   position: absolute;
   margin: 0;
@@ -1158,6 +1182,36 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_movies {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_movies {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 16%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_movies {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .movie-contents {
@@ -1375,7 +1429,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -1391,13 +1446,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1623,7 +1679,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -1639,13 +1696,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1668,7 +1726,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .history-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -1681,6 +1743,12 @@ header nav a:hover {
   z-index: 11;
   position: absolute;
   top: 50%;
+}
+
+@media (max-width: 480px) {
+  .history-mainvisual .history-mainvisual-box .section-title {
+    top: 25%;
+  }
 }
 
 .history-mainvisual .history-mainvisual-box::after {
@@ -1696,6 +1764,12 @@ header nav a:hover {
   right: 0;
 }
 
+@media (max-width: 480px) {
+  .history-mainvisual .history-mainvisual-box::after {
+    height: 12rem;
+  }
+}
+
 .bg-text-even_history {
   position: absolute;
   margin: 0;
@@ -1708,6 +1782,36 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_history {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_history {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 6.5%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_history {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 #history .history-main {
@@ -1930,7 +2034,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -1946,13 +2051,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -2126,7 +2232,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -2142,13 +2249,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -2171,7 +2279,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .faq-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -2186,6 +2298,12 @@ header nav a:hover {
   top: 50%;
 }
 
+@media (max-width: 480px) {
+  .faq-mainvisual .faq-mainvisual-box .section-title {
+    top: 25%;
+  }
+}
+
 .faq-mainvisual .faq-mainvisual-box::after {
   content: "";
   height: 24rem;
@@ -2197,6 +2315,12 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media (max-width: 480px) {
+  .faq-mainvisual .faq-mainvisual-box::after {
+    height: 12rem;
+  }
 }
 
 .bg-text-even_faq {
@@ -2213,9 +2337,39 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text-even_faq {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_faq {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 60%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_faq {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
 #faq .faq-main {
   width: 100%;
-  margin-bottom: 6.4rem;
+  margin-bottom: 14rem;
 }
 
 #faq .faq-main .faq-box {
@@ -2400,7 +2554,8 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -2416,13 +2571,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -2445,7 +2601,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .contact-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -2458,6 +2618,12 @@ header nav a:hover {
   z-index: 11;
   position: absolute;
   top: 50%;
+}
+
+@media (max-width: 480px) {
+  .contact-mainvisual .contact-mainvisual-box .section-title {
+    top: 25%;
+  }
 }
 
 .contact-mainvisual .contact-mainvisual-box::after {
@@ -2473,6 +2639,12 @@ header nav a:hover {
   right: 0;
 }
 
+@media (max-width: 480px) {
+  .contact-mainvisual .contact-mainvisual-box::after {
+    height: 12rem;
+  }
+}
+
 .bg-text-even_contact {
   position: absolute;
   margin: 0;
@@ -2485,6 +2657,36 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_contact {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_contact {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 0%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_contact {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .contact-box {
@@ -2513,10 +2715,22 @@ header nav a:hover {
   background-color: #000000;
 }
 
+@media (max-width: 480px) {
+  .contact-box-left {
+    font-size: 4.2rem;
+  }
+}
+
 .contact-box-right {
   margin-left: 7.3rem;
   font-size: 1.4rem;
   line-height: 3rem;
+}
+
+@media (max-width: 480px) {
+  .contact-box-right {
+    margin: 0;
+  }
 }
 
 .contact-box-right-text {

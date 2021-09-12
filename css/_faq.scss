@@ -11,12 +11,15 @@
 }
 .bg-text-even_faq {
   @include bg-text-even(72%);
+  @include sp {
+    @include bg-text-even(60%);
+  }
 }
 
 #faq {
   .faq-main {
     width: 100%;
-    margin-bottom: 6.4rem;
+    margin-bottom: 14rem;
 
     .faq-box {
       background-color: #f7f7f7;

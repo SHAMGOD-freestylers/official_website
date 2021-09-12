@@ -9,6 +9,9 @@
 }
 .bg-text-even_contact {
   @include bg-text-even(34%);
+  @include sp {
+    @include bg-text-even(0%);
+  }
 }
 .contact-box {
   margin-top: 4.3rem;
@@ -26,15 +29,20 @@
       color: white;
       background-color: #000000;
     }
+    @include sp {
+      font-size: 4.2rem;
+    }
   }
   &-right {
     margin-left: 7.3rem;
     font-size: 1.4rem;
     line-height: 3rem;
+    @include sp {
+      margin: 0;
+    }
     &-text {
       text-align: left;
       padding-top: 4.3rem;
-
       .contact-dot {
         vertical-align: middle;
       }

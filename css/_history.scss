@@ -8,6 +8,9 @@
 }
 .bg-text-even_history {
   @include bg-text-even(38%);
+  @include sp {
+    @include bg-text-even(6.5%);
+  }
 }
 #history {
   .history-main {
@@ -31,9 +34,8 @@
       padding-top: 4.8rem;
       img {
         padding-bottom: 7.5rem;
-        @include sp{
+        @include sp {
           max-width: 32rem;
-
         }
       }
       .history-main-text {
@@ -44,16 +46,14 @@
     }
     &_right {
       text-align: left;
-      @include sp{
+      @include sp {
         display: flex;
         flex-direction: column-reverse;
-
       }
       img {
         padding-bottom: 7.5rem;
-        @include sp{
+        @include sp {
           min-width: 34.5rem;
-
         }
       }
     }
