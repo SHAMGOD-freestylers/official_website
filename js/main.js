@@ -4,7 +4,7 @@ const hamburger = document.getElementById("hamburger");
 const icon = document.querySelector(".icon");
 const sm = document.querySelector(".sm");
 // slideUp
-const slideUp = (el, duration = 300) => {
+const slideUp = (el, duration = 850) => {
   el.style.height = el.offsetHeight + "px";
   el.offsetHeight;
   el.style.transitionProperty = "height, margin, padding";
@@ -31,7 +31,7 @@ const slideUp = (el, duration = 300) => {
 };
 
 // slideDown
-const slideDown = (el, duration = 300) => {
+const slideDown = (el, duration = 850) => {
   el.style.removeProperty("display");
   let display = window.getComputedStyle(el).display;
   if (display === "none") {
@@ -62,9 +62,8 @@ const slideDown = (el, duration = 300) => {
     el.style.removeProperty("transition-timing-function");
   }, duration);
 };
-
 // slideToggle
-const slideToggle = (el, duration = 300) => {
+const slideToggle = (el, duration = 850) => {
   if (window.getComputedStyle(el).display === "none") {
     return slideDown(el, duration);
   } else {
@@ -73,7 +72,7 @@ const slideToggle = (el, duration = 300) => {
 };
 hamburger.onclick = function () {
   icon.classList.toggle("close");
-  slideToggle(sm, 300);
+  slideToggle(sm, 850);
 };
 
 function changeColor() {

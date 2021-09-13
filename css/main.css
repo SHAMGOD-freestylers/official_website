@@ -611,9 +611,8 @@ header {
 
 @media (max-width: 480px) {
   header {
-    color: black;
     background-color: #fff;
-    height: 12rem;
+    height: 6rem;
     margin: 0;
   }
 }
@@ -645,14 +644,14 @@ header .icon span {
   /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
   width: 30px;
   /*横線の幅が30px*/
-  height: 4px;
+  height: 3px;
   /*横線の高さが4px*/
   background-color: black;
   /*横線を白色*/
-  border-radius: 8px;
+  border-radius: 1px;
   /*横線の両端の角に丸みを持たせる*/
-  -webkit-transition: ease 0.75s;
-  transition: ease 0.75s;
+  -webkit-transition: ease 0.65s;
+  transition: ease 0.65s;
   /*変化の時間（easeは初期値）*/
 }
 
@@ -687,7 +686,8 @@ header .close span:nth-of-type(3) {
 }
 
 header .sm {
-  top: 60px;
+  color: white;
+  top: 6rem;
   /*headerの余白分*/
   left: 0px;
   /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
@@ -695,7 +695,13 @@ header .sm {
   /*絶対配置　top　leftからの位置を絶対配置する*/
   z-index: 10;
   width: 100%;
+  height: 100vh;
   display: none;
+  text-align: center;
+  /*メニューリストの文字を中央寄せ*/
+  background-color: black;
+  /*透明の背景*/
+  opacity: 0.8;
 }
 
 header ul {
@@ -704,6 +710,12 @@ header ul {
       -ms-flex-direction: column;
           flex-direction: column;
   /*ulのflexboxを縦並びにする*/
+}
+
+header ul li {
+  padding: 2rem 0;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+  /*リストの境目に白線 */
 }
 
 @media (max-width: 480px) {
@@ -739,10 +751,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   header nav a {
-    text-align: center;
-    /*メニューリストの文字を中央寄せ*/
-    border-top: solid 0.5px rgba(255, 255, 255, 0.6);
-    /*リストの境目に白線 */
+    margin: 0;
   }
 }
 
