@@ -75,27 +75,48 @@ hamburger.onclick = function () {
   slideToggle(sm, 850);
 };
 
+// header color change
 function changeColor() {
-  const timing = 50; //　変化するタイミングを微調整する
+  const timing = 130; //　変化するタイミングを微調整する
 
   const scrollY = window.pageYOffset;
-  const nav = document.getElementById("nav");
+  // header取得
+  const nav = document.querySelector(".pc");
 
-  const trigger1 = document.getElementById("message");
-  const trigger2 = document.getElementById("history");
-  const trigger3 = document.getElementById("representative");
-  const trigger4 = document.getElementById("faq");
+  // 各セクション情報取得
+  const trigger1 = document.getElementById("mainvisual");
+  const trigger2 = document.getElementById("message");
+  const trigger3 = document.getElementById("movies1");
+  const trigger4 = document.getElementById("movies2");
+  const trigger5 = document.getElementById("history");
+  const trigger6 = document.getElementById("history2");
+  const trigger7 = document.getElementById("faq");
+  const trigger8 = document.getElementById("faq2");
+  const trigger9 = document.getElementById("contact");
+  const trigger10 = document.getElementById("contact2");
 
+  // 各セクションの位置を取得
   const trigger1Y = trigger1.getBoundingClientRect().top; // ウィンドウ上からの要素の位置
   const trigger2Y = trigger2.getBoundingClientRect().top;
   const trigger3Y = trigger3.getBoundingClientRect().top;
   const trigger4Y = trigger4.getBoundingClientRect().top;
+  const trigger5Y = trigger5.getBoundingClientRect().top;
+  const trigger6Y = trigger6.getBoundingClientRect().top;
+  const trigger7Y = trigger7.getBoundingClientRect().top;
+  const trigger8Y = trigger8.getBoundingClientRect().top;
+  const trigger9Y = trigger9.getBoundingClientRect().top;
+  const trigger10Y = trigger10.getBoundingClientRect().top;
 
-  // 白背景の時はbodyの.bg-is-blackを削除
-  // 黒背景の時はbodyに.bt-is-blackを付与
+  // 白背景の時はnavの.bg-is-blackを削除
+  // 黒背景の時はnavに.bg-is-blackを付与
   if (trigger2Y - timing > 0 && 0 >= trigger1Y - timing) {
     nav.classList.remove("bg-is-black");
-  } else if (trigger4Y - timing > 0 && 0 >= trigger3Y - timing) {
+  } else if (
+    (trigger4Y - timing > 0 && 0 >= trigger3Y - timing) ||
+    (trigger6Y - timing > 0 && 0 >= trigger5Y - timing) ||
+    (trigger8Y - timing > 0 && 0 >= trigger7Y - timing) ||
+    (trigger10Y - timing > 0 && 0 >= trigger9Y - timing)
+  ) {
     nav.classList.remove("bg-is-black");
   } else {
     nav.classList.add("bg-is-black");
