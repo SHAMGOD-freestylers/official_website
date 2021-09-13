@@ -1,10 +1,16 @@
 // hamburger menu animation
 const hamburger = document.getElementById("hamburger");
-
 const icon = document.querySelector(".icon");
 const sm = document.querySelector(".sm");
+const MessageNav = document.getElementById("message-nav");
+const MoviesNav = document.getElementById("movies-nav");
+const NewsNav = document.getElementById("news-nav");
+const HistoryNav = document.getElementById("history-nav");
+const FaqNav = document.getElementById("faq-nav");
+const ContactNav = document.getElementById("contact-nav");
+
 // slideUp
-const slideUp = (el, duration = 850) => {
+const slideUp = (el, duration = 700) => {
   el.style.height = el.offsetHeight + "px";
   el.offsetHeight;
   el.style.transitionProperty = "height, margin, padding";
@@ -31,7 +37,7 @@ const slideUp = (el, duration = 850) => {
 };
 
 // slideDown
-const slideDown = (el, duration = 850) => {
+const slideDown = (el, duration = 700) => {
   el.style.removeProperty("display");
   let display = window.getComputedStyle(el).display;
   if (display === "none") {
@@ -63,7 +69,7 @@ const slideDown = (el, duration = 850) => {
   }, duration);
 };
 // slideToggle
-const slideToggle = (el, duration = 850) => {
+const slideToggle = (el, duration = 700) => {
   if (window.getComputedStyle(el).display === "none") {
     return slideDown(el, duration);
   } else {
@@ -72,7 +78,22 @@ const slideToggle = (el, duration = 850) => {
 };
 hamburger.onclick = function () {
   icon.classList.toggle("close");
-  slideToggle(sm, 850);
+  slideToggle(sm, 700);
+};
+MoviesNav.onclick = function () {
+  slideToggle(sm, 700);
+};
+NewsNav.onclick = function () {
+  slideToggle(sm, 700);
+};
+HistoryNav.onclick = function () {
+  slideToggle(sm, 700);
+};
+FaqNav.onclick = function () {
+  slideToggle(sm, 700);
+};
+ContactNav.onclick = function () {
+  slideToggle(sm, 700);
 };
 
 // header color change
@@ -86,7 +107,7 @@ function changeColor() {
   // 各セクション情報取得
   const trigger1 = document.getElementById("mainvisual");
   const trigger2 = document.getElementById("message");
-  const trigger3 = document.getElementById("movies1");
+  const trigger3 = document.getElementById("movies");
   const trigger4 = document.getElementById("movies2");
   const trigger5 = document.getElementById("history");
   const trigger6 = document.getElementById("history2");
