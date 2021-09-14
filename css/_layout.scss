@@ -182,3 +182,14 @@
     letter-spacing: 0.3rem;
   }
 }
+@mixin highlight-text($left) {
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+  position: absolute;
+  top: 20%;
+  left: $left;
+  span {
+    color: white;
+    background-color: #000000;
+  }
+}

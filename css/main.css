@@ -2944,6 +2944,10 @@ header nav a:hover {
   }
 }
 
+#contact {
+  margin-bottom: 0;
+}
+
 .contact-box {
   margin-top: 4.3rem;
   padding: 0 7.9rem;
@@ -3004,6 +3008,113 @@ header nav a:hover {
   width: 26.579rem;
   height: 9.1rem;
   cursor: pointer;
+}
+
+.form-box {
+  padding: 0;
+  position: relative;
+}
+
+.form-box .form-box-left {
+  max-width: 82rem;
+  height: 64rem;
+  padding: 8rem 8.1rem 13rem;
+  background-color: #f7f7f7;
+}
+
+.form-box .form-box-left p {
+  margin-bottom: 3.75rem;
+  font-size: 1.4rem;
+}
+
+.form-box .highlight-text {
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.form-box .highlight-text span {
+  color: white;
+  background-color: #000000;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Alfa Slab One", cursive;
+  padding-right: 33.9rem;
+}
+
+form input {
+  width: 40rem;
+  background-color: #fff;
+  padding-left: 1.2rem;
+  height: 2.4rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+form input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+form input:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form input::-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form input::placeholder {
+  color: #bebebe;
+}
+
+form textarea {
+  width: 40rem;
+  background-color: #fff;
+  padding-left: 1.2rem;
+  padding-top: 1.4rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  resize: none;
+}
+
+form textarea::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea::-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea::placeholder {
+  color: #bebebe;
+}
+
+form .submit {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  width: 10rem;
+  height: 5rem;
+  text-align: center;
+  color: white;
+  border-radius: 0%;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#ff1013), to(#400b0c)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.86;
 }
 
 footer {
