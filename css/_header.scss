@@ -43,10 +43,10 @@ header {
       margin-left: 5rem;
     }
     .facebook-logo {
-      @include sp {
-        height: 2rem;
-        width: 2rem;
-        margin-top: 1.7rem;
+      img {
+        @include sp {
+          margin-bottom: 1.7rem;
+        }
       }
     }
   }

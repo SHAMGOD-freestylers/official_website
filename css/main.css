@@ -521,7 +521,7 @@ template {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -530,12 +530,13 @@ template {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -545,21 +546,13 @@ template {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -673,10 +666,8 @@ header #hamburger .fa-instagram {
 }
 
 @media (max-width: 480px) {
-  header #hamburger .facebook-logo {
-    height: 2rem;
-    width: 2rem;
-    margin-top: 1.7rem;
+  header #hamburger .facebook-logo img {
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -854,7 +845,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -863,12 +854,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -878,21 +870,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1013,7 +997,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1022,12 +1006,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1037,21 +1022,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1223,7 +1200,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1232,12 +1209,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1247,21 +1225,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1591,7 +1561,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1600,12 +1570,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1615,21 +1586,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1854,7 +1817,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1863,12 +1826,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1878,21 +1842,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2209,7 +2165,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2218,12 +2174,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2233,21 +2190,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2421,7 +2370,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2430,12 +2379,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2445,21 +2395,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2756,7 +2698,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2765,12 +2707,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2780,21 +2723,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
