@@ -8,6 +8,9 @@
 }
 .bg-text-even_history {
   @include bg-text-even(38%);
+  @include sp {
+    @include bg-text-even(6.5%);
+  }
 }
 #history {
   .history-main {
@@ -15,7 +18,6 @@
     font-size: 1.4rem;
     padding-top: 8.5rem;
     line-height: 2.8rem;
-
     margin: 0 auto;
     display: flex;
     @include sp {
@@ -30,6 +32,12 @@
     &_left {
       text-align: right;
       padding-top: 4.8rem;
+      img {
+        padding-bottom: 7.5rem;
+        @include sp {
+          max-width: 32rem;
+        }
+      }
       .history-main-text {
         &:nth-child(3) {
           padding-bottom: 11.2rem;
@@ -38,61 +46,57 @@
     }
     &_right {
       text-align: left;
+      @include sp {
+        display: flex;
+        flex-direction: column-reverse;
+      }
       img {
         padding-bottom: 7.5rem;
+        @include sp {
+          min-width: 34.5rem;
+        }
       }
-    }
-
-    /*タイムライン全体の設定*/
-    .timeline {
-      height: 67rem;
-      width: 100%;
-      margin-top: 3rem;
-      max-width: 5rem;
-      // 線からleft,rightの余白
-      padding-left: 2.8rem;
-      padding-right: 3.8rem;
-      margin-bottom: 1rem;
-      @include sp {
-        display: none;
-      }
-    }
-
-    .timeline li {
-      /*線の起点とするためrelativeを設定*/
-      position: relative;
-      list-style: none;
-      padding: 0 0 2rem 0;
-      &:last-child {
-        padding: 0;
-      }
-    }
-
-    .timeline dl {
-      margin: 0 0 20px 3em;
-    }
-
-    /*絶対配置で線を設定*/
-    .border-line {
-      /*線の位置*/
-      position: absolute;
-      left: 0.715rem;
-      top: 0;
-      width: 1px; /*線の太さ*/
-      height: 0; /*はじめは高さを0に*/
-      color: #707070;
-    }
-
-    /*タイムラインの見出し横の丸の位置と形状*/
-    .timeline li::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1rem;
-      height: 1rem;
-      background: #666;
-      border-radius: 50%;
     }
   }
+}
+/*タイムライン全体の設定*/
+.timeline {
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.timeline li {
+  /*線の起点とするためrelativeを設定*/
+  position: relative;
+  list-style: none;
+  padding: 0 0 20px 0;
+}
+
+.timeline dl {
+  margin: 0 0 20px 3em;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+  /*線の位置*/
+  position: absolute;
+  left: 0.25em;
+  top: 0;
+  width: 2px; /*線の太さ*/
+  height: 0; /*はじめは高さを0に*/
+  background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #666;
+  border-radius: 50%;
 }

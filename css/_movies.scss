@@ -8,6 +8,9 @@
 }
 .bg-text-even_movies {
   @include bg-text-even(44.3%);
+  @include sp {
+    @include bg-text-even(16%);
+  }
 }
 .movie-contents {
   margin-left: 11.3rem;
@@ -21,12 +24,22 @@
   padding-top: 7.6rem;
   @include sp {
     flex-direction: column;
-    flex-wrap: nowrap;
+    justify-content: center;
+
+    margin: 0 3rem;
   }
   .movies-box {
-    &:first-child {
-      // margin-left: 5.4rem;
+    margin-bottom: 5rem;
+    @include sp {
+      width: 100%;
     }
+    iframe {
+      width: 100%;
+      @include sp {
+        height: 19rem;
+      }
+    }
+
     &:nth-child(2) {
       margin-left: 5.4rem;
       @include sp {
@@ -55,16 +68,25 @@
       text-align: center;
       font-weight: bold;
       background-color: #f4f4f4;
+      @include sp {
+        max-width: 100%;
+      }
       .movies-box-text_title {
         line-height: 2.8rem;
         font-size: 2rem;
         font-family: $japanese;
+        @include sp {
+          font-size: 1.5rem;
+        }
       }
       .movies-box-text_subtext {
         padding-top: 0.7rem;
         font-size: 1.4rem;
         line-height: 2rem;
         color: $gray;
+        @include sp {
+          font-size: 1rem;
+        }
       }
     }
   }

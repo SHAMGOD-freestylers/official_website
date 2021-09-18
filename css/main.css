@@ -543,10 +543,23 @@ template {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -557,6 +570,13 @@ template {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -571,13 +591,14 @@ template {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -587,7 +608,7 @@ template {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -603,6 +624,144 @@ header {
 
 @media (max-width: 480px) {
   header {
+    background-color: black;
+    height: 6rem;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 6rem;
+    opacity: 0.85;
+  }
+}
+
+header #hamburger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  header #hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    /*ハンバーガーの横線の位置を決めるための基準*/
+    cursor: pointer;
+    /*リンクを示すカーソルを表示（指差しマーク）*/
+    height: 60px;
+    /*ヘッダーの高さと同じ60px*/
+  }
+}
+
+@media (max-width: 480px) {
+  header #hamburger .logo {
+    margin-left: 16.5rem;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header #hamburger .fab {
+    font-size: 2.5rem;
+    line-height: 6rem;
+    margin-right: 1.5rem;
+  }
+}
+
+header #hamburger .fa-instagram {
+  margin-left: 5rem;
+}
+
+@media (max-width: 480px) {
+  header #hamburger .facebook-logo {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 1.7rem;
+  }
+}
+
+header .icon span {
+  position: absolute;
+  /*親要素である#hamburgerを基準に位置を指定*/
+  left: 15px;
+  /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+  width: 30px;
+  /*横線の幅が30px*/
+  height: 3px;
+  /*横線の高さが4px*/
+  background-color: white;
+  /*横線を白色*/
+  border-radius: 1px;
+  /*横線の両端の角に丸みを持たせる*/
+  -webkit-transition: ease 0.65s;
+  transition: ease 0.65s;
+  /*変化の時間（easeは初期値）*/
+}
+
+header .icon span:nth-of-type(1) {
+  top: 16px;
+}
+
+header .icon span:nth-of-type(2) {
+  top: 28px;
+}
+
+header .icon span:nth-of-type(3) {
+  top: 40px;
+}
+
+header .close span:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /*反時計回りに45度回転*/
+  top: 28px;
+}
+
+header .close span:nth-of-type(2) {
+  opacity: 0;
+}
+
+header .close span:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  /*時計回りに45度回転*/
+  top: 28px;
+}
+
+header .sm {
+  color: white;
+  top: 6rem;
+  /*headerの余白分*/
+  left: 0px;
+  /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
+  position: absolute;
+  /*絶対配置　top　leftからの位置を絶対配置する*/
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  text-align: center;
+  /*メニューリストの文字を中央寄せ*/
+  background-color: black;
+  /*透明の背景*/
+  opacity: 0.8;
+}
+
+header ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*ulのflexboxを縦並びにする*/
+}
+
+header ul li {
+  border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+  /*リストの境目に白線 */
+}
+
+@media (max-width: 480px) {
+  header .pc {
     display: none;
   }
 }
@@ -630,6 +789,12 @@ header nav a {
 
 header nav a:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  header nav a {
+    margin: 0;
+  }
 }
 
 .bg-is-black {
@@ -711,10 +876,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -725,6 +903,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -739,13 +924,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -755,7 +941,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -770,6 +956,7 @@ header nav a:hover {
   .mainvisual img {
     max-width: 100%;
     height: auto;
+    margin-top: 6rem;
   }
 }
 
@@ -848,10 +1035,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -862,6 +1062,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -876,13 +1083,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -892,7 +1100,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -936,6 +1144,19 @@ header nav a:hover {
   line-height: 1.5;
   z-index: 20;
   padding: 0 7.3rem;
+}
+
+@media (max-width: 480px) {
+  #message .message-box .message-box_left {
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #message .message-box .message-box_left {
+    padding: 0;
+  }
 }
 
 #message .message-box .message-box_right {
@@ -1024,10 +1245,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -1038,6 +1272,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -1052,13 +1293,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1068,7 +1310,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1081,7 +1323,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .movies-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -1094,6 +1340,12 @@ header nav a:hover {
   z-index: 11;
   position: absolute;
   top: 50%;
+}
+
+@media (max-width: 480px) {
+  .movies-mainvisual .movies-mainvisual-box .section-title {
+    top: 25%;
+  }
 }
 
 .movies-mainvisual .movies-mainvisual-box::after {
@@ -1109,6 +1361,12 @@ header nav a:hover {
   right: 0;
 }
 
+@media (max-width: 480px) {
+  .movies-mainvisual .movies-mainvisual-box::after {
+    height: 12rem;
+  }
+}
+
 .bg-text-even_movies {
   position: absolute;
   margin: 0;
@@ -1121,6 +1379,36 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_movies {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_movies {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 16%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_movies {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .movie-contents {
@@ -1148,8 +1436,30 @@ header nav a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 3rem;
+  }
+}
+
+.movie-main .movies-box {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box {
+    width: 100%;
+  }
+}
+
+.movie-main .movies-box iframe {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box iframe {
+    height: 19rem;
   }
 }
 
@@ -1197,10 +1507,22 @@ header nav a:hover {
   background-color: #f4f4f4;
 }
 
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box {
+    max-width: 100%;
+  }
+}
+
 .movie-main .movies-box .movies-text-box .movies-box-text_title {
   line-height: 2.8rem;
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box .movies-box-text_title {
+    font-size: 1.5rem;
+  }
 }
 
 .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
@@ -1208,6 +1530,12 @@ header nav a:hover {
   font-size: 1.4rem;
   line-height: 2rem;
   color: #818181;
+}
+
+@media (max-width: 480px) {
+  .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -1285,10 +1613,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -1299,6 +1640,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -1313,13 +1661,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1329,7 +1678,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1369,8 +1718,20 @@ header nav a:hover {
   margin-left: 7rem;
 }
 
+@media (max-width: 480px) {
+  #news .news-container .news-box {
+    margin: 0 3rem 5rem;
+  }
+}
+
 #news .news-container .news-box:first-child {
   margin-left: 7.2rem;
+}
+
+@media (max-width: 480px) {
+  #news .news-container .news-box:first-child {
+    margin: 0 3rem 5rem;
+  }
 }
 
 #news .news-container .news-box img {
@@ -1380,6 +1741,12 @@ header nav a:hover {
 
 #news .news-container .news-box .news-text-box {
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #news .news-container .news-box .news-text-box {
+    max-width: 29.5rem;
+  }
 }
 
 #news .news-container .news-box .news-text-box .news-text_sub {
@@ -1509,10 +1876,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -1523,6 +1903,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -1537,13 +1924,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1553,7 +1941,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1566,7 +1954,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .history-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -1581,6 +1973,12 @@ header nav a:hover {
   top: 50%;
 }
 
+@media (max-width: 480px) {
+  .history-mainvisual .history-mainvisual-box .section-title {
+    top: 25%;
+  }
+}
+
 .history-mainvisual .history-mainvisual-box::after {
   content: "";
   height: 24rem;
@@ -1592,6 +1990,12 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media (max-width: 480px) {
+  .history-mainvisual .history-mainvisual-box::after {
+    height: 12rem;
+  }
 }
 
 .bg-text-even_history {
@@ -1608,6 +2012,36 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text-even_history {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_history {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 6.5%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_history {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
@@ -1617,9 +2051,6 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*タイムライン全体の設定*/
-  /*絶対配置で線を設定*/
-  /*タイムラインの見出し横の丸の位置と形状*/
 }
 
 @media (max-width: 480px) {
@@ -1641,6 +2072,16 @@ header nav a:hover {
   padding-top: 4.8rem;
 }
 
+#history .history-main_left img {
+  padding-bottom: 7.5rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main_left img {
+    max-width: 32rem;
+  }
+}
+
 #history .history-main_left .history-main-text:nth-child(3) {
   padding-bottom: 11.2rem;
 }
@@ -1649,60 +2090,68 @@ header nav a:hover {
   text-align: left;
 }
 
+@media (max-width: 480px) {
+  #history .history-main_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 #history .history-main_right img {
   padding-bottom: 7.5rem;
 }
 
-#history .history-main .timeline {
-  height: 67rem;
-  width: 100%;
-  margin-top: 3rem;
-  max-width: 5rem;
-  padding-left: 2.8rem;
-  padding-right: 3.8rem;
-  margin-bottom: 1rem;
-}
-
 @media (max-width: 480px) {
-  #history .history-main .timeline {
-    display: none;
+  #history .history-main_right img {
+    min-width: 34.5rem;
   }
 }
 
-#history .history-main .timeline li {
+/*タイムライン全体の設定*/
+.timeline {
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.timeline li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding: 0 0 2rem 0;
+  padding: 0 0 20px 0;
 }
 
-#history .history-main .timeline li:last-child {
-  padding: 0;
-}
-
-#history .history-main .timeline dl {
+.timeline dl {
   margin: 0 0 20px 3em;
 }
 
-#history .history-main .border-line {
+/*絶対配置で線を設定*/
+.border-line {
   /*線の位置*/
   position: absolute;
-  left: 0.715rem;
+  left: 0.25em;
   top: 0;
-  width: 1px;
+  width: 2px;
   /*線の太さ*/
   height: 0;
   /*はじめは高さを0に*/
-  color: #707070;
+  background: #ccc;
 }
 
-#history .history-main .timeline li::after {
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 10px;
+  height: 10px;
   background: #666;
   border-radius: 50%;
 }
@@ -1782,10 +2231,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -1796,6 +2258,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -1810,13 +2279,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -1826,7 +2296,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -1848,7 +2318,15 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   #representative .repsen-box {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 3rem;
+    margin: 5rem 0;
   }
 }
 
@@ -1865,6 +2343,11 @@ header nav a:hover {
   #representative .repsen-box-right {
     margin: 0;
     max-width: 100%;
+  }
+  #representative .repsen-box-right img {
+    max-width: 31.5rem;
+    max-height: 46rem;
+    margin: 3rem 0;
   }
 }
 
@@ -1960,10 +2443,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -1974,6 +2470,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -1988,13 +2491,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -2004,7 +2508,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -2017,7 +2521,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .faq-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -2032,6 +2540,12 @@ header nav a:hover {
   top: 50%;
 }
 
+@media (max-width: 480px) {
+  .faq-mainvisual .faq-mainvisual-box .section-title {
+    top: 25%;
+  }
+}
+
 .faq-mainvisual .faq-mainvisual-box::after {
   content: "";
   height: 24rem;
@@ -2043,6 +2557,12 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media (max-width: 480px) {
+  .faq-mainvisual .faq-mainvisual-box::after {
+    height: 12rem;
+  }
 }
 
 .bg-text-even_faq {
@@ -2059,9 +2579,39 @@ header nav a:hover {
   color: #f7f7f7;
 }
 
+@media (max-width: 480px) {
+  .bg-text-even_faq {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_faq {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 60%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_faq {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
 #faq .faq-main {
   width: 100%;
-  margin-bottom: 6.4rem;
+  margin-bottom: 14rem;
 }
 
 #faq .faq-main .faq-box {
@@ -2088,7 +2638,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   #faq .faq-main .faq-box {
+    background-color: #fff;
     display: block;
+    max-width: 31rem;
+    padding: 6rem 0;
+    margin: 6rem 0;
   }
 }
 
@@ -2099,11 +2653,23 @@ header nav a:hover {
   font-size: 2.4rem;
 }
 
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-question {
+    font-size: 1.8rem;
+  }
+}
+
 #faq .faq-main .faq-box .faq-question-q {
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
   margin-right: 3.2rem;
+}
+
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-question-q {
+    font-size: 3rem;
+  }
 }
 
 #faq .faq-main .faq-box .faq-answer {
@@ -2119,6 +2685,12 @@ header nav a:hover {
   font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
+}
+
+@media (max-width: 480px) {
+  #faq .faq-main .faq-box .faq-answer-a {
+    font-size: 3rem;
+  }
 }
 
 #faq .faq-main .faq-box:nth-child(even) {
@@ -2206,10 +2778,23 @@ header nav a:hover {
   margin-right: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .container .side .sticky .side-icon .facebook-logo img {
+    margin: 0;
+  }
 }
 
 .container .section-title {
@@ -2220,6 +2805,13 @@ header nav a:hover {
   border-left: thick solid black;
   padding-left: 2.4rem;
   margin-left: 2.4rem;
+}
+
+@media (max-width: 480px) {
+  .container .section-title {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main {
@@ -2234,13 +2826,14 @@ header nav a:hover {
 }
 
 .container main section {
-  margin: 8rem 0 7rem;
+  margin: 4rem 0 7rem;
   letter-spacing: 1.5px;
 }
 
 @media (max-width: 480px) {
   .container main section {
     margin: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -2250,7 +2843,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container main section .contents {
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 
@@ -2263,7 +2856,11 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .contact-mainvisual {
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    width: 100%;
+    padding-top: 68%;
   }
 }
 
@@ -2276,6 +2873,12 @@ header nav a:hover {
   z-index: 11;
   position: absolute;
   top: 50%;
+}
+
+@media (max-width: 480px) {
+  .contact-mainvisual .contact-mainvisual-box .section-title {
+    top: 25%;
+  }
 }
 
 .contact-mainvisual .contact-mainvisual-box::after {
@@ -2291,6 +2894,12 @@ header nav a:hover {
   right: 0;
 }
 
+@media (max-width: 480px) {
+  .contact-mainvisual .contact-mainvisual-box::after {
+    height: 12rem;
+  }
+}
+
 .bg-text-even_contact {
   position: absolute;
   margin: 0;
@@ -2303,6 +2912,40 @@ header nav a:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_contact {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-text-even_contact {
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    text-align: left;
+    font-size: 14rem;
+    top: 67%;
+    left: 0%;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.7rem;
+    color: #f7f7f7;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 480px) {
+  .bg-text-even_contact {
+    font-size: 6.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+#contact {
+  margin-bottom: 0;
 }
 
 .contact-box {
@@ -2331,10 +2974,23 @@ header nav a:hover {
   background-color: #000000;
 }
 
+@media (max-width: 480px) {
+  .contact-box-left {
+    font-size: 4.2rem;
+  }
+}
+
 .contact-box-right {
   margin-left: 7.3rem;
   font-size: 1.4rem;
   line-height: 3rem;
+}
+
+@media (max-width: 480px) {
+  .contact-box-right {
+    margin: 0;
+    margin-top: 10rem;
+  }
 }
 
 .contact-box-right-text {
@@ -2352,6 +3008,113 @@ header nav a:hover {
   width: 26.579rem;
   height: 9.1rem;
   cursor: pointer;
+}
+
+.form-box {
+  padding: 0;
+  position: relative;
+}
+
+.form-box .form-box-left {
+  max-width: 82rem;
+  height: 64rem;
+  padding: 8rem 8.1rem 13rem;
+  background-color: #f7f7f7;
+}
+
+.form-box .form-box-left p {
+  margin-bottom: 3.75rem;
+  font-size: 1.4rem;
+}
+
+.form-box .highlight-text {
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.form-box .highlight-text span {
+  color: white;
+  background-color: #000000;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Alfa Slab One", cursive;
+  padding-right: 33.9rem;
+}
+
+form input {
+  width: 40rem;
+  background-color: #fff;
+  padding-left: 1.2rem;
+  height: 2.4rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+form input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+form input:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form input::-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form input::placeholder {
+  color: #bebebe;
+}
+
+form textarea {
+  width: 40rem;
+  background-color: #fff;
+  padding-left: 1.2rem;
+  padding-top: 1.4rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  resize: none;
+}
+
+form textarea::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea::-ms-input-placeholder {
+  color: #bebebe;
+}
+
+form textarea::placeholder {
+  color: #bebebe;
+}
+
+form .submit {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  width: 10rem;
+  height: 5rem;
+  text-align: center;
+  color: white;
+  border-radius: 0%;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#ff1013), to(#400b0c)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.86;
 }
 
 footer {

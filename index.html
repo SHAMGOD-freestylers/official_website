@@ -47,17 +47,44 @@
       <main>
         <!-- header -->
         <header>
-          <nav id="nav">
-            <a href="#message">MESSAGE</a>
-            <a href="#movies">MOVIES</a>
-            <a href="#news">NEWS</a>
-            <a href="#history">HISTORY</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">CONTACT</a>
+          <nav class="pc">
+            <a href="#message" class="message-nav">MESSAGE</a>
+            <a href="#movies" class="movies-nav">MOVIES</a>
+            <a href="#news" class="news-nav">NEWS</a>
+            <a href="#history" class="history-nav">HISTORY</a>
+            <a href="#faq" class="faq-nav">FAQ</a>
+            <a href="#contact" class="contact-nav">CONTACT</a>
+          </nav>
+          <!-- レスポンシブ sp -->
+          <div id="hamburger">
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img class="logo" src="./images/logo.png" alt="" srcset="" />
+            <!-- <div class="side-icon"> -->
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+
+            <img class="facebook-logo" src="./images/facebook.png" alt="" />
+            <!-- </div> -->
+          </div>
+
+          <!--▽▽ハンバーガーメニューのリスト▽▽-->
+          <nav class="sm">
+            <ul>
+              <li><a href="#message" id="message-nav">MESSAGE</a></li>
+              <li><a href="#movies" id="movies-nav">MOVIES</a></li>
+              <li><a href="#news" id="news-nav">NEWS</a></li>
+              <li><a href="#history" id="history-nav">HISTORY</a></li>
+              <li><a href="#faq" id="faq-nav">FAQ</a></li>
+              <li><a href="#contact" id="contact-nav">CONTACT</a></li>
+            </ul>
           </nav>
         </header>
         <!-- mainvisual -->
-        <div class="mainvisual">
+        <div class="mainvisual" id="mainvisual">
           <img src="./images/mainvisual2.png" alt="" />
         </div>
         <!-- message -->
@@ -107,7 +134,7 @@
             </div>
           </div>
           <div class="movie-contents">
-            <div class="movie-main">
+            <div class="movie-main" id="movies2">
               <div class="movies-box">
                 <!-- youtube -->
                 <iframe
@@ -242,7 +269,7 @@
               <div class="bg-text-even_history">HISTORY</div>
             </div>
           </div>
-          <div class="contents history-main">
+          <div class="contents history-main" id="history2">
             <div class="history-main_left">
               <div class="history-main-text">
                 2009年 <br />
@@ -263,7 +290,6 @@
               />
             </div>
             <!-- timeline -->
-
             <ul class="timeline">
               <li>
                 <!--線が伸びる基準となるHTML。liを基準として、spanに指定された線を伸ばします。-->
@@ -388,7 +414,9 @@
             </div>
             <div class="repsen-box-right">
               <img
-                src="./images/representative-img.png"
+                width="390"
+                height="610"
+                src="./images/representative-ryuki.JPG"
                 alt=""
                 class="repsen-img"
               />
@@ -404,7 +432,7 @@
             </div>
           </div>
           <div class="contents faq-main">
-            <div class="faq-box">
+            <div class="faq-box" id="faq2">
               <div class="faq-question">
                 <span class="faq-question-q">Q.</span>
                 他のサークルと掛け持ちはできますか？
@@ -474,57 +502,87 @@
               <div class="bg-text-even_contact">CONTACT</div>
             </div>
           </div>
-          <div class="contents contact-box">
-            <div class="contact-box-left">
-              <div class="contact-box-left-text">
-                SHAMGODは、<br />
-                一緒にサークルを盛り上げる <br />
-                <span> メンバーを募集 </span>
-                しています！
+          <div class="contents" id="contact2">
+            <div class="contact-box">
+              <div class="contact-box-left">
+                <div class="contact-box-left-text">
+                  SHAMGODは、<br />
+                  一緒にサークルを盛り上げる <br />
+                  <span> メンバーを募集 </span>
+                  しています！
+                </div>
+              </div>
+              <div class="contact-box-right">
+                <div class="contact-box-right-text">
+                  <ul>
+                    <li>
+                      <img
+                        class="contact-dot"
+                        src="./images/dot-circle.svg"
+                        alt=""
+                      />
+                      フリースタイルバスケ面白そう！
+                    </li>
+                    <li>
+                      <img
+                        class="contact-dot"
+                        src="./images/dot-circle.svg"
+                        alt=""
+                      />
+                      大学で何か面白いことを始めたい！
+                    </li>
+                    <li>
+                      <img
+                        class="contact-dot"
+                        src="./images/dot-circle.svg"
+                        alt=""
+                      />
+                      人前に出るのが好き！
+                    </li>
+                  </ul>
+                  <br /><br />理由はなんでも大丈夫です！
+                </div>
+                <div class="contact-box-right-text">
+                  SHAMGODに興味を持っていただけた方、<br />
+                  体験練習やサークル入会希望のご相談など、<br />
+                  SHAMGODのLINE＠で受け付けております。<br />
+                  下記ボタンから追加お願いします！
+                </div>
+                <div class="contact-box-right-text">
+                  SHAMGOD一同、心よりご連絡をお待ちしております。
+                </div>
+                <div class="contact-box-right-btn">
+                  <img src="./images/entry.svg" alt="" />
+                </div>
               </div>
             </div>
-            <div class="contact-box-right">
-              <div class="contact-box-right-text">
-                <ul>
-                  <li>
-                    <img
-                      class="contact-dot"
-                      src="./images/dot-circle.svg"
-                      alt=""
-                    />
-                    フリースタイルバスケ面白そう！
-                  </li>
-                  <li>
-                    <img
-                      class="contact-dot"
-                      src="./images/dot-circle.svg"
-                      alt=""
-                    />
-                    大学で何か面白いことを始めたい！
-                  </li>
-                  <li>
-                    <img
-                      class="contact-dot"
-                      src="./images/dot-circle.svg"
-                      alt=""
-                    />
-                    人前に出るのが好き！
-                  </li>
-                </ul>
-                <br /><br />理由はなんでも大丈夫です！
-              </div>
-              <div class="contact-box-right-text">
-                SHAMGODに興味を持っていただけた方、<br />
-                体験練習やサークル入会希望のご相談など、<br />
-                SHAMGODのLINE＠で受け付けております。<br />
-                下記ボタンから追加お願いします！
-              </div>
-              <div class="contact-box-right-text">
-                SHAMGOD一同、心よりご連絡をお待ちしております。
-              </div>
-              <div class="contact-box-right-btn">
-                <img src="./images/entry.svg" alt="" />
-              </div>
+          </div>
+          <div class="form-box contact-box">
+            <div class="form-box-left">
+              <p>下記フォームからご連絡お待ちしております。</p>
+              <form action="confirm.php" method="post">
+                <input type="text" name="yourname" placeholder="Name" />
+                <input type="email" name="mail" id="" placeholder="E-mail" />
+                <input
+                  type="number"
+                  name="phonenumber"
+                  id=""
+                  placeholder="Phone"
+                />
+                <textarea
+                  name="comment"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <input class="submit" type="submit" value="送信" />
+              </form>
+            </div>
+
+            <div class="highlight-text">
+              <span> イベントの出演依頼も </span> <br />
+              募集しています！
             </div>
           </div>
         </section>
@@ -540,8 +598,14 @@
       crossorigin="anonymous"
     ></script>
     <!--自作のJS-->
-
-    <script src="./js/timeline.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/timeline.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-6/js/9-1-6.js"></script>
   </body>
 </html>
