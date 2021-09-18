@@ -1,5 +1,7 @@
 @import "variables";
-
+body {
+  margin: 0 auto;
+}
 .container {
   display: flex;
   margin: 0 auto;
@@ -34,18 +36,19 @@
         text-align: left;
         letter-spacing: 0.3rem;
         line-height: 2rem;
-        margin: auto 7rem;
+        margin: auto;
         font-weight: bold;
       }
       .side-icon {
         display: flex;
         text-align: center;
         // TODO margin paddingどっちの方がいい？
-        margin: 0 5.9rem;
+        margin: auto;
         margin-bottom: 2.2rem;
 
         i {
           font-size: 2rem;
+          line-height: 2.2rem;
         }
 
         i:first-child {
@@ -54,16 +57,11 @@
         }
         .facebook-logo {
           @include sp {
-            height: 1rem;
-            width: 1rem;
+            margin: 0;
           }
           img {
             height: 2rem;
             width: 2rem;
-            margin-left: 1rem;
-            @include sp {
-              margin: 0;
-            }
           }
         }
       }
@@ -172,7 +170,7 @@
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
+  top: 69%;
   left: $left;
   font-family: $english;
   letter-spacing: 0.7rem;
@@ -191,5 +189,11 @@
   span {
     color: white;
     background-color: #000000;
+  }
+  @include sp {
+    position: static;
+    line-height: 5rem;
+    width: 40rem !important;
+    font-size: 3rem;
   }
 }

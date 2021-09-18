@@ -8,7 +8,7 @@
   }
 }
 .bg-text-even_contact {
-  @include bg-text-even(34%);
+  @include bg-text-even(36%);
   @include sp {
     @include bg-text-even(0%);
   }
@@ -22,6 +22,7 @@
   display: flex;
   font-family: $japanese;
   @include sp {
+    padding: 0;
     display: block;
   }
   &-left {
@@ -42,7 +43,7 @@
     line-height: 3rem;
     @include sp {
       margin: 0;
-      margin-top: 10rem;
+      margin-top: 2rem;
     }
     &-text {
       text-align: left;
@@ -66,11 +67,21 @@
 .form-box {
   padding: 0;
   position: relative;
+  @include sp {
+    position: static;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem;
+  }
   .form-box-left {
     max-width: 82rem;
     height: 64rem;
     padding: 8rem 8.1rem 13rem;
     background-color: #f7f7f7;
+    @include sp {
+      height: 45rem;
+      padding: 2rem;
+    }
     p {
       margin-bottom: 3.75rem;
       font-size: 1.4rem;
@@ -95,6 +106,9 @@ form {
     &::placeholder {
       color: #bebebe;
     }
+    @include sp {
+      width: 20rem;
+    }
   }
   textarea {
     width: 40rem;
@@ -106,6 +120,9 @@ form {
     resize: none;
     &::placeholder {
       color: #bebebe;
+    }
+    @include sp {
+      width: 20rem;
     }
   }
   .submit {

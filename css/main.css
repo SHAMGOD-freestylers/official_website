@@ -468,6 +468,10 @@ template {
   display: none;
 }
 
+body {
+  margin: 0 auto;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +525,7 @@ template {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -530,12 +534,13 @@ template {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -545,21 +550,13 @@ template {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -673,10 +670,8 @@ header #hamburger .fa-instagram {
 }
 
 @media (max-width: 480px) {
-  header #hamburger .facebook-logo {
-    height: 2rem;
-    width: 2rem;
-    margin-top: 1.7rem;
+  header #hamburger .facebook-logo img {
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -801,6 +796,10 @@ header nav a:hover {
   color: black;
 }
 
+body {
+  margin: 0 auto;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,7 +853,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -863,12 +862,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -878,21 +878,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -947,7 +939,7 @@ header nav a:hover {
 
 .mainvisual img {
   width: 100%;
-  height: 100vh;
+  height: 101vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -958,6 +950,10 @@ header nav a:hover {
     height: auto;
     margin-top: 6rem;
   }
+}
+
+body {
+  margin: 0 auto;
 }
 
 .container {
@@ -1013,7 +1009,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1022,12 +1018,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1037,21 +1034,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1143,7 +1132,12 @@ header nav a:hover {
   font-size: 4.4rem;
   line-height: 1.5;
   z-index: 20;
+  padding-left: 0 !important;
   padding: 0 7.3rem;
+}
+
+#message .message-box .message-box_left .message-concept {
+  width: 50rem;
 }
 
 @media (max-width: 480px) {
@@ -1168,6 +1162,10 @@ header nav a:hover {
 
 #message .message-box .message-box_right .message-text {
   padding-bottom: 3rem;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .container {
@@ -1223,7 +1221,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1232,12 +1230,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1247,21 +1246,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1374,8 +1365,8 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
-  left: 44.3%;
+  top: 69%;
+  left: 46.3%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1396,7 +1387,7 @@ header nav a:hover {
     z-index: 10;
     text-align: left;
     font-size: 14rem;
-    top: 67%;
+    top: 69%;
     left: 16%;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
@@ -1467,7 +1458,7 @@ header nav a:hover {
   margin-left: 5.4rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .movie-main .movies-box:nth-child(2) {
     margin: 0;
   }
@@ -1482,7 +1473,7 @@ header nav a:hover {
   margin-left: 5.4rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .movie-main .movies-box:nth-child(4) {
     margin: 0;
   }
@@ -1527,15 +1518,21 @@ header nav a:hover {
 
 .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
   padding-top: 0.7rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 2rem;
+  padding: 1rem 2.1rem;
   color: #818181;
 }
 
 @media (max-width: 480px) {
   .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
+    width: auto;
     font-size: 1rem;
   }
+}
+
+body {
+  margin: 0 auto;
 }
 
 .container {
@@ -1591,7 +1588,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1600,12 +1597,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1615,21 +1613,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -1801,6 +1791,10 @@ header nav a:hover {
           box-shadow: 0px 0px 0px 1px white;
 }
 
+body {
+  margin: 0 auto;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1854,7 +1848,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -1863,12 +1857,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -1878,21 +1873,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2005,8 +1992,8 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
-  left: 38%;
+  top: 69%;
+  left: 39.5%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2027,7 +2014,7 @@ header nav a:hover {
     z-index: 10;
     text-align: left;
     font-size: 14rem;
-    top: 67%;
+    top: 69%;
     left: 6.5%;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
@@ -2056,11 +2043,12 @@ header nav a:hover {
 @media (max-width: 480px) {
   #history .history-main {
     display: block;
+    position: relative;
   }
 }
 
 #history .history-main .history-main-text {
-  padding-bottom: 6.5rem;
+  padding-bottom: 4rem;
 }
 
 #history .history-main .history-main-text:last-child {
@@ -2070,6 +2058,20 @@ header nav a:hover {
 #history .history-main_left {
   text-align: right;
   padding-top: 4.8rem;
+}
+
+@media (max-width: 480px) {
+  #history .history-main_left {
+    padding: 0 4rem;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 #history .history-main_left img {
@@ -2086,12 +2088,19 @@ header nav a:hover {
   padding-bottom: 11.2rem;
 }
 
+@media (max-width: 480px) {
+  #history .history-main_left .history-main-text:nth-child(3) {
+    padding-bottom: 4rem;
+  }
+}
+
 #history .history-main_right {
   text-align: left;
 }
 
 @media (max-width: 480px) {
   #history .history-main_right {
+    padding: 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2117,14 +2126,28 @@ header nav a:hover {
   max-width: 400px;
   width: 100%;
   margin: 50px auto;
-  padding: 0 30px;
+  padding-left: 3.5rem;
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    position: absolute;
+    top: 22%;
+    padding: 0;
+  }
 }
 
 .timeline li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding: 0 0 20px 0;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .timeline li {
+    padding-bottom: 4rem;
+  }
 }
 
 .timeline dl {
@@ -2154,6 +2177,10 @@ header nav a:hover {
   height: 10px;
   background: #666;
   border-radius: 50%;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .container {
@@ -2209,7 +2236,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2218,12 +2245,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2233,21 +2261,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2368,6 +2388,10 @@ header nav a:hover {
   }
 }
 
+body {
+  margin: 0 auto;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2421,7 +2445,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2430,12 +2454,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2445,21 +2470,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2572,8 +2589,8 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
-  left: 72%;
+  top: 69%;
+  left: 75%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2594,7 +2611,7 @@ header nav a:hover {
     z-index: 10;
     text-align: left;
     font-size: 14rem;
-    top: 67%;
+    top: 69%;
     left: 60%;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
@@ -2651,6 +2668,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   font-size: 2.4rem;
+  margin-right: 3.6rem;
 }
 
 @media (max-width: 480px) {
@@ -2661,9 +2679,8 @@ header nav a:hover {
 
 #faq .faq-main .faq-box .faq-question-q {
   font-size: 4rem;
-  margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
-  margin-right: 3.2rem;
+  margin-right: 1.7rem;
 }
 
 @media (max-width: 480px) {
@@ -2701,6 +2718,10 @@ header nav a:hover {
   #faq .faq-main .faq-box:nth-child(even) {
     margin: 0;
   }
+}
+
+body {
+  margin: 0 auto;
 }
 
 .container {
@@ -2756,7 +2777,7 @@ header nav a:hover {
   text-align: left;
   letter-spacing: 0.3rem;
   line-height: 2rem;
-  margin: auto 7rem;
+  margin: auto;
   font-weight: bold;
 }
 
@@ -2765,12 +2786,13 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  margin: 0 5.9rem;
+  margin: auto;
   margin-bottom: 2.2rem;
 }
 
 .container .side .sticky .side-icon i {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .container .side .sticky .side-icon i:first-child {
@@ -2780,21 +2802,13 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .container .side .sticky .side-icon .facebook-logo {
-    height: 1rem;
-    width: 1rem;
+    margin: 0;
   }
 }
 
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo img {
-    margin: 0;
-  }
 }
 
 .container .section-title {
@@ -2907,8 +2921,8 @@ header nav a:hover {
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
-  left: 34%;
+  top: 69%;
+  left: 36%;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2929,7 +2943,7 @@ header nav a:hover {
     z-index: 10;
     text-align: left;
     font-size: 14rem;
-    top: 67%;
+    top: 69%;
     left: 0%;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
@@ -2959,6 +2973,7 @@ header nav a:hover {
 
 @media (max-width: 480px) {
   .contact-box {
+    padding: 0;
     display: block;
   }
 }
@@ -2989,7 +3004,7 @@ header nav a:hover {
 @media (max-width: 480px) {
   .contact-box-right {
     margin: 0;
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
 }
 
@@ -3015,11 +3030,32 @@ header nav a:hover {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .form-box {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 3rem;
+  }
+}
+
 .form-box .form-box-left {
   max-width: 82rem;
   height: 64rem;
   padding: 8rem 8.1rem 13rem;
   background-color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .form-box .form-box-left {
+    height: 45rem;
+    padding: 2rem;
+  }
 }
 
 .form-box .form-box-left p {
@@ -3038,6 +3074,15 @@ header nav a:hover {
 .form-box .highlight-text span {
   color: white;
   background-color: #000000;
+}
+
+@media (max-width: 480px) {
+  .form-box .highlight-text {
+    position: static;
+    line-height: 5rem;
+    width: 40rem !important;
+    font-size: 3rem;
+  }
 }
 
 form {
@@ -3077,6 +3122,12 @@ form input::placeholder {
   color: #bebebe;
 }
 
+@media (max-width: 480px) {
+  form input {
+    width: 20rem;
+  }
+}
+
 form textarea {
   width: 40rem;
   background-color: #fff;
@@ -3101,6 +3152,12 @@ form textarea::-ms-input-placeholder {
 
 form textarea::placeholder {
   color: #bebebe;
+}
+
+@media (max-width: 480px) {
+  form textarea {
+    width: 20rem;
+  }
 }
 
 form .submit {

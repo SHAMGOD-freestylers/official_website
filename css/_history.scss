@@ -7,7 +7,7 @@
   }
 }
 .bg-text-even_history {
-  @include bg-text-even(38%);
+  @include bg-text-even(39.5%);
   @include sp {
     @include bg-text-even(6.5%);
   }
@@ -22,9 +22,10 @@
     display: flex;
     @include sp {
       display: block;
+      position: relative;
     }
     .history-main-text {
-      padding-bottom: 6.5rem;
+      padding-bottom: 4rem;
       &:last-child {
         padding-bottom: 0;
       }
@@ -32,6 +33,12 @@
     &_left {
       text-align: right;
       padding-top: 4.8rem;
+      @include sp {
+        padding: 0 4rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+      }
       img {
         padding-bottom: 7.5rem;
         @include sp {
@@ -41,12 +48,16 @@
       .history-main-text {
         &:nth-child(3) {
           padding-bottom: 11.2rem;
+          @include sp {
+            padding-bottom: 4rem;
+          }
         }
       }
     }
     &_right {
       text-align: left;
       @include sp {
+        padding: 0 4rem;
         display: flex;
         flex-direction: column-reverse;
       }
@@ -64,14 +75,22 @@
   max-width: 400px;
   width: 100%;
   margin: 50px auto;
-  padding: 0 30px;
+  padding-left: 3.5rem;
+  @include sp {
+    position: absolute;
+    top: 22%;
+    padding: 0;
+  }
 }
 
 .timeline li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding: 0 0 20px 0;
+  padding-bottom: 2rem;
+  @include sp {
+    padding-bottom: 4rem;
+  }
 }
 
 .timeline dl {
