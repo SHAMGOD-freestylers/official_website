@@ -2055,6 +2055,12 @@ body {
   padding-bottom: 0;
 }
 
+@media (max-width: 480px) {
+  #history .history-main .history-main-text:last-child {
+    padding-bottom: 4rem;
+  }
+}
+
 #history .history-main_left {
   text-align: right;
   padding-top: 4.8rem;
@@ -2080,7 +2086,7 @@ body {
 
 @media (max-width: 480px) {
   #history .history-main_left img {
-    max-width: 32rem;
+    max-width: 34rem;
   }
 }
 
@@ -2112,12 +2118,14 @@ body {
 }
 
 #history .history-main_right img {
+  padding: 0 4rem;
   padding-bottom: 7.5rem;
 }
 
 @media (max-width: 480px) {
   #history .history-main_right img {
-    min-width: 34.5rem;
+    max-width: 34rem;
+    padding: 0;
   }
 }
 
