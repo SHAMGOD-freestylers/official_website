@@ -1,5 +1,7 @@
 @import "variables";
-
+body {
+  margin: 0 auto;
+}
 .container {
   display: flex;
   margin: 0 auto;
@@ -168,7 +170,7 @@
   z-index: 10;
   text-align: left;
   font-size: 14rem;
-  top: 67%;
+  top: 69%;
   left: $left;
   font-family: $english;
   letter-spacing: 0.7rem;
@@ -187,5 +189,11 @@
   span {
     color: white;
     background-color: #000000;
+  }
+  @include sp {
+    position: static;
+    line-height: 5rem;
+    width: 40rem !important;
+    font-size: 3rem;
   }
 }
