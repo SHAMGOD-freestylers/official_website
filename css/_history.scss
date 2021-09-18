@@ -28,6 +28,9 @@
       padding-bottom: 4rem;
       &:last-child {
         padding-bottom: 0;
+        @include sp {
+          padding-bottom: 4rem;
+        }
       }
     }
     &_left {
@@ -42,7 +45,7 @@
       img {
         padding-bottom: 7.5rem;
         @include sp {
-          max-width: 32rem;
+          max-width: 34rem;
         }
       }
       .history-main-text {
@@ -62,9 +65,13 @@
         flex-direction: column-reverse;
       }
       img {
+        padding: 0 4rem;
+
         padding-bottom: 7.5rem;
         @include sp {
-          min-width: 34.5rem;
+          max-width: 34rem;
+
+          padding: 0;
         }
       }
     }
