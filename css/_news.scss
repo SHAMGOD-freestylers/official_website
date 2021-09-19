@@ -1,5 +1,3 @@
-@import "variables";
-@import "layout";
 // 背景文字
 .bg-text {
   @include bg-text;
@@ -8,6 +6,7 @@
   .news-container {
     font-family: $japanese;
     display: flex;
+    justify-content: space-between;
     padding-top: 13rem;
     @include sp {
       display: block;
@@ -15,16 +14,12 @@
     .news-box {
       z-index: 20;
 
-      margin-left: 7rem;
-      @include sp{
+      @include sp {
         margin: 0 3rem 5rem;
       }
       &:first-child {
-        margin-left: 7.2rem;
-        @include sp{
-
-        margin: 0 3rem 5rem;
-
+        @include sp {
+          margin: 0 3rem 5rem;
         }
       }
       img {
@@ -33,8 +28,8 @@
       }
       .news-text-box {
         font-weight: bold;
-        @include sp{
-          max-width: 29.5rem
+        @include sp {
+          max-width: 29.5rem;
         }
 
         .news-text_sub {
@@ -62,7 +57,6 @@
   font-size: 3rem;
   height: 5rem;
   cursor: pointer;
-  
 }
 
 .news-btn {

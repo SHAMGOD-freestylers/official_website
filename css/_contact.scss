@@ -1,6 +1,3 @@
-@import "layout";
-@import "variables";
-
 .contact-mainvisual {
   @include mainvisual("../images/contact-img.png");
   .contact-mainvisual-box {
@@ -8,9 +5,9 @@
   }
 }
 .bg-text-even_contact {
-  @include bg-text-even(36%);
+  @include bg-text-even();
   @include sp {
-    @include bg-text-even(0%);
+    @include bg-text-even();
   }
 }
 #contact {

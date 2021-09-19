@@ -600,7 +600,9 @@ body {
 }
 
 .container main section .contents {
-  padding: 0 7.5rem;
+  padding: 0 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
@@ -796,147 +798,6 @@ header nav a:hover {
   color: black;
 }
 
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
-  }
-}
-
 .mainvisual img {
   width: 100%;
   height: 101vh;
@@ -946,150 +807,9 @@ body {
 
 @media (max-width: 480px) {
   .mainvisual img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-top: 6rem;
-  }
-}
-
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
   }
 }
 
@@ -1164,147 +884,6 @@ body {
   padding-bottom: 3rem;
 }
 
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
-  }
-}
-
 .movies-mainvisual {
   background-image: url("../images/movies-img.png");
   background-size: cover;
@@ -1366,7 +945,7 @@ body {
   text-align: left;
   font-size: 14rem;
   top: 69%;
-  left: 46.3%;
+  right: 0;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -1388,7 +967,7 @@ body {
     text-align: left;
     font-size: 14rem;
     top: 69%;
-    left: 16%;
+    right: 0;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
     color: #f7f7f7;
@@ -1403,7 +982,13 @@ body {
 }
 
 .movie-contents {
-  margin-left: 11.3rem;
+  margin: 0 17rem;
+}
+
+@media (max-width: 768px) {
+  .movie-contents {
+    margin: 0 11rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1418,7 +1003,10 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 7.6rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7.6rem;
 }
 
 @media (max-width: 480px) {
@@ -1432,10 +1020,6 @@ body {
             justify-content: center;
     margin: 0 3rem;
   }
-}
-
-.movie-main .movies-box {
-  margin-bottom: 5rem;
 }
 
 @media (max-width: 480px) {
@@ -1454,10 +1038,6 @@ body {
   }
 }
 
-.movie-main .movies-box:nth-child(2) {
-  margin-left: 5.4rem;
-}
-
 @media (max-width: 768px) {
   .movie-main .movies-box:nth-child(2) {
     margin: 0;
@@ -1465,12 +1045,11 @@ body {
 }
 
 .movie-main .movies-box:nth-child(3) {
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .movie-main .movies-box:nth-child(4) {
-  margin-top: 6rem;
-  margin-left: 5.4rem;
+  margin-top: 7rem;
 }
 
 @media (max-width: 768px) {
@@ -1531,147 +1110,6 @@ body {
   }
 }
 
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
-  }
-}
-
 .bg-text {
   position: absolute;
   margin: 0;
@@ -1694,6 +1132,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 13rem;
 }
 
@@ -1705,17 +1146,12 @@ body {
 
 #news .news-container .news-box {
   z-index: 20;
-  margin-left: 7rem;
 }
 
 @media (max-width: 480px) {
   #news .news-container .news-box {
     margin: 0 3rem 5rem;
   }
-}
-
-#news .news-container .news-box:first-child {
-  margin-left: 7.2rem;
 }
 
 @media (max-width: 480px) {
@@ -1791,147 +1227,6 @@ body {
           box-shadow: 0px 0px 0px 1px white;
 }
 
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
-  }
-}
-
 .history-mainvisual {
   background-image: url("../images/history-img.png");
   background-size: cover;
@@ -1950,6 +1245,12 @@ body {
 }
 
 .history-mainvisual .history-mainvisual-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: white;
 }
 
@@ -1993,7 +1294,7 @@ body {
   text-align: left;
   font-size: 14rem;
   top: 69%;
-  left: 39.5%;
+  right: 0;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2015,7 +1316,7 @@ body {
     text-align: left;
     font-size: 14rem;
     top: 69%;
-    left: 6.5%;
+    right: 0;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
     color: #f7f7f7;
@@ -2038,12 +1339,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
 @media (max-width: 480px) {
   #history .history-main {
     display: block;
-    position: relative;
   }
 }
 
@@ -2062,6 +1366,7 @@ body {
 }
 
 #history .history-main_left {
+  width: 48rem;
   text-align: right;
   padding-top: 4.8rem;
 }
@@ -2102,6 +1407,7 @@ body {
 
 #history .history-main_right {
   text-align: left;
+  width: 48rem;
 }
 
 @media (max-width: 480px) {
@@ -2118,7 +1424,6 @@ body {
 }
 
 #history .history-main_right img {
-  padding: 0 4rem;
   padding-bottom: 7.5rem;
 }
 
@@ -2131,15 +1436,12 @@ body {
 
 /*タイムライン全体の設定*/
 .timeline {
-  max-width: 400px;
-  width: 100%;
-  margin: 50px auto;
-  padding-left: 3.5rem;
+  left: 49.5%;
+  position: absolute;
 }
 
 @media (max-width: 480px) {
   .timeline {
-    position: absolute;
     top: 22%;
     padding: 0;
   }
@@ -2187,153 +1489,11 @@ body {
   border-radius: 50%;
 }
 
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
-  }
-}
-
 #representative {
   position: relative;
 }
 
 #representative .repsen-box {
-  padding: 0 8.5rem;
   margin-top: 14rem;
   padding-bottom: 2rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -2393,147 +1553,6 @@ body {
 @media (max-width: 480px) {
   .bg-text {
     display: none;
-  }
-}
-
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
   }
 }
 
@@ -2598,7 +1617,7 @@ body {
   text-align: left;
   font-size: 14rem;
   top: 69%;
-  left: 75%;
+  right: 0;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2620,7 +1639,7 @@ body {
     text-align: left;
     font-size: 14rem;
     top: 69%;
-    left: 60%;
+    right: 0;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
     color: #f7f7f7;
@@ -2719,153 +1738,12 @@ body {
 }
 
 #faq .faq-main .faq-box:nth-child(even) {
-  margin-left: 40rem;
+  margin-left: auto;
 }
 
 @media (max-width: 480px) {
   #faq .faq-main .faq-box:nth-child(even) {
     margin: 0;
-  }
-}
-
-body {
-  margin: 0 auto;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    display: block;
-  }
-}
-
-.container .side {
-  width: 200px;
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container .side {
-    display: none;
-  }
-}
-
-.container .side .sticky {
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container .side .sticky .logo {
-  width: 14rem;
-  height: 14rem;
-  margin: 4.1rem 2.7rem 0 2.7rem;
-}
-
-.container .side .sticky .side-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  text-align: left;
-  letter-spacing: 0.3rem;
-  line-height: 2rem;
-  margin: auto;
-  font-weight: bold;
-}
-
-.container .side .sticky .side-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2.2rem;
-}
-
-.container .side .sticky .side-icon i {
-  font-size: 2rem;
-  line-height: 2.2rem;
-}
-
-.container .side .sticky .side-icon i:first-child {
-  margin-left: 0.2rem;
-  margin-right: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .container .side .sticky .side-icon .facebook-logo {
-    margin: 0;
-  }
-}
-
-.container .side .sticky .side-icon .facebook-logo img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container .section-title {
-  width: 100%;
-  font-weight: bold;
-  margin-top: 9rem;
-  font-size: 3rem;
-  border-left: thick solid black;
-  padding-left: 2.4rem;
-  margin-left: 2.4rem;
-}
-
-@media (max-width: 480px) {
-  .container .section-title {
-    font-size: 2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-.container main {
-  width: calc(100% - 200px);
-  font-family: "Alfa Slab One", cursive;
-}
-
-@media (max-width: 480px) {
-  .container main {
-    width: 100%;
-  }
-}
-
-.container main section {
-  margin: 4rem 0 7rem;
-  letter-spacing: 1.5px;
-}
-
-@media (max-width: 480px) {
-  .container main section {
-    margin: auto;
-    letter-spacing: 1px;
-  }
-}
-
-.container main section .contents {
-  padding: 0 7.5rem;
-}
-
-@media (max-width: 480px) {
-  .container main section .contents {
-    padding: 0 3rem;
   }
 }
 
@@ -2930,7 +1808,7 @@ body {
   text-align: left;
   font-size: 14rem;
   top: 69%;
-  left: 36%;
+  right: 0;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
@@ -2952,7 +1830,7 @@ body {
     text-align: left;
     font-size: 14rem;
     top: 69%;
-    left: 0%;
+    right: 0;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.7rem;
     color: #f7f7f7;

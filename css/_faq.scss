@@ -1,6 +1,3 @@
-@import "layout";
-@import "variables";
-
 .faq-mainvisual {
   @include mainvisual("../images/faq-img.png");
 
@@ -10,9 +7,9 @@
   }
 }
 .bg-text-even_faq {
-  @include bg-text-even(75%);
+  @include bg-text-even();
   @include sp {
-    @include bg-text-even(60%);
+    @include bg-text-even();
   }
 }
 
@@ -71,7 +68,7 @@
         }
       }
       &:nth-child(even) {
-        margin-left: 40rem;
+        margin-left: auto;
         @include sp {
           margin: 0;
         }

@@ -1,13 +1,8 @@
-@import "variables";
-@import "layout";
-
 #representative {
   position: relative;
   .repsen-box {
-    padding: 0 8.5rem;
     margin-top: 14rem;
     padding-bottom: 2rem;
-
     font-family: $japanese;
     line-height: 2.8rem;
     font-size: 1.4rem;
