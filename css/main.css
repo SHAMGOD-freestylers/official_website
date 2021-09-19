@@ -1153,7 +1153,7 @@ header nav a:hover {
           box-shadow: 0px 0px 0px 1px white;
 }
 
-.history-mainvisual {
+#history .history-mainvisual {
   background-image: url("../images/history-img.png");
   background-size: cover;
   height: 51rem;
@@ -1161,7 +1161,7 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .history-mainvisual {
+  #history .history-mainvisual {
     background-repeat: no-repeat;
     background-position: center center;
     height: 0;
@@ -1170,7 +1170,7 @@ header nav a:hover {
   }
 }
 
-.history-mainvisual .history-mainvisual-box {
+#history .history-mainvisual .history-mainvisual-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1181,7 +1181,7 @@ header nav a:hover {
   color: white;
 }
 
-.history-mainvisual .history-mainvisual-box .section-title {
+#history .history-mainvisual .history-mainvisual-box .section-title {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
@@ -1189,12 +1189,12 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .history-mainvisual .history-mainvisual-box .section-title {
+  #history .history-mainvisual .history-mainvisual-box .section-title {
     top: 25%;
   }
 }
 
-.history-mainvisual .history-mainvisual-box::after {
+#history .history-mainvisual .history-mainvisual-box::after {
   content: "";
   height: 24rem;
   z-index: 10;
@@ -1208,32 +1208,18 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .history-mainvisual .history-mainvisual-box::after {
+  #history .history-mainvisual .history-mainvisual-box::after {
     height: 12rem;
   }
 }
 
-.bg-text-even_history {
+#history .bg-text-even_history {
   top: 69%;
   right: 0;
 }
 
 @media (max-width: 480px) {
-  .bg-text-even_history {
-    font-size: 6.6rem;
-    letter-spacing: 0.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .bg-text-even_history {
-    top: 69%;
-    right: 0;
-  }
-}
-
-@media (max-width: 480px) and (max-width: 480px) {
-  .bg-text-even_history {
+  #history .bg-text-even_history {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
   }
@@ -1244,7 +1230,6 @@ header nav a:hover {
   font-size: 1.4rem;
   padding-top: 8.5rem;
   line-height: 2.8rem;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,16 +1245,16 @@ header nav a:hover {
   }
 }
 
-#history .history-main .history-main-text {
+#history .history-main-text {
   padding-bottom: 4rem;
 }
 
-#history .history-main .history-main-text:last-child {
-  padding-bottom: 0;
+#history .history-main-text:nth-child(3) {
+  padding-bottom: 11.2rem;
 }
 
 @media (max-width: 480px) {
-  #history .history-main .history-main-text:last-child {
+  #history .history-main-text:nth-child(3) {
     padding-bottom: 4rem;
   }
 }
@@ -1301,16 +1286,6 @@ header nav a:hover {
 @media (max-width: 480px) {
   #history .history-main_left img {
     max-width: 34rem;
-  }
-}
-
-#history .history-main_left .history-main-text:nth-child(3) {
-  padding-bottom: 11.2rem;
-}
-
-@media (max-width: 480px) {
-  #history .history-main_left .history-main-text:nth-child(3) {
-    padding-bottom: 4rem;
   }
 }
 
@@ -1347,6 +1322,7 @@ header nav a:hover {
 .timeline {
   left: 49.5%;
   position: absolute;
+  margin-top: 6rem;
 }
 
 @media (max-width: 480px) {
@@ -1361,6 +1337,18 @@ header nav a:hover {
   position: relative;
   list-style: none;
   padding-bottom: 2rem;
+  /*タイムラインの見出し横の丸の位置と形状*/
+}
+
+.timeline li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #666;
+  border-radius: 50%;
 }
 
 @media (max-width: 480px) {
@@ -1369,12 +1357,7 @@ header nav a:hover {
   }
 }
 
-.timeline dl {
-  margin: 0 0 20px 3em;
-}
-
-/*絶対配置で線を設定*/
-.border-line {
+.timeline li .border-line {
   /*線の位置*/
   position: absolute;
   left: 0.25em;
@@ -1386,59 +1369,46 @@ header nav a:hover {
   background: #ccc;
 }
 
-/*タイムラインの見出し横の丸の位置と形状*/
-.timeline li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background: #666;
-  border-radius: 50%;
+.timeline dl {
+  margin: 0 0 20px 3em;
 }
 
+/*絶対配置で線を設定*/
 #representative {
   position: relative;
 }
 
 #representative .repsen-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 14rem;
   padding-bottom: 2rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   font-size: 1.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 480px) {
   #representative .repsen-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 0 3rem;
     margin: 5rem 0;
   }
 }
 
-#representative .repsen-box .repsen-text {
+#representative .repsen-box-text {
   padding-top: 4.4rem;
-}
-
-#representative .repsen-box-right {
-  z-index: 20;
-  margin-left: 5.8rem;
 }
 
 @media (max-width: 480px) {
   #representative .repsen-box-right {
-    margin: 0;
     max-width: 100%;
   }
   #representative .repsen-box-right img {
@@ -1448,7 +1418,7 @@ header nav a:hover {
   }
 }
 
-.faq-mainvisual {
+#faq .faq-mainvisual {
   background-image: url("../images/faq-img.png");
   background-size: cover;
   height: 51rem;
@@ -1456,7 +1426,7 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .faq-mainvisual {
+  #faq .faq-mainvisual {
     background-repeat: no-repeat;
     background-position: center center;
     height: 0;
@@ -1465,12 +1435,12 @@ header nav a:hover {
   }
 }
 
-.faq-mainvisual .faq-mainvisual-box {
+#faq .faq-mainvisual .faq-mainvisual-box {
   font-family: "Alfa Slab One", cursive;
   color: white;
 }
 
-.faq-mainvisual .faq-mainvisual-box .section-title {
+#faq .faq-mainvisual .faq-mainvisual-box .section-title {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
@@ -1478,12 +1448,12 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .faq-mainvisual .faq-mainvisual-box .section-title {
+  #faq .faq-mainvisual .faq-mainvisual-box .section-title {
     top: 25%;
   }
 }
 
-.faq-mainvisual .faq-mainvisual-box::after {
+#faq .faq-mainvisual .faq-mainvisual-box::after {
   content: "";
   height: 24rem;
   z-index: 10;
@@ -1497,32 +1467,18 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .faq-mainvisual .faq-mainvisual-box::after {
+  #faq .faq-mainvisual .faq-mainvisual-box::after {
     height: 12rem;
   }
 }
 
-.bg-text-even_faq {
+#faq .bg-text-even_faq {
   top: 69%;
   right: 0;
 }
 
 @media (max-width: 480px) {
-  .bg-text-even_faq {
-    font-size: 6.6rem;
-    letter-spacing: 0.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .bg-text-even_faq {
-    top: 69%;
-    right: 0;
-  }
-}
-
-@media (max-width: 480px) and (max-width: 480px) {
-  .bg-text-even_faq {
+  #faq .bg-text-even_faq {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
   }
@@ -1565,7 +1521,7 @@ header nav a:hover {
   }
 }
 
-#faq .faq-main .faq-box .faq-question {
+#faq .faq-main .faq-box-question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1574,24 +1530,24 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  #faq .faq-main .faq-box .faq-question {
+  #faq .faq-main .faq-box-question {
     font-size: 1.8rem;
   }
 }
 
-#faq .faq-main .faq-box .faq-question-q {
+#faq .faq-main .faq-box-question-q {
   font-size: 4rem;
   font-family: "Alfa Slab One", cursive;
   margin-right: 1.7rem;
 }
 
 @media (max-width: 480px) {
-  #faq .faq-main .faq-box .faq-question-q {
+  #faq .faq-main .faq-box-question-q {
     font-size: 3rem;
   }
 }
 
-#faq .faq-main .faq-box .faq-answer {
+#faq .faq-main .faq-box-answer {
   margin-top: 4.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1599,7 +1555,7 @@ header nav a:hover {
   font-size: 1.4rem;
 }
 
-#faq .faq-main .faq-box .faq-answer-a {
+#faq .faq-main .faq-box-answer-a {
   color: #8d2659;
   font-size: 4rem;
   margin-right: 1.6rem;
@@ -1607,7 +1563,7 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  #faq .faq-main .faq-box .faq-answer-a {
+  #faq .faq-main .faq-box-answer-a {
     font-size: 3rem;
   }
 }
@@ -1622,7 +1578,12 @@ header nav a:hover {
   }
 }
 
-.contact-mainvisual {
+#contact {
+  position: relative;
+  margin-bottom: 0;
+}
+
+#contact .contact-mainvisual {
   background-image: url("../images/contact-img.png");
   background-size: cover;
   height: 51rem;
@@ -1630,7 +1591,7 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .contact-mainvisual {
+  #contact .contact-mainvisual {
     background-repeat: no-repeat;
     background-position: center center;
     height: 0;
@@ -1639,12 +1600,12 @@ header nav a:hover {
   }
 }
 
-.contact-mainvisual .contact-mainvisual-box {
+#contact .contact-mainvisual .contact-mainvisual-box {
   font-family: "Alfa Slab One", cursive;
   color: white;
 }
 
-.contact-mainvisual .contact-mainvisual-box .section-title {
+#contact .contact-mainvisual .contact-mainvisual-box .section-title {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
@@ -1652,12 +1613,12 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .contact-mainvisual .contact-mainvisual-box .section-title {
+  #contact .contact-mainvisual .contact-mainvisual-box .section-title {
     top: 25%;
   }
 }
 
-.contact-mainvisual .contact-mainvisual-box::after {
+#contact .contact-mainvisual .contact-mainvisual-box::after {
   content: "";
   height: 24rem;
   z-index: 10;
@@ -1671,44 +1632,39 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .contact-mainvisual .contact-mainvisual-box::after {
+  #contact .contact-mainvisual .contact-mainvisual-box::after {
     height: 12rem;
   }
 }
 
-.bg-text-even_contact {
+#contact .bg-text-even_contact {
   top: 69%;
   right: 0;
 }
 
 @media (max-width: 480px) {
-  .bg-text-even_contact {
+  #contact .bg-text-even_contact {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .bg-text-even_contact {
+  #contact .bg-text-even_contact {
     top: 69%;
     right: 0;
   }
 }
 
 @media (max-width: 480px) and (max-width: 480px) {
-  .bg-text-even_contact {
+  #contact .bg-text-even_contact {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
   }
 }
 
-#contact {
-  margin-bottom: 0;
-}
-
-.contact-box {
-  margin-top: 4.3rem;
-  padding: 0 7.9rem;
+#contact .contact-box {
+  margin: 4.6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1716,52 +1672,54 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .contact-box {
+  #contact .contact-box {
     padding: 0;
     display: block;
   }
 }
 
-.contact-box-left {
+#contact .contact-box-left {
+  z-index: 20;
   margin-top: 9rem;
   font-size: 4.4rem;
   line-height: 6.6rem;
 }
 
-.contact-box-left span {
+#contact .contact-box-left span {
   color: white;
   background-color: #000000;
 }
 
 @media (max-width: 480px) {
-  .contact-box-left {
+  #contact .contact-box-left {
     font-size: 4.2rem;
   }
 }
 
-.contact-box-right {
+#contact .contact-box-right {
+  z-index: 20;
   margin-left: 7.3rem;
   font-size: 1.4rem;
   line-height: 3rem;
 }
 
 @media (max-width: 480px) {
-  .contact-box-right {
+  #contact .contact-box-right {
     margin: 0;
     margin-top: 2rem;
   }
 }
 
-.contact-box-right-text {
+#contact .contact-box-right-text {
   text-align: left;
   padding-top: 4.3rem;
 }
 
-.contact-box-right-text .contact-dot {
+#contact .contact-box-right-text .contact-dot {
   vertical-align: middle;
 }
 
-.contact-box-right .contact-box-right-btn {
+#contact .contact-box-right .contact-box-right-btn {
   margin-top: 2.4rem;
   margin-bottom: 4rem;
   width: 26.579rem;
@@ -1769,13 +1727,18 @@ header nav a:hover {
   cursor: pointer;
 }
 
-.form-box {
+#contact .form-box {
   padding: 0;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 480px) {
-  .form-box {
+  #contact .form-box {
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1788,40 +1751,36 @@ header nav a:hover {
   }
 }
 
-.form-box .form-box-left {
-  max-width: 82rem;
-  height: 64rem;
-  padding: 8rem 8.1rem 13rem;
-  background-color: #f7f7f7;
+#contact .form-box .form-box-left {
+  z-index: 20;
+  padding: 8rem 0 13rem;
 }
 
 @media (max-width: 480px) {
-  .form-box .form-box-left {
+  #contact .form-box .form-box-left {
     height: 45rem;
     padding: 2rem;
   }
 }
 
-.form-box .form-box-left p {
+#contact .form-box .form-box-left p {
   margin-bottom: 3.75rem;
   font-size: 1.4rem;
 }
 
-.form-box .highlight-text {
+#contact .form-box .form-box-right {
+  z-index: 20;
   font-size: 4.4rem;
   line-height: 6.6rem;
-  position: absolute;
-  top: 20%;
-  left: 50%;
 }
 
-.form-box .highlight-text span {
+#contact .form-box .form-box-right span {
   color: white;
   background-color: #000000;
 }
 
 @media (max-width: 480px) {
-  .form-box .highlight-text {
+  #contact .form-box .form-box-right {
     position: static;
     line-height: 5rem;
     width: 40rem !important;
@@ -1829,7 +1788,7 @@ header nav a:hover {
   }
 }
 
-form {
+#contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1838,10 +1797,9 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Alfa Slab One", cursive;
-  padding-right: 33.9rem;
 }
 
-form input {
+#contact form input {
   width: 40rem;
   background-color: #fff;
   padding-left: 1.2rem;
@@ -1850,29 +1808,29 @@ form input {
   border-radius: 8px;
 }
 
-form input::-webkit-input-placeholder {
+#contact form input::-webkit-input-placeholder {
   color: #bebebe;
 }
 
-form input:-ms-input-placeholder {
+#contact form input:-ms-input-placeholder {
   color: #bebebe;
 }
 
-form input::-ms-input-placeholder {
+#contact form input::-ms-input-placeholder {
   color: #bebebe;
 }
 
-form input::placeholder {
+#contact form input::placeholder {
   color: #bebebe;
 }
 
 @media (max-width: 480px) {
-  form input {
+  #contact form input {
     width: 20rem;
   }
 }
 
-form textarea {
+#contact form textarea {
   width: 40rem;
   background-color: #fff;
   padding-left: 1.2rem;
@@ -1882,29 +1840,29 @@ form textarea {
   resize: none;
 }
 
-form textarea::-webkit-input-placeholder {
+#contact form textarea::-webkit-input-placeholder {
   color: #bebebe;
 }
 
-form textarea:-ms-input-placeholder {
+#contact form textarea:-ms-input-placeholder {
   color: #bebebe;
 }
 
-form textarea::-ms-input-placeholder {
+#contact form textarea::-ms-input-placeholder {
   color: #bebebe;
 }
 
-form textarea::placeholder {
+#contact form textarea::placeholder {
   color: #bebebe;
 }
 
 @media (max-width: 480px) {
-  form textarea {
+  #contact form textarea {
     width: 20rem;
   }
 }
 
-form .submit {
+#contact form .submit {
   font-size: 2rem;
   padding: 0;
   margin: 0;
@@ -1916,6 +1874,30 @@ form .submit {
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#ff1013), to(#400b0c)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%) 0% 0% no-repeat padding-box;
   opacity: 0.86;
+}
+
+#contact .contact-bgc {
+  height: 64rem;
+  width: 82rem;
+  z-index: 0;
+  background-color: #f7f7f7;
+  position: absolute;
+}
+
+@media (max-width: 480px) {
+  #contact .contact-bgc {
+    height: 12rem;
+  }
+}
+
+#contact .contact-bgc1 {
+  top: 28.5%;
+  right: 0;
+}
+
+#contact .contact-bgc2 {
+  left: 0;
+  top: 67%;
 }
 
 footer {

@@ -1,24 +1,21 @@
-.history-mainvisual {
-  @include mainvisual("../images/history-img.png");
-  .history-mainvisual-box {
-    display: flex;
-    justify-content: space-between;
-    @include mainvisual-box(#123a7f);
+#history {
+  .history-mainvisual {
+    @include mainvisual("../images/history-img.png");
+    .history-mainvisual-box {
+      display: flex;
+      justify-content: space-between;
+      @include mainvisual-box(#123a7f);
+    }
   }
-}
-.bg-text-even_history {
-  @include bg-text-even();
-  @include sp {
+  .bg-text-even_history {
     @include bg-text-even();
   }
-}
-#history {
   .history-main {
+    //contents
     font-family: $japanese;
     font-size: 1.4rem;
     padding-top: 8.5rem;
     line-height: 2.8rem;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -26,10 +23,10 @@
       display: block;
     }
 
-    .history-main-text {
+    &-text {
       padding-bottom: 4rem;
-      &:last-child {
-        padding-bottom: 0;
+      &:nth-child(3) {
+        padding-bottom: 11.2rem;
         @include sp {
           padding-bottom: 4rem;
         }
@@ -37,7 +34,6 @@
     }
     &_left {
       width: 48rem;
-
       text-align: right;
       padding-top: 4.8rem;
       @include sp {
@@ -52,19 +48,10 @@
           max-width: 34rem;
         }
       }
-      .history-main-text {
-        &:nth-child(3) {
-          padding-bottom: 11.2rem;
-          @include sp {
-            padding-bottom: 4rem;
-          }
-        }
-      }
     }
     &_right {
       text-align: left;
       width: 48rem;
-
       @include sp {
         padding: 0 4rem;
         display: flex;
@@ -74,7 +61,6 @@
         padding-bottom: 7.5rem;
         @include sp {
           max-width: 34rem;
-
           padding: 0;
         }
       }
@@ -85,45 +71,43 @@
 .timeline {
   left: 49.5%;
   position: absolute;
+  margin-top: 6rem;
   @include sp {
     top: 22%;
     padding: 0;
   }
-}
-
-.timeline li {
-  /*線の起点とするためrelativeを設定*/
-  position: relative;
-  list-style: none;
-  padding-bottom: 2rem;
-  @include sp {
-    padding-bottom: 4rem;
+  li {
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+    list-style: none;
+    padding-bottom: 2rem;
+    /*タイムラインの見出し横の丸の位置と形状*/
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #666;
+      border-radius: 50%;
+    }
+    @include sp {
+      padding-bottom: 4rem;
+    }
+    .border-line {
+      /*線の位置*/
+      position: absolute;
+      left: 0.25em;
+      top: 0;
+      width: 2px; /*線の太さ*/
+      height: 0; /*はじめは高さを0に*/
+      background: #ccc;
+    }
+  }
+  dl {
+    margin: 0 0 20px 3em;
   }
 }
 
-.timeline dl {
-  margin: 0 0 20px 3em;
-}
-
 /*絶対配置で線を設定*/
-.border-line {
-  /*線の位置*/
-  position: absolute;
-  left: 0.25em;
-  top: 0;
-  width: 2px; /*線の太さ*/
-  height: 0; /*はじめは高さを0に*/
-  background: #ccc;
-}
-
-/*タイムラインの見出し横の丸の位置と形状*/
-.timeline li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background: #666;
-  border-radius: 50%;
-}
