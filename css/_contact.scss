@@ -1,6 +1,5 @@
 #contact {
   position: relative;
-
   .contact-mainvisual {
     @include mainvisual("../images/contact-img.png");
     .contact-mainvisual-box {
@@ -13,7 +12,6 @@
       @include bg-text-even();
     }
   }
-  margin-bottom: 0;
   .contact-box {
     margin: 4.6rem 0;
     display: flex;
@@ -89,7 +87,6 @@
     }
     .form-box-right {
       z-index: 20;
-
       font-size: 4.4rem;
       line-height: 6.6rem;
       span {
@@ -108,7 +105,6 @@
     display: flex;
     flex-direction: column;
     font-family: $english;
-
     input {
       width: 40rem;
       background-color: #fff;
@@ -159,7 +155,6 @@
     z-index: 0;
     background-color: #f7f7f7;
     position: absolute;
-
     @include sp {
       height: 12rem;
     }
@@ -169,7 +164,7 @@
     }
     &2 {
       left: 0;
-      top: 67%;
+      top: 68.4%;
     }
   }
 }
