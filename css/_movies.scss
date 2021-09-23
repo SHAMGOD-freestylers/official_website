@@ -12,7 +12,6 @@
   }
   .movie-contents {
     @include tab {
-      margin: 0 11rem;
     }
     @include sp {
       margin: 0;

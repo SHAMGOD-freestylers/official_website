@@ -602,7 +602,8 @@ template {
 
 @media (max-width: 768px) {
   .container main section .contents {
-    padding: 0 3rem;
+    padding: 0 11rem;
+    text-align: center;
   }
 }
 
@@ -612,6 +613,12 @@ template {
   font-size: 14rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .bg-text {
+    font-size: 9rem;
+  }
 }
 
 header {
@@ -852,6 +859,12 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  #message .message-box {
+    display: inherit;
+  }
+}
+
 #message .message-box_left {
   z-index: 20;
   font-size: 4.4rem;
@@ -859,7 +872,24 @@ header nav a:hover {
   padding: 0 7.3rem;
 }
 
+@media (max-width: 768px) {
+  #message .message-box_left {
+    z-index: 20;
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+}
+
 @media (max-width: 480px) {
+  #message .message-box_left {
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
   #message .message-box_left {
     font-size: 2.7rem;
     margin-bottom: 5rem;
@@ -945,12 +975,6 @@ header nav a:hover {
   #movies .bg-text-even_movies {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #movies .movie-contents {
-    margin: 0 11rem;
   }
 }
 
