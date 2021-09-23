@@ -1,23 +1,16 @@
-@import "layout";
-@import "variables";
-
-.faq-mainvisual {
-  @include mainvisual("../images/faq-img.png");
-
-  .faq-mainvisual-box {
-    @include mainvisual-box($dark-red) // padding-top: 26.7rem;
-;
-  }
-}
-.bg-text-even_faq {
-  @include bg-text-even(75%);
-  @include sp {
-    @include bg-text-even(60%);
-  }
-}
-
 #faq {
+  .faq-mainvisual {
+    @include mainvisual("../images/faq-img.png");
+    .faq-mainvisual-box {
+      @include mainvisual-box($dark-red);
+    }
+  }
+  .bg-text-even_faq {
+    @include bg-text-even();
+  }
+
   .faq-main {
+    //contents
     width: 100%;
     margin-bottom: 14rem;
 
@@ -39,7 +32,7 @@
         padding: 6rem 0;
         margin: 6rem 0;
       }
-      .faq-question {
+      &-question {
         display: flex;
         font-size: 2.4rem;
         margin-right: 3.6rem;
@@ -55,7 +48,7 @@
           }
         }
       }
-      .faq-answer {
+      &-answer {
         margin-top: 4.2rem;
         display: flex;
         font-size: 1.4rem;
@@ -71,7 +64,7 @@
         }
       }
       &:nth-child(even) {
-        margin-left: 40rem;
+        margin-left: auto;
         @include sp {
           margin: 0;
         }

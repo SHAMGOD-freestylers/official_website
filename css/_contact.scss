@@ -1,141 +1,170 @@
-@import "layout";
-@import "variables";
-
-.contact-mainvisual {
-  @include mainvisual("../images/contact-img.png");
-  .contact-mainvisual-box {
-    @include mainvisual-box(#818284);
-  }
-}
-.bg-text-even_contact {
-  @include bg-text-even(36%);
-  @include sp {
-    @include bg-text-even(0%);
-  }
-}
 #contact {
-  margin-bottom: 0;
-}
-.contact-box {
-  margin-top: 4.3rem;
-  padding: 0 7.9rem;
-  display: flex;
-  font-family: $japanese;
-  @include sp {
-    padding: 0;
-    display: block;
-  }
-  &-left {
-    margin-top: 9rem;
-    font-size: 4.4rem;
-    line-height: 6.6rem;
-    span {
-      color: white;
-      background-color: #000000;
-    }
-    @include sp {
-      font-size: 4.2rem;
+  position: relative;
+  .contact-mainvisual {
+    @include mainvisual("../images/contact-img.png");
+    .contact-mainvisual-box {
+      @include mainvisual-box(#818284);
     }
   }
-  &-right {
-    margin-left: 7.3rem;
-    font-size: 1.4rem;
-    line-height: 3rem;
+  .bg-text-even_contact {
+    @include bg-text-even();
     @include sp {
-      margin: 0;
-      margin-top: 2rem;
+      @include bg-text-even();
     }
-    &-text {
-      text-align: left;
-      padding-top: 4.3rem;
-      .contact-dot {
-        vertical-align: middle;
+  }
+  .contact-box {
+    margin: 4.6rem 0;
+    display: flex;
+
+    font-family: $japanese;
+    @include sp {
+      padding: 0;
+      display: block;
+    }
+    &-left {
+      z-index: 20;
+      margin-top: 9rem;
+      font-size: 4.4rem;
+      line-height: 6.6rem;
+      span {
+        color: white;
+        background-color: #000000;
+      }
+      @include sp {
+        font-size: 4.2rem;
       }
     }
-    // btn
-    .contact-box-right-btn {
-      margin-top: 2.4rem;
-      margin-bottom: 4rem;
-      width: 26.579rem;
-      height: 9.1rem;
-      cursor: pointer;
-    }
-  }
-}
-
-// form
-.form-box {
-  padding: 0;
-  position: relative;
-  @include sp {
-    position: static;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 3rem;
-  }
-  .form-box-left {
-    max-width: 82rem;
-    height: 64rem;
-    padding: 8rem 8.1rem 13rem;
-    background-color: #f7f7f7;
-    @include sp {
-      height: 45rem;
-      padding: 2rem;
-    }
-    p {
-      margin-bottom: 3.75rem;
+    &-right {
+      z-index: 20;
+      margin-left: 7.3rem;
       font-size: 1.4rem;
+      line-height: 3rem;
+      @include sp {
+        margin: 0;
+        margin-top: 2rem;
+      }
+      &-text {
+        text-align: left;
+        padding-top: 4.3rem;
+        .contact-dot {
+          vertical-align: middle;
+        }
+      }
+      // btn
+      .contact-box-right-btn {
+        margin-top: 2.4rem;
+        margin-bottom: 4rem;
+        width: 26.579rem;
+        height: 9.1rem;
+        cursor: pointer;
+      }
     }
   }
-  .highlight-text {
-    @include highlight-text(50%);
-  }
-}
-form {
-  display: flex;
-  flex-direction: column;
-  font-family: $english;
-  padding-right: 33.9rem;
-  input {
-    width: 40rem;
-    background-color: #fff;
-    padding-left: 1.2rem;
-    height: 2.4rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    &::placeholder {
-      color: #bebebe;
-    }
-    @include sp {
-      width: 20rem;
-    }
-  }
-  textarea {
-    width: 40rem;
-    background-color: #fff;
-    padding-left: 1.2rem;
-    padding-top: 1.4rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    resize: none;
-    &::placeholder {
-      color: #bebebe;
-    }
-    @include sp {
-      width: 20rem;
-    }
-  }
-  .submit {
-    font-size: 2rem;
+
+  // form
+  .form-box {
     padding: 0;
-    margin: 0;
-    width: 10rem;
-    height: 5rem;
-    text-align: center;
-    color: white;
-    border-radius: 0%;
-    background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%) 0%
-      0% no-repeat padding-box;
-    opacity: 0.86;
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+      position: static;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 3rem;
+    }
+    .form-box-left {
+      z-index: 20;
+
+      padding: 8rem 0 13rem;
+      @include sp {
+        height: 45rem;
+        padding: 2rem;
+      }
+      p {
+        margin-bottom: 3.75rem;
+        font-size: 1.4rem;
+      }
+    }
+    .form-box-right {
+      z-index: 20;
+      font-size: 4.4rem;
+      line-height: 6.6rem;
+      span {
+        color: white;
+        background-color: #000000;
+      }
+      @include sp {
+        position: static;
+        line-height: 5rem;
+        width: 40rem !important;
+        font-size: 3rem;
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: $english;
+    input {
+      width: 40rem;
+      background-color: #fff;
+      padding-left: 1.2rem;
+      height: 2.4rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      &::placeholder {
+        color: #bebebe;
+      }
+      @include sp {
+        width: 20rem;
+      }
+    }
+    textarea {
+      width: 40rem;
+      background-color: #fff;
+      padding-left: 1.2rem;
+      padding-top: 1.4rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      resize: none;
+      &::placeholder {
+        color: #bebebe;
+      }
+      @include sp {
+        width: 20rem;
+      }
+    }
+    .submit {
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+      width: 10rem;
+      height: 5rem;
+      text-align: center;
+      color: white;
+      border-radius: 0%;
+      background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%)
+        0% 0% no-repeat padding-box;
+      opacity: 0.86;
+    }
+  }
+  .contact-bgc {
+    //   背景色重ね
+    height: 64rem;
+    width: 82rem;
+    z-index: 0;
+    background-color: #f7f7f7;
+    position: absolute;
+    @include sp {
+      height: 12rem;
+    }
+    &1 {
+      top: 28.5%;
+      right: 0;
+    }
+    &2 {
+      left: 0;
+      top: 68.4%;
+    }
   }
 }

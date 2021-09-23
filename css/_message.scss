@@ -1,12 +1,5 @@
-@import "layout";
-@import "variables";
-
-.bg-text {
-  @include bg-text;
-}
 #message {
   position: relative;
-
   .message-box {
     display: flex;
     padding-top: 8.4rem;
@@ -14,27 +7,19 @@
     @include sp {
       display: block;
     }
-    .message-box_left {
+    &_left {
+      z-index: 20;
       font-size: 4.4rem;
       line-height: 1.5;
-      z-index: 20;
-      padding-left: 0 !important;
-      .message-concept {
-        width: 50rem;
-      }
+      padding: 0 7.3rem;
       @include sp {
         font-size: 2.7rem;
         margin-bottom: 5rem;
-      }
-
-      padding: 0 7.3rem;
-      @include sp {
         padding: 0;
       }
     }
-    .message-box_right {
+    &_right {
       z-index: 20;
-
       font-weight: bold;
       font-size: 1.4rem;
       line-height: 2.8rem;

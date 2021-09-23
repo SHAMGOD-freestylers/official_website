@@ -1,31 +1,21 @@
-@import "variables";
-@import "layout";
-// 背景文字
-.bg-text {
-  @include bg-text;
-}
 #news {
   .news-container {
     font-family: $japanese;
     display: flex;
+    justify-content: space-between;
     padding-top: 13rem;
     @include sp {
       display: block;
     }
     .news-box {
       z-index: 20;
-
-      margin-left: 7rem;
-      @include sp{
-        margin: 0 3rem 5rem;
-      }
       &:first-child {
-        margin-left: 7.2rem;
-        @include sp{
-
-        margin: 0 3rem 5rem;
-
+        @include sp {
+          margin: 0 3rem 5rem;
         }
+      }
+      @include sp {
+        margin: 0 3rem 5rem;
       }
       img {
         height: 20.7rem;
@@ -33,10 +23,9 @@
       }
       .news-text-box {
         font-weight: bold;
-        @include sp{
-          max-width: 29.5rem
+        @include sp {
+          max-width: 29.5rem;
         }
-
         .news-text_sub {
           padding-top: 2.45rem;
           display: flex;
@@ -49,20 +38,19 @@
           font-size: 1.8rem;
         }
       }
+      .news-btn-box {
+        margin-left: auto;
+        text-align: center;
+        margin-top: 3.9rem;
+        line-height: 40px;
+        width: 14rem;
+        font-weight: bold;
+        font-size: 3rem;
+        height: 5rem;
+        cursor: pointer;
+      }
     }
   }
-}
-.news-btn-box {
-  margin-left: auto;
-  text-align: center;
-  margin-top: 3.9rem;
-  line-height: 40px;
-  width: 14rem;
-  font-weight: bold;
-  font-size: 3rem;
-  height: 5rem;
-  cursor: pointer;
-  
 }
 
 .news-btn {

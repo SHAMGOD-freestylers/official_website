@@ -1,94 +1,87 @@
-@import "layout";
-@import "variables";
-.movies-mainvisual {
-  @include mainvisual("../images/movies-img.png");
-  .movies-mainvisual-box {
-    @include mainvisual-box(#801617);
-  }
-}
-.bg-text-even_movies {
-  @include bg-text-even(46.3%);
-  @include sp {
-    @include bg-text-even(16%);
-  }
-}
-.movie-contents {
-  margin-left: 11.3rem;
-  @include sp {
-    margin: 0;
-  }
-}
-.movie-main {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 7.6rem;
-  @include sp {
-    flex-direction: column;
-    justify-content: center;
+#movies {
+  font-family: $japanese;
 
-    margin: 0 3rem;
+  .movies-mainvisual {
+    @include mainvisual("../images/movies-img.png");
+    .movies-mainvisual-box {
+      @include mainvisual-box(#801617);
+    }
   }
-  .movies-box {
-    margin-bottom: 5rem;
+  .bg-text-even_movies {
+    @include bg-text-even();
+  }
+  .movie-contents {
+    @include tab {
+      margin: 0 11rem;
+    }
     @include sp {
-      width: 100%;
+      margin: 0;
     }
-    iframe {
-      width: 100%;
-      @include sp {
-        height: 19rem;
-      }
-    }
-
-    &:nth-child(2) {
-      margin-left: 5.4rem;
-      @include tab {
-        margin: 0;
-      }
-    }
-    &:nth-child(3) {
-      margin-top: 6rem;
-      // margin-left: 5.4rem;
-    }
-    &:nth-child(4) {
-      margin-top: 6rem;
-      margin-left: 5.4rem;
-      @include tab {
-        margin: 0;
-      }
-    }
-
-    .movies-text-box {
+    .movie-main {
       display: flex;
-      font-family: $japanese;
-      flex-direction: column;
-      justify-content: center;
-      width: 48rem;
-      height: 16.35rem;
-      text-align: center;
-      font-weight: bold;
-      background-color: #f4f4f4;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 7.6rem;
       @include sp {
-        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 3rem;
       }
-      .movies-box-text_title {
-        line-height: 2.8rem;
-        font-size: 2rem;
-        font-family: $japanese;
+      .movies-box {
         @include sp {
-          font-size: 1.5rem;
+          width: 100%;
         }
-      }
-      .movies-box-text_subtext {
-        padding-top: 0.7rem;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        padding: 1rem 2.1rem;
+        iframe {
+          width: 100%;
+          @include sp {
+            height: 19rem;
+          }
+        }
+        &:nth-child(2) {
+          @include tab {
+            margin-top: 7rem;
+          }
+        }
+        &:nth-child(3) {
+          margin-top: 7rem;
+        }
+        &:nth-child(4) {
+          margin-top: 7rem;
+          @include tab {
+            margin: 0;
+          }
+        }
 
-        color: $gray;
-        @include sp {
-          width: auto;
-          font-size: 1rem;
+        .movies-text-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 48rem;
+          height: 16.35rem;
+          text-align: center;
+          font-weight: bold;
+          background-color: #f4f4f4;
+          @include sp {
+            max-width: 100%;
+          }
+          .movies-box-text_title {
+            line-height: 2.8rem;
+            font-size: 2rem;
+            @include sp {
+              font-size: 1.5rem;
+            }
+          }
+          .movies-box-text_subtext {
+            padding-top: 0.7rem;
+            font-size: 1.3rem;
+            line-height: 2rem;
+            padding: 1rem 2.1rem;
+            color: $gray;
+            @include sp {
+              width: auto;
+              font-size: 1rem;
+            }
+          }
         }
       }
     }

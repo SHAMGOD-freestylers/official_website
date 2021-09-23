@@ -1,35 +1,24 @@
-@import "variables";
-@import "layout";
-
 #representative {
   position: relative;
   .repsen-box {
-    padding: 0 8.5rem;
+    display: flex;
+    justify-content: space-between;
     margin-top: 14rem;
     padding-bottom: 2rem;
-
     font-family: $japanese;
     line-height: 2.8rem;
     font-size: 1.4rem;
     display: flex;
     @include sp {
-      display: flex;
       flex-direction: column-reverse;
-      padding: 0 3rem;
       margin: 5rem 0;
     }
-    .repsen-text {
+    &-text {
       padding-top: 4.4rem;
     }
     &-right {
-      z-index: 20;
-      margin-left: 5.8rem;
-
       @include sp {
-        margin: 0;
-
         max-width: 100%;
-        // height: auto;
         img {
           max-width: 31.5rem;
           max-height: 46rem;
@@ -38,8 +27,4 @@
       }
     }
   }
-}
-// 背景文字
-.bg-text {
-  @include bg-text;
 }
