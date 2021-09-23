@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden;
-  @include sp {
+  @include tab {
     width: 100%;
     display: block;
   }
@@ -10,7 +10,7 @@
   .side {
     width: 200px;
     font-family: $english;
-    @include sp {
+    @include tab {
       display: none;
     }
     .sticky {
@@ -50,7 +50,7 @@
         }
 
         .facebook-logo {
-          @include sp {
+          @include tab {
             margin: 0;
           }
           img {
@@ -66,7 +66,7 @@
   main {
     width: calc(100% - 200px);
     font-family: $english;
-    @include sp {
+    @include tab {
       width: 100%;
     }
     .section-title {
@@ -76,7 +76,7 @@
       padding-left: 2.4rem;
       font-size: 3rem;
       border-left: thick solid black;
-      @include sp {
+      @include tab {
         font-size: 2rem;
         padding-left: 1.2rem;
       }
@@ -84,7 +84,7 @@
     section {
       margin: 4rem 0 7rem;
       letter-spacing: 1.5px;
-      @include sp {
+      @include tab {
         margin: auto;
         letter-spacing: 1px;
       }
@@ -92,7 +92,7 @@
         padding: 0 3rem;
         max-width: 1100px;
         margin: 0 auto;
-        @include sp {
+        @include tab {
           padding: 0 3rem;
         }
       }
@@ -110,7 +110,7 @@
     z-index: 11;
     position: absolute;
     top: 50%;
-    @include sp {
+    @include tab {
       top: 25%;
     }
   }
@@ -127,7 +127,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    @include sp {
+    @include tab {
       height: 12rem;
     }
   }
@@ -137,7 +137,7 @@
   background-size: cover;
   height: 51rem;
   position: relative;
-  @include sp {
+  @include tab {
     background-repeat: no-repeat;
     background-position: center center;
     height: 0;
@@ -157,7 +157,7 @@
 @mixin bg-text-even() {
   top: 69%;
   right: 0;
-  @include sp {
+  @include tab {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
   }
