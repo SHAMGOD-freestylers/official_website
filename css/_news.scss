@@ -4,15 +4,15 @@
     display: flex;
     justify-content: space-between;
     padding-top: 13rem;
-    @include sp {
-      display: block;
+    @include tab {
+      flex-direction: column;
     }
     .news-box {
       z-index: 20;
+      @include tab {
+        margin: 3rem auto;
+      }
       &:first-child {
-        @include sp {
-          margin: 0 3rem 5rem;
-        }
       }
       @include sp {
         margin: 0 3rem 5rem;

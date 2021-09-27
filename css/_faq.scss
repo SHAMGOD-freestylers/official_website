@@ -25,6 +25,9 @@
       font-family: $japanese;
       line-height: 2.8rem;
       margin-top: 6rem;
+      @include tab {
+        width: auto;
+      }
       @include sp {
         background-color: #fff;
         display: block;

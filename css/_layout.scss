@@ -112,7 +112,7 @@
     position: absolute;
     top: 50%;
     @include tab {
-      top: 25%;
+      top: 55%;
     }
   }
   // 背景色重ね
@@ -124,12 +124,12 @@
     opacity: 0.5;
     background-color: $color;
     position: absolute;
-    top: 53%;
+    top: 56%;
     bottom: 0;
     left: 0;
     right: 0;
     @include tab {
-      height: 12rem;
+      height: 22.7rem;
     }
   }
 }
@@ -164,5 +164,6 @@
   @include tab {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }

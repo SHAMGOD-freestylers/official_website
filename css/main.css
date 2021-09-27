@@ -889,11 +889,13 @@ header nav a:hover {
   }
 }
 
+#message .message-box_left .message-concept {
+  width: 50rem;
+}
+
 @media (max-width: 768px) {
-  #message .message-box_left {
-    font-size: 2.7rem;
-    margin-bottom: 5rem;
-    padding: 0;
+  #message .message-box_left .message-concept {
+    width: auto;
   }
 }
 
@@ -943,7 +945,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #movies .movies-mainvisual .movies-mainvisual-box .section-title {
-    top: 25%;
+    top: 55%;
   }
 }
 
@@ -954,7 +956,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #801617;
   position: absolute;
-  top: 53%;
+  top: 56%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -962,7 +964,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #movies .movies-mainvisual .movies-mainvisual-box::after {
-    height: 12rem;
+    height: 22.7rem;
   }
 }
 
@@ -975,6 +977,7 @@ header nav a:hover {
   #movies .bg-text-even_movies {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }
 
@@ -1009,20 +1012,8 @@ header nav a:hover {
   }
 }
 
-@media (max-width: 480px) {
-  #movies .movie-contents .movie-main .movies-box {
-    width: 100%;
-  }
-}
-
 #movies .movie-contents .movie-main .movies-box iframe {
   width: 100%;
-}
-
-@media (max-width: 480px) {
-  #movies .movie-contents .movie-main .movies-box iframe {
-    height: 19rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1106,9 +1097,12 @@ header nav a:hover {
   padding-top: 13rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #news .news-container {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1116,9 +1110,9 @@ header nav a:hover {
   z-index: 20;
 }
 
-@media (max-width: 480px) {
-  #news .news-container .news-box:first-child {
-    margin: 0 3rem 5rem;
+@media (max-width: 768px) {
+  #news .news-container .news-box {
+    margin: 3rem auto;
   }
 }
 
@@ -1232,7 +1226,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #history .history-mainvisual .history-mainvisual-box .section-title {
-    top: 25%;
+    top: 55%;
   }
 }
 
@@ -1243,7 +1237,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #123a7f;
   position: absolute;
-  top: 53%;
+  top: 56%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1251,7 +1245,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #history .history-mainvisual .history-mainvisual-box::after {
-    height: 12rem;
+    height: 22.7rem;
   }
 }
 
@@ -1264,6 +1258,7 @@ header nav a:hover {
   #history .bg-text-even_history {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }
 
@@ -1434,7 +1429,7 @@ header nav a:hover {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #representative .repsen-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1490,7 +1485,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #faq .faq-mainvisual .faq-mainvisual-box .section-title {
-    top: 25%;
+    top: 55%;
   }
 }
 
@@ -1501,7 +1496,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #8d2659;
   position: absolute;
-  top: 53%;
+  top: 56%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1509,7 +1504,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #faq .faq-mainvisual .faq-mainvisual-box::after {
-    height: 12rem;
+    height: 22.7rem;
   }
 }
 
@@ -1522,6 +1517,7 @@ header nav a:hover {
   #faq .bg-text-even_faq {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }
 
@@ -1550,6 +1546,12 @@ header nav a:hover {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  #faq .faq-main .faq-box {
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1654,7 +1656,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #contact .contact-mainvisual .contact-mainvisual-box .section-title {
-    top: 25%;
+    top: 55%;
   }
 }
 
@@ -1665,7 +1667,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #818284;
   position: absolute;
-  top: 53%;
+  top: 56%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1673,7 +1675,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   #contact .contact-mainvisual .contact-mainvisual-box::after {
-    height: 12rem;
+    height: 22.7rem;
   }
 }
 
@@ -1686,6 +1688,7 @@ header nav a:hover {
   #contact .bg-text-even_contact {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }
 
@@ -1700,6 +1703,7 @@ header nav a:hover {
   #contact .bg-text-even_contact {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }
 
@@ -1945,7 +1949,7 @@ footer {
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   height: 8.2rem;
-  line-height: 6rem;
+  line-height: 8.2rem;
   width: 100%;
   background-color: black;
 }

@@ -9,7 +9,7 @@
     line-height: 2.8rem;
     font-size: 1.4rem;
     display: flex;
-    @include sp {
+    @include tab {
       flex-direction: column-reverse;
       margin: 5rem 0;
     }
