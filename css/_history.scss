@@ -44,6 +44,8 @@
         flex-direction: column-reverse;
       }
       img {
+        width: 49rem;
+        min-height: 31rem;
         padding-bottom: 7.5rem;
       }
     }
@@ -58,6 +60,8 @@
       }
       img {
         padding-bottom: 7.5rem;
+        width: 49rem;
+        min-height: 31rem;
         @include tab {
           padding: 0;
         }
@@ -85,7 +89,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: -0.1px;
       width: 10px;
       height: 10px;
       background: black;
@@ -95,11 +99,11 @@
     .border-line {
       /*線の位置*/
       position: absolute;
-      left: 0.25em;
+      left: 0.26em;
       top: 0;
       width: 2px; /*線の太さ*/
       height: 0; /*はじめは高さを0に*/
-      background: #ccc;
+      background: #666;
     }
   }
   dl {

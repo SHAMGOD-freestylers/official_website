@@ -67,6 +67,13 @@
           }
         }
       }
+      img {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
     }
   }
   // main

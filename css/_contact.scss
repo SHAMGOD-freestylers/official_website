@@ -58,6 +58,10 @@
         width: 26.579rem;
         height: 9.1rem;
         cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
       }
     }
   }
@@ -153,6 +157,10 @@
       border-radius: 0%;
       background-color: #c10305;
       opacity: 0.86;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+      }
       img {
         margin-bottom: 0.2rem;
         margin-left: 2.3rem;

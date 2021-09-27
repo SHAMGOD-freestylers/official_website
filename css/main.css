@@ -567,6 +567,13 @@ template {
   transition: 0.3s;
 }
 
+.container .side .sticky img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .container main {
   width: calc(100% - 200px);
   font-family: "Alfa Slab One", cursive;
@@ -1348,6 +1355,8 @@ header nav a:hover {
 }
 
 #history .history-main_left img {
+  width: 49rem;
+  min-height: 31rem;
   padding-bottom: 7.5rem;
 }
 
@@ -1372,6 +1381,8 @@ header nav a:hover {
 
 #history .history-main_right img {
   padding-bottom: 7.5rem;
+  width: 49rem;
+  min-height: 31rem;
 }
 
 @media (max-width: 768px) {
@@ -1407,7 +1418,7 @@ header nav a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -0.1px;
   width: 10px;
   height: 10px;
   background: black;
@@ -1417,13 +1428,13 @@ header nav a:hover {
 .timeline li .border-line {
   /*線の位置*/
   position: absolute;
-  left: 0.25em;
+  left: 0.26em;
   top: 0;
   width: 2px;
   /*線の太さ*/
   height: 0;
   /*はじめは高さを0に*/
-  background: #ccc;
+  background: #666;
 }
 
 .timeline dl {
@@ -1801,6 +1812,12 @@ header nav a:hover {
   cursor: pointer;
 }
 
+#contact .contact-box-right .contact-box-right-btn:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #contact .form-box {
   margin-top: 7rem;
   padding: 0;
@@ -1959,6 +1976,12 @@ header nav a:hover {
   border-radius: 0%;
   background-color: #c10305;
   opacity: 0.86;
+}
+
+#contact form .submit:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #contact form .submit img {
