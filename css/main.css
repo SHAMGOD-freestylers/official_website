@@ -589,7 +589,7 @@ template {
   font-weight: bold;
   letter-spacing: 0.1em;
   margin-left: 10rem;
-  margin-top: 9rem;
+  margin-top: 8rem;
   padding-left: 2.4rem;
   font-size: 3rem;
   border-left: thick solid black;
@@ -603,7 +603,7 @@ template {
 }
 
 .container main section {
-  margin: 4rem 0 7rem;
+  margin: 0 0 7rem;
   letter-spacing: 1.5px;
 }
 
@@ -617,7 +617,7 @@ template {
 .container main section .contents {
   padding: 0 3rem;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 8rem auto;
 }
 
 @media (max-width: 768px) {
@@ -871,7 +871,6 @@ header nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8.4rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -936,6 +935,10 @@ header nav a:hover {
   color: #c10305;
 }
 
+#message .message-box_right .message-text:last-child {
+  padding-bottom: 0;
+}
+
 #movies {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -997,7 +1000,7 @@ header nav a:hover {
 
 #movies .bg-text-even_movies {
   top: 69%;
-  right: 0;
+  right: -1rem;
 }
 
 @media (max-width: 768px) {
@@ -1121,7 +1124,7 @@ header nav a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 13rem;
+  padding-top: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -1199,9 +1202,9 @@ header nav a:hover {
 
 .news-btn {
   display: inline-block;
-  background: black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  background: #c10305;
+  border-top: 3px solid #c10305;
+  border-bottom: 3px solid #c10305;
   color: white;
   font-size: 1.4rem;
   padding: 1.5rem;
@@ -1288,7 +1291,7 @@ header nav a:hover {
 
 #history .bg-text-even_history {
   top: 69%;
-  right: 0;
+  right: -1rem;
 }
 
 @media (max-width: 768px) {
@@ -1302,7 +1305,6 @@ header nav a:hover {
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
-  padding-top: 8.5rem;
   line-height: 2.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1319,24 +1321,24 @@ header nav a:hover {
   }
 }
 
-#history .history-main-text {
-  padding-bottom: 4rem;
-}
-
-#history .history-main-text:nth-child(3) {
-  padding-bottom: 11.2rem;
-}
-
-@media (max-width: 768px) {
-  #history .history-main-text:nth-child(3) {
-    padding-bottom: 4rem;
-  }
-}
-
 #history .history-main_left {
   width: 48rem;
   text-align: right;
   padding-top: 4.8rem;
+}
+
+#history .history-main_left-text {
+  padding-bottom: 4rem;
+}
+
+#history .history-main_left-text:nth-child(3) {
+  padding-bottom: 11.2rem;
+}
+
+@media (max-width: 768px) {
+  #history .history-main_left-text:nth-child(3) {
+    padding-bottom: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1363,6 +1365,14 @@ header nav a:hover {
 #history .history-main_right {
   text-align: left;
   width: 48rem;
+}
+
+#history .history-main_right-text {
+  padding-bottom: 4rem;
+}
+
+#history .history-main_right-text:last-child {
+  padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -1548,7 +1558,7 @@ header nav a:hover {
 
 #faq .bg-text-even_faq {
   top: 69%;
-  right: 0;
+  right: -1rem;
 }
 
 @media (max-width: 768px) {
@@ -1561,7 +1571,6 @@ header nav a:hover {
 
 #faq .faq-main {
   width: 100%;
-  margin-bottom: 14rem;
 }
 
 #faq .faq-main .faq-box {
@@ -1584,6 +1593,10 @@ header nav a:hover {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   margin-top: 6rem;
+}
+
+#faq .faq-main .faq-box:first-child {
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -1721,7 +1734,7 @@ header nav a:hover {
 
 #contact .bg-text-even_contact {
   top: 69%;
-  right: 0;
+  right: -1rem;
 }
 
 @media (max-width: 768px) {
@@ -1735,7 +1748,7 @@ header nav a:hover {
 @media (max-width: 480px) {
   #contact .bg-text-even_contact {
     top: 69%;
-    right: 0;
+    right: -1rem;
   }
 }
 
@@ -1748,7 +1761,6 @@ header nav a:hover {
 }
 
 #contact .contact-box {
-  margin-top: 2.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1800,6 +1812,14 @@ header nav a:hover {
   padding-top: 3.6rem;
 }
 
+#contact .contact-box-right-text:first-child {
+  padding-top: 0;
+}
+
+#contact .contact-box-right-text:nth-child(2) {
+  color: #c10305;
+}
+
 #contact .contact-box-right-text .contact-dot {
   vertical-align: middle;
 }
@@ -1845,7 +1865,7 @@ header nav a:hover {
 
 #contact .form-box .form-box-left {
   z-index: 20;
-  padding: 8rem 0 4rem;
+  padding: 8rem 0 0;
 }
 
 @media (max-width: 480px) {
@@ -1894,12 +1914,11 @@ header nav a:hover {
 }
 
 #contact form input {
-  width: 40rem;
+  width: 50rem;
   background-color: #fff;
   padding-left: 1.2rem;
   height: 4.8rem;
   margin-bottom: 2rem;
-  border-radius: 8px;
 }
 
 #contact form input::-webkit-input-placeholder {
@@ -1929,12 +1948,11 @@ header nav a:hover {
 }
 
 #contact form textarea {
-  width: 40rem;
+  width: 50rem;
   background-color: #fff;
   padding-left: 1.2rem;
   padding-top: 1.4rem;
   margin-bottom: 3.8rem;
-  border-radius: 8px;
   resize: none;
 }
 
@@ -1990,7 +2008,7 @@ header nav a:hover {
 }
 
 #contact .contact-bgc {
-  height: 64rem;
+  height: 62rem;
   width: 82rem;
   z-index: 0;
   background-color: #f7f7f7;
@@ -2004,13 +2022,13 @@ header nav a:hover {
 }
 
 #contact .contact-bgc1 {
-  top: 28.4%;
+  top: 28.8%;
   right: 0;
 }
 
 #contact .contact-bgc2 {
   left: 0;
-  top: 68.2%;
+  top: 69.5%;
 }
 
 footer {

@@ -2,7 +2,6 @@
   position: relative;
   .message-box {
     display: flex;
-    padding-top: 8.4rem;
     font-family: $japanese;
     @include sp {
       display: block;
@@ -42,6 +41,9 @@
         padding-bottom: 3rem;
         &:nth-child(3) {
           color: #c10305;
+        }
+        &:last-child {
+          padding-bottom: 0;
         }
       }
     }

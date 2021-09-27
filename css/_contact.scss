@@ -13,7 +13,6 @@
     }
   }
   .contact-box {
-    margin-top: 2.6rem;
     display: flex;
 
     font-family: $japanese;
@@ -47,6 +46,12 @@
       &-text {
         text-align: left;
         padding-top: 3.6rem;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:nth-child(2) {
+          color: #c10305;
+        }
         .contact-dot {
           vertical-align: middle;
         }
@@ -81,7 +86,7 @@
     .form-box-left {
       z-index: 20;
 
-      padding: 8rem 0 4rem;
+      padding: 8rem 0 0;
       @include sp {
         height: 45rem;
         padding: 2rem;
@@ -115,12 +120,11 @@
     flex-direction: column;
     font-family: $english;
     input {
-      width: 40rem;
+      width: 50rem;
       background-color: #fff;
       padding-left: 1.2rem;
       height: 4.8rem;
       margin-bottom: 2rem;
-      border-radius: 8px;
       &::placeholder {
         color: #bebebe;
         font-size: 1.6rem;
@@ -130,12 +134,11 @@
       }
     }
     textarea {
-      width: 40rem;
+      width: 50rem;
       background-color: #fff;
       padding-left: 1.2rem;
       padding-top: 1.4rem;
       margin-bottom: 3.8rem;
-      border-radius: 8px;
       resize: none;
       &::placeholder {
         color: #bebebe;
@@ -169,7 +172,7 @@
   }
   .contact-bgc {
     //   背景色重ね
-    height: 64rem;
+    height: 62rem;
     width: 82rem;
     z-index: 0;
     background-color: #f7f7f7;
@@ -178,12 +181,12 @@
       height: 12rem;
     }
     &1 {
-      top: 28.4%;
+      top: 28.8%;
       right: 0;
     }
     &2 {
       left: 0;
-      top: 68.2%;
+      top: 69.5%;
     }
   }
 }

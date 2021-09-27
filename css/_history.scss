@@ -14,7 +14,6 @@
     //contents
     font-family: $japanese;
     font-size: 1.4rem;
-    padding-top: 8.5rem;
     line-height: 2.8rem;
     display: flex;
     justify-content: space-between;
@@ -23,19 +22,20 @@
       display: block;
     }
 
-    &-text {
-      padding-bottom: 4rem;
-      &:nth-child(3) {
-        padding-bottom: 11.2rem;
-        @include tab {
-          padding-bottom: 4rem;
-        }
-      }
-    }
     &_left {
       width: 48rem;
       text-align: right;
       padding-top: 4.8rem;
+      &-text {
+        padding-bottom: 4rem;
+
+        &:nth-child(3) {
+          padding-bottom: 11.2rem;
+          @include tab {
+            padding-bottom: 4rem;
+          }
+        }
+      }
       @include tab {
         width: auto;
         padding: 0 4rem;
@@ -52,6 +52,12 @@
     &_right {
       text-align: left;
       width: 48rem;
+      &-text {
+        padding-bottom: 4rem;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
       @include tab {
         width: auto;
         padding: 0 4rem;
