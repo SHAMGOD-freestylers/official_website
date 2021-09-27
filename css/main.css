@@ -544,6 +544,12 @@ template {
   margin-right: 1.2rem;
 }
 
+.container .side .sticky .side-icon i:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @media (max-width: 768px) {
   .container .side .sticky .side-icon .facebook-logo {
     margin: 0;
@@ -553,6 +559,12 @@ template {
 .container .side .sticky .side-icon .facebook-logo img {
   height: 2rem;
   width: 2rem;
+}
+
+.container .side .sticky .side-icon .facebook-logo:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container main {
@@ -568,7 +580,8 @@ template {
 
 .container main .section-title {
   font-weight: bold;
-  margin-left: 2.4rem;
+  letter-spacing: 0.1em;
+  margin-left: 10rem;
   margin-top: 9rem;
   padding-left: 2.4rem;
   font-size: 3rem;
@@ -814,6 +827,8 @@ header nav a {
 
 header nav a:hover {
   opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -869,7 +884,7 @@ header nav a:hover {
   z-index: 20;
   font-size: 4.4rem;
   line-height: 1.5;
-  padding: 0 7.3rem;
+  padding-right: 7.9rem;
 }
 
 @media (max-width: 768px) {
@@ -908,6 +923,10 @@ header nav a:hover {
 
 #message .message-box_right .message-text {
   padding-bottom: 3rem;
+}
+
+#message .message-box_right .message-text:nth-child(3) {
+  color: #c10305;
 }
 
 #movies {
@@ -956,7 +975,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #801617;
   position: absolute;
-  top: 56%;
+  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -965,6 +984,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   #movies .movies-mainvisual .movies-mainvisual-box::after {
     height: 22.7rem;
+    top: 56%;
   }
 }
 
@@ -1086,7 +1106,7 @@ header nav a:hover {
   }
 }
 
-#news .news-container {
+#news .news-box-container {
   font-family: "Noto Sans JP", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1098,7 +1118,7 @@ header nav a:hover {
 }
 
 @media (max-width: 768px) {
-  #news .news-container {
+  #news .news-box-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1106,38 +1126,44 @@ header nav a:hover {
   }
 }
 
-#news .news-container .news-box {
+#news .news-box-container .news-box {
   z-index: 20;
 }
 
+#news .news-box-container .news-box:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @media (max-width: 768px) {
-  #news .news-container .news-box {
+  #news .news-box-container .news-box {
     margin: 3rem auto;
   }
 }
 
 @media (max-width: 480px) {
-  #news .news-container .news-box {
+  #news .news-box-container .news-box {
     margin: 0 3rem 5rem;
   }
 }
 
-#news .news-container .news-box img {
+#news .news-box-container .news-box img {
   height: 20.7rem;
   width: 30.46rem;
 }
 
-#news .news-container .news-box .news-text-box {
+#news .news-box-container .news-box .news-text-box {
   font-weight: bold;
 }
 
 @media (max-width: 480px) {
-  #news .news-container .news-box .news-text-box {
+  #news .news-box-container .news-box .news-text-box {
     max-width: 29.5rem;
   }
 }
 
-#news .news-container .news-box .news-text-box .news-text_sub {
+#news .news-box-container .news-box .news-text-box .news-text_sub {
   padding-top: 2.45rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1149,31 +1175,29 @@ header nav a:hover {
   font-size: 1.2rem;
 }
 
-#news .news-container .news-box .news-text-box .news-text_title {
+#news .news-box-container .news-box .news-text-box .news-text_title {
   padding-top: 1rem;
   font-size: 1.8rem;
 }
 
-#news .news-container .news-box .news-btn-box {
-  margin-left: auto;
+#news .news-btn-box {
   text-align: center;
-  margin-top: 3.9rem;
-  line-height: 40px;
-  width: 14rem;
-  font-weight: bold;
-  font-size: 3rem;
-  height: 5rem;
+  font-size: 1.4rem;
+  width: 16rem;
+  padding: rem;
+  margin-top: 4rem;
+  margin-left: auto;
   cursor: pointer;
 }
 
 .news-btn {
-  display: block;
+  display: inline-block;
   background: black;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   color: white;
   font-size: 1.4rem;
-  font-weight: bold;
+  padding: 1.5rem;
   -webkit-box-shadow: 0px 0px 0px 1px white inset;
           box-shadow: 0px 0px 0px 1px white inset;
   -webkit-transition: all 0.5s ease;
@@ -1187,6 +1211,11 @@ header nav a:hover {
   border-bottom: 3px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px white;
           box-shadow: 0px 0px 0px 1px white;
+}
+
+.news-btn img {
+  margin-bottom: 0.3rem;
+  margin-left: 0.5rem;
 }
 
 #history .history-mainvisual {
@@ -1237,7 +1266,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #123a7f;
   position: absolute;
-  top: 56%;
+  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1246,6 +1275,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   #history .history-mainvisual .history-mainvisual-box::after {
     height: 22.7rem;
+    top: 56%;
   }
 }
 
@@ -1276,7 +1306,7 @@ header nav a:hover {
   position: relative;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #history .history-main {
     display: block;
   }
@@ -1290,7 +1320,7 @@ header nav a:hover {
   padding-bottom: 11.2rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #history .history-main-text:nth-child(3) {
     padding-bottom: 4rem;
   }
@@ -1302,8 +1332,9 @@ header nav a:hover {
   padding-top: 4.8rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #history .history-main_left {
+    width: auto;
     padding: 0 4rem;
     text-align: left;
     display: -webkit-box;
@@ -1320,19 +1351,14 @@ header nav a:hover {
   padding-bottom: 7.5rem;
 }
 
-@media (max-width: 480px) {
-  #history .history-main_left img {
-    max-width: 34rem;
-  }
-}
-
 #history .history-main_right {
   text-align: left;
   width: 48rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #history .history-main_right {
+    width: auto;
     padding: 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1348,9 +1374,8 @@ header nav a:hover {
   padding-bottom: 7.5rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #history .history-main_right img {
-    max-width: 34rem;
     padding: 0;
   }
 }
@@ -1362,9 +1387,10 @@ header nav a:hover {
   margin-top: 6rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .timeline {
-    top: 22%;
+    top: 26%;
+    left: 10.5%;
     padding: 0;
   }
 }
@@ -1384,14 +1410,8 @@ header nav a:hover {
   left: 0;
   width: 10px;
   height: 10px;
-  background: #666;
+  background: black;
   border-radius: 50%;
-}
-
-@media (max-width: 480px) {
-  .timeline li {
-    padding-bottom: 4rem;
-  }
 }
 
 .timeline li .border-line {
@@ -1454,6 +1474,12 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 480px) and (max-width: 768px) {
+  #representative .repsen-box-right img {
+    height: auto;
+  }
+}
+
 #faq .faq-mainvisual {
   background-image: url("../images/faq-img.png");
   background-size: cover;
@@ -1496,7 +1522,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #8d2659;
   position: absolute;
-  top: 56%;
+  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1505,6 +1531,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   #faq .faq-mainvisual .faq-mainvisual-box::after {
     height: 22.7rem;
+    top: 56%;
   }
 }
 
@@ -1541,8 +1568,8 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 25rem;
   width: 63rem;
+  padding: 5rem 6rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
   margin-top: 6rem;
@@ -1569,7 +1596,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   font-size: 2.4rem;
-  margin-right: 3.6rem;
+  margin-right: auto;
 }
 
 @media (max-width: 480px) {
@@ -1596,6 +1623,7 @@ header nav a:hover {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
+  margin-right: auto;
 }
 
 #faq .faq-main .faq-box-answer-a {
@@ -1667,7 +1695,7 @@ header nav a:hover {
   opacity: 0.5;
   background-color: #818284;
   position: absolute;
-  top: 56%;
+  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1676,6 +1704,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   #contact .contact-mainvisual .contact-mainvisual-box::after {
     height: 22.7rem;
+    top: 56%;
   }
 }
 
@@ -1708,7 +1737,7 @@ header nav a:hover {
 }
 
 #contact .contact-box {
-  margin: 4.6rem 0;
+  margin-top: 2.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1732,6 +1761,7 @@ header nav a:hover {
 #contact .contact-box-left span {
   color: white;
   background-color: #000000;
+  padding: 0 1rem;
 }
 
 @media (max-width: 480px) {
@@ -1756,7 +1786,7 @@ header nav a:hover {
 
 #contact .contact-box-right-text {
   text-align: left;
-  padding-top: 4.3rem;
+  padding-top: 3.6rem;
 }
 
 #contact .contact-box-right-text .contact-dot {
@@ -1772,6 +1802,7 @@ header nav a:hover {
 }
 
 #contact .form-box {
+  margin-top: 7rem;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1797,7 +1828,7 @@ header nav a:hover {
 
 #contact .form-box .form-box-left {
   z-index: 20;
-  padding: 8rem 0 13rem;
+  padding: 8rem 0 4rem;
 }
 
 @media (max-width: 480px) {
@@ -1816,11 +1847,13 @@ header nav a:hover {
   z-index: 20;
   font-size: 4.4rem;
   line-height: 6.6rem;
+  margin-top: 16%;
 }
 
 #contact .form-box .form-box-right span {
   color: white;
   background-color: #000000;
+  padding: 0 1rem;
 }
 
 @media (max-width: 480px) {
@@ -1847,25 +1880,29 @@ header nav a:hover {
   width: 40rem;
   background-color: #fff;
   padding-left: 1.2rem;
-  height: 2.4rem;
+  height: 4.8rem;
   margin-bottom: 2rem;
   border-radius: 8px;
 }
 
 #contact form input::-webkit-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form input:-ms-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form input::-ms-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form input::placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 480px) {
@@ -1879,25 +1916,29 @@ header nav a:hover {
   background-color: #fff;
   padding-left: 1.2rem;
   padding-top: 1.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.8rem;
   border-radius: 8px;
   resize: none;
 }
 
 #contact form textarea::-webkit-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form textarea:-ms-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form textarea::-ms-input-placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 #contact form textarea::placeholder {
   color: #bebebe;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 480px) {
@@ -1907,17 +1948,22 @@ header nav a:hover {
 }
 
 #contact form .submit {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   padding: 0;
   margin: 0;
-  width: 10rem;
+  width: 23.5rem;
   height: 5rem;
   text-align: center;
   color: white;
   border-radius: 0%;
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#ff1013), to(#400b0c)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%) 0% 0% no-repeat padding-box;
+  background-color: #c10305;
   opacity: 0.86;
+}
+
+#contact form .submit img {
+  margin-bottom: 0.2rem;
+  margin-left: 2.3rem;
 }
 
 #contact .contact-bgc {
@@ -1935,13 +1981,13 @@ header nav a:hover {
 }
 
 #contact .contact-bgc1 {
-  top: 28.5%;
+  top: 28.4%;
   right: 0;
 }
 
 #contact .contact-bgc2 {
   left: 0;
-  top: 68.4%;
+  top: 68.2%;
 }
 
 footer {

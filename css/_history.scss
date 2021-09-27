@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    @include sp {
+    @include tab {
       display: block;
     }
 
@@ -27,7 +27,7 @@
       padding-bottom: 4rem;
       &:nth-child(3) {
         padding-bottom: 11.2rem;
-        @include sp {
+        @include tab {
           padding-bottom: 4rem;
         }
       }
@@ -36,7 +36,8 @@
       width: 48rem;
       text-align: right;
       padding-top: 4.8rem;
-      @include sp {
+      @include tab {
+        width: auto;
         padding: 0 4rem;
         text-align: left;
         display: flex;
@@ -44,23 +45,20 @@
       }
       img {
         padding-bottom: 7.5rem;
-        @include sp {
-          max-width: 34rem;
-        }
       }
     }
     &_right {
       text-align: left;
       width: 48rem;
-      @include sp {
+      @include tab {
+        width: auto;
         padding: 0 4rem;
         display: flex;
         flex-direction: column-reverse;
       }
       img {
         padding-bottom: 7.5rem;
-        @include sp {
-          max-width: 34rem;
+        @include tab {
           padding: 0;
         }
       }
@@ -72,8 +70,9 @@
   left: 49.5%;
   position: absolute;
   margin-top: 6rem;
-  @include sp {
-    top: 22%;
+  @include tab {
+    top: 26%;
+    left: 10.5%;
     padding: 0;
   }
   li {
@@ -89,12 +88,10 @@
       left: 0;
       width: 10px;
       height: 10px;
-      background: #666;
+      background: black;
       border-radius: 50%;
     }
-    @include sp {
-      padding-bottom: 4rem;
-    }
+
     .border-line {
       /*線の位置*/
       position: absolute;

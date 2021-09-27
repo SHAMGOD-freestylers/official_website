@@ -23,6 +23,9 @@
           max-width: 31.5rem;
           max-height: 46rem;
           margin: 3rem 0;
+          @include tab {
+            height: auto;
+          }
         }
       }
     }

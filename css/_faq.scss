@@ -20,8 +20,8 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height: 25rem;
       width: 63rem;
+      padding: 5rem 6rem;
       font-family: $japanese;
       line-height: 2.8rem;
       margin-top: 6rem;
@@ -38,7 +38,7 @@
       &-question {
         display: flex;
         font-size: 2.4rem;
-        margin-right: 3.6rem;
+        margin-right: auto;
         @include sp {
           font-size: 1.8rem;
         }
@@ -55,7 +55,7 @@
         margin-top: 4.2rem;
         display: flex;
         font-size: 1.4rem;
-
+        margin-right: auto;
         &-a {
           color: $dark-red;
           font-size: 4rem;
