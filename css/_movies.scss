@@ -12,7 +12,6 @@
   }
   .movie-contents {
     @include tab {
-      margin: 0 11rem;
     }
     @include sp {
       margin: 0;
@@ -28,13 +27,11 @@
         margin: 0 3rem;
       }
       .movies-box {
-        @include sp {
-          width: 100%;
+        @include tab {
         }
         iframe {
           width: 100%;
-          @include sp {
-            height: 19rem;
+          @include tab {
           }
         }
         &:nth-child(2) {

@@ -13,7 +13,6 @@
     }
   }
   .contact-box {
-    margin: 4.6rem 0;
     display: flex;
 
     font-family: $japanese;
@@ -29,6 +28,7 @@
       span {
         color: white;
         background-color: #000000;
+        padding: 0 1rem;
       }
       @include sp {
         font-size: 4.2rem;
@@ -45,7 +45,13 @@
       }
       &-text {
         text-align: left;
-        padding-top: 4.3rem;
+        padding-top: 3.6rem;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:nth-child(2) {
+          color: #c10305;
+        }
         .contact-dot {
           vertical-align: middle;
         }
@@ -57,12 +63,17 @@
         width: 26.579rem;
         height: 9.1rem;
         cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
       }
     }
   }
 
   // form
   .form-box {
+    margin-top: 7rem;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -75,7 +86,7 @@
     .form-box-left {
       z-index: 20;
 
-      padding: 8rem 0 13rem;
+      padding: 8rem 0 0;
       @include sp {
         height: 45rem;
         padding: 2rem;
@@ -89,9 +100,12 @@
       z-index: 20;
       font-size: 4.4rem;
       line-height: 6.6rem;
+      margin-top: 16%;
+
       span {
         color: white;
         background-color: #000000;
+        padding: 0 1rem;
       }
       @include sp {
         position: static;
@@ -106,51 +120,59 @@
     flex-direction: column;
     font-family: $english;
     input {
-      width: 40rem;
+      width: 50rem;
       background-color: #fff;
       padding-left: 1.2rem;
-      height: 2.4rem;
+      height: 4.8rem;
       margin-bottom: 2rem;
-      border-radius: 8px;
       &::placeholder {
         color: #bebebe;
+        font-size: 1.6rem;
       }
       @include sp {
         width: 20rem;
       }
     }
     textarea {
-      width: 40rem;
+      width: 50rem;
       background-color: #fff;
       padding-left: 1.2rem;
       padding-top: 1.4rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
+      margin-bottom: 3.8rem;
       resize: none;
       &::placeholder {
         color: #bebebe;
+        font-size: 1.6rem;
       }
       @include sp {
         width: 20rem;
       }
     }
     .submit {
-      font-size: 2rem;
+      font-size: 1.6rem;
+      font-weight: bold;
       padding: 0;
       margin: 0;
-      width: 10rem;
+      width: 23.5rem;
       height: 5rem;
       text-align: center;
       color: white;
       border-radius: 0%;
-      background: transparent linear-gradient(180deg, #ff1013 0%, #400b0c 100%)
-        0% 0% no-repeat padding-box;
+      background-color: #c10305;
       opacity: 0.86;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+      }
+      img {
+        margin-bottom: 0.2rem;
+        margin-left: 2.3rem;
+      }
     }
   }
   .contact-bgc {
     //   背景色重ね
-    height: 64rem;
+    height: 62rem;
     width: 82rem;
     z-index: 0;
     background-color: #f7f7f7;
@@ -159,12 +181,12 @@
       height: 12rem;
     }
     &1 {
-      top: 28.5%;
+      top: 28.8%;
       right: 0;
     }
     &2 {
       left: 0;
-      top: 68.4%;
+      top: 69.5%;
     }
   }
 }

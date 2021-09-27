@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden;
-  @include sp {
+  @include tab {
     width: 100%;
     display: block;
   }
@@ -10,7 +10,7 @@
   .side {
     width: 200px;
     font-family: $english;
-    @include sp {
+    @include tab {
       display: none;
     }
     .sticky {
@@ -47,16 +47,31 @@
             margin-left: 0.2rem;
             margin-right: 1.2rem;
           }
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
         }
 
         .facebook-logo {
-          @include sp {
+          @include tab {
             margin: 0;
           }
           img {
             height: 2rem;
             width: 2rem;
           }
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
+        }
+      }
+      img {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+          transition: 0.3s;
         }
       }
     }
@@ -66,34 +81,37 @@
   main {
     width: calc(100% - 200px);
     font-family: $english;
-    @include sp {
+    @include tab {
       width: 100%;
     }
     .section-title {
       font-weight: bold;
-      margin-left: 2.4rem; // 左の線用margin
-      margin-top: 9rem;
+      letter-spacing: 0.1em;
+      margin-left: 10rem; // 左の線用margin
+      margin-top: 8rem;
       padding-left: 2.4rem;
       font-size: 3rem;
       border-left: thick solid black;
-      @include sp {
+      @include tab {
         font-size: 2rem;
         padding-left: 1.2rem;
       }
     }
     section {
-      margin: 4rem 0 7rem;
+      margin: 0 0 7rem;
       letter-spacing: 1.5px;
-      @include sp {
+      @include tab {
         margin: auto;
         letter-spacing: 1px;
       }
       .contents {
         padding: 0 3rem;
         max-width: 1100px;
-        margin: 0 auto;
-        @include sp {
-          padding: 0 3rem;
+        margin: 8rem auto;
+
+        @include tab {
+          padding: 0 11rem;
+          text-align: center;
         }
       }
     }
@@ -110,8 +128,8 @@
     z-index: 11;
     position: absolute;
     top: 50%;
-    @include sp {
-      top: 25%;
+    @include tab {
+      top: 55%;
     }
   }
   // 背景色重ね
@@ -127,8 +145,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    @include sp {
-      height: 12rem;
+    @include tab {
+      height: 22.7rem;
+      top: 56%;
     }
   }
 }
@@ -137,7 +156,7 @@
   background-size: cover;
   height: 51rem;
   position: relative;
-  @include sp {
+  @include tab {
     background-repeat: no-repeat;
     background-position: center center;
     height: 0;
@@ -152,13 +171,17 @@
   font-size: 14rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+  @include tab {
+    font-size: 9rem;
+  }
 }
 // 背景文字(右配置)
 @mixin bg-text-even() {
   top: 69%;
-  right: 0;
-  @include sp {
+  right: -1rem;
+  @include tab {
     font-size: 6.6rem;
     letter-spacing: 0.3rem;
+    top: 83%;
   }
 }

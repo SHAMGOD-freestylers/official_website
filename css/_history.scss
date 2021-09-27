@@ -14,53 +14,61 @@
     //contents
     font-family: $japanese;
     font-size: 1.4rem;
-    padding-top: 8.5rem;
     line-height: 2.8rem;
     display: flex;
     justify-content: space-between;
     position: relative;
-    @include sp {
+    @include tab {
       display: block;
     }
 
-    &-text {
-      padding-bottom: 4rem;
-      &:nth-child(3) {
-        padding-bottom: 11.2rem;
-        @include sp {
-          padding-bottom: 4rem;
-        }
-      }
-    }
     &_left {
       width: 48rem;
       text-align: right;
       padding-top: 4.8rem;
-      @include sp {
+      &-text {
+        padding-bottom: 4rem;
+
+        &:nth-child(3) {
+          padding-bottom: 11.2rem;
+          @include tab {
+            padding-bottom: 4rem;
+          }
+        }
+      }
+      @include tab {
+        width: auto;
         padding: 0 4rem;
         text-align: left;
         display: flex;
         flex-direction: column-reverse;
       }
       img {
+        width: 48rem;
+        min-height: 31rem;
         padding-bottom: 7.5rem;
-        @include sp {
-          max-width: 34rem;
-        }
       }
     }
     &_right {
       text-align: left;
       width: 48rem;
-      @include sp {
+      &-text {
+        padding-bottom: 4rem;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      @include tab {
+        width: auto;
         padding: 0 4rem;
         display: flex;
         flex-direction: column-reverse;
       }
       img {
         padding-bottom: 7.5rem;
-        @include sp {
-          max-width: 34rem;
+        width: 49rem;
+        min-height: 31rem;
+        @include tab {
           padding: 0;
         }
       }
@@ -72,8 +80,9 @@
   left: 49.5%;
   position: absolute;
   margin-top: 6rem;
-  @include sp {
-    top: 22%;
+  @include tab {
+    top: 26%;
+    left: 10.5%;
     padding: 0;
   }
   li {
@@ -86,23 +95,21 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: -0.1px;
       width: 10px;
       height: 10px;
-      background: #666;
+      background: black;
       border-radius: 50%;
     }
-    @include sp {
-      padding-bottom: 4rem;
-    }
+
     .border-line {
       /*線の位置*/
       position: absolute;
-      left: 0.25em;
+      left: 0.26em;
       top: 0;
       width: 2px; /*線の太さ*/
       height: 0; /*はじめは高さを0に*/
-      background: #ccc;
+      background: #666;
     }
   }
   dl {
