@@ -6,8 +6,8 @@ header {
   left: 0;
   z-index: 100;
   margin-top: 3.5rem;
-  @include tab {
-    background-color: rgb(0, 0, 0);
+  @include sm {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     position: relative;
