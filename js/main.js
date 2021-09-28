@@ -133,10 +133,11 @@ function changeColor() {
   if (trigger2Y - timing > 0 && 0 >= trigger1Y - timing) {
     nav.classList.remove("bg-is-black");
   } else if (
-    (trigger4Y - timing > 0 && 0 >= trigger3Y - timing) ||
-    (trigger6Y - timing > 0 && 0 >= trigger5Y - timing) ||
-    (trigger8Y - timing > 0 && 0 >= trigger7Y - timing) ||
-    (trigger10Y - timing > 0 && 0 >= trigger9Y - timing)
+    // 4,6,8,10は各id2
+    (trigger4Y - timing > -10 && -90 >= trigger3Y - timing) ||
+    (trigger6Y - timing > 140 && -90 >= trigger5Y - timing) ||
+    (trigger8Y - timing > 110 && -90 >= trigger7Y - timing) ||
+    (trigger10Y - timing > 80 && -90 >= trigger9Y - timing)
   ) {
     nav.classList.remove("bg-is-black");
   } else {
