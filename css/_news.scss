@@ -4,32 +4,21 @@
     display: flex;
     justify-content: space-between;
     padding-top: 5rem;
-    @include tab {
-      flex-direction: column;
-    }
+
     .news-box {
       z-index: 20;
       &:hover {
         opacity: 0.8;
         transition: 0.3s;
       }
-      @include tab {
-        margin: 3rem auto;
-      }
-      &:first-child {
-      }
-      @include sp {
-        margin: 0 3rem 5rem;
-      }
+
       img {
         height: 20.7rem;
         width: 30.46rem;
       }
       .news-text-box {
         font-weight: bold;
-        @include sp {
-          max-width: 29.5rem;
-        }
+
         .news-text_sub {
           padding-top: 2.45rem;
           display: flex;

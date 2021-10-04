@@ -18,9 +18,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    @include tab {
-      display: block;
-    }
 
     &_left {
       width: 48rem;
@@ -31,18 +28,9 @@
 
         &:nth-child(3) {
           padding-bottom: 11.2rem;
-          @include tab {
-            padding-bottom: 4rem;
-          }
         }
       }
-      @include tab {
-        width: auto;
-        padding: 0 4rem;
-        text-align: left;
-        display: flex;
-        flex-direction: column-reverse;
-      }
+
       img {
         width: 48rem;
         min-height: 31rem;
@@ -58,19 +46,11 @@
           padding-bottom: 0;
         }
       }
-      @include tab {
-        width: auto;
-        padding: 0 4rem;
-        display: flex;
-        flex-direction: column-reverse;
-      }
+
       img {
         padding-bottom: 7.5rem;
         width: 49rem;
         min-height: 31rem;
-        @include tab {
-          padding: 0;
-        }
       }
     }
   }
@@ -80,11 +60,7 @@
   left: 49.5%;
   position: absolute;
   margin-top: 6rem;
-  @include tab {
-    top: 26%;
-    left: 10.5%;
-    padding: 0;
-  }
+
   li {
     /*線の起点とするためrelativeを設定*/
     position: relative;

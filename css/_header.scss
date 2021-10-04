@@ -1,99 +1,115 @@
 header {
-  color: white;
   width: 100%;
+  padding-right: 6.25vw;
+  padding-left: 24.25vw;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  margin-top: 3.5rem;
+  background-color: white;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include sm {
-    background-color: white;
+    color: white;
+    display: block;
+    margin-top: 2.5rem;
+    background-color: transparent;
+  }
+  @include md {
+    margin-top: 3.5rem;
+  }
+  .header_box {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    height: 6rem;
-    font-size: 4rem;
-    margin: 0;
-    padding: 0 3rem;
-    line-height: 6rem;
-    opacity: 0.85;
-  }
-  #hamburger {
-    display: none;
-    @include tab {
-      display: inherit;
-      cursor: pointer; /*リンクを示すカーソルを表示（指差しマーク）*/
-      height: 60px; /*ヘッダーの高さと同じ60px*/
-    }
-  }
+    align-items: center;
+    width: 100%;
 
-  .sham-logo {
-    //shamgod logo
-    display: none;
-    @include tab {
-      position: absolute;
-      left: 45%;
-      top: -6%;
-      display: initial;
-    }
-    .logo {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
+    .icon {
+      //id="hamburger"
+      // position: relative;
+      @include sm {
+        display: none;
+      }
+      span {
+        padding-left: 6.25vw;
 
-  .fab {
-    @include tab {
-      font-size: 2.5rem;
-      line-height: 6rem;
+        position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
+        left: 15px; /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+        width: 30px; /*横線の幅が30px*/
+        height: 3px; /*横線の高さが4px*/
+        background-color: rgb(0, 0, 0); /*横線を白色*/
+        border-radius: 1px; /*横線の両端の角に丸みを持たせる*/
+        transition: ease 0.65s; /*変化の時間（easeは初期値）*/
+        &:nth-of-type(1) {
+          top: 42px;
+        }
+        &:nth-of-type(2) {
+          top: 55px;
+        }
+        &:nth-of-type(3) {
+          top: 68px;
+        }
+      }
     }
-  }
+    .close span:nth-of-type(1) {
+      transform: rotate(45deg); /*反時計回りに45度回転*/
+      top: 52px;
+    }
 
-  .facebook-logo {
-    display: none;
-    @include tab {
-      display: initial;
+    .close span:nth-of-type(2) {
+      opacity: 0;
     }
-    img {
-      @include tab {
-        margin-bottom: 2.3rem;
+
+    .close span:nth-of-type(3) {
+      transform: rotate(-45deg); /*時計回りに45度回転*/
+      top: 52px;
+    }
+
+    .sham-logo {
+      //shamgod logo
+      @include sm {
+        display: none;
+      }
+
+      .logo {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
+    .sns {
+      a {
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
+      @include sm {
+        display: none;
+      }
+      font-size: 5vw;
+      .facebook-logo img {
+        //layoutでスタイリング
+        height: 5vw;
+        width: 5vw;
+
+        margin-bottom: 0.45rem;
+
+        @include sm {
+          display: none;
+        }
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
       }
     }
   }
-  .icon span {
-    position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
-    left: 15px; /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
-    width: 30px; /*横線の幅が30px*/
-    height: 3px; /*横線の高さが4px*/
-    background-color: rgb(255, 255, 255); /*横線を白色*/
-    border-radius: 1px; /*横線の両端の角に丸みを持たせる*/
-    transition: ease 0.65s; /*変化の時間（easeは初期値）*/
-  }
-  .icon span:nth-of-type(1) {
-    top: 16px;
-  }
-  .icon span:nth-of-type(2) {
-    top: 28px;
-  }
-  .icon span:nth-of-type(3) {
-    top: 40px;
-  }
-  .close span:nth-of-type(1) {
-    transform: rotate(45deg); /*反時計回りに45度回転*/
-    top: 28px;
-  }
-
-  .close span:nth-of-type(2) {
-    opacity: 0;
-  }
-
-  .close span:nth-of-type(3) {
-    transform: rotate(-45deg); /*時計回りに45度回転*/
-    top: 28px;
-  }
   .sm {
+    font-size: 1.4rem;
     color: white;
-    top: 6rem; /*headerの余白分*/
+    top: 12rem; /*headerの余白分*/
     left: 0px; /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
     position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
     z-index: 10;
@@ -107,32 +123,35 @@ header {
   ul {
     flex-direction: column; /*ulのflexboxを縦並びにする*/
     li {
+      padding: 5.5rem;
       border-top: solid 0.5px rgba(255, 255, 255, 0.6); /*リストの境目に白線 */
     }
   }
-  .pc {
-    @include tab {
-      display: none;
-    }
-  }
+
   // pc header用
   nav {
-    display: flex;
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-    a {
-      font-size: 1.4rem;
-      margin-right: 4rem;
-      font-family: $english;
-      letter-spacing: 0.07rem;
-      cursor: pointer;
-      &:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-      }
-      @include tab {
-        margin: 0;
+    display: none;
+    @include sm {
+      display: flex;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      a {
+        font-family: $english;
+        letter-spacing: 0.07rem;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+        @include sm {
+          font-size: 1.1rem;
+          margin-right: 3rem;
+        }
+        @include md {
+          font-size: 1.4rem;
+          margin-right: 4rem;
+        }
       }
     }
   }

@@ -3,31 +3,26 @@
   .repsen-box {
     display: flex;
     justify-content: space-between;
-    margin-top: 14rem;
     padding-bottom: 2rem;
+    margin-top: 6rem;
     font-family: $japanese;
     line-height: 2.8rem;
     font-size: 1.4rem;
     display: flex;
-    @include tab {
-      flex-direction: column-reverse;
-      margin: 5rem 0;
-    }
+
     &-text {
-      padding-top: 4.4rem;
+      padding-top: 3rem;
+      &:last-child {
+        color: #c10305;
+      }
+    }
+    &-left {
+      z-index: 30;
     }
     &-right {
-      @include sp {
-        max-width: 100%;
-        img {
-          max-width: 31.5rem;
-          max-height: 46rem;
-          margin: 3rem 0;
-          @include tab {
-            height: auto;
-          }
-        }
-      }
+      padding-top: 3rem;
+
+      z-index: 30;
     }
   }
 }

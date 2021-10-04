@@ -8,18 +8,12 @@
   }
   .bg-text-even_contact {
     @include bg-text-even();
-    @include sp {
-      @include bg-text-even();
-    }
   }
   .contact-box {
     display: flex;
 
     font-family: $japanese;
-    @include sp {
-      padding: 0;
-      display: block;
-    }
+
     &-left {
       z-index: 20;
       margin-top: 9rem;
@@ -30,19 +24,13 @@
         background-color: #000000;
         padding: 0 1rem;
       }
-      @include sp {
-        font-size: 4.2rem;
-      }
     }
     &-right {
       z-index: 20;
       margin-left: 7.3rem;
       font-size: 1.4rem;
       line-height: 3rem;
-      @include sp {
-        margin: 0;
-        margin-top: 2rem;
-      }
+
       &-text {
         text-align: left;
         padding-top: 3.6rem;
@@ -77,20 +65,12 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    @include sp {
-      position: static;
-      display: flex;
-      flex-direction: column-reverse;
-      padding: 3rem;
-    }
+
     .form-box-left {
       z-index: 20;
 
       padding: 8rem 0 0;
-      @include sp {
-        height: 45rem;
-        padding: 2rem;
-      }
+
       p {
         margin-bottom: 3.75rem;
         font-size: 1.4rem;
@@ -106,12 +86,6 @@
         color: white;
         background-color: #000000;
         padding: 0 1rem;
-      }
-      @include sp {
-        position: static;
-        line-height: 5rem;
-        width: 40rem !important;
-        font-size: 3rem;
       }
     }
   }
@@ -129,9 +103,6 @@
         color: #bebebe;
         font-size: 1.6rem;
       }
-      @include sp {
-        width: 20rem;
-      }
     }
     textarea {
       width: 50rem;
@@ -143,9 +114,6 @@
       &::placeholder {
         color: #bebebe;
         font-size: 1.6rem;
-      }
-      @include sp {
-        width: 20rem;
       }
     }
     .submit {
@@ -177,16 +145,18 @@
     z-index: 0;
     background-color: #f7f7f7;
     position: absolute;
-    @include sp {
-      height: 12rem;
-    }
+
     &1 {
-      top: 28.8%;
-      right: 0;
+      @include lg {
+        top: 28.8%;
+        right: 0;
+      }
     }
     &2 {
-      left: 0;
-      top: 69.5%;
+      @include lg {
+        left: 0;
+        top: 69.5%;
+      }
     }
   }
 }

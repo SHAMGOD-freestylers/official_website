@@ -11,42 +11,23 @@
     @include bg-text-even();
   }
   .movie-contents {
-    @include tab {
-    }
-    @include sp {
-      margin: 0;
-    }
     .movie-main {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 7.6rem;
-      @include sp {
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 3rem;
-      }
+
       .movies-box {
-        @include tab {
-        }
         iframe {
           width: 100%;
-          @include tab {
-          }
         }
         &:nth-child(2) {
-          @include tab {
-            margin-top: 7rem;
-          }
         }
         &:nth-child(3) {
           margin-top: 7rem;
         }
         &:nth-child(4) {
           margin-top: 7rem;
-          @include tab {
-            margin: 0;
-          }
         }
 
         .movies-text-box {
@@ -58,15 +39,10 @@
           text-align: center;
           font-weight: bold;
           background-color: #f4f4f4;
-          @include sp {
-            max-width: 100%;
-          }
+
           .movies-box-text_title {
             line-height: 2.8rem;
             font-size: 2rem;
-            @include sp {
-              font-size: 1.5rem;
-            }
           }
           .movies-box-text_subtext {
             padding-top: 0.7rem;
@@ -74,10 +50,6 @@
             line-height: 2rem;
             padding: 1rem 2.1rem;
             color: $gray;
-            @include sp {
-              width: auto;
-              font-size: 1rem;
-            }
           }
         }
       }
