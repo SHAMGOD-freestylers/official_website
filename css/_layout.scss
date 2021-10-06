@@ -174,9 +174,12 @@
 .bg-text {
   position: absolute;
   margin-top: 2rem;
-  font-size: 14rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+  font-size: 5rem;
+  @include sm {
+    font-size: 14rem;
+  }
 }
 // 背景文字(右配置)
 @mixin bg-text-even() {

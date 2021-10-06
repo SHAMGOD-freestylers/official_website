@@ -1,16 +1,19 @@
 header {
   width: 100%;
   padding-right: 6.25vw;
-  padding-left: 24.25vw;
+  padding-left: 0.8rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: white;
-  height: 12rem;
+  height: 8.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include xxs {
+    padding-left: 1.8rem;
+  }
   @include sm {
     color: white;
     display: block;
@@ -26,30 +29,76 @@ header {
     align-items: center;
     width: 100%;
 
-    .icon {
+    &_left {
+      //shamgod logo
+      display: flex;
+      align-items: center;
+      @include sm {
+        display: none;
+      }
+
+      .logo {
+        width: 6rem;
+        height: 6rem;
+        @include xs {
+          width: 6.8rem;
+          height: 6.8rem;
+        }
+        @include sm {
+          width: 9rem;
+          height: 9rem;
+        }
+      }
+      &_text {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        line-height: 1.4rem;
+        display: block;
+        margin-left: 0.5rem;
+        @include xxs {
+          margin-left: 1.2rem;
+        }
+      }
+    }
+    &_right {
       //id="hamburger"
       // position: relative;
       @include sm {
         display: none;
       }
+      &_text {
+        position: absolute;
+        top: 4.8rem;
+        letter-spacing: 1.4px;
+        transform: scale(0.8);
+        right: 0.62rem;
+        @include xxs {
+          transform: none;
+          right: 2.4rem;
+          font-size: 1rem;
+        }
+      }
       span {
-        padding-left: 6.25vw;
+        padding-left: 1.25vw;
+        right: 1.3rem;
 
         position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
-        left: 15px; /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
-        width: 30px; /*横線の幅が30px*/
-        height: 3px; /*横線の高さが4px*/
+        width: 30px;
+        height: 1px; /*横線の高さが4px*/
         background-color: rgb(0, 0, 0); /*横線を白色*/
-        border-radius: 1px; /*横線の両端の角に丸みを持たせる*/
         transition: ease 0.65s; /*変化の時間（easeは初期値）*/
+        @include xxs {
+          width: 40px; /*横線の幅が30px*/
+          right: 2.5rem;
+        }
         &:nth-of-type(1) {
-          top: 42px;
+          top: 29px;
         }
         &:nth-of-type(2) {
-          top: 55px;
+          top: 36px;
         }
         &:nth-of-type(3) {
-          top: 68px;
+          top: 43px;
         }
       }
     }
@@ -67,17 +116,6 @@ header {
       top: 52px;
     }
 
-    .sham-logo {
-      //shamgod logo
-      @include sm {
-        display: none;
-      }
-
-      .logo {
-        width: 9rem;
-        height: 9rem;
-      }
-    }
     .sns {
       a {
         &:hover {
@@ -92,7 +130,7 @@ header {
       .facebook-logo img {
         //layoutでスタイリング
         height: 5vw;
-        width: 5vw;
+        width: w;
 
         margin-bottom: 0.45rem;
 

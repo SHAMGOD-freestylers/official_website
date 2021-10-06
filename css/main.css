@@ -666,21 +666,27 @@ template {
 .bg-text {
   position: absolute;
   margin-top: 2rem;
-  font-size: 14rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
+  font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+  .bg-text {
+    font-size: 14rem;
+  }
 }
 
 header {
   width: 100%;
   padding-right: 6.25vw;
-  padding-left: 24.25vw;
+  padding-left: 0.8rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: white;
-  height: 12rem;
+  height: 8.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,6 +696,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 360px) {
+  header {
+    padding-left: 1.8rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -720,41 +732,111 @@ header .header_box {
   width: 100%;
 }
 
+header .header_box_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 768px) {
-  header .header_box .icon {
+  header .header_box_left {
     display: none;
   }
 }
 
-header .header_box .icon span {
-  padding-left: 6.25vw;
+header .header_box_left .logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media (min-width: 400px) {
+  header .header_box_left .logo {
+    width: 6.8rem;
+    height: 6.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header .header_box_left .logo {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+header .header_box_left_text {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 1.4rem;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 360px) {
+  header .header_box_left_text {
+    margin-left: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header .header_box_right {
+    display: none;
+  }
+}
+
+header .header_box_right_text {
+  position: absolute;
+  top: 4.8rem;
+  letter-spacing: 1.4px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 0.62rem;
+}
+
+@media (min-width: 360px) {
+  header .header_box_right_text {
+    -webkit-transform: none;
+            transform: none;
+    right: 2.4rem;
+    font-size: 1rem;
+  }
+}
+
+header .header_box_right span {
+  padding-left: 1.25vw;
+  right: 1.3rem;
   position: absolute;
   /*親要素である#hamburgerを基準に位置を指定*/
-  left: 15px;
-  /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
   width: 30px;
-  /*横線の幅が30px*/
-  height: 3px;
+  height: 1px;
   /*横線の高さが4px*/
   background-color: black;
   /*横線を白色*/
-  border-radius: 1px;
-  /*横線の両端の角に丸みを持たせる*/
   -webkit-transition: ease 0.65s;
   transition: ease 0.65s;
   /*変化の時間（easeは初期値）*/
 }
 
-header .header_box .icon span:nth-of-type(1) {
-  top: 42px;
+@media (min-width: 360px) {
+  header .header_box_right span {
+    width: 40px;
+    /*横線の幅が30px*/
+    right: 2.5rem;
+  }
 }
 
-header .header_box .icon span:nth-of-type(2) {
-  top: 55px;
+header .header_box_right span:nth-of-type(1) {
+  top: 29px;
 }
 
-header .header_box .icon span:nth-of-type(3) {
-  top: 68px;
+header .header_box_right span:nth-of-type(2) {
+  top: 36px;
+}
+
+header .header_box_right span:nth-of-type(3) {
+  top: 43px;
 }
 
 header .header_box .close span:nth-of-type(1) {
@@ -775,17 +857,6 @@ header .header_box .close span:nth-of-type(3) {
   top: 52px;
 }
 
-@media (min-width: 768px) {
-  header .header_box .sham-logo {
-    display: none;
-  }
-}
-
-header .header_box .sham-logo .logo {
-  width: 9rem;
-  height: 9rem;
-}
-
 header .header_box .sns {
   font-size: 5vw;
 }
@@ -804,7 +875,7 @@ header .header_box .sns a:hover {
 
 header .header_box .sns .facebook-logo img {
   height: 5vw;
-  width: 5vw;
+  width: w;
   margin-bottom: 0.45rem;
 }
 
@@ -913,23 +984,24 @@ header nav {
   right: 0;
   font-weight: normal;
   letter-spacing: 1.5px;
+  bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .mainvisual .mainvisual_box {
-    bottom: 1rem;
     padding: 0.5rem;
   }
 }
 
 .mainvisual .mainvisual_box_text {
   background-color: rgba(193, 3, 5, 0.7);
+  font-size: 1.3rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .mainvisual .mainvisual_box_text {
     font-size: 2rem;
-    padding: 0.5rem;
   }
 }
 
@@ -962,9 +1034,24 @@ header nav {
 }
 
 .mainvisual img {
-  width: 100%;
+  height: 34vh;
+  width: 100vw;
+  margin-top: 8.4rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 400px) {
+  .mainvisual img {
+    height: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainvisual img {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1200px) {
