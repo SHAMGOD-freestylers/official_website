@@ -107,6 +107,7 @@
   // main
   // セクションタイトル(背景なし)
   main {
+    width: 100%;
     @include sm {
       width: calc(100% - 160px);
     }
