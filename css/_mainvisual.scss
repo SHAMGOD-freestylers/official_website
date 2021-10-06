@@ -5,7 +5,6 @@
     right: 0;
     font-family: $japanese;
     color: #f7f7f7;
-    right: 0;
     font-weight: normal;
     letter-spacing: 1.5px;
 
@@ -29,6 +28,8 @@
       &_1 {
         display: inline-block;
         margin-bottom: 1rem;
+        width: 13rem;
+
         @include sm {
           width: 22rem;
         }
@@ -49,8 +50,10 @@
     }
     width: 100vw;
     margin-top: 8.4rem;
-    @include sm {
+    @include xxs {
       width: 100%;
+    }
+    @include sm {
       margin-top: 0;
     }
     object-fit: cover;

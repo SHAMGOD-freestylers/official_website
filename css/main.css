@@ -626,6 +626,7 @@ template {
 }
 
 .container main {
+  width: 100%;
   font-family: "Alfa Slab One", cursive;
 }
 
@@ -644,12 +645,27 @@ template {
 .container main .section-title {
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-left: 10rem;
-  margin-top: 8rem;
+  margin-top: 4.5rem;
   padding-left: 2.4rem;
-  font-size: 3rem;
+  font-size: 1.4rem;
   border-left: thick solid black;
-  padding-left: 1.2rem;
+  padding-left: 0.9rem;
+  margin-left: 2rem;
+}
+
+@media (min-width: 400px) {
+  .container main .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container main .section-title {
+    margin-top: 8rem;
+    margin-left: 10rem;
+    font-size: 3rem;
+    padding-left: 1.2rem;
+  }
 }
 
 .container main section {
@@ -658,9 +674,29 @@ template {
 }
 
 .container main section .contents {
-  padding: 0 3rem;
-  max-width: 1100px;
-  margin: 8rem auto;
+  padding: 0 2rem;
+  margin: 4rem auto;
+  width: 34rem;
+}
+
+@media (min-width: 400px) {
+  .container main section .contents {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container main section .contents {
+    max-width: 1100px;
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .container main section .contents {
+    width: 100%;
+    margin: 8rem auto;
+  }
 }
 
 .bg-text {
@@ -668,10 +704,22 @@ template {
   margin-top: 2rem;
   letter-spacing: 0.7rem;
   color: #f7f7f7;
-  font-size: 5rem;
+  font-size: 3.5rem;
+}
+
+@media (min-width: 400px) {
+  .bg-text {
+    font-size: 6.1rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .bg-text {
+    font-size: 9.6rem;
+  }
+}
+
+@media (min-width: 960px) {
   .bg-text {
     font-size: 14rem;
   }
@@ -981,7 +1029,6 @@ header nav {
   right: 0;
   font-family: "Noto Sans JP", sans-serif;
   color: #f7f7f7;
-  right: 0;
   font-weight: normal;
   letter-spacing: 1.5px;
   bottom: 1rem;
@@ -1015,6 +1062,7 @@ header nav {
 .mainvisual .mainvisual_box_text_1 {
   display: inline-block;
   margin-bottom: 1rem;
+  width: 13rem;
 }
 
 @media (min-width: 768px) {
@@ -1047,9 +1095,14 @@ header nav {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
   .mainvisual img {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainvisual img {
     margin-top: 0;
   }
 }
@@ -1065,32 +1118,78 @@ header nav {
 }
 
 #message .message-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media (min-width: 960px) {
+  #message .message-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 #message .message-box_left {
+  position: relative;
   z-index: 20;
-  font-size: 4.4rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   padding-right: 7.9rem;
 }
 
+@media (min-width: 768px) {
+  #message .message-box_left {
+    font-size: 3.8rem;
+  }
+}
+
 #message .message-box_left .message-concept {
-  width: 50rem;
+  width: 23rem;
+}
+
+@media (min-width: 400px) {
+  #message .message-box_left .message-concept {
+    width: 39.4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #message .message-box_left .message-concept {
+    width: 39.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #message .message-box_left .message-concept {
+    width: 44rem;
+  }
 }
 
 #message .message-box_right {
+  position: relative;
   z-index: 20;
   font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 2.8rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 960px) {
+  #message .message-box_right {
+    padding-top: 0;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
 }
 
 #message .message-box_right .message-text {
-  padding-bottom: 3rem;
+  padding-bottom: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  #message .message-box_right .message-text {
+    padding-bottom: 3rem;
+  }
 }
 
 #message .message-box_right .message-text:nth-child(3) {
