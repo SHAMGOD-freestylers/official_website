@@ -488,7 +488,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container .side {
     width: 200px;
   }
@@ -515,7 +515,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container .side .sticky {
     width: 200px;
   }
@@ -532,7 +532,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container .side .sticky .logo {
     width: 14rem;
     height: 14rem;
@@ -562,7 +562,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container .side .sticky .side-text {
     margin: 15rem auto 0;
   }
@@ -612,7 +612,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container .side .sticky img {
     width: 200px;
   }
@@ -636,7 +636,7 @@ template {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .container main {
     width: calc(100% - 200px);
   }
@@ -674,13 +674,13 @@ template {
 }
 
 .container main section .contents {
-  padding: 0 2rem;
   margin: 4rem auto;
   width: 34rem;
 }
 
 @media (min-width: 400px) {
   .container main section .contents {
+    padding: 0 2rem;
     width: 40rem;
   }
 }
@@ -1107,7 +1107,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   .mainvisual img {
     height: 101vh;
   }
@@ -1159,7 +1159,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #message .message-box_left .message-concept {
     width: 44rem;
   }
@@ -1237,7 +1237,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #movies .movies-mainvisual {
     height: 51rem;
   }
@@ -1282,7 +1282,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #movies .movies-mainvisual .movies-mainvisual-box::after {
     top: 52.7%;
     height: 24rem;
@@ -1308,7 +1308,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #movies .bg-text-even_movies {
     top: 69%;
     font-size: 14rem;
@@ -1319,16 +1319,53 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 7.6rem;
+}
+
+@media (min-width: 1233px) {
+  #movies .movie-contents .movie-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#movies .movie-contents .movie-main .movies-box {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
 }
 
 #movies .movie-contents .movie-main .movies-box iframe {
   width: 100%;
+  height: 20vh;
+}
+
+@media (min-width: 960px) {
+  #movies .movie-contents .movie-main .movies-box iframe {
+    height: 27vh;
+  }
+}
+
+#movies .movie-contents .movie-main .movies-box:nth-child(2) {
+  margin-top: 7rem;
+}
+
+@media (min-width: 1233px) {
+  #movies .movie-contents .movie-main .movies-box:nth-child(2) {
+    margin-top: 0;
+  }
 }
 
 #movies .movie-contents .movie-main .movies-box:nth-child(3) {
@@ -1350,24 +1387,42 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 48rem;
+  width: 33rem;
   height: 16.35rem;
   text-align: center;
   font-weight: bold;
   background-color: #f4f4f4;
 }
 
+@media (min-width: 960px) {
+  #movies .movie-contents .movie-main .movies-box .movies-text-box {
+    width: 48rem;
+  }
+}
+
 #movies .movie-contents .movie-main .movies-box .movies-text-box .movies-box-text_title {
   line-height: 2.8rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 960px) {
+  #movies .movie-contents .movie-main .movies-box .movies-text-box .movies-box-text_title {
+    font-size: 2rem;
+  }
 }
 
 #movies .movie-contents .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
   padding-top: 0.7rem;
-  font-size: 1.3rem;
   line-height: 2rem;
   padding: 1rem 2.1rem;
   color: #818181;
+  font-size: 1rem;
+}
+
+@media (min-width: 960px) {
+  #movies .movie-contents .movie-main .movies-box .movies-text-box .movies-box-text_subtext {
+    font-size: 1.3rem;
+  }
 }
 
 #news .news-box-container {
@@ -1488,7 +1543,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #history .history-mainvisual {
     height: 51rem;
   }
@@ -1539,7 +1594,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #history .history-mainvisual .history-mainvisual-box::after {
     top: 52.7%;
     height: 24rem;
@@ -1565,7 +1620,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #history .bg-text-even_history {
     top: 69%;
     font-size: 14rem;
@@ -1735,7 +1790,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #faq .faq-mainvisual {
     height: 51rem;
   }
@@ -1780,7 +1835,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #faq .faq-mainvisual .faq-mainvisual-box::after {
     top: 52.7%;
     height: 24rem;
@@ -1806,7 +1861,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #faq .bg-text-even_faq {
     top: 69%;
     font-size: 14rem;
@@ -1914,7 +1969,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #contact .contact-mainvisual {
     height: 51rem;
   }
@@ -1959,7 +2014,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #contact .contact-mainvisual .contact-mainvisual-box::after {
     top: 52.7%;
     height: 24rem;
@@ -1985,7 +2040,7 @@ header nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #contact .bg-text-even_contact {
     top: 69%;
     font-size: 14rem;
@@ -2185,14 +2240,14 @@ header nav {
   position: absolute;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #contact .contact-bgc1 {
     top: 28.8%;
     right: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1233px) {
   #contact .contact-bgc2 {
     left: 0;
     top: 69.5%;

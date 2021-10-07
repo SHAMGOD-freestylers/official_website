@@ -142,10 +142,10 @@
       letter-spacing: 1.5px;
 
       .contents {
-        padding: 0 2rem;
         margin: 4rem auto;
         width: 34rem;
         @include xs {
+          padding: 0 2rem;
           width: 40rem;
         }
         @include sm {
