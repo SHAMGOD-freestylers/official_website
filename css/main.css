@@ -653,18 +653,18 @@ template {
   margin-left: 2rem;
 }
 
-@media (min-width: 400px) {
-  .container main .section-title {
-    font-size: 2rem;
-  }
-}
-
 @media (min-width: 768px) {
   .container main .section-title {
     margin-top: 8rem;
     margin-left: 10rem;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 1.2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .container main .section-title {
+    font-size: 3rem;
   }
 }
 
@@ -1205,10 +1205,42 @@ header nav {
 }
 
 #movies .movies-mainvisual {
-  background-image: url("../images/movies-img.png");
   background-size: cover;
-  height: 51rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/movies-img.png");
   position: relative;
+  background-position: center;
+  height: 25rem;
+}
+
+@media (min-width: 360px) {
+  #movies .movies-mainvisual {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #movies .movies-mainvisual {
+    min-height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #movies .movies-mainvisual {
+    height: 31rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #movies .movies-mainvisual {
+    height: 41rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #movies .movies-mainvisual {
+    height: 51rem;
+  }
 }
 
 #movies .movies-mainvisual .movies-mainvisual-box {
@@ -1225,20 +1257,62 @@ header nav {
 
 #movies .movies-mainvisual .movies-mainvisual-box::after {
   content: "";
-  height: 24rem;
   z-index: 10;
   opacity: 0.5;
   background-color: #801617;
   position: absolute;
-  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 50%;
+  height: 50%;
+}
+
+@media (min-width: 768px) {
+  #movies .movies-mainvisual .movies-mainvisual-box::after {
+    height: 50%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #movies .movies-mainvisual .movies-mainvisual-box::after {
+    top: 48.7%;
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #movies .movies-mainvisual .movies-mainvisual-box::after {
+    top: 52.7%;
+    height: 24rem;
+  }
 }
 
 #movies .bg-text-even_movies {
-  top: 69%;
+  top: 70%;
   right: -1rem;
+}
+
+@media (min-width: 768px) {
+  #movies .bg-text-even_movies {
+    top: 73%;
+    font-size: 6.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #movies .bg-text-even_movies {
+    top: 72%;
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #movies .bg-text-even_movies {
+    top: 69%;
+    font-size: 14rem;
+  }
 }
 
 #movies .movie-contents .movie-main {
@@ -1382,10 +1456,42 @@ header nav {
 }
 
 #history .history-mainvisual {
-  background-image: url("../images/history-img.png");
   background-size: cover;
-  height: 51rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/history-img.png");
   position: relative;
+  background-position: center;
+  height: 25rem;
+}
+
+@media (min-width: 360px) {
+  #history .history-mainvisual {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #history .history-mainvisual {
+    min-height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #history .history-mainvisual {
+    height: 31rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #history .history-mainvisual {
+    height: 41rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #history .history-mainvisual {
+    height: 51rem;
+  }
 }
 
 #history .history-mainvisual .history-mainvisual-box {
@@ -1408,20 +1514,62 @@ header nav {
 
 #history .history-mainvisual .history-mainvisual-box::after {
   content: "";
-  height: 24rem;
   z-index: 10;
   opacity: 0.5;
   background-color: #123a7f;
   position: absolute;
-  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 50%;
+  height: 50%;
+}
+
+@media (min-width: 768px) {
+  #history .history-mainvisual .history-mainvisual-box::after {
+    height: 50%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #history .history-mainvisual .history-mainvisual-box::after {
+    top: 48.7%;
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #history .history-mainvisual .history-mainvisual-box::after {
+    top: 52.7%;
+    height: 24rem;
+  }
 }
 
 #history .bg-text-even_history {
-  top: 69%;
+  top: 70%;
   right: -1rem;
+}
+
+@media (min-width: 768px) {
+  #history .bg-text-even_history {
+    top: 73%;
+    font-size: 6.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #history .bg-text-even_history {
+    top: 72%;
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #history .bg-text-even_history {
+    top: 69%;
+    font-size: 14rem;
+  }
 }
 
 #history .history-main {
@@ -1555,10 +1703,42 @@ header nav {
 }
 
 #faq .faq-mainvisual {
-  background-image: url("../images/faq-img.png");
   background-size: cover;
-  height: 51rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/faq-img.png");
   position: relative;
+  background-position: center;
+  height: 25rem;
+}
+
+@media (min-width: 360px) {
+  #faq .faq-mainvisual {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #faq .faq-mainvisual {
+    min-height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #faq .faq-mainvisual {
+    height: 31rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-mainvisual {
+    height: 41rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #faq .faq-mainvisual {
+    height: 51rem;
+  }
 }
 
 #faq .faq-mainvisual .faq-mainvisual-box {
@@ -1575,20 +1755,62 @@ header nav {
 
 #faq .faq-mainvisual .faq-mainvisual-box::after {
   content: "";
-  height: 24rem;
   z-index: 10;
   opacity: 0.5;
   background-color: #8d2659;
   position: absolute;
-  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 50%;
+  height: 50%;
+}
+
+@media (min-width: 768px) {
+  #faq .faq-mainvisual .faq-mainvisual-box::after {
+    height: 50%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-mainvisual .faq-mainvisual-box::after {
+    top: 48.7%;
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #faq .faq-mainvisual .faq-mainvisual-box::after {
+    top: 52.7%;
+    height: 24rem;
+  }
 }
 
 #faq .bg-text-even_faq {
-  top: 69%;
+  top: 70%;
   right: -1rem;
+}
+
+@media (min-width: 768px) {
+  #faq .bg-text-even_faq {
+    top: 73%;
+    font-size: 6.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .bg-text-even_faq {
+    top: 72%;
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #faq .bg-text-even_faq {
+    top: 69%;
+    font-size: 14rem;
+  }
 }
 
 #faq .faq-main {
@@ -1660,10 +1882,42 @@ header nav {
 }
 
 #contact .contact-mainvisual {
-  background-image: url("../images/contact-img.png");
   background-size: cover;
-  height: 51rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/contact-img.png");
   position: relative;
+  background-position: center;
+  height: 25rem;
+}
+
+@media (min-width: 360px) {
+  #contact .contact-mainvisual {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #contact .contact-mainvisual {
+    min-height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-mainvisual {
+    height: 31rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #contact .contact-mainvisual {
+    height: 41rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact .contact-mainvisual {
+    height: 51rem;
+  }
 }
 
 #contact .contact-mainvisual .contact-mainvisual-box {
@@ -1680,20 +1934,62 @@ header nav {
 
 #contact .contact-mainvisual .contact-mainvisual-box::after {
   content: "";
-  height: 24rem;
   z-index: 10;
   opacity: 0.5;
   background-color: #818284;
   position: absolute;
-  top: 53%;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 50%;
+  height: 50%;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-mainvisual .contact-mainvisual-box::after {
+    height: 50%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #contact .contact-mainvisual .contact-mainvisual-box::after {
+    top: 48.7%;
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact .contact-mainvisual .contact-mainvisual-box::after {
+    top: 52.7%;
+    height: 24rem;
+  }
 }
 
 #contact .bg-text-even_contact {
-  top: 69%;
+  top: 70%;
   right: -1rem;
+}
+
+@media (min-width: 768px) {
+  #contact .bg-text-even_contact {
+    top: 73%;
+    font-size: 6.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #contact .bg-text-even_contact {
+    top: 72%;
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact .bg-text-even_contact {
+    top: 69%;
+    font-size: 14rem;
+  }
 }
 
 #contact .contact-box {

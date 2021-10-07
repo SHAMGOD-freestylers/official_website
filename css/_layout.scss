@@ -126,14 +126,15 @@
       border-left: thick solid black;
       padding-left: 0.9rem;
       margin-left: 2rem;
-      @include xs {
-        font-size: 2rem;
-      }
+
       @include sm {
         margin-top: 8rem;
         margin-left: 10rem; // 左の線用margin
-        font-size: 3rem;
+        font-size: 2rem;
         padding-left: 1.2rem;
+      }
+      @include md {
+        font-size: 3rem;
       }
     }
     section {
@@ -175,22 +176,51 @@
   &::after {
     //   背景色重ね
     content: "";
-    height: 24rem;
     z-index: 10;
     opacity: 0.5;
     background-color: $color;
     position: absolute;
-    top: 53%;
     bottom: 0;
     left: 0;
     right: 0;
+    top: 50%;
+    height: 50%;
+    @include sm {
+      height: 50%;
+      top: 50%;
+    }
+    @include md {
+      top: 48.7%;
+      height: 21rem;
+    }
+    @include lg {
+      top: 52.7%;
+      height: 24rem;
+    }
   }
 }
 @mixin mainvisual($url) {
-  background-image: url($url);
   background-size: cover;
-  height: 51rem;
+  background-repeat: no-repeat;
+  background-image: url($url);
   position: relative;
+  background-position: center;
+  height: 25rem;
+  @include xxs {
+    height: 18rem;
+  }
+  @include xs {
+    min-height: 26rem;
+  }
+  @include sm {
+    height: 31rem;
+  }
+  @include md {
+    height: 41rem;
+  }
+  @include lg {
+    height: 51rem;
+  }
 }
 // 背景文字共通クラス(左右)
 .bg-text {
@@ -212,6 +242,20 @@
 }
 // 背景文字(右配置)
 @mixin bg-text-even() {
-  top: 69%;
+  top: 70%;
+
   right: -1rem;
+
+  @include sm {
+    top: 73%;
+    font-size: 6.6rem;
+  }
+  @include md {
+    top: 72%;
+    font-size: 10rem;
+  }
+  @include lg {
+    top: 69%;
+    font-size: 14rem;
+  }
 }
