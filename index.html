@@ -17,7 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans+JP:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
     <title>~freestyle ballers~ SHAMGOD</title>
   </head>
   <body>
@@ -258,9 +261,9 @@
         <section id="news">
           <h2 class="section-title">NEWS</h2>
           <div class="bg-text">NEWS</div>
-          <div class="contents">
-            <div class="news-box-container">
-              <a class="news-box" href="">
+          <div class="contents swiper-container" 　>
+            <div class="news-box-container swiper-wrapper">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news1.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -270,7 +273,7 @@
                   <p class="news-text_title">七夕祭出演</p>
                 </div>
               </a>
-              <a class="news-box" href="">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news2.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -280,7 +283,7 @@
                   <p class="news-text_title">代表挨拶</p>
                 </div>
               </a>
-              <a class="news-box" href="">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news3.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -291,6 +294,12 @@
                 </div>
               </a>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
             <!-- <div class="news-btn-box">
               <a class="news-btn"
                 >VIEW MORE <img src="./images/view-more.svg" alt="" srcset="" />
@@ -420,8 +429,18 @@
           <div class="contents repsen-box">
             <div class="repsen-box-left">
               <div class="repsen-box-text">
-                SHAMGODは先輩後輩関係なく仲が良くて、 <br />
-                普段はメンバー同士おちゃらけていることが多いです。<br />
+                SHAMGODは遊びも <br />
+                フリースタイルバスケも <br />
+                本気です。
+              </div>
+              <div class="repsen-box-text">
+                皆さん、初めまして。<br />
+                SHAMGOD12代目代表のRyukiです！
+              </div>
+              <div class="repsen-box-text">
+                僕たちSHAMGODは良い意味で先輩後輩の垣根がなく、 <br />
+                普段はとてもにぎやかな雰囲気で、<br />
+                おちゃらけていることも多々あります。
               </div>
               <div class="repsen-box-text">
                 しかし、イベントが近づいてくると自然に、<br />
@@ -429,11 +448,9 @@
                 という一致団結した良い雰囲気になれるところが大好きです。
               </div>
               <div class="repsen-box-text">
-                たまに、「かっこいい！！、、、でも難しそう」という声をよく聞くのですが、
-                <br />
-                実は全然そんなことなくて、半分以上がバスケ初心者だし、<br />
+                たまに「かっこいい！！、、でも難しそう」という声をいただきますが、
+                実は全然そんなことなくて、メンバーの半分以上がバスケ初心者で、
                 ダンス経験なんて皆無です(笑)
-                <br />
               </div>
               <div class="repsen-box-text">
                 気がついたら上手くなっていて、<br />
@@ -445,12 +462,7 @@
               </div>
             </div>
             <div class="repsen-box-right">
-              <img
-                width="420"
-                height="460"
-                src="./images/representative-ryuki.png"
-                alt=""
-              />
+              <img src="./images/representative-ryuki.png" alt="" />
             </div>
           </div>
         </section>
@@ -649,6 +661,53 @@
     <!--自作のJS-->
     <script src="./js/main.js"></script>
     <script src="./js/timeline.js"></script>
+    <!-- slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script>
+      var swiper = undefined;
+      var winW = window.innerWidth;
+      var swiperElement = document.getElementsByClassName("swiper-container");
+      var swiperWrapper = document.getElementsByClassName("swiper-wrapper");
+      var swiperSlide = document.getElementsByClassName("swiper-slide");
+      var options = {
+        loop: true,
+        centeredSlides: true,
+        pagination: ".swiper-pagination",
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        breakpoints: {
+          991: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          767: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+      };
+      function initSwiper() {
+        if (swiperElement) {
+          var screenWidth = window.innerWidth;
+          if (screenWidth > 992 && swiper == undefined) {
+            swiper = new Swiper(".swiper-container", options);
+          } else if (screenWidth > 991 && swiper != undefined) {
+            swiper.destroy();
+            swiper = undefined;
+            for (var i = 0; i < swiperWrapper.length; i++) {
+              swiperWrapper[i].removeAttribute("style");
+            }
+            for (var i = 0; i < swiperSlide.length; i++) {
+              swiperSlide[i].removeAttribute("style");
+            }
+          }
+        }
+      }
+      initSwiper();
+
+      window.addEventListener("resize", initSwiper);
+    </script>
+    <!-- jqery -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

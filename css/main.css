@@ -701,13 +701,14 @@ template {
 .bg-text {
   position: absolute;
   margin-top: 2rem;
-  letter-spacing: 0.7rem;
   color: #f7f7f7;
+  letter-spacing: 0.3rem;
   font-size: 3.5rem;
 }
 
 @media (min-width: 400px) {
   .bg-text {
+    letter-spacing: 0.7rem;
     font-size: 6.1rem;
   }
 }
@@ -1836,27 +1837,53 @@ header nav {
   margin: 0 0 20px 3em;
 }
 
-#representative {
-  position: relative;
-}
-
 #representative .repsen-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
   padding-bottom: 2rem;
   margin-top: 6rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.8rem;
-  font-size: 1.4rem;
-  display: flex;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 960px) {
+  #representative .repsen-box {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1233px) {
+  #representative .repsen-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 #representative .repsen-box-text {
-  padding-top: 3rem;
+  max-width: 53rem;
+  padding-top: 1.8rem;
+}
+
+@media (min-width: 960px) {
+  #representative .repsen-box-text {
+    padding-top: 3rem;
+  }
+}
+
+#representative .repsen-box-text:first-child {
+  font-size: 1.8rem;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+@media (min-width: 960px) {
+  #representative .repsen-box-text:first-child {
+    font-size: 2.4rem;
+  }
 }
 
 #representative .repsen-box-text:last-child {
@@ -1864,12 +1891,54 @@ header nav {
 }
 
 #representative .repsen-box-left {
+  position: relative;
   z-index: 30;
 }
 
 #representative .repsen-box-right {
   padding-top: 3rem;
   z-index: 30;
+}
+
+#representative .repsen-box-right img {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  width: 30%;
+  height: 18%;
+}
+
+@media (min-width: 400px) {
+  #representative .repsen-box-right img {
+    height: 22%;
+  }
+}
+
+@media (min-width: 768px) {
+  #representative .repsen-box-right img {
+    width: 37%;
+    right: 0%;
+    height: 20%;
+  }
+}
+
+@media (min-width: 960px) {
+  #representative .repsen-box-right img {
+    right: -21%;
+    width: 26.8vw;
+    height: 42%;
+    position: absolute;
+    right: 3%;
+  }
+}
+
+@media (min-width: 1233px) {
+  #representative .repsen-box-right img {
+    right: 0;
+    width: 30.8vw;
+    height: 70%;
+    position: relative;
+  }
 }
 
 #faq .faq-mainvisual {

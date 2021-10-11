@@ -226,11 +226,11 @@
 .bg-text {
   position: absolute;
   margin-top: 2rem;
-  letter-spacing: 0.7rem;
   color: #f7f7f7;
-
+  letter-spacing: 0.3rem;
   font-size: 3.5rem;
   @include xs {
+    letter-spacing: 0.7rem;
     font-size: 6.1rem;
   }
   @include sm {
