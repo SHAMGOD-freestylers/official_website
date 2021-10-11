@@ -13,33 +13,71 @@
   .history-main {
     //contents
     font-family: $japanese;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    display: flex;
-    justify-content: space-between;
     position: relative;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 0 3rem;
+    @include xs {
+      padding: 0 5rem;
+    }
+    @include sm {
+      padding: 0 2rem;
 
+      line-height: 2.8rem;
+      font-size: 1.4rem;
+    }
+    @include md {
+      display: flex;
+      justify-content: space-between;
+    }
     &_left {
-      width: 48rem;
-      text-align: right;
-      padding-top: 4.8rem;
+      width: 100%;
+
+      @include md {
+        width: 47%;
+        text-align: right;
+        padding-top: 4.8rem;
+      }
       &-text {
         padding-bottom: 4rem;
 
         &:nth-child(3) {
-          padding-bottom: 11.2rem;
+          padding-bottom: 4rem;
+
+          @include md {
+            padding-bottom: 11.2rem;
+          }
         }
       }
 
       img {
-        width: 48rem;
-        min-height: 31rem;
-        padding-bottom: 7.5rem;
+        position: absolute;
+        width: 27.5%;
+        height: 11.8%;
+        top: 87%;
+        right: 5%;
+        @include sm {
+          width: 50%;
+          height: 19%;
+          top: 87%;
+          right: -21%;
+        }
+        @include md {
+          width: 100%;
+          height: 47%;
+          position: relative;
+          padding-bottom: 7.5rem;
+          top: 0;
+          right: 0;
+        }
       }
     }
     &_right {
       text-align: left;
-      width: 48rem;
+      width: 100%;
+      @include md {
+        width: 47%;
+      }
       &-text {
         padding-bottom: 4rem;
         &:last-child {
@@ -48,19 +86,50 @@
       }
 
       img {
-        padding-bottom: 7.5rem;
-        width: 49rem;
-        min-height: 31rem;
+        position: absolute;
+        width: 27.5%;
+        height: 11.8%;
+        top: 12%;
+        right: 5%;
+        @include sm {
+          width: 50%;
+          height: 19%;
+          top: 10%;
+          right: -21%;
+        }
+        @include md {
+          width: 100%;
+          height: 47%;
+          position: relative;
+          padding-bottom: 7.5rem;
+          top: 0;
+          right: 0;
+        }
       }
     }
   }
 }
 /*タイムライン全体の設定*/
 .timeline {
-  left: 49.5%;
   position: absolute;
-  margin-top: 6rem;
+  margin-top: 1rem;
+  left: 2%;
+  top: 0;
+  @include xxs {
+    left: 0;
+  }
+  @include xs {
+    left: 4.5%;
+  }
+  @include sm {
+    left: -9.5%;
+  }
+  @include md {
+    top: none;
 
+    margin-top: 6rem;
+    left: 49.5%;
+  }
   li {
     /*線の起点とするためrelativeを設定*/
     position: relative;
@@ -72,10 +141,14 @@
       position: absolute;
       top: 0;
       left: -0.1px;
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       background: black;
       border-radius: 50%;
+      @include sm {
+        width: 10px;
+        height: 10px;
+      }
     }
 
     .border-line {
