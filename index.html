@@ -17,7 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans+JP:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
     <title>~freestyle ballers~ SHAMGOD</title>
   </head>
   <body>
@@ -25,8 +28,8 @@
       <!-- sidebar -->
       <aside class="side">
         <div class="sticky">
-          <!-- <div class="sticky-part"> -->
           <img class="logo" src="./images/logo.png" alt="" />
+
           <div class="side-text">
             KEIO UNIVERSITY <br />
             FREESTYLE <br />
@@ -64,55 +67,62 @@
             <a href="#contact" class="contact-nav">CONTACT</a>
           </nav>
           <!-- レスポンシブ sp -->
-          <div id="hamburger">
-            <div class="icon">
-              <span></span>
-              <span></span>
-              <span></span>
+
+          <div class="header_box">
+            <div class="header_box_left">
+              <img class="logo" src="./images/logo.png" alt="" srcset="" />
+              <p class="header_box_left_text">
+                KEIO UNIVERSITY <br />
+                FREESTYLE <br />
+                BASKETBALL CREW
+              </p>
             </div>
-          </div>
-          <div class="sham-logo">
-            <img class="logo" src="./images/logo.png" alt="" srcset="" />
-          </div>
 
-          <div class="sns">
-            <a href="https://www.instagram.com/keio_shamgod/">
-              <i class="fab fa-instagram"> </i
-            ></a>
-            <a href="https://twitter.com/keio_shamgod">
-              <i class="fab fa-twitter"> </i>
-            </a>
+            <div class="header_box_right" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="header_box_right_text">MENU</p>
+            </div>
+            <!-- <div class="sns">
+              <a href="https://www.instagram.com/keio_shamgod/">
+                <i class="fab fa-instagram"> </i
+              ></a>
+              <a href="https://twitter.com/keio_shamgod">
+                <i class="fab fa-twitter"> </i>
+              </a>
 
-            <a
-              class="facebook-logo"
-              href="https://www.facebook.com/shamgod.freestyleballers/"
-            >
-              <img
-                src="./images/facebook.png"
-                alt=""
-                style="width: 2rem; height: 2rem"
-              />
-            </a>
+              <a
+                class="facebook-logo"
+                href="https://www.facebook.com/shamgod.freestyleballers/"
+              >
+                <img src="./images/facebook.png" alt="" />
+              </a>
+            </div> -->
+
+            <!--▽▽ハンバーガーメニューのリスト▽▽-->
+            <nav class="sm">
+              <ul>
+                <li><a href="#message" id="message-nav">MESSAGE</a></li>
+                <li><a href="#movies" id="movies-nav">MOVIES</a></li>
+                <li><a href="#news" id="news-nav">NEWS</a></li>
+                <li><a href="#history" id="history-nav">HISTORY</a></li>
+                <li><a href="#faq" id="faq-nav">FAQ</a></li>
+                <li><a href="#contact" id="contact-nav">CONTACT</a></li>
+              </ul>
+            </nav>
           </div>
-
-          <!--▽▽ハンバーガーメニューのリスト▽▽-->
-          <nav class="sm">
-            <ul>
-              <li><a href="#message" id="message-nav">MESSAGE</a></li>
-              <li><a href="#movies" id="movies-nav">MOVIES</a></li>
-              <li><a href="#news" id="news-nav">NEWS</a></li>
-              <li><a href="#history" id="history-nav">HISTORY</a></li>
-              <li><a href="#faq" id="faq-nav">FAQ</a></li>
-              <li><a href="#contact" id="contact-nav">CONTACT</a></li>
-            </ul>
-          </nav>
         </header>
         <!-- mainvisual -->
         <div class="mainvisual" id="mainvisual">
-          <p class="mainvisual_text mainvisual_text_1">慶應義塾大学発の</p>
-          <p class="mainvisual_text mainvisual_text_2">
-            フリースタイルバスケサークル
-          </p>
+          <div class="mainvisual_box">
+            <p class="mainvisual_box_text mainvisual_box_text_1">
+              慶應義塾大学発の
+            </p>
+            <p class="mainvisual_box_text mainvisual_box_text_2">
+              フリースタイルバスケサークル
+            </p>
+          </div>
           <img src="./images/mainvisual2.png" alt="" />
         </div>
         <!-- message -->
@@ -122,10 +132,9 @@
           <div class="contents message-main">
             <div class="message-box">
               <div class="message-box_left">
+                <h1 class="message-concept">一人でも多くの人に、</h1>
                 <h1 class="message-concept">
-                  一人でも多くの人に、<br />
-                  フリースタイルバスケの <br />
-                  魅力を届けたい。
+                  フリースタイルバスケの 魅力を届けたい。
                 </h1>
               </div>
               <div class="message-box_right">
@@ -252,9 +261,9 @@
         <section id="news">
           <h2 class="section-title">NEWS</h2>
           <div class="bg-text">NEWS</div>
-          <div class="contents">
-            <div class="news-box-container">
-              <a class="news-box" href="">
+          <div class="contents swiper-container" 　>
+            <div class="news-box-container swiper-wrapper">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news1.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -264,7 +273,7 @@
                   <p class="news-text_title">七夕祭出演</p>
                 </div>
               </a>
-              <a class="news-box" href="">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news2.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -274,7 +283,7 @@
                   <p class="news-text_title">代表挨拶</p>
                 </div>
               </a>
-              <a class="news-box" href="">
+              <a class="news-box swiper-slide" href="">
                 <img src="./images/news3.png" alt="" class="news-box-img" />
                 <div class="news-text-box">
                   <div class="news-text_sub">
@@ -285,11 +294,17 @@
                 </div>
               </a>
             </div>
-            <div class="news-btn-box">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- <div class="news-btn-box">
               <a class="news-btn"
                 >VIEW MORE <img src="./images/view-more.svg" alt="" srcset="" />
               </a>
-            </div>
+            </div> -->
           </div>
         </section>
         <!-- history -->
@@ -414,28 +429,40 @@
           <div class="contents repsen-box">
             <div class="repsen-box-left">
               <div class="repsen-box-text">
-                今年で12年目を迎えるFreestyle Basketball Crew SHAMGOD。<br />
-                約30名の男子パフォーマーと5名の女子マネージャーが所属し、<br />
-                バスケットボールを使った斬新なパフォーマンスで観客を魅了します。
+                SHAMGODは遊びも <br />
+                フリースタイルバスケも <br />
+                本気です。
               </div>
               <div class="repsen-box-text">
-                今年で12年目を迎えるFreestyle Basketball Crew SHAMGOD。<br />
-                約30名の男子パフォーマーと5名の女子マネージャーが所属し、<br />
-                バスケットボールを使った斬新なパフォーマンスで観客を魅了します。
+                皆さん、初めまして。<br />
+                SHAMGOD12代目代表のRyukiです！
               </div>
               <div class="repsen-box-text">
-                今年で12年目を迎えるFreestyle Basketball Crew SHAMGOD。<br />
-                約30名の男子パフォーマーと5名の女子マネージャーが所属し、<br />
-                バスケットボールを使った斬新なパフォーマンスで観客を魅了します。
+                僕たちSHAMGODは良い意味で先輩後輩の垣根がなく、 <br />
+                普段はとてもにぎやかな雰囲気で、<br />
+                おちゃらけていることも多々あります。
+              </div>
+              <div class="repsen-box-text">
+                しかし、イベントが近づいてくると自然に、<br />
+                「良いショーケースを作ろう」<br />
+                という一致団結した良い雰囲気になれるところが大好きです。
+              </div>
+              <div class="repsen-box-text">
+                たまに「かっこいい！！、、でも難しそう」という声をいただきますが、
+                実は全然そんなことなくて、メンバーの半分以上がバスケ初心者で、
+                ダンス経験なんて皆無です(笑)
+              </div>
+              <div class="repsen-box-text">
+                気がついたら上手くなっていて、<br />
+                気がついたら三田祭のステージに立っていて、<br />
+                気がついたらSHAMGODが大好きになっている。<br />
+              </div>
+              <div class="repsen-box-text">
+                遊びもフリースタイルバスケも全力でやるSHAMGODだからこそ出せる魅力です！
               </div>
             </div>
             <div class="repsen-box-right">
-              <img
-                width="420"
-                height="460"
-                src="./images/representative-ryuki.png"
-                alt=""
-              />
+              <img src="./images/representative-ryuki.png" alt="" />
             </div>
           </div>
         </section>
@@ -634,6 +661,53 @@
     <!--自作のJS-->
     <script src="./js/main.js"></script>
     <script src="./js/timeline.js"></script>
+    <!-- slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script>
+      var swiper = undefined;
+      var winW = window.innerWidth;
+      var swiperElement = document.getElementsByClassName("swiper-container");
+      var swiperWrapper = document.getElementsByClassName("swiper-wrapper");
+      var swiperSlide = document.getElementsByClassName("swiper-slide");
+      var options = {
+        loop: true,
+        centeredSlides: true,
+        pagination: ".swiper-pagination",
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        breakpoints: {
+          991: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          767: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+      };
+      function initSwiper() {
+        if (swiperElement) {
+          var screenWidth = window.innerWidth;
+          if (screenWidth > 992 && swiper == undefined) {
+            swiper = new Swiper(".swiper-container", options);
+          } else if (screenWidth > 991 && swiper != undefined) {
+            swiper.destroy();
+            swiper = undefined;
+            for (var i = 0; i < swiperWrapper.length; i++) {
+              swiperWrapper[i].removeAttribute("style");
+            }
+            for (var i = 0; i < swiperSlide.length; i++) {
+              swiperSlide[i].removeAttribute("style");
+            }
+          }
+        }
+      }
+      initSwiper();
+
+      window.addEventListener("resize", initSwiper);
+    </script>
+    <!-- jqery -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

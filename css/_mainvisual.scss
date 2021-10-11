@@ -1,35 +1,64 @@
 .mainvisual {
   position: relative;
-  .mainvisual_text {
+  .mainvisual_box {
     position: absolute;
-    font-family: $japanese;
-    padding: 1rem;
-    background-color: rgba(193, 3, 5, 0.7);
-    font-size: 3rem;
-    color: #f7f7f7;
     right: 0;
+    font-family: $japanese;
+    color: #f7f7f7;
     font-weight: normal;
     letter-spacing: 1.5px;
-    @include tab {
-      font-size: 9rem;
+
+    bottom: 1rem;
+    @include sm {
+      padding: 0.5rem;
     }
-    &_1 {
-      top: 79%;
-      right: 15.1%;
-    }
-    &_2 {
-      top: 87%;
+
+    &_text {
+      background-color: rgba(193, 3, 5, 0.7);
+      font-size: 1.3rem;
+      padding: 0.5rem;
+
+      @include sm {
+        font-size: 2rem;
+      }
+      @include md {
+        font-size: 3rem;
+        padding: 1rem;
+      }
+      &_1 {
+        display: inline-block;
+        margin-bottom: 1rem;
+        width: 13rem;
+
+        @include sm {
+          width: 22rem;
+        }
+        @include md {
+          width: 28rem;
+        }
+      }
+      &_2 {
+        display: block;
+      }
     }
   }
 
   img {
-    width: 100%;
-    height: 101vh;
-    object-fit: cover;
-    @include sp {
+    height: 34vh;
+    @include xs {
+      height: 40%;
+    }
+    width: 100vw;
+    margin-top: 8.4rem;
+    @include xxs {
       width: 100%;
-      height: auto;
-      margin-top: 6rem;
+    }
+    @include sm {
+      margin-top: 0;
+    }
+    object-fit: cover;
+    @include lg {
+      height: 101vh;
     }
   }
 }

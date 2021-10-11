@@ -27,30 +27,16 @@
       &:first-child {
         margin-top: 0;
       }
-      @include tab {
-        width: auto;
-      }
-      @include sp {
-        background-color: #fff;
-        display: block;
-        max-width: 31rem;
-        padding: 6rem 0;
-        margin: 6rem 0;
-      }
+
       &-question {
         display: flex;
         font-size: 2.4rem;
         margin-right: auto;
-        @include sp {
-          font-size: 1.8rem;
-        }
+
         &-q {
           font-size: 4rem;
           font-family: $english;
           margin-right: 1.7rem;
-          @include sp {
-            font-size: 3rem;
-          }
         }
       }
       &-answer {
@@ -63,16 +49,10 @@
           font-size: 4rem;
           margin-right: 1.6rem;
           font-family: $english;
-          @include sp {
-            font-size: 3rem;
-          }
         }
       }
       &:nth-child(even) {
         margin-left: auto;
-        @include sp {
-          margin: 0;
-        }
       }
     }
   }

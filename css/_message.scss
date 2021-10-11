@@ -1,44 +1,52 @@
 #message {
   position: relative;
   .message-box {
-    display: flex;
     font-family: $japanese;
-    @include sp {
-      display: block;
-    }
-    @include tab {
-      display: inherit;
+    @include md {
+      display: flex;
     }
     &_left {
+      position: relative;
       z-index: 20;
-      font-size: 4.4rem;
+      font-size: 1.8rem;
       line-height: 1.5;
       padding-right: 7.9rem;
-      @include tab {
-        z-index: 20;
-        font-size: 2.7rem;
-        margin-bottom: 5rem;
-        padding: 0;
+      @include sm {
+        font-size: 3.8rem;
       }
-      @include sp {
-        font-size: 2.7rem;
-        margin-bottom: 5rem;
-        padding: 0;
+      @include md {
       }
       .message-concept {
-        width: 50rem;
-        @include tab {
-          width: auto;
+        width: 23rem;
+
+        @include xs {
+          width: 39.4rem;
+        }
+        @include md {
+          width: 39.4rem;
+        }
+        @include lg {
+          width: 44rem;
         }
       }
     }
     &_right {
+      position: relative;
       z-index: 20;
       font-weight: bold;
-      font-size: 1.4rem;
-      line-height: 2.8rem;
+      font-size: 1.1rem;
+      line-height: 1.9rem;
+      padding-top: 2.5rem;
+      @include md {
+        padding-top: 0;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+      }
       .message-text {
-        padding-bottom: 3rem;
+        padding-bottom: 1.8rem;
+        @include sm {
+          padding-bottom: 3rem;
+        }
         &:nth-child(3) {
           color: #c10305;
         }

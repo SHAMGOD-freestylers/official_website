@@ -11,32 +11,29 @@
     @include bg-text-even();
   }
   .movie-contents {
-    @include tab {
-    }
-    @include sp {
-      margin: 0;
-    }
     .movie-main {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
       margin-top: 7.6rem;
-      @include sp {
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 3rem;
+      @include lg {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
       .movies-box {
-        @include tab {
-        }
+        max-width: max-content;
+        margin: 0 auto;
         iframe {
           width: 100%;
-          @include tab {
+          height: 20vh;
+          @include md {
+            height: 27vh;
           }
         }
         &:nth-child(2) {
-          @include tab {
-            margin-top: 7rem;
+          margin-top: 7rem;
+          @include lg {
+            margin-top: 0;
           }
         }
         &:nth-child(3) {
@@ -44,39 +41,38 @@
         }
         &:nth-child(4) {
           margin-top: 7rem;
-          @include tab {
-            margin: 0;
-          }
         }
 
         .movies-text-box {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 48rem;
+          @include md {
+            width: 48rem;
+          }
+          width: 33rem;
           height: 16.35rem;
           text-align: center;
           font-weight: bold;
           background-color: #f4f4f4;
-          @include sp {
-            max-width: 100%;
-          }
+
           .movies-box-text_title {
             line-height: 2.8rem;
-            font-size: 2rem;
-            @include sp {
-              font-size: 1.5rem;
+            font-size: 1.6rem;
+
+            @include md {
+              font-size: 2rem;
             }
           }
           .movies-box-text_subtext {
             padding-top: 0.7rem;
-            font-size: 1.3rem;
             line-height: 2rem;
             padding: 1rem 2.1rem;
             color: $gray;
-            @include sp {
-              width: auto;
-              font-size: 1rem;
+            font-size: 1rem;
+
+            @include md {
+              font-size: 1.3rem;
             }
           }
         }

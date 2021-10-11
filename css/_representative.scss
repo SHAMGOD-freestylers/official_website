@@ -1,31 +1,73 @@
 #representative {
-  position: relative;
   .repsen-box {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 14rem;
+    position: relative;
     padding-bottom: 2rem;
+    margin-top: 6rem;
     font-family: $japanese;
     line-height: 2.8rem;
-    font-size: 1.4rem;
-    display: flex;
-    @include tab {
-      flex-direction: column-reverse;
-      margin: 5rem 0;
+    font-size: 1.1rem;
+
+    @include md {
+      font-size: 1.4rem;
+    }
+    @include lg {
+      display: flex;
+      justify-content: space-between;
     }
     &-text {
-      padding-top: 4.4rem;
+      max-width: 53rem;
+      padding-top: 1.8rem;
+
+      @include md {
+        padding-top: 3rem;
+      }
+      &:first-child {
+        font-size: 1.8rem;
+        padding-top: 0;
+        font-weight: bold;
+        @include md {
+          font-size: 2.4rem;
+        }
+      }
+      &:last-child {
+        color: #c10305;
+      }
+    }
+    &-left {
+      position: relative;
+      z-index: 30;
     }
     &-right {
-      @include sp {
-        max-width: 100%;
-        img {
-          max-width: 31.5rem;
-          max-height: 46rem;
-          margin: 3rem 0;
-          @include tab {
-            height: auto;
-          }
+      padding-top: 3rem;
+      z-index: 30;
+      img {
+        position: absolute;
+        top: 0;
+        right: 4%;
+        width: 30%;
+        height: 18%;
+        @include xs {
+          height: 22%;
+        }
+        @include sm {
+          width: 37%;
+
+          right: 0%;
+          height: 20%;
+        }
+
+        @include md {
+          right: -21%;
+          width: 26.8vw;
+          height: 42%;
+          position: absolute;
+          right: 3%;
+        }
+        @include lg {
+          right: 0;
+          width: 30.8vw;
+          height: 70%;
+          position: relative;
         }
       }
     }

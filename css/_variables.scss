@@ -7,22 +7,35 @@ $english: "Alfa Slab One", cursive;
 $japanese: "Noto Sans JP", sans-serif;
 
 // レスポンシブ
-$pc: 1024px; // PC
-$tab: 768px; // タブレット
-$sp: 480px; // スマホ
 
-@mixin pc {
-  @media (max-width: ($pc)) {
+$xxs: 360px;
+$xs: 400px;
+$sm: 768px;
+$md: 960px;
+$lg: 1233px;
+
+@mixin xxs {
+  @media (min-width: ($xxs)) {
     @content;
   }
 }
-@mixin tab {
-  @media (max-width: ($tab)) {
+@mixin xs {
+  @media (min-width: ($xs)) {
     @content;
   }
 }
-@mixin sp {
-  @media (max-width: ($sp)) {
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: ($lg)) {
     @content;
   }
 }
