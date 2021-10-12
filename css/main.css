@@ -2071,11 +2071,32 @@ header nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 63rem;
-  padding: 5rem 6rem;
   font-family: "Noto Sans JP", sans-serif;
-  line-height: 2.8rem;
-  margin-top: 6rem;
+  line-height: 1.75rem;
+  padding: 2rem;
+  margin-top: 5.5rem;
+  margin: 5.5rem 2rem 0;
+  width: 80%;
+}
+
+@media (min-width: 400px) {
+  #faq .faq-main .faq-box {
+    width: 100%;
+    margin: 6rem 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #faq .faq-main .faq-box {
+    padding: 5rem 6rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-main .faq-box {
+    width: 63rem;
+  }
 }
 
 #faq .faq-main .faq-box:first-child {
@@ -2086,34 +2107,79 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2.4rem;
   margin-right: auto;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  #faq .faq-main .faq-box-question {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-main .faq-box-question {
+    font-size: 2.4rem;
+  }
 }
 
 #faq .faq-main .faq-box-question-q {
-  font-size: 4rem;
   font-family: "Alfa Slab One", cursive;
   margin-right: 1.7rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  #faq .faq-main .faq-box-question-q {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-main .faq-box-question-q {
+    font-size: 4rem;
+  }
 }
 
 #faq .faq-main .faq-box-answer {
-  margin-top: 4.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.4rem;
   margin-right: auto;
+  font-size: 1rem;
+  margin-top: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  #faq .faq-main .faq-box-answer {
+    margin-top: 4.2rem;
+    font-size: 1.4rem;
+  }
 }
 
 #faq .faq-main .faq-box-answer-a {
   color: #8d2659;
-  font-size: 4rem;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
+  font-size: 1.6rem;
 }
 
-#faq .faq-main .faq-box:nth-child(even) {
-  margin-left: auto;
+@media (min-width: 768px) {
+  #faq .faq-main .faq-box-answer-a {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-main .faq-box-answer-a {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #faq .faq-main .faq-box:nth-child(even) {
+    margin-left: auto;
+  }
 }
 
 #contact {
