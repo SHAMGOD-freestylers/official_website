@@ -11,67 +11,127 @@
     @include bg-text-even();
   }
   .movie-contents {
+    width: auto;
+    @include xxs {
+      width: 34rem;
+    }
+    @include xs {
+      width: 100%;
+    }
+    @include lg {
+      width: auto;
+    }
     .movie-main {
       display: flex;
       flex-direction: column;
       margin-top: 7.6rem;
-      @include lg {
-        flex-direction: row;
+
+      @include sm {
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
       }
+
       .movies-box {
-        max-width: max-content;
         margin: 0 auto;
-        iframe {
+        width: 84%;
+        @include xxs {
           width: 100%;
-          height: 20vh;
+        }
+        @include xs {
+          height: 64vh;
+        }
+
+        @include sm {
+          margin: 0;
+          width: 48%;
+          height: auto;
+        }
+        @include md {
+          width: 47%;
+          margin: 0 auto;
+        }
+        iframe {
+          height: 72%;
+          width: 100%;
           @include md {
-            height: 27vh;
+            height: 90%;
           }
         }
         &:nth-child(2) {
-          margin-top: 7rem;
+          padding-top: 7rem;
+          @include sm {
+            padding-top: 0;
+          }
+          @include md {
+            padding-top: 0;
+          }
           @include lg {
-            margin-top: 0;
+            padding-left: 0;
           }
         }
         &:nth-child(3) {
           margin-top: 7rem;
+          @include md {
+            margin-top: 14rem;
+          }
         }
-        &:nth-child(4) {
+        &:last-child {
           margin-top: 7rem;
+          @include md {
+            margin-top: 14rem;
+          }
+
+          @include lg {
+            padding-left: 0;
+          }
         }
 
         .movies-text-box {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          @include md {
-            width: 48rem;
-          }
-          width: 33rem;
-          height: 16.35rem;
+
+          height: 11.4rem;
           text-align: center;
           font-weight: bold;
           background-color: #f4f4f4;
 
           .movies-box-text_title {
-            line-height: 2.8rem;
-            font-size: 1.6rem;
+            line-height: 2rem;
+            font-size: 1.4rem;
+            @include xxs {
+              line-height: 2.4rem;
+              font-size: 1.6rem;
+            }
 
+            @include sm {
+              font-size: 1.3rem;
+            }
             @include md {
+              padding-top: 2rem;
+              line-height: 2.8rem;
+              font-size: 1.6rem;
+            }
+            @include lg {
               font-size: 2rem;
             }
           }
           .movies-box-text_subtext {
             padding-top: 0.7rem;
-            line-height: 2rem;
-            padding: 1rem 2.1rem;
+            padding: 1rem 0.5rem;
+
             color: $gray;
             font-size: 1rem;
-
+            line-height: 1.3rem;
+            @include xxs {
+              line-height: 1.6rem;
+            }
             @include md {
+              padding: 1rem 2.1rem;
+            }
+            @include md {
+              line-height: 2rem;
               font-size: 1.3rem;
             }
           }

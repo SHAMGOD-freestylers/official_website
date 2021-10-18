@@ -28,7 +28,9 @@
       <!-- sidebar -->
       <aside class="side">
         <div class="sticky">
-          <img class="logo" src="./images/logo.png" alt="" />
+          <h1 class="logo">
+            <img class="logo" src="./images/logo.png" alt="" />
+          </h1>
 
           <div class="side-text">
             KEIO UNIVERSITY <br />
@@ -116,26 +118,27 @@
         <!-- mainvisual -->
         <div class="mainvisual" id="mainvisual">
           <div class="mainvisual_box">
-            <p class="mainvisual_box_text mainvisual_box_text_1">
+            <h2 class="mainvisual_box_text mainvisual_box_text_1">
               慶應義塾大学発の
-            </p>
-            <p class="mainvisual_box_text mainvisual_box_text_2">
+            </h2>
+            <h2 class="mainvisual_box_text mainvisual_box_text_2">
               フリースタイルバスケサークル
-            </p>
+            </h2>
           </div>
           <img src="./images/mainvisual2.png" alt="" />
         </div>
         <!-- message -->
         <section id="message">
-          <p class="section-title">MESSAGE</p>
           <div class="bg-text">SHAMGOD</div>
-          <div class="contents message-main">
+          <p class="section-title">MESSAGE</p>
+          <div class="contents message_main">
             <div class="message-box">
               <div class="message-box_left">
-                <h1 class="message-concept">一人でも多くの人に、</h1>
-                <h1 class="message-concept">
-                  フリースタイルバスケの 魅力を届けたい。
-                </h1>
+                <h3 class="message-concept">
+                  一人でも多くの人に、<br />フリースタイルバスケの<br
+                    class="message_br"
+                  />魅力を届けたい。
+                </h3>
               </div>
               <div class="message-box_right">
                 <p class="message-text">
@@ -174,8 +177,6 @@
                 <!-- youtube -->
                 <iframe
                   id="movies2"
-                  width="480"
-                  height="265"
                   src="https://www.youtube.com/embed/JKhw0CKEhMk"
                   title="YouTube video player"
                   frameborder="0"
@@ -196,8 +197,6 @@
               <div class="movies-box">
                 <!-- youtube -->
                 <iframe
-                  width="480"
-                  height="265"
                   src="https://www.youtube.com/embed/MdVJW7M5NW4"
                   title="YouTube video player"
                   frameborder="0"
@@ -217,8 +216,6 @@
               <div class="movies-box">
                 <!-- youtube -->
                 <iframe
-                  width="480"
-                  height="265"
                   src="https://www.youtube.com/embed/6HUL20fEp7k"
                   title="YouTube video player"
                   frameborder="0"
@@ -236,8 +233,6 @@
               <div class="movies-box">
                 <!-- youtube -->
                 <iframe
-                  width="480"
-                  height="265"
                   src="https://www.youtube.com/embed/b3pDN3ibOw8"
                   title="YouTube video player"
                   frameborder="0"
@@ -246,10 +241,10 @@
                 ></iframe>
                 <div class="movies-text-box">
                   <p class="movies-box-text_title">
-                    フリースタイルバスケ日本一決定戦
+                    フリースタイルバスケ 日本一決定戦
                   </p>
                   <p class="movies-box-text_subtext">
-                    SHAMGODを代表するショーケース「STOMP TO OUT BEAT」で <br />
+                    SHAMGODを代表するショーケース「STOMP TO OUT BEAT」で
                     団体第二位を受賞しました。
                   </p>
                 </div>
@@ -297,9 +292,6 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
             <!-- <div class="news-btn-box">
               <a class="news-btn"
                 >VIEW MORE <img src="./images/view-more.svg" alt="" srcset="" />
@@ -546,7 +538,7 @@
               <div class="bg-text bg-text-even_contact">CONTACT</div>
             </div>
           </div>
-          <div class="contents">
+          <div class="contents contact_main">
             <div class="contact-box">
               <div class="contact-box-left" id="contact2">
                 <div class="contact-box-left-text">
@@ -613,7 +605,11 @@
               <div class="contact-bgc contact-bgc2"></div>
 
               <div class="form-box-left">
-                <p>下記フォームからご連絡お待ちしております。</p>
+                <p>
+                  下記フォームから
+                  <br class="form_br" />
+                  ご連絡お待ちしております。
+                </p>
                 <form action="confirm.php" method="post">
                   <input type="text" name="yourname" placeholder="Name" />
                   <input type="email" name="mail" id="" placeholder="E-mail" />
@@ -672,9 +668,12 @@
       var options = {
         loop: true,
         centeredSlides: true,
+        allowTouchMove: true,
         pagination: ".swiper-pagination",
-        nextButton: ".swiper-button-next",
-        prevButton: ".swiper-button-prev",
+        mousewheel: {
+          forceToAxis: true,
+        },
+
         breakpoints: {
           991: {
             slidesPerView: 2,

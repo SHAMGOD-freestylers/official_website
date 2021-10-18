@@ -47,13 +47,13 @@
         letter-spacing: 0.3rem;
         line-height: 2rem;
         @include sm {
-          margin: 11rem auto 12rem;
+          margin: 16rem auto 12rem;
         }
         @include md {
-          margin: 22rem auto 0;
+          margin: 16rem auto 0;
         }
         @include lg {
-          margin: 15rem auto 0;
+          margin: 16rem auto 0;
         }
         font-weight: bold;
       }
@@ -129,7 +129,6 @@
 
       @include sm {
         margin-top: 8rem;
-        margin-left: 10rem; // 左の線用margin
         font-size: 2rem;
         padding-left: 1.2rem;
       }
@@ -150,10 +149,9 @@
         }
         @include sm {
           max-width: 1100px;
-          // padding: 0 3rem;
+          width: 100%;
         }
         @include md {
-          width: 100%;
           margin: 8rem auto;
         }
       }
@@ -242,16 +240,16 @@
 }
 // 背景文字(右配置)
 @mixin bg-text-even() {
-  top: 70%;
+  top: 67%;
 
   right: -1rem;
 
   @include sm {
-    top: 73%;
+    top: 70%;
     font-size: 6.6rem;
   }
   @include md {
-    top: 72%;
+    top: 70%;
     font-size: 10rem;
   }
   @include lg {
