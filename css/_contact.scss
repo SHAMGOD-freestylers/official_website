@@ -1,5 +1,9 @@
 #contact {
   position: relative;
+  margin-bottom: 0;
+  @include lg {
+    margin: 0 0 7rem;
+  }
   .contact-mainvisual {
     @include mainvisual("../images/contact-img.png");
     .contact-mainvisual-box {
@@ -9,153 +13,282 @@
   .bg-text-even_contact {
     @include bg-text-even();
   }
-  .contact-box {
-    display: flex;
+  .contact_main {
+    margin: 0;
+    padding-top: 3rem;
+    width: 100%;
+    @include md {
+      padding-top: 8rem;
+    }
+    .contact-box {
+      font-family: $japanese;
+      @include md {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-left {
+        position: relative;
+        z-index: 20;
+        line-height: 4.6rem;
+        font-size: 2.4rem;
+        @include md {
+          margin-top: 9rem;
+          line-height: 6.6rem;
+        }
+        @include lg {
+          font-size: 4.2rem;
+        }
+        span {
+          color: white;
+          background-color: #000000;
+          padding: 0 1rem;
+        }
+      }
+      &-right {
+        position: relative;
+        z-index: 20;
+        margin-left: 7.3rem;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        width: 48rem;
+        margin-top: 4rem;
+        margin-left: auto;
+        @include md {
+          width: auto;
+          margin-top: 0;
+          margin-left: 0;
+        }
+        &-text {
+          padding-top: 1.5rem;
 
-    font-family: $japanese;
+          @include md {
+            padding-top: 2.6rem;
+          }
 
-    &-left {
-      z-index: 20;
-      margin-top: 9rem;
-      font-size: 4.4rem;
-      line-height: 6.6rem;
-      span {
-        color: white;
-        background-color: #000000;
-        padding: 0 1rem;
+          @include md {
+            padding-top: 3.6rem;
+          }
+          &:first-child {
+            padding-top: 0;
+          }
+          &:nth-child(2) {
+            color: #c10305;
+          }
+          .contact-dot {
+            vertical-align: middle;
+          }
+        }
+        // btn
+        .contact-box-right-btn {
+          margin-top: 2.4rem;
+          margin-bottom: 4rem;
+          img {
+            width: 15rem;
+            height: 5rem;
+            @include sm {
+              width: 21rem;
+              height: 7rem;
+            }
+            @include md {
+              width: 26.579rem;
+              height: 9.1rem;
+            }
+          }
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
+        }
       }
     }
-    &-right {
-      z-index: 20;
-      margin-left: 7.3rem;
-      font-size: 1.4rem;
-      line-height: 3rem;
 
-      &-text {
-        text-align: left;
-        padding-top: 3.6rem;
-        &:first-child {
-          padding-top: 0;
-        }
-        &:nth-child(2) {
-          color: #c10305;
-        }
-        .contact-dot {
-          vertical-align: middle;
+    // form
+    .form-box {
+      margin-top: 7rem;
+      padding: 0 0 7rem;
+
+      @include sm {
+        display: flex;
+      }
+      @include md {
+        justify-content: space-between;
+      }
+      @include lg {
+        padding-bottom: 0;
+      }
+      .form-box-left {
+        z-index: 20;
+        position: relative;
+        padding: 8rem 0 0;
+
+        p {
+          margin-bottom: 3.75rem;
+          font-size: 1.4rem;
+          form_br {
+            @include md {
+              display: none;
+            }
+          }
         }
       }
-      // btn
-      .contact-box-right-btn {
-        margin-top: 2.4rem;
-        margin-bottom: 4rem;
-        width: 26.579rem;
-        height: 9.1rem;
-        cursor: pointer;
+      .form-box-right {
+        position: relative;
+        z-index: 20;
+        font-size: 2.4rem;
+        line-height: 4.6rem;
+        margin-top: 16%;
+        padding-left: 5.8rem;
+        @include md {
+          line-height: 6.6rem;
+        }
+        @include lg {
+          font-size: 4.4rem;
+        }
+        span {
+          color: white;
+          background-color: #000000;
+          padding: 0 1rem;
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      font-family: $english;
+      input {
+        background-color: #fff;
+        padding-left: 1.2rem;
+        margin-bottom: 2rem;
+        width: 17.5rem;
+        height: 2.5rem;
+        @include md {
+          width: 40rem;
+          height: 4.8rem;
+        }
+        @include lg {
+          width: 50rem;
+        }
+        &::placeholder {
+          color: #bebebe;
+          font-size: 1rem;
+          @include md {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      textarea {
+        background-color: #fff;
+        padding-left: 1.2rem;
+        padding-top: 1.4rem;
+        margin-bottom: 3.8rem;
+        resize: none;
+        width: 17.5rem;
+
+        &:placeholder {
+          color: #bebebe;
+          font-size: 1rem;
+          @include md {
+            font-size: 1.6rem;
+            color: #bebebe;
+          }
+        }
+
+        @include md {
+          width: 40rem;
+        }
+        @include lg {
+          width: 50rem;
+        }
+      }
+
+      .submit {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: white;
+        border-radius: 0%;
+        background-color: #c10305;
+        opacity: 0.86;
+        width: 13.2rem;
+        height: 3rem;
+        font-size: 1rem;
+        @include md {
+          font-weight: bold;
+          font-size: 1.6rem;
+          width: 23.5rem;
+          height: 5rem;
+        }
         &:hover {
           opacity: 0.7;
           transition: 0.3s;
         }
+        img {
+          height: 2.6px;
+          width: 5.5px;
+          margin-bottom: 0.2rem;
+          margin-left: 2.3rem;
+        }
       }
     }
-  }
-
-  // form
-  .form-box {
-    margin-top: 7rem;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-
-    .form-box-left {
-      z-index: 20;
-
-      padding: 8rem 0 0;
-
-      p {
-        margin-bottom: 3.75rem;
-        font-size: 1.4rem;
+    .contact-bgc {
+      height: 62rem;
+      width: 82rem;
+      z-index: 0;
+      background-color: #f7f7f7;
+      position: absolute;
+      @include sm {
+        height: 68rem;
+        width: 54rem;
       }
-    }
-    .form-box-right {
-      z-index: 20;
-      font-size: 4.4rem;
-      line-height: 6.6rem;
-      margin-top: 16%;
-
-      span {
-        color: white;
-        background-color: #000000;
-        padding: 0 1rem;
+      @include md {
+        height: 62rem;
+        width: 74rem;
       }
-    }
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    font-family: $english;
-    input {
-      width: 50rem;
-      background-color: #fff;
-      padding-left: 1.2rem;
-      height: 4.8rem;
-      margin-bottom: 2rem;
-      &::placeholder {
-        color: #bebebe;
-        font-size: 1.6rem;
-      }
-    }
-    textarea {
-      width: 50rem;
-      background-color: #fff;
-      padding-left: 1.2rem;
-      padding-top: 1.4rem;
-      margin-bottom: 3.8rem;
-      resize: none;
-      &::placeholder {
-        color: #bebebe;
-        font-size: 1.6rem;
-      }
-    }
-    .submit {
-      font-size: 1.6rem;
-      font-weight: bold;
-      padding: 0;
-      margin: 0;
-      width: 23.5rem;
-      height: 5rem;
-      text-align: center;
-      color: white;
-      border-radius: 0%;
-      background-color: #c10305;
-      opacity: 0.86;
-      &:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-      }
-      img {
-        margin-bottom: 0.2rem;
-        margin-left: 2.3rem;
-      }
-    }
-  }
-  .contact-bgc {
-    //   背景色重ね
-    height: 62rem;
-    width: 82rem;
-    z-index: 0;
-    background-color: #f7f7f7;
-    position: absolute;
-
-    &1 {
       @include lg {
-        top: 28.8%;
+        //   背景色重ね
+
+        height: 87rem;
+        width: 54rem;
+
+        @include md {
+          height: 64rem;
+        }
+        z-index: 0;
+        background-color: #f7f7f7;
+        position: absolute;
+      }
+
+      &1 {
         right: 0;
+        top: 18.6%;
+        @include sm {
+          top: 19.7%;
+        }
+        @include md {
+          top: 23.6%;
+          right: -10%;
+        }
+        @include lg {
+          top: 28.8%;
+          right: 0;
+        }
       }
-    }
-    &2 {
-      @include lg {
+      &2 {
         left: 0;
-        top: 69.5%;
+
+        top: 69%;
+        @include sm {
+          top: 66.7%;
+          height: 52rem;
+        }
+        @include md {
+          top: 64.4%;
+        }
+        @include lg {
+          left: 0;
+          top: 67.8%;
+        }
       }
     }
   }
