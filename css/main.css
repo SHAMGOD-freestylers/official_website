@@ -1038,6 +1038,13 @@ header nav {
   font-size: 1.3rem;
 }
 
+@media (min-width: 360px) {
+  .mainvisual .mainvisual_box_text {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+  }
+}
+
 @media (min-width: 400px) {
   .mainvisual .mainvisual_box_text {
     font-size: 2rem;
