@@ -665,7 +665,7 @@ template {
 }
 
 .container main section {
-  margin: 4rem 0;
+  margin: 6rem 0;
   letter-spacing: 1.5px;
 }
 
@@ -678,6 +678,7 @@ template {
 .container main section .contents {
   margin: 4rem auto;
   width: 34rem;
+  padding: 0 1.5rem;
 }
 
 @media (min-width: 400px) {
@@ -1295,7 +1296,13 @@ header nav {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
-  top: 50%;
+  top: 62%;
+}
+
+@media (min-width: 400px) {
+  #movies .movies-mainvisual .movies-mainvisual-box .section-title {
+    top: 68%;
+  }
 }
 
 #movies .movies-mainvisual .movies-mainvisual-box::after {
@@ -1333,8 +1340,25 @@ header nav {
 }
 
 #movies .bg-text-even_movies {
-  top: 67%;
   right: -1rem;
+  top: 59%;
+  font-size: 5rem;
+  top: 66%;
+  font-size: 6rem;
+}
+
+@media (min-width: 360px) {
+  #movies .bg-text-even_movies {
+    top: 54%;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #movies .bg-text-even_movies {
+    top: 64%;
+    font-size: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1359,19 +1383,7 @@ header nav {
 }
 
 #movies .movie-contents {
-  width: auto;
-}
-
-@media (min-width: 360px) {
-  #movies .movie-contents {
-    width: 34rem;
-  }
-}
-
-@media (min-width: 400px) {
-  #movies .movie-contents {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 @media (min-width: 1233px) {
@@ -1407,18 +1419,11 @@ header nav {
 
 #movies .movie-contents .movie-main .movies-box {
   margin: 0 auto;
-  width: 84%;
 }
 
 @media (min-width: 360px) {
   #movies .movie-contents .movie-main .movies-box {
     width: 100%;
-  }
-}
-
-@media (min-width: 400px) {
-  #movies .movie-contents .movie-main .movies-box {
-    height: 64vh;
   }
 }
 
@@ -1434,17 +1439,6 @@ header nav {
   #movies .movie-contents .movie-main .movies-box {
     width: 47%;
     margin: 0 auto;
-  }
-}
-
-#movies .movie-contents .movie-main .movies-box iframe {
-  height: 72%;
-  width: 100%;
-}
-
-@media (min-width: 960px) {
-  #movies .movie-contents .movie-main .movies-box iframe {
-    height: 90%;
   }
 }
 
@@ -1494,6 +1488,21 @@ header nav {
   #movies .movie-contents .movie-main .movies-box:last-child {
     padding-left: 0;
   }
+}
+
+#movies .movie-contents .movie-main .movies-box .movies-box-youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+
+#movies .movie-contents .movie-main .movies-box .movies-box-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #movies .movie-contents .movie-main .movies-box .movies-text-box {
@@ -1711,7 +1720,13 @@ header nav {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
-  top: 50%;
+  top: 62%;
+}
+
+@media (min-width: 400px) {
+  #history .history-mainvisual .history-mainvisual-box .section-title {
+    top: 68%;
+  }
 }
 
 #history .history-mainvisual .history-mainvisual-box::after {
@@ -1749,8 +1764,25 @@ header nav {
 }
 
 #history .bg-text-even_history {
-  top: 67%;
   right: -1rem;
+  top: 59%;
+  font-size: 5rem;
+  top: 66%;
+  font-size: 6rem;
+}
+
+@media (min-width: 360px) {
+  #history .bg-text-even_history {
+    top: 54%;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #history .bg-text-even_history {
+    top: 64%;
+    font-size: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1790,7 +1822,7 @@ header nav {
 
 @media (min-width: 768px) {
   #history .history-main {
-    padding: 0 2rem;
+    padding: 0 5rem;
     line-height: 2.8rem;
     font-size: 1.4rem;
   }
@@ -1798,6 +1830,7 @@ header nav {
 
 @media (min-width: 960px) {
   #history .history-main {
+    padding: 0 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1930,7 +1963,7 @@ header nav {
 
 @media (min-width: 768px) {
   .timeline {
-    left: -9.5%;
+    left: 2%;
   }
 }
 
@@ -2136,7 +2169,13 @@ header nav {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
-  top: 50%;
+  top: 62%;
+}
+
+@media (min-width: 400px) {
+  #faq .faq-mainvisual .faq-mainvisual-box .section-title {
+    top: 68%;
+  }
 }
 
 #faq .faq-mainvisual .faq-mainvisual-box::after {
@@ -2174,8 +2213,25 @@ header nav {
 }
 
 #faq .bg-text-even_faq {
-  top: 67%;
   right: -1rem;
+  top: 59%;
+  font-size: 5rem;
+  top: 66%;
+  font-size: 6rem;
+}
+
+@media (min-width: 360px) {
+  #faq .bg-text-even_faq {
+    top: 54%;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #faq .bg-text-even_faq {
+    top: 64%;
+    font-size: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2388,7 +2444,13 @@ header nav {
   border-left: thick solid white;
   z-index: 11;
   position: absolute;
-  top: 50%;
+  top: 62%;
+}
+
+@media (min-width: 400px) {
+  #contact .contact-mainvisual .contact-mainvisual-box .section-title {
+    top: 68%;
+  }
 }
 
 #contact .contact-mainvisual .contact-mainvisual-box::after {
@@ -2426,8 +2488,25 @@ header nav {
 }
 
 #contact .bg-text-even_contact {
-  top: 67%;
   right: -1rem;
+  top: 59%;
+  font-size: 5rem;
+  top: 66%;
+  font-size: 6rem;
+}
+
+@media (min-width: 360px) {
+  #contact .bg-text-even_contact {
+    top: 54%;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #contact .bg-text-even_contact {
+    top: 64%;
+    font-size: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2455,10 +2534,12 @@ header nav {
   margin: 0;
   padding-top: 3rem;
   width: 100%;
+  text-align: center;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   #contact .contact_main {
+    text-align: left;
     padding-top: 8rem;
   }
 }
@@ -2507,22 +2588,21 @@ header nav {
 #contact .contact_main .contact-box-right {
   position: relative;
   z-index: 20;
-  margin-left: 7.3rem;
   font-size: 1.4rem;
   line-height: 3rem;
-  width: 48rem;
   margin-top: 4rem;
-  margin-left: auto;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   #contact .contact_main .contact-box-right {
     width: 32rem;
+    margin-left: 7.3rem;
   }
 }
 
 @media (min-width: 960px) {
   #contact .contact_main .contact-box-right {
+    width: 48rem;
     width: auto;
     margin-top: 0;
     margin-left: 0;
@@ -2650,12 +2730,12 @@ header nav {
   z-index: 20;
   font-size: 1.8rem;
   line-height: 3rem;
-  margin-top: 21%;
+  margin-top: 7%;
 }
 
 @media (min-width: 400px) {
   #contact .contact_main .form-box .form-box-right {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 }
 

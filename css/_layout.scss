@@ -133,8 +133,7 @@
       }
     }
     section {
-      margin: 4rem 0;
-
+      margin: 6rem 0;
       letter-spacing: 1.5px;
       @include sm {
         margin: 8rem 0;
@@ -143,6 +142,8 @@
       .contents {
         margin: 4rem auto;
         width: 34rem;
+        padding: 0 1.5rem;
+
         @include xs {
           padding: 0 2rem;
           width: 40rem;
@@ -168,7 +169,10 @@
     border-left: thick solid white;
     z-index: 11;
     position: absolute;
-    top: 50%;
+    top: 62%;
+    @include xs {
+      top: 68%;
+    }
   }
   // 背景色重ね
   &::after {
@@ -237,10 +241,19 @@
 }
 // 背景文字(右配置)
 @mixin bg-text-even() {
-  top: 67%;
-
   right: -1rem;
-
+  top: 59%;
+  font-size: 5rem;
+  top: 66%;
+  font-size: 6rem;
+  @include xxs {
+    top: 54%;
+    font-size: 6rem;
+  }
+  @include xs {
+    top: 64%;
+    font-size: 7rem;
+  }
   @include sm {
     top: 70%;
     font-size: 6.6rem;
