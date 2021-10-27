@@ -118,17 +118,13 @@
 
     .section-title {
       font-weight: bold;
-      letter-spacing: 0.1em;
-      margin-top: 4.5rem;
-      padding-left: 2.4rem;
-
-      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      font-size: 1.5rem;
       border-left: thick solid black;
-      padding-left: 0.9rem;
-      margin-left: 2rem;
+      padding-left: 1rem;
+      margin-left: 1.5rem;
 
       @include sm {
-        margin-top: 8rem;
         font-size: 2rem;
         padding-left: 1.2rem;
       }
@@ -137,8 +133,12 @@
       }
     }
     section {
-      margin: 0 0 7rem;
+      margin: 4rem 0;
+
       letter-spacing: 1.5px;
+      @include sm {
+        margin: 8rem 0;
+      }
 
       .contents {
         margin: 4rem auto;
@@ -223,14 +223,11 @@
 // 背景文字共通クラス(左右)
 .bg-text {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 2.6rem;
   color: #f7f7f7;
-  letter-spacing: 0.3rem;
-  font-size: 3.5rem;
-  @include xs {
-    letter-spacing: 0.7rem;
-    font-size: 6.1rem;
-  }
+  font-size: 15vw;
+  letter-spacing: 0.1em;
+
   @include sm {
     font-size: 9.6rem;
   }

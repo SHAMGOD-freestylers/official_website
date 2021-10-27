@@ -644,18 +644,15 @@ template {
 
 .container main .section-title {
   font-weight: bold;
-  letter-spacing: 0.1em;
-  margin-top: 4.5rem;
-  padding-left: 2.4rem;
-  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  font-size: 1.5rem;
   border-left: thick solid black;
-  padding-left: 0.9rem;
-  margin-left: 2rem;
+  padding-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .container main .section-title {
-    margin-top: 8rem;
     font-size: 2rem;
     padding-left: 1.2rem;
   }
@@ -668,8 +665,14 @@ template {
 }
 
 .container main section {
-  margin: 0 0 7rem;
+  margin: 4rem 0;
   letter-spacing: 1.5px;
+}
+
+@media (min-width: 768px) {
+  .container main section {
+    margin: 8rem 0;
+  }
 }
 
 .container main section .contents {
@@ -699,17 +702,10 @@ template {
 
 .bg-text {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 2.6rem;
   color: #f7f7f7;
-  letter-spacing: 0.3rem;
-  font-size: 3.5rem;
-}
-
-@media (min-width: 400px) {
-  .bg-text {
-    letter-spacing: 0.7rem;
-    font-size: 6.1rem;
-  }
+  font-size: 15vw;
+  letter-spacing: 0.1em;
 }
 
 @media (min-width: 768px) {
@@ -822,6 +818,7 @@ header .header_box_left_text {
 
 @media (min-width: 360px) {
   header .header_box_left_text {
+    font-size: 1rem;
     margin-left: 1.2rem;
   }
 }
@@ -1113,9 +1110,10 @@ header nav {
   padding: 0 1.5rem;
   margin-top: 4rem;
   width: auto;
+  margin: 4rem auto 0;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 960px) {
   #message .message_main {
     margin: 6rem auto 0;
   }
@@ -1152,13 +1150,22 @@ header nav {
 
 @media (min-width: 768px) {
   #message .message-box_left {
-    font-size: 3.4rem;
+    font-size: 3.6vw;
   }
 }
 
 @media (min-width: 960px) {
   #message .message-box_left {
     font-size: 3.8rem;
+    margin: 0 auto;
+    width: 77rem;
+  }
+}
+
+@media (min-width: 1233px) {
+  #message .message-box_left {
+    margin: 0;
+    width: auto;
   }
 }
 
@@ -1168,13 +1175,13 @@ header nav {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   #message .message-box_left .message-concept .message_br {
-    display: block;
+    display: none;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1233px) {
   #message .message-box_left .message-concept .message_br {
     display: block;
   }
@@ -1184,35 +1191,29 @@ header nav {
   position: relative;
   z-index: 20;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 2vw;
   line-height: 1.75;
   padding-top: 2.5rem;
 }
 
-@media (min-width: 400px) {
-  #message .message-box_right {
-    margin-left: auto;
-    width: 37rem;
-  }
-}
-
 @media (min-width: 768px) {
   #message .message-box_right {
-    width: 37rem;
+    width: 53rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 960px) {
   #message .message-box_right {
-    width: 53rem;
     padding-top: 4rem;
-    font-size: 1.4rem;
     line-height: 2;
   }
 }
 
 @media (min-width: 1233px) {
   #message .message-box_right {
+    margin: 0 0 0 auto;
     padding-top: 0;
   }
 }
@@ -2581,8 +2582,14 @@ header nav {
 }
 
 #contact .contact_main .form-box {
-  margin-top: 7rem;
-  padding: 0 0 7rem;
+  padding: 0 0 1rem;
+}
+
+@media (min-width: 768px) {
+  #contact .contact_main .form-box {
+    margin-top: 7rem;
+    padding: 0 0 7rem;
+  }
 }
 
 @media (min-width: 400px) {
@@ -2605,7 +2612,13 @@ header nav {
 #contact .contact_main .form-box .form-box-left {
   z-index: 20;
   position: relative;
-  padding: 8rem 0 0;
+  padding: 3rem 0 0;
+}
+
+@media (min-width: 768px) {
+  #contact .contact_main .form-box .form-box-left {
+    padding: 8rem 0 0;
+  }
 }
 
 #contact .contact_main .form-box .form-box-left p {
@@ -2630,13 +2643,12 @@ header nav {
   z-index: 20;
   font-size: 1.8rem;
   line-height: 3rem;
-  padding-left: 1.5rem;
   margin-top: 21%;
 }
 
 @media (min-width: 400px) {
   #contact .contact_main .form-box .form-box-right {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 

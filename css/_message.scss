@@ -4,7 +4,9 @@
     padding: 0 1.5rem;
     margin-top: 4rem;
     width: auto;
-    @include xs {
+    margin: 4rem auto 0;
+
+    @include md {
       margin: 6rem auto 0;
     }
   }
@@ -24,30 +26,30 @@
         font-size: 2.4rem;
       }
       @include sm {
-        font-size: 3.4rem;
+        font-size: 3.6vw;
       }
       @include md {
         font-size: 3.8rem;
+
+        margin: 0 auto;
+        width: 77rem;
+      }
+      @include lg {
+        margin: 0;
+        width: auto;
       }
 
       .message-concept {
-        // width: 23rem;
-
-        // @include xs {
-        //   width: 39.4rem;
-        // }
-        // @include md {
-        //   width: 44rem;
-        // }
-
         .message_br {
           @include xs {
             display: none;
           }
-          @include sm {
-            display: block;
-          }
+
           @include md {
+            display: none;
+          }
+
+          @include lg {
             display: block;
           }
         }
@@ -57,23 +59,21 @@
       position: relative;
       z-index: 20;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 2vw;
       line-height: 1.75;
       padding-top: 2.5rem;
-      @include xs {
-        margin-left: auto;
-        width: 37rem;
-      }
+
       @include sm {
-        width: 37rem;
+        width: 53rem;
+        font-size: 1.4rem;
+        margin: 0 auto;
       }
       @include md {
-        width: 53rem;
         padding-top: 4rem;
-        font-size: 1.4rem;
         line-height: 2;
       }
       @include lg {
+        margin: 0 0 0 auto;
         padding-top: 0;
       }
       .message-text {

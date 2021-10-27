@@ -108,8 +108,12 @@
 
     // form
     .form-box {
-      margin-top: 7rem;
-      padding: 0 0 7rem;
+      padding: 0 0 1rem;
+
+      @include sm {
+        margin-top: 7rem;
+        padding: 0 0 7rem;
+      }
 
       @include xs {
         display: flex;
@@ -123,7 +127,11 @@
       .form-box-left {
         z-index: 20;
         position: relative;
-        padding: 8rem 0 0;
+        padding: 3rem 0 0;
+
+        @include sm {
+          padding: 8rem 0 0;
+        }
 
         p {
           margin-bottom: 3.75rem;
@@ -143,10 +151,9 @@
         z-index: 20;
         font-size: 1.8rem;
         line-height: 3rem;
-        padding-left: 1.5rem;
         margin-top: 21%;
         @include xs {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
         }
         @include md {
           margin-top: 16%;
