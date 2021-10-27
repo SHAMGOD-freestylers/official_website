@@ -10,9 +10,13 @@
     bottom: 3rem;
     &_text {
       background-color: rgba(193, 3, 5, 0.7);
-      font-size: 1.3rem;
       padding: 0.5rem;
 
+      font-size: 1.3rem;
+
+      @include xs {
+        font-size: 2rem;
+      }
       @include sm {
         font-size: 2rem;
       }
@@ -23,8 +27,6 @@
       &_1 {
         display: inline-block;
         margin-bottom: 1rem;
-        width: 13rem;
-
         @include sm {
           width: 22rem;
         }
@@ -39,19 +41,14 @@
   }
 
   img {
-    height: 34vh;
-    @include xs {
-      height: 40%;
-    }
-    width: 100vw;
+    height: 70vh;
+    width: 100%;
     margin-top: 8.4rem;
-    @include xxs {
-      width: 100%;
-    }
+    object-fit: cover;
+
     @include sm {
       margin-top: 0;
     }
-    object-fit: cover;
     @include lg {
       height: 101vh;
     }
