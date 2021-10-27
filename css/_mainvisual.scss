@@ -8,6 +8,9 @@
     font-weight: normal;
     letter-spacing: 1.5px;
     bottom: 3rem;
+    @include lg {
+      bottom: 4rem;
+    }
     &_text {
       background-color: rgba(193, 3, 5, 0.7);
       padding: 0.5rem;
@@ -52,6 +55,7 @@
 
     @include sm {
       margin-top: 0;
+      height: 80vh;
     }
     @include lg {
       height: 101vh;

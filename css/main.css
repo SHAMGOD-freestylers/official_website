@@ -1029,6 +1029,12 @@ header nav {
   bottom: 3rem;
 }
 
+@media (min-width: 1233px) {
+  .mainvisual .mainvisual_box {
+    bottom: 4rem;
+  }
+}
+
 .mainvisual .mainvisual_box_text {
   background-color: rgba(193, 3, 5, 0.7);
   padding: 0.5rem;
@@ -1093,6 +1099,7 @@ header nav {
 @media (min-width: 768px) {
   .mainvisual img {
     margin-top: 0;
+    height: 80vh;
   }
 }
 
@@ -1191,7 +1198,7 @@ header nav {
   position: relative;
   z-index: 20;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.2rem;
   line-height: 1.75;
   padding-top: 2.5rem;
 }
