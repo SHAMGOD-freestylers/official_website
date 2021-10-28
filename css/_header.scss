@@ -116,7 +116,9 @@ header {
       transform: rotate(-45deg); /*時計回りに45度回転*/
       top: 52px;
     }
-
+    .close-menu {
+      display: none;
+    }
     .sns {
       a {
         &:hover {
@@ -148,7 +150,7 @@ header {
   .sm {
     font-size: 1.4rem;
     color: white;
-    top: 12rem; /*headerの余白分*/
+    top: 8.2rem; /*headerの余白分*/
     left: 0px; /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
     position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
     z-index: 10;
