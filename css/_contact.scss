@@ -114,18 +114,17 @@
     // form
     .form-box {
       padding: 0 0 1rem;
-
+      @include xs {
+        display: flex;
+        flex-direction: column-reverse;
+      }
       @include sm {
         margin-top: 7rem;
         padding: 0 0 7rem;
-      }
-
-      @include xs {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
       }
-      @include md {
-      }
+
       @include lg {
         padding-bottom: 0;
       }
@@ -133,7 +132,9 @@
         z-index: 20;
         position: relative;
         padding: 3rem 0 0;
-
+        @include xs {
+          margin: 0 auto;
+        }
         @include sm {
           padding: 8rem 0 0;
         }
@@ -189,7 +190,7 @@
         background-color: #fff;
         padding-left: 1.2rem;
         margin-bottom: 2rem;
-        width: 17.5rem;
+        width: 25.5rem;
         height: 2.5rem;
         @include md {
           width: 40rem;
@@ -199,6 +200,7 @@
           width: 50rem;
         }
         &::placeholder {
+          text-align: left;
           color: #bebebe;
           font-size: 1rem;
           @include md {
@@ -212,9 +214,10 @@
         padding-top: 1.4rem;
         margin-bottom: 3.8rem;
         resize: none;
-        width: 17.5rem;
+        width: 25.5rem;
 
         &::placeholder {
+          text-align: left;
           color: #bebebe;
           font-size: 1rem;
           @include md {
@@ -233,7 +236,7 @@
 
       .submit {
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
         color: white;
         border-radius: 0%;
@@ -242,6 +245,9 @@
         width: 13.2rem;
         height: 3rem;
         font-size: 1rem;
+        @include sm {
+          margin: 0;
+        }
         @include md {
           font-weight: bold;
           font-size: 1.6rem;
@@ -292,8 +298,11 @@
         right: 0;
         top: 18.6%;
         height: 64rem;
+        @include xxs {
+          top: 13.2%;
+        }
         @include xs {
-          top: 15.6%;
+          top: 19%;
         }
         @include sm {
           top: 19.7%;

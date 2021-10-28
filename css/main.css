@@ -901,6 +901,10 @@ header .header_box .close span:nth-of-type(3) {
   top: 52px;
 }
 
+header .header_box .close-menu {
+  display: none;
+}
+
 header .header_box .sns {
   font-size: 5vw;
 }
@@ -938,7 +942,7 @@ header .header_box .sns .facebook-logo img:hover {
 header .sm {
   font-size: 1.4rem;
   color: white;
-  top: 12rem;
+  top: 8.2rem;
   /*headerの余白分*/
   left: 0px;
   /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
@@ -2279,12 +2283,12 @@ header nav {
   padding: 2rem;
   margin-top: 5.5rem;
   margin: 5.5rem 2rem 0;
-  width: 80%;
+  width: 100%;
+  margin: 2rem 0 0;
 }
 
 @media (min-width: 400px) {
   #faq .faq-main .faq-box {
-    width: 100%;
     margin: 6rem 0 0;
   }
 }
@@ -2672,18 +2676,26 @@ header nav {
   padding: 0 0 1rem;
 }
 
-@media (min-width: 768px) {
-  #contact .contact_main .form-box {
-    margin-top: 7rem;
-    padding: 0 0 7rem;
-  }
-}
-
 @media (min-width: 400px) {
   #contact .contact_main .form-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact_main .form-box {
+    margin-top: 7rem;
+    padding: 0 0 7rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2700,6 +2712,12 @@ header nav {
   z-index: 20;
   position: relative;
   padding: 3rem 0 0;
+}
+
+@media (min-width: 400px) {
+  #contact .contact_main .form-box .form-box-left {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2781,7 +2799,7 @@ header nav {
   background-color: #fff;
   padding-left: 1.2rem;
   margin-bottom: 2rem;
-  width: 17.5rem;
+  width: 25.5rem;
   height: 2.5rem;
 }
 
@@ -2799,21 +2817,25 @@ header nav {
 }
 
 #contact .contact_main form input::-webkit-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form input:-ms-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form input::-ms-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form input::placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
@@ -2839,25 +2861,29 @@ header nav {
   padding-top: 1.4rem;
   margin-bottom: 3.8rem;
   resize: none;
-  width: 17.5rem;
+  width: 25.5rem;
 }
 
 #contact .contact_main form textarea::-webkit-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form textarea:-ms-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form textarea::-ms-input-placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
 
 #contact .contact_main form textarea::placeholder {
+  text-align: left;
   color: #bebebe;
   font-size: 1rem;
 }
@@ -2895,7 +2921,7 @@ header nav {
 
 #contact .contact_main form .submit {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   color: white;
   border-radius: 0%;
@@ -2904,6 +2930,12 @@ header nav {
   width: 13.2rem;
   height: 3rem;
   font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  #contact .contact_main form .submit {
+    margin: 0;
+  }
 }
 
 @media (min-width: 960px) {
@@ -2972,9 +3004,15 @@ header nav {
   height: 64rem;
 }
 
+@media (min-width: 360px) {
+  #contact .contact_main .contact-bgc1 {
+    top: 13.2%;
+  }
+}
+
 @media (min-width: 400px) {
   #contact .contact_main .contact-bgc1 {
-    top: 15.6%;
+    top: 19%;
   }
 }
 

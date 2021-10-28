@@ -1,6 +1,7 @@
 // hamburger menu animation
 const hamburger = document.getElementById("hamburger");
-const icon = document.querySelector(".icon");
+const hamburgerBorder = document.querySelector(".header_box_right");
+const hamburgerBorderText = document.querySelector(".header_box_right_text");
 const sm = document.querySelector(".sm");
 const MessageNav = document.getElementById("message-nav");
 const MoviesNav = document.getElementById("movies-nav");
@@ -77,7 +78,8 @@ const slideToggle = (el, duration = 700) => {
   }
 };
 hamburger.onclick = function () {
-  icon.classList.toggle("close");
+  hamburgerBorder.classList.toggle("close");
+  hamburgerBorderText.classList.toggle("close-menu");
   slideToggle(sm, 700);
 };
 MoviesNav.onclick = function () {
