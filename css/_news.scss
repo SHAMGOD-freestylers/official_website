@@ -71,6 +71,9 @@
               height: 62vw;
               overflow: hidden;
               width: 100%;
+
+              // margin: 0 10px;
+
               @include sm {
                 height: 35vw;
               }
@@ -93,6 +96,9 @@
 
                 @include xs {
                   font-size: 1.2rem;
+                }
+                @include md {
+                  width: 72%;
                 }
               }
               .news-text_title {

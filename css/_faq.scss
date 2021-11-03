@@ -20,21 +20,19 @@
       align-items: center;
       flex-direction: column;
       font-family: $japanese;
-      line-height: 1.75rem;
-      padding: 2rem;
-      margin-top: 5.5rem;
-      margin: 5.5rem 2rem 0;
-      width: 100%;
+      line-height: 1.75;
+      padding: 2.8rem 2rem;
+
       margin: 2rem 0 0;
+      width: 100%;
       @include xs {
-        margin: 6rem 0 0;
+        margin: 5rem 0 0;
       }
       @include sm {
         padding: 5rem 6rem;
-        line-height: 2.8rem;
       }
       @include md {
-        width: 63rem;
+        width: 65rem;
       }
       &:first-child {
         margin-top: 0;
@@ -43,7 +41,7 @@
       &-question {
         display: flex;
         margin-right: auto;
-        font-size: 1rem;
+        font-size: 1.4rem;
 
         @include sm {
           font-size: 2rem;
@@ -51,40 +49,64 @@
         @include md {
           font-size: 2.4rem;
         }
-
+        &-text {
+          padding-top: 0.8rem;
+          @include md {
+            padding-top: 1.8rem;
+            line-height: 1.75;
+          }
+        }
         &-q {
           font-family: $english;
           margin-right: 1.7rem;
-          font-size: 1.6rem;
+          font-size: 2.2rem;
           @include sm {
             font-size: 3rem;
           }
           @include md {
             font-size: 4rem;
+            padding-top: 0.5rem;
           }
         }
       }
       &-answer {
         display: flex;
         margin-right: auto;
-        font-size: 1rem;
-        margin-top: 3.2rem;
-
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+        line-height: 1.75;
         @include sm {
-          margin-top: 4.2rem;
+          margin-top: 1.2rem;
           font-size: 1.4rem;
+        }
+
+        &-text {
+          padding-top: 0.8rem;
+          @include sm {
+            padding-top: 1.2rem;
+          }
+          @include md {
+            padding-top: 2.2rem;
+          }
         }
         &-a {
           color: $dark-red;
           margin-right: 1.6rem;
           font-family: $english;
-
-          font-size: 1.6rem;
+          font-size: 2.2rem;
           @include sm {
             font-size: 3rem;
           }
           @include md {
             font-size: 4rem;
+          }
+        }
+        .faq-text-br {
+          @include xs {
+            display: none;
+          }
+          @include sm {
+            display: block;
           }
         }
       }
