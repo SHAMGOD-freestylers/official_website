@@ -264,47 +264,75 @@
         <section id="news">
           <h2 class="section-title">NEWS</h2>
           <div class="bg-text">NEWS</div>
-          <div class="contents swiper-container" 　>
-            <div class="news-box-container swiper-wrapper">
-              <a class="news-box swiper-slide" href="">
-                <img src="./images/news1.png" alt="" class="news-box-img" />
-                <div class="news-text-box">
-                  <div class="news-text_sub">
-                    <p>2018/07/07</p>
-                    <p>お知らせ</p>
+          <div class="contents news-contents" 　>
+            <section class="carousel" aria-label="Gallery">
+              <ol class="carousel__viewport news-box-container">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                  <div class="carousel__snapper news-box">
+                    <img src="./images/news1.png" alt="" class="news-box-img" />
+                    <div class="news-text-box">
+                      <div class="news-text_sub">
+                        <p>2018/07/07</p>
+                        <p>お知らせ</p>
+                      </div>
+                      <p class="news-text_title">七夕祭出演</p>
+                    </div>
                   </div>
-                  <p class="news-text_title">七夕祭出演</p>
-                </div>
-              </a>
-              <a class="news-box swiper-slide" href="">
-                <img src="./images/news2.png" alt="" class="news-box-img" />
-                <div class="news-text-box">
-                  <div class="news-text_sub">
-                    <p>2018/07/07</p>
-                    <p>お知らせ</p>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                  <div class="carousel__snapper news-box">
+                    <img src="./images/news2.png" alt="" class="news-box-img" />
+                    <div class="news-text-box">
+                      <div class="news-text_sub">
+                        <p>2018/07/07</p>
+                        <p>お知らせ</p>
+                      </div>
+                      <p class="news-text_title">代表挨拶</p>
+                    </div>
                   </div>
-                  <p class="news-text_title">代表挨拶</p>
-                </div>
-              </a>
-              <a class="news-box swiper-slide" href="">
-                <img src="./images/news3.png" alt="" class="news-box-img" />
-                <div class="news-text-box">
-                  <div class="news-text_sub">
-                    <p>2018/07/07</p>
-                    <p>お知らせ</p>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                  <div class="carousel__snapper news-box">
+                    <img src="./images/news3.png" alt="" class="news-box-img" />
+                    <div class="news-text-box">
+                      <div class="news-text_sub">
+                        <p>2018/07/07</p>
+                        <p>お知らせ</p>
+                      </div>
+                      <p class="news-text_title">三田祭本公演を終えて</p>
+                    </div>
                   </div>
-                  <p class="news-text_title">三田祭本公演を終えて</p>
-                </div>
-              </a>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- <div class="news-btn-box">
-              <a class="news-btn"
-                >VIEW MORE <img src="./images/view-more.svg" alt="" srcset="" />
-              </a>
-            </div> -->
+                </li>
+                <!-- <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                </li> -->
+              </ol>
+              <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                  <li class="carousel__navigation-item">
+                    <a
+                      href="#carousel__slide1"
+                      class="carousel__navigation-button"
+                      >Go to slide 3</a
+                    >
+                  </li>
+                  <li class="carousel__navigation-item">
+                    <a
+                      href="#carousel__slide2"
+                      class="carousel__navigation-button"
+                      >Go to slide 2</a
+                    >
+                  </li>
+                  <li class="carousel__navigation-item">
+                    <a
+                      href="#carousel__slide3"
+                      class="carousel__navigation-button news-box"
+                    >
+                    </a>
+                  </li>
+                </ol>
+              </aside>
+            </section>
           </div>
         </section>
         <!-- history -->
@@ -667,53 +695,7 @@
     <script src="./js/timeline.js"></script>
     <!-- slider js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-    <script>
-      var swiper = undefined;
-      var winW = window.innerWidth;
-      var swiperElement = document.getElementsByClassName("swiper-container");
-      var swiperWrapper = document.getElementsByClassName("swiper-wrapper");
-      var swiperSlide = document.getElementsByClassName("swiper-slide");
-      var options = {
-        loop: true,
-        centeredSlides: true,
-        allowTouchMove: true,
-        pagination: ".swiper-pagination",
-        mousewheel: {
-          forceToAxis: true,
-        },
 
-        breakpoints: {
-          991: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          767: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-        },
-      };
-      function initSwiper() {
-        if (swiperElement) {
-          var screenWidth = window.innerWidth;
-          if (screenWidth > 992 && swiper == undefined) {
-            swiper = new Swiper(".swiper-container", options);
-          } else if (screenWidth > 991 && swiper != undefined) {
-            swiper.destroy();
-            swiper = undefined;
-            for (var i = 0; i < swiperWrapper.length; i++) {
-              swiperWrapper[i].removeAttribute("style");
-            }
-            for (var i = 0; i < swiperSlide.length; i++) {
-              swiperSlide[i].removeAttribute("style");
-            }
-          }
-        }
-      }
-      initSwiper();
-
-      window.addEventListener("resize", initSwiper);
-    </script>
     <!-- jqery -->
 
     <script
