@@ -41,7 +41,7 @@
       &-question {
         display: flex;
         margin-right: auto;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
         @include sm {
           font-size: 2rem;
@@ -59,7 +59,7 @@
         &-q {
           font-family: $english;
           margin-right: 1.7rem;
-          font-size: 2.2rem;
+          font-size: 2.4rem;
           @include sm {
             font-size: 3rem;
           }
@@ -93,7 +93,7 @@
           color: $dark-red;
           margin-right: 1.6rem;
           font-family: $english;
-          font-size: 2.2rem;
+          font-size: 2.4rem;
           @include sm {
             font-size: 3rem;
           }
