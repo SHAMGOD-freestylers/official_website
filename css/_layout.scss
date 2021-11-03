@@ -140,12 +140,13 @@
       }
 
       .contents {
-        margin: 4rem auto;
+        margin: 5rem auto;
         width: 34rem;
         padding: 0 1.5rem;
 
         @include xs {
           padding: 0 2rem;
+
           width: 40rem;
         }
         @include sm {
