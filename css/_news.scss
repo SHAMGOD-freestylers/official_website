@@ -1,46 +1,163 @@
 #news {
-  .news-box-container {
-    font-family: $japanese;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5rem;
-
-    .news-box {
-      z-index: 20;
-      &:hover {
-        opacity: 0.8;
-        transition: 0.3s;
-      }
-
-      img {
-        height: 20.7rem;
-        width: 30.46rem;
-      }
-      .news-text-box {
-        font-weight: bold;
-
-        .news-text_sub {
-          padding-top: 2.45rem;
-          display: flex;
-          justify-content: space-between;
-          color: $gray;
-          font-size: 1.2rem;
-        }
-        .news-text_title {
-          padding-top: 1rem;
-          font-size: 1.8rem;
-        }
-      }
+  .news-contents {
+    width: 100%;
+    @include xs {
+      margin-top: 11rem;
     }
-  }
-  .news-btn-box {
-    text-align: center;
-    font-size: 1.4rem;
-    width: 16rem;
-    padding: rem;
-    margin-top: 4rem;
-    margin-left: auto;
-    cursor: pointer;
+
+    .carousel {
+      position: relative;
+
+      filter: drop-shadow(0 0 10px #0003);
+      perspective: 100px;
+      padding-top: 93%;
+      @include md {
+        padding-top: 30%;
+      }
+      &__viewport {
+        max-width: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0%;
+        display: flex;
+        overflow-x: scroll;
+
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        font-family: $japanese;
+
+        @include sm {
+          max-width: 75%;
+          left: 13%;
+        }
+        @include md {
+          left: 0;
+          max-width: 38%;
+          overflow-x: visible;
+          justify-content: space-between;
+        }
+        .carousel__slide {
+          position: relative;
+          flex: 0 0 100%;
+          width: 100%;
+          &:last-child {
+            animation-name: tostart, snap;
+          }
+          @include md {
+          }
+          .news-box {
+            width: 100%;
+
+            scroll-snap-align: center;
+            animation-name: tostart, snap;
+            @include md {
+            }
+            &:hover {
+              opacity: 0.8;
+              transition: 0.3s;
+              animation-name: tonext, snap;
+              animation-timing-function: ease;
+              animation-duration: 4s;
+              animation-iteration-count: infinite;
+              @include md {
+              }
+            }
+
+            img {
+              // height: 20.7rem;
+              height: 62vw;
+              overflow: hidden;
+              width: 100%;
+              @include sm {
+                height: 35vw;
+              }
+              @include md {
+                height: 15vw;
+                width: 72%;
+              }
+
+              // width: 30.46rem;
+            }
+            .news-text-box {
+              font-weight: bold;
+
+              .news-text_sub {
+                padding-top: 2.45rem;
+                display: flex;
+                justify-content: space-between;
+                color: $gray;
+                font-size: 1rem;
+
+                @include xs {
+                  font-size: 1.2rem;
+                }
+              }
+              .news-text_title {
+                padding-top: 1rem;
+                font-size: 1.4rem;
+
+                @include xs {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__navigation {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -7%;
+        text-align: center;
+        @include xxs {
+          bottom: 2%;
+        }
+
+        @include xs {
+          bottom: 2%;
+        }
+        @include sm {
+          bottom: 33%;
+        }
+        @include md {
+          display: none;
+        }
+      }
+
+      &__navigation-list,
+      &__navigation-item {
+        display: inline-block;
+      }
+      // &::before,
+      // &::after {
+      //   content: "";
+      //   z-index: 1;
+      //   background-color: #333;
+      //   background-size: 1.5rem 1.5rem;
+      //   background-repeat: no-repeat;
+      //   background-position: center center;
+      //   color: #fff;
+      //   font-size: 2.5rem;
+      //   line-height: 4rem;
+      //   text-align: center;
+      //   pointer-events: none;
+      //   @include md {
+      //   }
+      // }
+    }
+    .news-btn-box {
+      text-align: center;
+      font-size: 1.4rem;
+      width: 16rem;
+      padding: rem;
+      margin-top: 4rem;
+      margin-left: auto;
+      cursor: pointer;
+    }
   }
 }
 
@@ -66,3 +183,109 @@
     margin-left: 0.5rem;
   }
 }
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// @media (hover: hover) {
+//   .carousel__snapper {
+//     animation-name: tonext, snap;
+//     animation-timing-function: ease;
+//     animation-duration: 4s;
+//     animation-iteration-count: infinite;
+//     @include md {
+//       display: none;
+//     }
+//   }
+// }
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(121, 4, 4);
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+// .carousel::before,
+// .carousel::after,
+// .carousel__prev,
+// .carousel__next {
+//   // position: absolute;
+//   // top: 0;
+//   // margin-top: 37.5%;
+//   // width: 4rem;
+//   // height: 4rem;
+//   // transform: translateY(-50%);
+//   // border-radius: 50%;
+//   // font-size: 0;
+//   // outline: 0;
+// }
+
+// .carousel::before,
+// .carousel__prev {
+//   left: -1rem;
+// }
