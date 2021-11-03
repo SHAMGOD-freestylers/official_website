@@ -1486,7 +1486,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   height: 10.4rem;
   text-align: center;
   font-weight: bold;
@@ -2556,7 +2556,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -2585,7 +2585,7 @@ li {
 #faq .faq-main .faq-box-question-q {
   font-family: "Alfa Slab One", cursive;
   margin-right: 1.7rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 768px) {
@@ -2638,7 +2638,7 @@ li {
   color: #8d2659;
   margin-right: 1.6rem;
   font-family: "Alfa Slab One", cursive;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 768px) {
