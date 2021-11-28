@@ -35,6 +35,7 @@
         line-height: 4.6rem;
         font-size: 2.4rem;
         @include md {
+          font-size: 2.8rem;
           margin-top: 9rem;
           line-height: 6.6rem;
         }
@@ -58,7 +59,7 @@
         @include sm {
           width: 32rem;
           // margin-left: auto;
-          margin-left: 7.3rem;
+          margin-left: 35%;
         }
         @include md {
           width: 48rem;
@@ -161,8 +162,9 @@
         @include xs {
           font-size: 2.4rem;
         }
-
         @include md {
+          font-size: 2.8rem;
+
           margin-top: 16%;
           line-height: 4.6rem;
           padding-left: 5.8rem;
@@ -284,7 +286,7 @@
         //   背景色重ね
 
         height: 87rem;
-        width: 54rem;
+        // width: 54rem;
 
         @include md {
           height: 64rem;
@@ -302,11 +304,11 @@
           top: 13.2%;
         }
         @include xs {
-          top: 19%;
+          top: 17.8%;
         }
         @include sm {
-          top: 19.7%;
-          height: 67rem;
+          top: 19.1%;
+          height: 73rem;
         }
         @include md {
           top: 23.6%;
@@ -314,7 +316,7 @@
           height: 64rem;
         }
         @include lg {
-          top: 28.8%;
+          top: 28.5%;
           right: 0;
         }
       }
@@ -327,10 +329,10 @@
         }
         @include sm {
           top: 66.7%;
-          height: 52rem;
+          height: 54rem;
         }
         @include md {
-          top: 64.4%;
+          top: 64.7%;
           height: 62rem;
         }
         @include lg {

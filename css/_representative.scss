@@ -43,11 +43,12 @@
       img {
         position: absolute;
         top: 0;
-        right: 4%;
+        right: 0%;
         width: 30%;
         height: 18%;
         @include xs {
           height: 22%;
+          right: 4%;
         }
         @include sm {
           width: 34%;
