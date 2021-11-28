@@ -33,38 +33,54 @@
     }
     &_left {
       width: 100%;
+      display: flex;
+      flex-direction: column;
 
       @include md {
+        display: block;
         width: 47%;
         text-align: right;
         padding-top: 4.8rem;
       }
-      &-text {
-        padding-bottom: 4rem;
-
-        &:nth-child(3) {
+      .history-main-box {
+        order: 2;
+        &-left-text {
           padding-bottom: 4rem;
+          &:first-child {
+            padding-top: 3rem;
+            @include md {
+              padding-top: 0;
+            }
+          }
+          &:nth-child(3) {
+            padding-bottom: 4rem;
 
-          @include md {
-            padding-bottom: 11.2rem;
+            @include md {
+              padding-bottom: 11.2rem;
+            }
           }
         }
       }
 
       img {
-        position: absolute;
-        width: 27.5%;
-        height: 11.8%;
-        top: 87%;
-        right: 5%;
+        // タブレット・スマホ版では非表示
+
+        order: 1;
+        width: 100%;
+
         @include sm {
-          width: 50%;
+          // width: 50%;
           height: 19%;
           top: 87%;
           right: -21%;
         }
         @include md {
-          width: 100%;
+          // display: block;
+          position: absolute;
+          // width: 27.5%;
+          // height: 11.8%;
+          top: 87%;
+          right: 5%;
           height: 47%;
           position: relative;
           padding-bottom: 7.5rem;
@@ -76,30 +92,40 @@
     &_right {
       text-align: left;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+
       @include md {
+        display: block;
         width: 47%;
       }
       &-text {
         padding-bottom: 4rem;
         &:last-child {
-          padding-bottom: 0;
+          padding-bottom: 3rem;
+          @include md {
+            padding-bottom: 0;
+          }
         }
       }
 
       img {
-        position: absolute;
-        width: 27.5%;
+        order: 2;
+        // width: 27.5%;
+        width: 100%;
+
         height: 11.8%;
-        top: 12%;
-        right: 5%;
+        // top: 12%;
+        // right: 5%;
         @include sm {
-          width: 50%;
+          // width: 50%;
           height: 19%;
-          top: 10%;
-          right: -21%;
+
+          // top: 10%;
+          // right: -21%;
         }
         @include md {
-          width: 100%;
+          position: absolute;
           height: 47%;
           position: relative;
           padding-bottom: 7.5rem;
@@ -115,7 +141,7 @@
   position: absolute;
   margin-top: 1rem;
   left: 2%;
-  top: 0;
+  top: 22%;
   @include xxs {
     left: 0;
   }
@@ -124,10 +150,10 @@
   }
   @include sm {
     left: 2%;
+    top: 28%;
   }
   @include md {
-    top: none;
-
+    top: 0;
     margin-top: 6rem;
     left: 49.5%;
   }
@@ -135,7 +161,13 @@
     /*線の起点とするためrelativeを設定*/
     position: relative;
     list-style: none;
-    padding-bottom: 2rem;
+    padding-bottom: 2.9rem;
+    @include sm {
+      padding-bottom: 1.3rem;
+    }
+    @include md {
+      padding-bottom: 2rem;
+    }
     /*タイムラインの見出し横の丸の位置と形状*/
     &:after {
       content: "";

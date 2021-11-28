@@ -522,7 +522,7 @@ template {
 }
 
 .container .side .sticky .logo {
-  margin: 5rem auto 0;
+  margin: 2rem auto 0;
 }
 
 @media (min-width: 768px) {
@@ -552,7 +552,7 @@ template {
 
 @media (min-width: 768px) {
   .container .side .sticky .side-text {
-    margin: 16rem auto 12rem;
+    margin: 12rem auto 12rem;
   }
 }
 
@@ -887,7 +887,7 @@ header .header_box .close span:nth-of-type(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   /*反時計回りに45度回転*/
-  top: 52px;
+  top: 41px;
 }
 
 header .header_box .close span:nth-of-type(2) {
@@ -898,7 +898,7 @@ header .header_box .close span:nth-of-type(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   /*時計回りに45度回転*/
-  top: 52px;
+  top: 41px;
 }
 
 header .header_box .close-menu {
@@ -968,7 +968,7 @@ header ul {
 }
 
 header ul li {
-  padding: 5.5rem;
+  padding: 4.5rem;
   border-top: solid 0.5px rgba(255, 255, 255, 0.6);
   /*リストの境目に白線 */
 }
@@ -1318,7 +1318,7 @@ header nav {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 49.5%;
   height: 50%;
 }
 
@@ -1361,7 +1361,7 @@ header nav {
 @media (min-width: 400px) {
   #movies .bg-text-even_movies {
     top: 64%;
-    font-size: 7rem;
+    font-size: 6.7rem;
   }
 }
 
@@ -1748,7 +1748,15 @@ header nav {
 }
 
 #news .news-contents .carousel__navigation-list, #news .news-contents .carousel__navigation-item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #news .news-contents .news-btn-box {
@@ -1986,7 +1994,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 49.5%;
   height: 50%;
 }
 
@@ -2029,7 +2037,7 @@ li {
 @media (min-width: 400px) {
   #history .bg-text-even_history {
     top: 64%;
-    font-size: 7rem;
+    font-size: 6.7rem;
   }
 }
 
@@ -2090,41 +2098,63 @@ li {
 
 #history .history-main_left {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 960px) {
   #history .history-main_left {
+    display: block;
     width: 47%;
     text-align: right;
     padding-top: 4.8rem;
   }
 }
 
-#history .history-main_left-text {
+#history .history-main_left .history-main-box {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#history .history-main_left .history-main-box-left-text {
   padding-bottom: 4rem;
 }
 
-#history .history-main_left-text:nth-child(3) {
+#history .history-main_left .history-main-box-left-text:first-child {
+  padding-top: 3rem;
+}
+
+@media (min-width: 960px) {
+  #history .history-main_left .history-main-box-left-text:first-child {
+    padding-top: 0;
+  }
+}
+
+#history .history-main_left .history-main-box-left-text:nth-child(3) {
   padding-bottom: 4rem;
 }
 
 @media (min-width: 960px) {
-  #history .history-main_left-text:nth-child(3) {
+  #history .history-main_left .history-main-box-left-text:nth-child(3) {
     padding-bottom: 11.2rem;
   }
 }
 
 #history .history-main_left img {
-  position: absolute;
-  width: 27.5%;
-  height: 11.8%;
-  top: 87%;
-  right: 5%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   #history .history-main_left img {
-    width: 50%;
     height: 19%;
     top: 87%;
     right: -21%;
@@ -2133,7 +2163,9 @@ li {
 
 @media (min-width: 960px) {
   #history .history-main_left img {
-    width: 100%;
+    position: absolute;
+    top: 87%;
+    right: 5%;
     height: 47%;
     position: relative;
     padding-bottom: 7.5rem;
@@ -2145,10 +2177,18 @@ li {
 #history .history-main_right {
   text-align: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 960px) {
   #history .history-main_right {
+    display: block;
     width: 47%;
   }
 }
@@ -2158,29 +2198,32 @@ li {
 }
 
 #history .history-main_right-text:last-child {
-  padding-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 960px) {
+  #history .history-main_right-text:last-child {
+    padding-bottom: 0;
+  }
 }
 
 #history .history-main_right img {
-  position: absolute;
-  width: 27.5%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
   height: 11.8%;
-  top: 12%;
-  right: 5%;
 }
 
 @media (min-width: 768px) {
   #history .history-main_right img {
-    width: 50%;
     height: 19%;
-    top: 10%;
-    right: -21%;
   }
 }
 
 @media (min-width: 960px) {
   #history .history-main_right img {
-    width: 100%;
+    position: absolute;
     height: 47%;
     position: relative;
     padding-bottom: 7.5rem;
@@ -2194,7 +2237,7 @@ li {
   position: absolute;
   margin-top: 1rem;
   left: 2%;
-  top: 0;
+  top: 22%;
 }
 
 @media (min-width: 360px) {
@@ -2212,12 +2255,13 @@ li {
 @media (min-width: 768px) {
   .timeline {
     left: 2%;
+    top: 28%;
   }
 }
 
 @media (min-width: 960px) {
   .timeline {
-    top: none;
+    top: 0;
     margin-top: 6rem;
     left: 49.5%;
   }
@@ -2227,8 +2271,20 @@ li {
   /*線の起点とするためrelativeを設定*/
   position: relative;
   list-style: none;
-  padding-bottom: 2rem;
+  padding-bottom: 2.9rem;
   /*タイムラインの見出し横の丸の位置と形状*/
+}
+
+@media (min-width: 768px) {
+  .timeline li {
+    padding-bottom: 1.3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .timeline li {
+    padding-bottom: 2rem;
+  }
 }
 
 .timeline li:after {
@@ -2331,7 +2387,7 @@ li {
 #representative .repsen-box-right img {
   position: absolute;
   top: 0;
-  right: 4%;
+  right: 0%;
   width: 30%;
   height: 18%;
 }
@@ -2339,6 +2395,7 @@ li {
 @media (min-width: 400px) {
   #representative .repsen-box-right img {
     height: 22%;
+    right: 4%;
   }
 }
 
@@ -2435,7 +2492,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 49.5%;
   height: 50%;
 }
 
@@ -2478,7 +2535,7 @@ li {
 @media (min-width: 400px) {
   #faq .bg-text-even_faq {
     top: 64%;
-    font-size: 7rem;
+    font-size: 6.7rem;
   }
 }
 
@@ -2748,7 +2805,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 49.5%;
   height: 50%;
 }
 
@@ -2791,7 +2848,7 @@ li {
 @media (min-width: 400px) {
   #contact .bg-text-even_contact {
     top: 64%;
-    font-size: 7rem;
+    font-size: 6.7rem;
   }
 }
 
@@ -2854,6 +2911,7 @@ li {
 
 @media (min-width: 960px) {
   #contact .contact_main .contact-box-left {
+    font-size: 2.8rem;
     margin-top: 9rem;
     line-height: 6.6rem;
   }
@@ -2882,7 +2940,7 @@ li {
 @media (min-width: 768px) {
   #contact .contact_main .contact-box-right {
     width: 32rem;
-    margin-left: 7.3rem;
+    margin-left: 35%;
   }
 }
 
@@ -3041,6 +3099,7 @@ li {
 
 @media (min-width: 960px) {
   #contact .contact_main .form-box .form-box-right {
+    font-size: 2.8rem;
     margin-top: 16%;
     line-height: 4.6rem;
     padding-left: 5.8rem;
@@ -3267,7 +3326,6 @@ li {
 @media (min-width: 1233px) {
   #contact .contact_main .contact-bgc {
     height: 87rem;
-    width: 54rem;
     z-index: 0;
     background-color: #f7f7f7;
     position: absolute;
@@ -3294,14 +3352,14 @@ li {
 
 @media (min-width: 400px) {
   #contact .contact_main .contact-bgc1 {
-    top: 19%;
+    top: 17.8%;
   }
 }
 
 @media (min-width: 768px) {
   #contact .contact_main .contact-bgc1 {
-    top: 19.7%;
-    height: 67rem;
+    top: 19.1%;
+    height: 73rem;
   }
 }
 
@@ -3315,7 +3373,7 @@ li {
 
 @media (min-width: 1233px) {
   #contact .contact_main .contact-bgc1 {
-    top: 28.8%;
+    top: 28.5%;
     right: 0;
   }
 }
@@ -3335,13 +3393,13 @@ li {
 @media (min-width: 768px) {
   #contact .contact_main .contact-bgc2 {
     top: 66.7%;
-    height: 52rem;
+    height: 54rem;
   }
 }
 
 @media (min-width: 960px) {
   #contact .contact_main .contact-bgc2 {
-    top: 64.4%;
+    top: 64.7%;
     height: 62rem;
   }
 }

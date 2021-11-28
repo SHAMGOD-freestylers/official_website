@@ -105,7 +105,7 @@ header {
     }
     .close span:nth-of-type(1) {
       transform: rotate(45deg); /*反時計回りに45度回転*/
-      top: 52px;
+      top: 41px;
     }
 
     .close span:nth-of-type(2) {
@@ -114,7 +114,7 @@ header {
 
     .close span:nth-of-type(3) {
       transform: rotate(-45deg); /*時計回りに45度回転*/
-      top: 52px;
+      top: 41px;
     }
     .close-menu {
       display: none;
@@ -164,7 +164,7 @@ header {
   ul {
     flex-direction: column; /*ulのflexboxを縦並びにする*/
     li {
-      padding: 5.5rem;
+      padding: 4.5rem;
       border-top: solid 0.5px rgba(255, 255, 255, 0.6); /*リストの境目に白線 */
     }
   }

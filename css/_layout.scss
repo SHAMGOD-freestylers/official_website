@@ -30,7 +30,7 @@
       flex-direction: column;
       justify-content: center;
       .logo {
-        margin: 5rem auto 0;
+        margin: 2rem auto 0;
         @include sm {
           width: 11rem;
           height: 11rem;
@@ -47,7 +47,7 @@
         letter-spacing: 0.3rem;
         line-height: 2rem;
         @include sm {
-          margin: 16rem auto 12rem;
+          margin: 12rem auto 12rem;
         }
         @include md {
           margin: 16rem auto 0;
@@ -186,7 +186,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 49.5%;
     height: 50%;
     @include sm {
       height: 50%;
@@ -253,7 +253,7 @@
   }
   @include xs {
     top: 64%;
-    font-size: 7rem;
+    font-size: 6.7rem;
   }
   @include sm {
     top: 70%;
