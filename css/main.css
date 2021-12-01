@@ -1777,8 +1777,6 @@ header nav {
   color: white;
   font-size: 1.4rem;
   padding: 1.5rem;
-  -webkit-box-shadow: 0px 0px 0px 1px white inset;
-          box-shadow: 0px 0px 0px 1px white inset;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1788,8 +1786,6 @@ header nav {
   color: black;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
-  -webkit-box-shadow: 0px 0px 0px 1px white;
-          box-shadow: 0px 0px 0px 1px white;
 }
 
 .news-btn img {
@@ -2065,9 +2061,10 @@ li {
 #history .history-main {
   font-family: "Noto Sans JP", sans-serif;
   position: relative;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   padding: 0 3rem;
+  width: auto;
 }
 
 @media (min-width: 400px) {
@@ -2197,6 +2194,10 @@ li {
   padding-bottom: 4rem;
 }
 
+#history .history-main_right-text:nth-child(3) {
+  padding-bottom: 3rem;
+}
+
 #history .history-main_right-text:last-child {
   padding-bottom: 3rem;
 }
@@ -2207,10 +2208,13 @@ li {
   }
 }
 
-#history .history-main_right img {
+#history .history-main_right .history-main-img_2 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+#history .history-main_right img {
   width: 100%;
   height: 11.8%;
 }
@@ -2224,11 +2228,17 @@ li {
 @media (min-width: 960px) {
   #history .history-main_right img {
     position: absolute;
-    height: 47%;
+    height: 42%;
     position: relative;
-    padding-bottom: 7.5rem;
+    padding-bottom: 4.5rem;
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: 1233px) {
+  #history .history-main_right img {
+    height: 44%;
   }
 }
 
@@ -2262,8 +2272,14 @@ li {
 @media (min-width: 960px) {
   .timeline {
     top: 0;
-    margin-top: 6rem;
+    margin-top: 4rem;
     left: 49.5%;
+  }
+}
+
+@media (min-width: 1233px) {
+  .timeline {
+    top: -3%;
   }
 }
 
@@ -2283,7 +2299,22 @@ li {
 
 @media (min-width: 960px) {
   .timeline li {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1233px) {
+  .timeline li:first-child {
+    padding-bottom: 4px;
+  }
+  .timeline li:nth-child(3) {
+    padding-bottom: 3rem;
+  }
+  .timeline li:nth-child(5) {
+    padding-bottom: 1rem;
+  }
+  .timeline li:nth-child(6) {
+    padding-bottom: 3rem;
   }
 }
 
@@ -2317,22 +2348,20 @@ li {
   background: #666;
 }
 
-.timeline dl {
-  margin: 0 0 20px 3em;
-}
-
 #representative .repsen-box {
   position: relative;
   padding-bottom: 2rem;
   margin-top: 6rem;
   font-family: "Noto Sans JP", sans-serif;
-  line-height: 2.8rem;
-  font-size: 1.1rem;
+  line-height: 1.75;
+  font-size: 1.2rem;
+  width: auto;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   #representative .repsen-box {
     font-size: 1.4rem;
+    line-height: 1.75;
   }
 }
 
@@ -2364,14 +2393,33 @@ li {
   font-weight: bold;
 }
 
+@media (min-width: 400px) {
+  #representative .repsen-box-text:first-child {
+    line-height: 1.5;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #representative .repsen-box-text:first-child {
+    font-size: 3.6vw;
+  }
+}
+
 @media (min-width: 960px) {
   #representative .repsen-box-text:first-child {
-    font-size: 2.4rem;
+    font-size: 3.8rem;
   }
 }
 
 #representative .repsen-box-text:last-child {
   color: #c10305;
+}
+
+@media (min-width: 400px) {
+  #representative .repsen-box-text-br {
+    display: none;
+  }
 }
 
 #representative .repsen-box-left {
@@ -2386,24 +2434,36 @@ li {
 
 #representative .repsen-box-right img {
   position: absolute;
-  top: 0;
-  right: 0%;
-  width: 30%;
-  height: 18%;
+  top: 14%;
+  right: 12%;
+  width: 25%;
+  height: auto;
+}
+
+@media (min-width: 360px) {
+  #representative .repsen-box-right img {
+    top: 4%;
+    right: 3%;
+    width: 34%;
+    height: auto;
+  }
 }
 
 @media (min-width: 400px) {
   #representative .repsen-box-right img {
-    height: 22%;
-    right: 4%;
+    top: 2%;
+    right: 2.5%;
+    width: 23%;
+    height: auto;
   }
 }
 
 @media (min-width: 768px) {
   #representative .repsen-box-right img {
-    width: 34%;
-    right: 0%;
-    height: 23%;
+    width: 25vw;
+    height: 28vw;
+    right: 3%;
+    top: -2%;
   }
 }
 
@@ -2411,7 +2471,7 @@ li {
   #representative .repsen-box-right img {
     right: -21%;
     width: 26.8vw;
-    height: 42%;
+    height: 30vw;
     position: absolute;
     right: 3%;
   }

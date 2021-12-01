@@ -301,9 +301,6 @@
                     </div>
                   </div>
                 </li>
-                <!-- <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                  <div class="carousel__snapper"></div>
-                </li> -->
               </ol>
               <aside class="carousel__navigation">
                 <ol class="carousel__navigation-list">
@@ -360,11 +357,14 @@
                   フリースタイルバスケットボール日本一決定戦で2位受賞
                 </div>
               </div>
-              <img
-                src="./images/history-left.png"
-                alt=""
-                class="history-main-img"
-              />
+              <picture class="history-main-img">
+                <source
+                  srcset="./images/history-left.png"
+                  media="(min-width:
+                960px)"
+                />
+                <img src="./images/history-right.png" alt="" />
+              </picture>
             </div>
             <!-- timeline -->
             <ul class="timeline">
@@ -418,15 +418,28 @@
                     <br />
                   </dd>
                 </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt><br /><br /></dt>
+                  <dd>
+                    <br />
+                  </dd>
+                </dl>
               </li>
             </ul>
 
             <div class="history-main-box history-main_right">
-              <img
-                src="./images/history-right.png"
-                alt=""
-                class="history-main-img"
-              />
+              <picture class="history-main-img history-main-img_2">
+                <source
+                  srcset="./images/history-right.png"
+                  media="(min-width:
+                960px)"
+                />
+                <img src="./images/history-left.png" alt="" />
+              </picture>
+
               <div class="history-text-box">
                 <div class="history-main-text history-main_right-text">
                   2016年<br />
@@ -461,7 +474,8 @@
               </div>
               <div class="repsen-box-text">
                 皆さん、初めまして。<br />
-                SHAMGOD12代目代表のRyukiです！
+                SHAMGOD12代目代表の<br class="repsen-box-text-br" />
+                Ryukiです！
               </div>
               <div class="repsen-box-text">
                 僕たちSHAMGODは良い意味で先輩後輩の垣根がなく、 <br />

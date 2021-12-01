@@ -4,11 +4,14 @@
     padding-bottom: 2rem;
     margin-top: 6rem;
     font-family: $japanese;
-    line-height: 2.8rem;
-    font-size: 1.1rem;
-
-    @include md {
+    line-height: 1.75;
+    font-size: 1.2rem;
+    width: auto;
+    @include xs {
+    }
+    @include sm {
       font-size: 1.4rem;
+      line-height: 1.75;
     }
     @include lg {
       display: flex;
@@ -25,12 +28,24 @@
         font-size: 1.8rem;
         padding-top: 0;
         font-weight: bold;
-        @include md {
+        @include xs {
+          line-height: 1.5;
           font-size: 2.4rem;
+        }
+        @include sm {
+          font-size: 3.6vw;
+        }
+        @include md {
+          font-size: 3.8rem;
         }
       }
       &:last-child {
         color: #c10305;
+      }
+      &-br {
+        @include xs {
+          display: none;
+        }
       }
     }
     &-left {
@@ -42,25 +57,33 @@
       z-index: 30;
       img {
         position: absolute;
-        top: 0;
-        right: 0%;
-        width: 30%;
-        height: 18%;
+        top: 14%;
+        right: 12%;
+        width: 25%;
+        height: auto;
+        @include xxs {
+          top: 4%;
+          right: 3%;
+          width: 34%;
+          height: auto;
+        }
         @include xs {
-          height: 22%;
-          right: 4%;
+          top: 2%;
+          right: 2.5%;
+          width: 23%;
+          height: auto;
         }
         @include sm {
-          width: 34%;
-
-          right: 0%;
-          height: 23%;
+          width: 25vw;
+          height: 28vw;
+          right: 3%;
+          top: -2%;
         }
 
         @include md {
           right: -21%;
           width: 26.8vw;
-          height: 42%;
+          height: 30vw;
           position: absolute;
           right: 3%;
         }

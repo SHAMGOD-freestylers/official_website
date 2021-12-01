@@ -14,9 +14,10 @@
     //contents
     font-family: $japanese;
     position: relative;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     padding: 0 3rem;
+    width: auto;
     @include xs {
       padding: 0 5rem;
     }
@@ -27,7 +28,6 @@
     }
     @include md {
       padding: 0 2rem;
-
       display: flex;
       justify-content: space-between;
     }
@@ -69,16 +69,12 @@
         width: 100%;
 
         @include sm {
-          // width: 50%;
           height: 19%;
           top: 87%;
           right: -21%;
         }
         @include md {
-          // display: block;
           position: absolute;
-          // width: 27.5%;
-          // height: 11.8%;
           top: 87%;
           right: 5%;
           height: 47%;
@@ -101,6 +97,9 @@
       }
       &-text {
         padding-bottom: 4rem;
+        &:nth-child(3) {
+          padding-bottom: 3rem;
+        }
         &:last-child {
           padding-bottom: 3rem;
           @include md {
@@ -108,29 +107,26 @@
           }
         }
       }
-
-      img {
+      .history-main-img_2 {
         order: 2;
-        // width: 27.5%;
+      }
+      img {
+        // order: 2;
         width: 100%;
-
         height: 11.8%;
-        // top: 12%;
-        // right: 5%;
         @include sm {
-          // width: 50%;
           height: 19%;
-
-          // top: 10%;
-          // right: -21%;
         }
         @include md {
           position: absolute;
-          height: 47%;
+          height: 42%;
           position: relative;
-          padding-bottom: 7.5rem;
+          padding-bottom: 4.5rem;
           top: 0;
           right: 0;
+        }
+        @include lg {
+          height: 44%;
         }
       }
     }
@@ -154,8 +150,11 @@
   }
   @include md {
     top: 0;
-    margin-top: 6rem;
+    margin-top: 4rem;
     left: 49.5%;
+  }
+  @include lg {
+    top: -3%;
   }
   li {
     /*線の起点とするためrelativeを設定*/
@@ -166,7 +165,25 @@
       padding-bottom: 1.3rem;
     }
     @include md {
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
+      // &:first-child {
+      //   padding-bottom: 4px;
+      // }
+    }
+    @include lg {
+      &:first-child {
+        padding-bottom: 4px;
+      }
+      &:nth-child(3) {
+        padding-bottom: 3rem;
+      }
+      &:nth-child(5) {
+        padding-bottom: 1rem;
+      }
+
+      &:nth-child(6) {
+        padding-bottom: 3rem;
+      }
     }
     /*タイムラインの見出し横の丸の位置と形状*/
     &:after {
@@ -194,7 +211,12 @@
       background: #666;
     }
   }
-  dl {
-    margin: 0 0 20px 3em;
-  }
+  // dl {
+  //   margin: 0 0 20px 3em;
+  //   @include lg {
+  //     &:nth-child(2) {
+  //       // margin: -10px 0 10px 3em;
+  //     }
+  //   }
+  // }
 }
