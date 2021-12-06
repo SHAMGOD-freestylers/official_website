@@ -119,14 +119,14 @@
         }
         @include md {
           position: absolute;
-          height: 42%;
+          height: 44%;
           position: relative;
           padding-bottom: 4.5rem;
           top: 0;
           right: 0;
         }
         @include lg {
-          height: 44%;
+          height: 40%;
         }
       }
     }
@@ -136,17 +136,19 @@
 .timeline {
   position: absolute;
   margin-top: 1rem;
-  left: 2%;
-  top: 22%;
+  left: 3%;
+  top: 16%;
   @include xxs {
-    left: 0;
+    left: 3%;
+    top: 20%;
   }
   @include xs {
-    left: 4.5%;
+    left: 3%;
+    top: 31%;
   }
   @include sm {
     left: 2%;
-    top: 28%;
+    top: 29%;
   }
   @include md {
     top: 0;
@@ -160,15 +162,15 @@
     /*線の起点とするためrelativeを設定*/
     position: relative;
     list-style: none;
-    padding-bottom: 2.9rem;
+    padding-bottom: 4rem;
     @include sm {
       padding-bottom: 1.3rem;
+      &:nth-child(6) {
+        padding-bottom: 1rem;
+      }
     }
     @include md {
-      padding-bottom: 1rem;
-      // &:first-child {
-      //   padding-bottom: 4px;
-      // }
+      padding-bottom: 2rem;
     }
     @include lg {
       &:first-child {

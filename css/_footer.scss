@@ -2,8 +2,30 @@ footer {
   color: white;
   font-family: $japanese;
   text-align: center;
-  height: 8.2rem;
-  line-height: 8.2rem;
+
+  height: 14rem;
   width: 100%;
   background-color: black;
+  @include sm {
+    height: 8.2rem;
+    line-height: 8.2rem;
+  }
+  .logo {
+    margin-top: 2rem;
+    img {
+      height: 7rem;
+      width: 7rem;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+  p {
+    line-height: 1;
+    margin-top: 1.6rem;
+    @include sm {
+      line-height: 8.2;
+      margin-top: 0;
+    }
+  }
 }

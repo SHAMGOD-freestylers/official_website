@@ -50,11 +50,9 @@
           margin: 12rem auto 12rem;
         }
         @include md {
-          margin: 16rem auto 0;
+          margin: 16rem auto 3rem;
         }
-        @include lg {
-          margin: 16rem auto 0;
-        }
+
         font-weight: bold;
       }
       .side-icon {
@@ -244,9 +242,8 @@
 @mixin bg-text-even() {
   right: -1rem;
   top: 59%;
-  font-size: 5rem;
-  top: 66%;
-  font-size: 6rem;
+  top: 72%;
+  font-size: 4.5rem;
   @include xxs {
     top: 54%;
     font-size: 6rem;
