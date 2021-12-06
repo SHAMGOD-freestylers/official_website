@@ -17,7 +17,7 @@
     margin: 0;
     padding-top: 3rem;
     width: 100%;
-    text-align: center;
+    text-align: left;
 
     @include sm {
       text-align: left;
@@ -30,12 +30,21 @@
         justify-content: space-between;
       }
       &-left {
-        position: relative;
         z-index: 20;
-        line-height: 4.6rem;
-        font-size: 2.4rem;
+        line-height: 2;
+        font-size: 1.4rem;
+        @include xxs {
+          font-size: 1.8rem;
+        }
+        @include sm {
+          padding-left: 4%;
+          font-size: 2rem;
+        }
         @include md {
+          padding-left: 0%;
           font-size: 2.8rem;
+          line-height: 2.8;
+
           margin-top: 9rem;
           line-height: 6.6rem;
         }
@@ -47,25 +56,44 @@
           background-color: #000000;
           padding: 0 1rem;
         }
+        .contact-br {
+          display: none;
+          @include sm {
+            display: block;
+          }
+          @include md {
+            display: none;
+          }
+        }
       }
       &-right {
-        position: relative;
+        right: 0%;
         z-index: 20;
-        font-size: 1.4rem;
-        line-height: 3rem;
-        margin-top: 4rem;
+        font-size: 1.1rem;
+        line-height: 1.9;
+        position: absolute;
+        top: 30%;
+        @include xxs {
+          top: 27%;
+        }
         @include xs {
+          top: 34%;
         }
+
         @include sm {
-          width: 32rem;
-          // margin-left: auto;
-          margin-left: 35%;
-        }
-        @include md {
-          width: 48rem;
+          line-height: 2.6;
           width: auto;
           margin-top: 0;
           margin-left: 0;
+          top: 26%;
+        }
+        @include md {
+          top: 29%;
+          right: 5%;
+        }
+        @include lg {
+          padding-left: 0;
+          top: 33%;
         }
         &-text {
           padding-top: 1.5rem;
@@ -115,63 +143,52 @@
     // form
     .form-box {
       padding: 0 0 1rem;
+      height: 46rem;
+      // @include xxs {
+      //   height: 46rem;
+      // }
       @include xs {
         display: flex;
-        flex-direction: column-reverse;
+        height: 95rem;
       }
       @include sm {
         margin-top: 7rem;
         padding: 0 0 7rem;
-        flex-direction: row;
         justify-content: space-between;
+        height: 70rem;
       }
-
+      @include md {
+        height: 85rem;
+      }
       @include lg {
         padding-bottom: 0;
+        height: 85rem;
       }
-      .form-box-left {
-        z-index: 20;
-        position: relative;
-        padding: 3rem 0 0;
-        @include xs {
-          margin: 0 auto;
-        }
-        @include sm {
-          padding: 8rem 0 0;
-        }
 
-        p {
-          margin-bottom: 3.75rem;
-          font-size: 1rem;
-          @include xs {
-            font-size: 1.4rem;
-          }
-          form_br {
-            @include md {
-              display: none;
-            }
-          }
-        }
-      }
-      .form-box-right {
-        position: relative;
+      .form-box-left {
         z-index: 20;
         font-size: 1.8rem;
         line-height: 3rem;
-        margin-top: 7%;
+        margin-top: 45rem;
+
+        @include xxs {
+          margin-top: 48rem;
+        }
         @include xs {
           font-size: 2.4rem;
+          margin-top: 48rem;
+        }
+        @include sm {
+          margin-top: 38rem;
         }
         @include md {
           font-size: 2.8rem;
-
-          margin-top: 16%;
-          line-height: 4.6rem;
-          padding-left: 5.8rem;
-          line-height: 6.6rem;
+          margin-top: 40rem;
+          line-height: 1.6;
         }
         @include lg {
           font-size: 4.4rem;
+          margin-top: 40rem;
         }
         span {
           color: white;
@@ -180,6 +197,42 @@
 
           @include xs {
             padding: 0 1rem;
+          }
+        }
+      }
+      .form-box-right {
+        z-index: 1;
+        position: absolute;
+        padding: 3rem 0 0;
+        right: 5%;
+        bottom: 0%;
+
+        @include sm {
+          padding: 8rem 0 0;
+          right: 10%;
+          bottom: 1%;
+        }
+        @include md {
+          bottom: 3%;
+          right: 5%;
+        }
+        @include lg {
+          bottom: 0%;
+        }
+
+        p {
+          margin-bottom: 1.75rem;
+          font-size: 1rem;
+          @include xs {
+            font-size: 1.4rem;
+          }
+          @include md {
+            margin-bottom: 3.75rem;
+          }
+          form_br {
+            @include md {
+              display: none;
+            }
           }
         }
       }
@@ -192,8 +245,11 @@
         background-color: #fff;
         padding-left: 1.2rem;
         margin-bottom: 2rem;
-        width: 25.5rem;
+        width: 22.5rem;
         height: 2.5rem;
+        @include sm {
+          width: 25.5rem;
+        }
         @include md {
           width: 40rem;
           height: 4.8rem;
@@ -216,8 +272,10 @@
         padding-top: 1.4rem;
         margin-bottom: 3.8rem;
         resize: none;
-        width: 25.5rem;
-
+        width: 22.5rem;
+        @include sm {
+          width: 25.5rem;
+        }
         &::placeholder {
           text-align: left;
           color: #bebebe;
@@ -270,10 +328,16 @@
     }
     .contact-bgc {
       height: 62rem;
-      width: 82rem;
-      z-index: 0;
+      z-index: -1;
+      width: 30rem;
       background-color: #f7f7f7;
       position: absolute;
+      @include xxs {
+        width: 31rem;
+      }
+      @include xs {
+        width: 31rem;
+      }
       @include sm {
         height: 68rem;
         width: 54rem;
@@ -284,7 +348,6 @@
       }
       @include lg {
         //   背景色重ね
-
         height: 87rem;
         // width: 54rem;
 
@@ -297,46 +360,50 @@
       }
 
       &1 {
-        right: 0;
-        top: 18.6%;
-        height: 64rem;
-        @include xxs {
-          top: 13.2%;
-        }
+        z-index: -1;
+        top: 17.2%;
+        right: -2%;
+        height: 52rem;
+
         @include xs {
-          top: 17.8%;
+          top: 19.2%;
+
+          height: 55rem;
         }
         @include sm {
-          top: 19.1%;
-          height: 73rem;
+          top: 21.2%;
+          right: -2%;
+          height: 55rem;
         }
         @include md {
-          top: 23.6%;
-          right: -10%;
+          top: 24.2%;
+          right: -2%;
           height: 64rem;
         }
         @include lg {
-          top: 28.5%;
-          right: 0;
+          top: 28.2%;
+          right: -2%;
         }
       }
       &2 {
-        left: 0;
-        top: 69%;
-        @include xs {
-          top: 53%;
-          height: 70rem;
+        right: -2%;
+        top: 61.8%;
+        z-index: -1;
+        @include xxs {
+          top: 59.8%;
         }
-        @include sm {
-          top: 66.7%;
+        @include xs {
+          top: 63%;
           height: 54rem;
         }
+        @include sm {
+          top: 67.8%;
+        }
         @include md {
-          top: 64.7%;
+          top: 65.8%;
           height: 62rem;
         }
         @include lg {
-          left: 0;
           top: 67.8%;
           height: 64rem;
         }
