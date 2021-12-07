@@ -1614,7 +1614,7 @@ header nav {
 @media (min-width: 960px) {
   #news .news-contents .carousel__viewport {
     left: 0;
-    max-width: 38%;
+    max-width: 37%;
     overflow-x: visible;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3021,7 +3021,7 @@ li {
 }
 
 #contact .contact_main .contact-box-right {
-  right: 0%;
+  right: 2%;
   z-index: 20;
   font-size: 1.1rem;
   line-height: 1.9;
@@ -3054,7 +3054,6 @@ li {
 @media (min-width: 960px) {
   #contact .contact_main .contact-box-right {
     top: 29%;
-    right: 5%;
   }
 }
 
@@ -3219,14 +3218,13 @@ li {
   z-index: 1;
   position: absolute;
   padding: 3rem 0 0;
-  right: 5%;
+  right: 3%;
   bottom: 0%;
 }
 
 @media (min-width: 768px) {
   #contact .contact_main .form-box .form-box-right {
     padding: 8rem 0 0;
-    right: 10%;
     bottom: 1%;
   }
 }
@@ -3234,7 +3232,6 @@ li {
 @media (min-width: 960px) {
   #contact .contact_main .form-box .form-box-right {
     bottom: 3%;
-    right: 5%;
   }
 }
 
@@ -3449,10 +3446,30 @@ li {
 }
 
 #contact .contact_main form .submit img {
-  height: 2.6px;
-  width: 5.5px;
-  margin-bottom: 0.2rem;
-  margin-left: 2.3rem;
+  height: 5.6px;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+@media (min-width: 400px) {
+  #contact .contact_main form .submit img {
+    height: 5.6px;
+    margin-bottom: 0.4rem;
+    margin-left: 0.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact_main form .submit img {
+    height: 8.6px;
+    margin-left: 0.3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  #contact .contact_main form .submit img {
+    margin-bottom: 0.5rem;
+  }
 }
 
 #contact .contact_main .contact-bgc {

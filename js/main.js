@@ -77,25 +77,43 @@ const slideToggle = (el, duration = 700) => {
     return slideUp(el, duration);
   }
 };
+// 連続クリック防止フラグ
+
+let clickFlg = true;
+const navigation = function () {
+  if (clickFlg) {
+    // イベント処理中はフラグをoffにします。
+    clickFlg = false;
+    // クリック処理を実施
+    hamburgerBorder.classList.toggle("close");
+    hamburgerBorderText.classList.toggle("close-menu");
+    slideToggle(sm, 700);
+  } else {
+    // イベント処理中は処理しない
+    return false;
+  }
+  clickFlg = true;
+};
 hamburger.onclick = function () {
-  hamburgerBorder.classList.toggle("close");
-  hamburgerBorderText.classList.toggle("close-menu");
-  slideToggle(sm, 700);
+  navigation();
+};
+MessageNav.onclick = function () {
+  navigation();
 };
 MoviesNav.onclick = function () {
-  slideToggle(sm, 700);
+  navigation();
 };
 NewsNav.onclick = function () {
-  slideToggle(sm, 700);
+  navigation();
 };
 HistoryNav.onclick = function () {
-  slideToggle(sm, 700);
+  navigation();
 };
 FaqNav.onclick = function () {
-  slideToggle(sm, 700);
+  navigation();
 };
 ContactNav.onclick = function () {
-  slideToggle(sm, 700);
+  navigation();
 };
 
 // header color change
