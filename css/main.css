@@ -944,7 +944,7 @@ header .sm {
   /*絶対配置　top　leftからの位置を絶対配置する*/
   z-index: 10;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 8.2rem);
   display: none;
   text-align: center;
   /*メニューリストの文字を中央寄せ*/
@@ -1560,9 +1560,15 @@ header nav {
   width: 100%;
 }
 
+@media (min-width: 360px) {
+  #news .news-contents {
+    margin-top: 6rem;
+  }
+}
+
 @media (min-width: 400px) {
   #news .news-contents {
-    margin-top: 11rem;
+    margin-top: 8rem;
   }
 }
 
@@ -1663,6 +1669,16 @@ header nav {
 
 #news .news-contents .splide__pagination__page.is-active {
   background: #8d2659 !important;
+}
+
+.splide__arrow {
+  top: 39%;
+}
+
+@media (min-width: 360px) {
+  .splide__arrow {
+    top: 50%;
+  }
 }
 
 #history .history-mainvisual {
@@ -1809,13 +1825,20 @@ header nav {
   position: relative;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  width: 30rem;
   padding: 0 3rem;
-  width: auto;
+}
+
+@media (min-width: 360px) {
+  #history .history-main {
+    width: 37rem;
+  }
 }
 
 @media (min-width: 400px) {
   #history .history-main {
-    padding: 0 5rem;
+    padding: 0 2rem;
+    width: auto;
   }
 }
 
@@ -1896,6 +1919,14 @@ header nav {
   width: 100%;
 }
 
+@media (min-width: 400px) {
+  #history .history-main_left img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 27rem;
+  }
+}
+
 @media (min-width: 768px) {
   #history .history-main_left img {
     height: 19%;
@@ -1965,6 +1996,14 @@ header nav {
   height: 11.8%;
 }
 
+@media (min-width: 400px) {
+  #history .history-main_right img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 27rem;
+  }
+}
+
 @media (min-width: 768px) {
   #history .history-main_right img {
     height: 19%;
@@ -1993,7 +2032,7 @@ header nav {
   position: absolute;
   margin-top: 1rem;
   left: 3%;
-  top: 16%;
+  top: 20%;
 }
 
 @media (min-width: 360px) {
