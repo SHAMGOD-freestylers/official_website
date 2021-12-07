@@ -21,6 +21,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
     />
+    <!-- splide -->
+    <link rel="stylesheet" href="./css/splide.min.css" />
     <title>~freestyle ballers~ SHAMGOD</title>
   </head>
   <body>
@@ -263,9 +265,63 @@
           <h2 class="section-title">NEWS</h2>
           <div class="bg-text">NEWS</div>
           <div class="contents news-contents" 　>
-            <section class="carousel" aria-label="Gallery">
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="slide-box">
+                      <img
+                        src="./images/news1.png"
+                        alt=""
+                        class="news-box-img"
+                      />
+                      <div class="news-text-box">
+                        <div class="news-text_sub">
+                          <p>2018/07/07</p>
+                          <p>お知らせ</p>
+                        </div>
+                        <p class="news-text_title">七夕祭出演</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slide-box">
+                      <img
+                        src="./images/news2.png"
+                        alt=""
+                        class="news-box-img"
+                      />
+                      <div class="news-text-box">
+                        <div class="news-text_sub">
+                          <p>2018/07/07</p>
+                          <p>お知らせ</p>
+                        </div>
+                        <p class="news-text_title">代表挨拶</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slide-box">
+                      <img
+                        src="./images/news3.png"
+                        alt=""
+                        class="news-box-img"
+                      />
+                      <div class="news-text-box">
+                        <div class="news-text_sub">
+                          <p>2018/07/07</p>
+                          <p>お知らせ</p>
+                        </div>
+                        <p class="news-text_title">三田祭本公演を終えて</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <section class="carousel" aria-label="Gallery">
               <ol class="carousel__viewport news-box-container">
-                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <li id="carousel__slide1"  class="carousel__slide">
                   <div class="carousel__snapper news-box">
                     <img src="./images/news1.png" alt="" class="news-box-img" />
                     <div class="news-text-box">
@@ -277,7 +333,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <li id="carousel__slide2"  class="carousel__slide">
                   <div class="carousel__snapper news-box">
                     <img src="./images/news2.png" alt="" class="news-box-img" />
                     <div class="news-text-box">
@@ -327,7 +383,7 @@
                   </li>
                 </ol>
               </aside>
-            </section>
+            </section> -->
           </div>
         </section>
         <!-- history -->
@@ -736,6 +792,23 @@
     <script src="./js/timeline.js"></script>
     <!-- slider js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <!-- splide -->
+    <script src="./js/splide.min.js"></script>
+    <script>
+      const splide = new Splide(".splide", {
+        type: "loop",
+        padding: "10%",
+        mediaQuery: "min",
+        breakpoints: {
+          960: {
+            destroy: true,
+          },
+        },
+        // wheel: true,
+      });
+
+      splide.mount();
+    </script>
     <!-- jqery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
