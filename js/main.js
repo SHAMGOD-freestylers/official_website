@@ -81,22 +81,27 @@ const slideToggle = (el, duration = 700) => {
 
 let clickFlg = true;
 const navigation = function () {
-  if (clickFlg) {
-    // イベント処理中はフラグをoffにします。
-    clickFlg = false;
-    // クリック処理を実施
     hamburgerBorder.classList.toggle("close");
     hamburgerBorderText.classList.toggle("close-menu");
-    slideToggle(sm, 700);
-  } else {
-    // イベント処理中は処理しない
-    return false;
+    slideToggle(sm, 500);
+
   }
-  clickFlg = true;
-};
+function check_renda(){
+  if(clickFlg == true){
+    clickFlg = false
+    return true
+  }
+  return false
+}
 hamburger.onclick = function () {
+
+  if(check_renda== false){
+    return;
+  }
   navigation();
+  clickFlg= true
 };
+
 MessageNav.onclick = function () {
   navigation();
 };
