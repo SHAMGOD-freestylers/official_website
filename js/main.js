@@ -171,3 +171,14 @@ function changeColor() {
 }
 
 window.addEventListener("scroll", changeColor);
+
+// 友達追加
+
+const AddfriendBtn = document.querySelector(".side-icon-line");
+const AddfriendBtn2 = document.querySelector(".contact-box-right-btn");
+AddfriendBtn.onclick = function () {
+  window.open("https://lin.ee/AlnId7l", "_blank");
+};
+AddfriendBtn2.onclick = function () {
+  window.open("https://lin.ee/AlnId7l", "_blank");
+};
