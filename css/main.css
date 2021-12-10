@@ -3378,6 +3378,12 @@ header nav {
   height: 52rem;
 }
 
+@media (min-width: 360px) {
+  #contact .contact_main .contact-bgc1 {
+    top: 14.2%;
+  }
+}
+
 @media (min-width: 400px) {
   #contact .contact_main .contact-bgc1 {
     top: 19.2%;
