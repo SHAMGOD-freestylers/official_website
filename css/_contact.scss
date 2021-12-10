@@ -375,7 +375,9 @@
         top: 17.2%;
         right: -2%;
         height: 52rem;
-
+        @include xxs {
+          top: 14.2%;
+        }
         @include xs {
           top: 19.2%;
 
