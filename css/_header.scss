@@ -155,7 +155,7 @@ header {
     position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
     z-index: 10;
     width: 100%;
-    height: 100vh - 8.2rem;
+    height: calc(100vh - 8.2rem);
     display: none;
     text-align: center; /*メニューリストの文字を中央寄せ*/
     background-color: black; /*透明の背景*/
@@ -164,8 +164,13 @@ header {
   ul {
     flex-direction: column; /*ulのflexboxを縦並びにする*/
     li {
-      padding: 4.5rem;
       border-top: solid 0.5px rgba(255, 255, 255, 0.6); /*リストの境目に白線 */
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 4.5rem;
+      }
     }
   }
 

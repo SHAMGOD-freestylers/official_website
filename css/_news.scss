@@ -1,17 +1,16 @@
 #news {
   .news-contents {
     width: 100%;
+    @include xxs {
+      margin-top: 6rem;
+    }
     @include xs {
-      margin-top: 11rem;
+      margin-top: 8rem;
     }
 
     .splide {
       &__track {
         font-family: $japanese;
-
-        @include md {
-          // overflow: inherit;
-        }
         .splide__list {
           position: relative;
           width: 100%;
@@ -78,6 +77,7 @@
     .splide__pagination__page.is-active {
       background: $dark-red !important;
     }
+
     // .news-btn-box {
     //   text-align: center;
     //   font-size: 1.4rem;
@@ -89,7 +89,12 @@
     // }
   }
 }
-
+.splide__arrow {
+  top: 39%;
+  @include xxs {
+    top: 50%;
+  }
+}
 // .news-btn {
 //   display: inline-block;
 //   background: #c10305;

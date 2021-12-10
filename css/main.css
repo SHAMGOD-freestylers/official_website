@@ -944,7 +944,7 @@ header .sm {
   /*絶対配置　top　leftからの位置を絶対配置する*/
   z-index: 10;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 8.2rem);
   display: none;
   text-align: center;
   /*メニューリストの文字を中央寄せ*/
@@ -962,9 +962,15 @@ header ul {
 }
 
 header ul li {
-  padding: 4.5rem;
   border-top: solid 0.5px rgba(255, 255, 255, 0.6);
   /*リストの境目に白線 */
+}
+
+header ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 4.5rem;
 }
 
 header nav {
@@ -1560,9 +1566,15 @@ header nav {
   width: 100%;
 }
 
+@media (min-width: 360px) {
+  #news .news-contents {
+    margin-top: 6rem;
+  }
+}
+
 @media (min-width: 400px) {
   #news .news-contents {
-    margin-top: 11rem;
+    margin-top: 8rem;
   }
 }
 
@@ -1663,6 +1675,16 @@ header nav {
 
 #news .news-contents .splide__pagination__page.is-active {
   background: #8d2659 !important;
+}
+
+.splide__arrow {
+  top: 39%;
+}
+
+@media (min-width: 360px) {
+  .splide__arrow {
+    top: 50%;
+  }
 }
 
 #history .history-mainvisual {
@@ -1809,13 +1831,20 @@ header nav {
   position: relative;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  width: 29rem;
   padding: 0 3rem;
-  width: auto;
+}
+
+@media (min-width: 360px) {
+  #history .history-main {
+    width: 37rem;
+  }
 }
 
 @media (min-width: 400px) {
   #history .history-main {
-    padding: 0 5rem;
+    padding: 0 4rem;
+    width: auto;
   }
 }
 
@@ -1824,6 +1853,7 @@ header nav {
     padding: 0 5rem;
     line-height: 2.8rem;
     font-size: 1.4rem;
+    width: 80vw;
   }
 }
 
@@ -1889,11 +1919,35 @@ header nav {
   }
 }
 
+#history .history-main_left .history-main-box .history-br {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  #history .history-main_left .history-main-box .history-br {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #history .history-main_left .history-main-box .history-br {
+    display: none;
+  }
+}
+
 #history .history-main_left img {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   width: 100%;
+}
+
+@media (min-width: 400px) {
+  #history .history-main_left img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 27rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1965,6 +2019,14 @@ header nav {
   height: 11.8%;
 }
 
+@media (min-width: 400px) {
+  #history .history-main_right img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 27rem;
+  }
+}
+
 @media (min-width: 768px) {
   #history .history-main_right img {
     height: 19%;
@@ -1992,8 +2054,8 @@ header nav {
 .timeline {
   position: absolute;
   margin-top: 1rem;
-  left: 3%;
-  top: 16%;
+  left: 2.5%;
+  top: 17%;
 }
 
 @media (min-width: 360px) {
@@ -2005,15 +2067,15 @@ header nav {
 
 @media (min-width: 400px) {
   .timeline {
-    left: 3%;
-    top: 31%;
+    left: 2.5%;
+    top: 25%;
   }
 }
 
 @media (min-width: 768px) {
   .timeline {
     left: 2%;
-    top: 29%;
+    top: 26%;
   }
 }
 
@@ -2039,12 +2101,52 @@ header nav {
   /*タイムラインの見出し横の丸の位置と形状*/
 }
 
+.timeline li:nth-child(2) {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 360px) {
+  .timeline li:nth-child(4) {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .timeline li:first-child {
+    padding-bottom: 3rem;
+  }
+  .timeline li:nth-child(3) {
+    padding-bottom: 2.5rem;
+  }
+  .timeline li:nth-child(4) {
+    padding-bottom: 2.5rem;
+  }
+  .timeline li:nth-child(5) {
+    padding-bottom: 3.5rem;
+  }
+  .timeline li:nth-child(6) {
+    padding-bottom: 4.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .timeline li {
     padding-bottom: 1.3rem;
   }
-  .timeline li:nth-child(6) {
+  .timeline li:nth-child(2) {
+    padding-bottom: 2rem;
+  }
+  .timeline li:nth-child(3) {
     padding-bottom: 1rem;
+  }
+  .timeline li:nth-child(4) {
+    padding-bottom: 1rem;
+  }
+  .timeline li:nth-child(5) {
+    padding-bottom: 3rem;
+  }
+  .timeline li:nth-child(6) {
+    padding-bottom: 3rem;
   }
 }
 
@@ -2062,7 +2164,7 @@ header nav {
     padding-bottom: 3rem;
   }
   .timeline li:nth-child(5) {
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
   .timeline li:nth-child(6) {
     padding-bottom: 3rem;

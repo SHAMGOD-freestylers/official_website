@@ -79,41 +79,46 @@ const slideToggle = (el, duration = 700) => {
 };
 // 連続クリック防止フラグ
 
-let clickFlg = true;
+let clickFlg = false;
 const navigation = function () {
+  slideToggle(sm, 500);
+  hamburgerBorder.classList.toggle("close");
+  hamburgerBorderText.classList.toggle("close-menu");
+};
+
+function check_renda() {
   if (clickFlg) {
-    // イベント処理中はフラグをoffにします。
-    clickFlg = false;
-    // クリック処理を実施
-    hamburgerBorder.classList.toggle("close");
-    hamburgerBorderText.classList.toggle("close-menu");
-    slideToggle(sm, 700);
+    return;
   } else {
-    // イベント処理中は処理しない
-    return false;
+    clickFlg = true;
+
+    navigation();
+    setTimeout(() => {
+      clickFlg = false;
+    }, 650);
   }
-  clickFlg = true;
-};
+}
 hamburger.onclick = function () {
-  navigation();
+  check_renda();
 };
+
 MessageNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 MoviesNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 NewsNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 HistoryNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 FaqNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 ContactNav.onclick = function () {
-  navigation();
+  check_renda();
 };
 
 // header color change
