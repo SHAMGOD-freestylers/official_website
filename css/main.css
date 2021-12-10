@@ -944,9 +944,8 @@ header .sm {
   /*絶対配置　top　leftからの位置を絶対配置する*/
   z-index: 10;
   width: 100%;
-  height: calc(100vh - 8.2rem);
   display: none;
-  text-align: center;
+  text-align: right;
   /*メニューリストの文字を中央寄せ*/
   background-color: black;
   /*透明の背景*/
@@ -970,7 +969,7 @@ header ul li a {
   display: block;
   height: 100%;
   width: 100%;
-  padding: 4.5rem;
+  padding: calc(100vh / 40);
 }
 
 header nav {
