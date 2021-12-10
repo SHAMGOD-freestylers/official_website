@@ -164,8 +164,13 @@ header {
   ul {
     flex-direction: column; /*ulのflexboxを縦並びにする*/
     li {
-      padding: 4.5rem;
       border-top: solid 0.5px rgba(255, 255, 255, 0.6); /*リストの境目に白線 */
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 4.5rem;
+      }
     }
   }
 
